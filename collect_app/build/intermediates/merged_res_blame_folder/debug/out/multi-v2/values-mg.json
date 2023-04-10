@@ -4,7 +4,7 @@
             "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-mg/values-mg.xml",
             "map": [
                 {
-                    "source": "/Users/aurora/Documents/odk/odk/collect-master/strings/build/intermediates/packaged_res/debug/values-mg/values-mg.xml",
+                    "source": "/Users/aurora/Documents/odk/agaveodk/strings/build/intermediates/packaged_res/debug/values-mg/values-mg.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

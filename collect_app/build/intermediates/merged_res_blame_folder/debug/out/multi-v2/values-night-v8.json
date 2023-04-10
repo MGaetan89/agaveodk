@@ -4,6 +4,23 @@
             "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
+                    "source": "/Users/aurora/Documents/odk/agaveodk/collect_app/src/main/res/values-night/colors.xml",
+                    "from": {
+                        "startLines": "6,4,2,3,13",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "206,156,55,102,503",
+                        "endColumns": "44,48,46,53,52",
+                        "endOffsets": "246,200,97,151,551"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,100,149,196,250",
+                        "endColumns": "44,48,46,53,52",
+                        "endOffsets": "95,144,191,245,298"
+                    }
+                },
+                {
                     "source": "/Users/aurora/.gradle/caches/transforms-3/859b7a25b258116c7363c29b5ef95fca/transformed/jetified-core-splashscreen-1.0.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2",
@@ -52,23 +69,6 @@
                         "startOffsets": "1021,1096,1207,1296,1397,1504,1611,1710,1813,1901,2025,2127,2229,2345,2447,2561,2689,2805,2927,3063,3183,3317,3437,3549,3764,3881,4005,4135,4257,4395,4529,4645",
                         "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "1091,1202,1291,1392,1499,1606,1705,1808,1896,2020,2122,2224,2340,2442,2556,2684,2800,2922,3058,3178,3312,3432,3544,3670,3876,4000,4130,4252,4390,4524,4640,4760"
-                    }
-                },
-                {
-                    "source": "/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/res/values-night/colors.xml",
-                    "from": {
-                        "startLines": "6,4,2,3,13",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "206,156,55,102,503",
-                        "endColumns": "44,48,46,53,52",
-                        "endOffsets": "246,200,97,151,551"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,100,149,196,250",
-                        "endColumns": "44,48,46,53,52",
-                        "endOffsets": "95,144,191,245,298"
                     }
                 }
             ]

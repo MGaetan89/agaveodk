@@ -11,7 +11,8 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1066,
+      "versionCode": 1069,
+      "versionName": "4ec93dd-dirty",
       "outputFile": "AndroidManifest.xml"
     }
   ],

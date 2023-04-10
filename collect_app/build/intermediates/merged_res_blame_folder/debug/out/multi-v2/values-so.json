@@ -4,7 +4,7 @@
             "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-so/values-so.xml",
             "map": [
                 {
-                    "source": "/Users/aurora/Documents/odk/odk/collect-master/strings/build/intermediates/packaged_res/debug/values-so/values-so.xml",
+                    "source": "/Users/aurora/Documents/odk/agaveodk/strings/build/intermediates/packaged_res/debug/values-so/values-so.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item msgid="2178576254385739855" quantity="one">"homme"</item>
+        <item msgid="2973062968038355991" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> päeva pärast"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item msgid="3274708118124045246" quantity="one">"1 tunni pärast"</item>
+        <item msgid="3705373766798013406" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> tunni pärast"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item msgid="562786149928284878" quantity="one">"1 minuti pärast"</item>
+        <item msgid="4216113292706568726" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minuti pärast"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item msgid="5842225370795066299" quantity="one">"1 sekundi pärast"</item>
+        <item msgid="5495880108825805108" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sekundi pärast"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item msgid="8463161711492680309" quantity="one">"eile"</item>
+        <item msgid="3453342639616481191" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> päeva tagasi"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item msgid="4796212039724722116" quantity="one">"1 tund tagasi"</item>
+        <item msgid="6889970745748538901" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> tundi tagasi"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item msgid="6361490147113871545" quantity="one">"1 minut tagasi"</item>
+        <item msgid="851164968597150710" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minutit tagasi"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item msgid="1849036840200069118" quantity="one">"1 s tagasi"</item>
+        <item msgid="3699169366650930415" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sekundit tagasi"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item msgid="8917467491248809972" quantity="one">"1 tund"</item>
+        <item msgid="3863962854246773930" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> tundi"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item msgid="4915414002546085617" quantity="one">"1 minut"</item>
+        <item msgid="3165187169224908775" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minutit"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item msgid="6962015528372969481" quantity="one">"1 sekund"</item>
+        <item msgid="1886107766577166786" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sekundit"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item msgid="5413088743009839518" quantity="one">"homme"</item>
+        <item msgid="5109449375100953247" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> päeva pärast"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item msgid="7164353342477769999" quantity="one">"1 tunni pärast"</item>
+        <item msgid="547290677353727389" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> tunni pärast"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item msgid="8793095251325200395" quantity="one">"1 minuti pärast"</item>
+        <item msgid="3330713936399448749" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minuti pärast"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item msgid="2729745560954905102" quantity="one">"1 sekundi pärast"</item>
+        <item msgid="1241926116443974687" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sekundi pärast"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item msgid="861358534398115820" quantity="one">"eile"</item>
+        <item msgid="2479586466153314633" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> päeva tagasi"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item msgid="9150797944610821849" quantity="one">"1 tund tagasi"</item>
+        <item msgid="2467273239587587569" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> tundi tagasi"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item msgid="3306787433088810191" quantity="one">"1 minut tagasi"</item>
+        <item msgid="2176942008915455116" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minutit tagasi"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item msgid="4869870056547896011" quantity="one">"1 sekund tagasi"</item>
+        <item msgid="3903706804349556379" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sekundit tagasi"</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d uus märguanne</item>
+    <item quantity="other">%d uut märguannet</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Liigu avalehele"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Liigu üles"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Rohkem valikuid"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Valmis"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Kuva kõik"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Valige rakendus"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"VÄLJAS"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"SEES"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"kustuta"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"sisestusklahv"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Funktsiooniklahv +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Tõstuklahv +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"tühik"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menüü +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Otsige …"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Päringu tühistamine"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Otsingupäring"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Otsing"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Päringu esitamine"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Häälotsing"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Jaga:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Jagamine rakendusega <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ahendamine"</string>
+    <string name="about_preferences">Teave</string>
+    <string name="accept_bearing">Salvesta suund</string>
+    <string name="activity_not_found">%s teostamiseks ei leidu toimingut</string>
+    <string name="added_on_date_at_time">\'Lisatud\' EEE, MMM dd, yyyy \'kell\' HH:mm</string>
+    <string name="admin_password">Administraatori salasõna</string>
+    <string name="admin_password_changed">Administraatori salasõna muutmine õnnestus</string>
+    <string name="admin_password_disabled">Administraatori salasõna on keelatud</string>
+    <string name="admin_password_incorrect">Vabandust, salasõna on vale!</string>
+    <string name="alert">Alarm</string>
+    <string name="analytics">Anonüümne kasutusinfo kogumine</string>
+    <string name="analytics_preferences">Kasutusinfo</string>
+    <string name="bad_uri">Vale veebiaadress: %s</string>
+    <string name="bearing">Suund: %.3f</string>
+    <string msgid="2102429900219199821" name="biometric_or_screen_lock_prompt_message">"Jätkamiseks kasutage oma biomeetrilisi andmeid või ekraanilukku"</string>
+    <string msgid="1160635338192065472" name="biometric_prompt_message">"Jätkamiseks kasutage oma biomeetrilisi andmeid"</string>
+    <string name="bottomsheet_action_expand_halfway">Laiendamine poolenisti</string>
+    <string name="buttons_navigation">Liikumiseks kasuta edasi-tagasi nuppe</string>
+    <string name="cancel">Tühista</string>
+    <string name="cancel_loading_form">Tühista</string>
+    <string name="cancel_location">Tühista</string>
+    <string name="capture_audio">Heli salvestamine</string>
+    <string name="capture_image">Pildista</string>
+    <string name="capture_osm">Ava OpenMapKit</string>
+    <string name="capture_video">Video salvestamine</string>
+    <string name="change_admin_password">Muuda administraatori salasõna</string>
+    <string name="change_font_size">Teksti suurus</string>
+    <string name="change_language">Muuda keelt</string>
+    <string name="change_password">ODK salasõna</string>
+    <string name="change_server_url">Serveri veebiaadress</string>
+    <string name="change_username">ODK kasutajanimi</string>
+    <string name="change_view">Muuda vaadet</string>
+    <string name="character_counter_content_description">Sisestatud tähemärgid: %1$d/%2$d</string>
+    <string name="character_counter_overflowed_content_description">Tähemärgipiirang on ületatud: %1$d/%2$d</string>
+    <string name="choose_image">Vali pilt</string>
+    <string name="choose_sound">Vali heli</string>
+    <string name="choose_video">Vali video</string>
+    <string name="clear">Eemalda</string>
+    <string name="clear_all">Eemalda kõik</string>
+    <string name="clear_answer">Eemalda vastus</string>
+    <string name="clear_answer_ask">Eemalda see vastus?</string>
+    <string name="clear_answer_no">Tühista</string>
+    <string name="clear_text_end_icon_content_description">Kustuta tekst</string>
+    <string name="clearanswer_confirm">Eemalda vastus \"%s\"?</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Luba</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Rakendus %1$s töötab ainult siis, kui lubate Google Play teenused.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play teenuste lubamine</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installi</string>
+    <string name="common_google_play_services_install_text">Rakendus %1$s töötab ainult koos Google Play teenustega, mida teie seadmes pole.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play teenuste hankimine</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play teenuste saadavalolek</string>
+    <string name="common_google_play_services_notification_ticker">Viga Google Play teenustes</string>
+    <string name="common_google_play_services_unknown_issue">Rakendusel %1$s on probleeme Google Play teenustega. Proovige uuesti.</string>
+    <string name="common_google_play_services_unsupported_text">Rakendus %1$s töötab ainult koos Google Play teenustega, mida teie seadmes ei toetata.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Värskenda</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Rakenduse %1$s töötamiseks peate värskendama Google Play teenuseid.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play teenuste värskendamine</string>
+    <string name="common_google_play_services_updating_text">Rakendus %1$s töötab ainult koos Google Play teenustega, mida praegu värskendatakse.</string>
+    <string name="common_google_play_services_wear_update_text">Vajalik on Google Play teenuste uus versioon. See värskendab end peagi.</string>
+    <string name="common_open_on_phone">Ava telefonis</string>
+    <string name="common_signin_button_text">Logi sisse</string>
+    <string name="common_signin_button_text_long">Logi sisse Google\'i kontoga</string>
+    <string msgid="5912733858573823945" name="confirm_device_credential_password">"Kasuta parooli"</string>
+    <string name="constraint_behavior">Piira vormi töötlemise käitumist</string>
+    <string name="constraint_behavior_on_finalize">Vormi valideerimine toimub sisestuse lõpetamisel</string>
+    <string name="constraint_behavior_on_swipe">Valideeri vormis edasi liikudes</string>
+    <string msgid="6083905920877235314" name="copy">"Kopeerimine"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link kopeeriti lõikelauale"</string>
+    <string name="data">Salvestatud vormid</string>
+    <string name="data_saved_error">Kahjuks ebaõnnestus vormi salvestamine!</string>
+    <string name="data_saved_ok">Vorm on edukalt salvestatud!</string>
+    <string name="default_completed">Vaikimis märgi lõpetatuks</string>
+    <string name="default_completed_summary">Vaikimisi märgi vorm lõpetatuks</string>
+    <string msgid="4776854077120974966" name="default_error_msg">"Tundmatu viga"</string>
+    <string name="delete_after_send">Kustuta peale saatmist</string>
+    <string name="delete_after_send_summary">Peale serverisse saatmist kustutab lõpetatud vormid ja meedia</string>
+    <string name="delete_confirm">Kustuta vorm(id) %s?</string>
+    <string name="delete_file">Kustuta valitu</string>
+    <string name="delete_no">Ei kustuta</string>
+    <string name="delete_repeat">Eemalda grupp</string>
+    <string name="delete_repeat_ask">Eemalda see grupp?</string>
+    <string name="delete_repeat_confirm">Eemalda grupp \"%s\" ja kõik tema alamgrupid?</string>
+    <string name="delete_repeat_no">Tühista</string>
+    <string name="delete_yes">Kustuta vormid</string>
+    <string name="deleted_form">Kustutatud vorm</string>
+    <string name="deleted_on_date_at_time">\'Kustutatud\' EEE, MMM dd, yyyy \' \' HH:mm</string>
+    <string name="direction">Siht: %s</string>
+    <string name="discard">Loobu</string>
+    <string name="discard_answer">Eemalda vastus</string>
+    <string name="discard_group">Eemalda grupp</string>
+    <string name="do_not_change">Tühista</string>
+    <string name="do_not_exit">Tühista</string>
+    <string name="download">Lae alla</string>
+    <string name="download_selected">Allalaadimine valitud</string>
+    <string name="downloading_data">Serveriga ühendumine</string>
+    <string name="draw_image">Joonista pilt</string>
+    <string name="drive_get_file">Laen %1$s ja meediafailid.</string>
+    <string name="east">E %1$s%2$s%3$s</string>
+    <string name="edit_prompt">Muuda küsimust</string>
+    <string name="edited_osm_file">Muudetud OSM XML fail:</string>
+    <string name="enable_gps">Luba GPS</string>
+    <string name="encrypted_form">Krüptitud vorm</string>
+    <string name="encryption_error_message">%s vorm ei ole salvestatud ja lõpetatud.</string>
+    <string name="enter_admin_password">Sisestage administraatori salasõna</string>
+    <string name="enter_data">Täida vorm</string>
+    <string name="enter_data_button">Täida vorm</string>
+    <string name="enter_new_password">Sisesta uus salasõna</string>
+    <string name="error_attaching_binary_file">Meedia %s lisamisel esines viga </string>
+    <string name="error_icon_content_description">Viga</string>
+    <string name="error_occured">Esines viga</string>
+    <string name="exit">Välju</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Täpsemad"</string>
+    <string name="exposed_dropdown_menu_content_description">Kuva rippmenüü</string>
+    <string name="ext_assign_value_error">\'%s\' ebaõnnestus väärtuse määramine.</string>
+    <string name="ext_conflicting_columns_error">%s tulbad sobivad!</string>
+    <string name="ext_file_no_data_error">Fail on tühi!</string>
+    <string name="ext_import_completed_message">Andmete lugemine sai valmis!</string>
+    <string name="ext_import_csv_missing_error">Väiline andmefail %1$s ei ole imporditud. Äkki unustasite vormile lisada %2$s.csv faili?</string>
+    <string name="ext_import_finalizing_message">Lõpetan andmete eellaadimist…</string>
+    <string name="ext_import_generic_error">Import %1$s ebaõnnestus. Põhjus %2$s</string>
+    <string name="ext_import_progress_message">Vormi eellaadimine \'%1$s\', palun oodake… %2$s</string>
+    <string name="ext_not_initialized_error">ExternalDataManager ei ole algseadistatud.</string>
+    <string name="ext_search_bad_function_error">Süntaksi viga funktsoonis search(): \'%s\' ei oma õiget funktsoon vormigut.</string>
+    <string name="ext_search_generic_error">Süntaksi viga funktsioonis search(): %s</string>
+    <string name="ext_search_return_error">Otsing tagastas \'%s\' tüüpi objekti</string>
+    <string name="ext_search_wrong_arguments_error">Süntaksi viga funktsoonis search(): funktsoon vajab 1, 4 või 6 argumenti.</string>
+    <string name="ext_search_wrong_function_error">Süntaksi viga funktsoonis search(): tundmatu funktsoon \'%s\'</string>
+    <string name="ext_sortBy_numeric_error">Veerg peaks sisaldama ainult numbrilisi väärtusi. Konfliktis on väärtused: \'%s\'</string>
+    <string msgid="4562557128765735254" name="face_or_screen_lock_prompt_message">"Jätkamiseks kasutage oma nägu või ekraanilukku"</string>
+    <string msgid="2282389249605674226" name="face_prompt_message">"Jätkamiseks kasutage oma nägu"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopeeri link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Ava brauseris"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Jaga linki"</string>
+    <string name="fetching_file">Laen alla %1$s.\n\nVormi(id) (%2$s/%3$s).</string>
+    <string name="file_delete_in_progress">Kahjuks kustutamise tegevus on juba töös!</string>
+    <string name="file_deleted_error">Kahjuks ei õnnestunud kustutada %1$s / %2$s valitud vormidest.
+</string>
+    <string name="file_deleted_ok">%s vorm(id) edukalt kustutatud!</string>
+    <string name="file_invalid">Fail %s on sobimatu.</string>
+    <string name="file_missing">Fail %s on puudu.</string>
+    <string name="finalized_on_date_at_time">\'Lõpetatud\' EEE, MMM dd, yyyy \'kell\' HH:mm</string>
+    <string msgid="5462024216548165325" name="fingerprint_dialog_icon_description">"Sõrmejälje ikoon"</string>
+    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"Puudutage sõrmejäljeandurit"</string>
+    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"Sõrmejälje riistvara pole saadaval."</string>
+    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"Selles seadmes pole sõrmejäljeandurit"</string>
+    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"Liiga palju katseid. Proovige hiljem uuesti."</string>
+    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"Ühtegi sõrmejälge pole registreeritud."</string>
+    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"Kasutaja tühistas sõrmejälje kasutamise."</string>
+    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"Ei tuvastatud"</string>
+    <string msgid="8382576858490514495" name="fingerprint_or_screen_lock_prompt_message">"Jätkamiseks kasutage oma sõrmejälge või ekraanilukku"</string>
+    <string msgid="7449360011861769080" name="fingerprint_prompt_message">"Jätkamiseks kasutage oma sõrmejälge"</string>
+    <string name="finished_disk_scan">Skanneerimine lõpetatud. Kõik vormid on laaditud.</string>
+    <string name="font_size">Teksti suurus</string>
+    <string name="font_size_extra_large">Väga suur</string>
+    <string name="font_size_extra_small">Väga väike</string>
+    <string name="font_size_large">Suur</string>
+    <string name="font_size_medium">Keskmine</string>
+    <string name="font_size_small">Väike</string>
+    <string name="form_download_progress">%1$s. Laeb faile: %2$s of %3$s</string>
+    <string name="form_forward">Järgmine</string>
+    <string name="forms">Sisestusvormid</string>
+    <string name="found_in_main">Peamenüüst eemaldamiseks puhasta väli</string>
+    <string name="fs_create_media_folder_error">\'%s\' meediakausta loomine ebaõnnestus.</string>
+    <string name="fs_delete_media_path_if_file_error">\'%s\' kustutamine ebaõnnestus. Palun kusutage fail käsitsi ja laadige vorm uuesti alla.</string>
+    <string name="fs_file_copy_error">\'%1$s\' kopeerimine \'%2$s\' ebaõnnestus. Põhjuseks: %3$s</string>
+    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"PIN-koodi, mustrit ega parooli pole määratud."</string>
+    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"See seade ei toeta PIN-koodi, mustrit ega parooli."</string>
+    <string msgid="7309881387583143581" name="generic_error_user_canceled">"Kasutaja tühistas autentimise."</string>
+    <string name="geo_clear_warning">Kujutis on juba loodud. Kas soovite kujutise eemaldada?</string>
+    <string name="geo_exit_warning">Loobu muudatustest ja ava ODK?</string>
+    <string name="geopoint_instruction">Markeri paigutamiseks tuleb teha pikk hoidmine või valida marker nupp.</string>
+    <string name="geopoint_no_draggable_instruction">Puuduta lisa marke nuppu.</string>
+    <string name="geopoint_view_read_only">Vaata asukohapunkti</string>
+    <string name="geoshape_title">Polügoon</string>
+    <string name="geoshape_view_change_location">Vaata või muuda polügooni</string>
+    <string name="geotrace_title">Rada</string>
+    <string name="geotrace_view_change_location">Vaata või muuda rada</string>
+    <string name="get_barcode">Skaneeri triipkood</string>
+    <string name="get_bearing">Salvesta suund</string>
+    <string name="get_forms">Lae sisestusvorm alla</string>
+    <string name="get_location">Salvesta asukoht</string>
+    <string name="get_point">Loo asukohapunkt</string>
+    <string name="get_shape">Loo polügoon</string>
+    <string name="get_trace">Alusta rada</string>
+    <string name="getting_bearing">Laen suunda</string>
+    <string name="go_back">Liikuge tagasi</string>
+    <string name="go_drive">Minu Drive</string>
+    <string name="go_shared">Minuga jagatud</string>
+    <string name="google_play_services_error_occured">Puudub ligipääs Google Maps-ile. Veenduge, et Google Play teenused on paigaldatud.</string>
+    <string name="google_search_browse">Otsi vorme. Või vali sirvimiseks \"Minu Drive\".</string>
+    <string name="google_sheets_missing_columns">Arvutustabelist on puudu järgmised tulbad: %1$s</string>
+    <string name="gps_result">Laiuskraad: %1$s\nPikkuskraad: %2$s\nKõrgus: %3$sm\nTäpsusaste: %4$sm</string>
+    <string name="high_resolution_summary">Kõrge resolutiooniga videosalvestuse võimaldamine</string>
+    <string name="hybrid">Hübriid</string>
+    <string name="icon_content_description">Dialoogi ikoon</string>
+    <string name="install_openmapkit">Palun paigaldage OpenMapKit!</string>
+    <string name="invalid_answer_error">Kahjuks on antud vastus ei sobimatu!</string>
+    <string name="invalid_osm_data">Midagi läks valesti. Me ei saanud korrektseid OSM andmeid.</string>
+    <string name="invalid_rsa_public_key">RSA avalik võti on sobimatu.</string>
+    <string name="invalid_sheet_id">Vale lehe id: %1$s</string>
+    <string name="item_view_role_description">Vaheleht</string>
+    <string name="joda_time_android_date_time">%2$s %1$s</string>
+    <string msgid="9093949757757445117" name="joda_time_android_preposition_for_date">"kuupäeval <ns1:g id="DATE">%s</ns1:g>"</string>
+    <string msgid="5506831244263083793" name="joda_time_android_preposition_for_time">"kell <ns1:g id="TIME">%s</ns1:g>"</string>
+    <string msgid="1818557177829411417" name="joda_time_android_relative_time">"<ns1:g id="DATE">%1$s</ns1:g>, <ns1:g id="TIME">%2$s</ns1:g>"</string>
+    <string name="jump_to_beginning">Liigu algusesse</string>
+    <string name="jump_to_end">Liigu lõppu</string>
+    <string name="jump_to_previous">Liigu üles</string>
+    <string name="keep_changes">Muudatuste salvestamine</string>
+    <string name="launch_app">Alusta</string>
+    <string name="launch_printer">Alusta printimist</string>
+    <string name="loading_form">Vormide laadimine</string>
+    <string name="manage_files">Kustuta salvestatud vorm</string>
+    <string name="mark_finished">Märgi vorm lõpetatuks</string>
+    <string name="markup_image">Markup pilt</string>
+    <string name="material_clock_toggle_content_description">Valige AM või PM</string>
+    <string name="material_hour_selection">Valige tund</string>
+    <string name="material_hour_suffix">Kell %1$s</string>
+    <string name="material_minute_selection">Minutite valimine</string>
+    <string name="material_minute_suffix">%1$s minutit</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Aktiveerige kellaaja sisestamiseks kellarežiim.</string>
+    <string name="material_timepicker_hour">Tunnid</string>
+    <string name="material_timepicker_minute">Minut</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Aja valimine</string>
+    <string name="material_timepicker_text_input_mode_description">Aktiveerige kellaaja sisestamiseks tekstisisestusrežiim.</string>
+    <string name="modified_on_date_at_time">\'Muudetud\' EEE, MMM dd, yyyy \'kell\' HH:mm</string>
+    <string name="mtrl_badge_numberless_content_description">Uus märguanne</string>
+    <string name="mtrl_chip_close_icon_content_description">Üksuse %1$s eemaldamine</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Rohkem kui %1$d uut märguannet</string>
+    <string name="mtrl_picker_a11y_next_month">Vaheta järgmisele kuule</string>
+    <string name="mtrl_picker_a11y_prev_month">Vaheta eelmisele kuule</string>
+    <string name="mtrl_picker_announce_current_selection">Praegune valik: %1$s</string>
+    <string name="mtrl_picker_cancel">Tühista</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Valige kuupäev</string>
+    <string name="mtrl_picker_date_header_unselected">Valitud kuupäev</string>
+    <string name="mtrl_picker_day_of_week_column_header">Päevade veerg: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Sobimatu vorming.</string>
+    <string name="mtrl_picker_invalid_format_example">Näide: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Kasutage: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Sobimatu vahemik.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Mine aastasse %1$s</string>
+    <string name="mtrl_picker_out_of_range">Vahemikust väljas: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Alguskuupäev – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – lõppkuupäev</string>
+    <string name="mtrl_picker_range_header_selected">%1$s–%2$s</string>
+    <string name="mtrl_picker_range_header_title">Valige vahemik</string>
+    <string name="mtrl_picker_range_header_unselected">Alguskuupäev – lõppkuupäev</string>
+    <string name="mtrl_picker_save">Salvesta</string>
+    <string name="mtrl_picker_text_input_date_hint">Kuupäev</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Lõppkuupäev</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Alguskuupäev</string>
+    <string name="mtrl_picker_text_input_day_abbr">p</string>
+    <string name="mtrl_picker_text_input_month_abbr">k</string>
+    <string name="mtrl_picker_text_input_year_abbr">a</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Lülitu kalendrisisestusrežiimile</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Puudutage, et lülituda päeva valimisele</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Lülitu tekstisisestusrežiimile</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Puudutage, et lülituda aasta valimisele</string>
+    <string name="mtrl_timepicker_cancel">Tühista</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Navigeeri üles"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Navigeerimissahtli avamine"</string>
+    <string name="navigation">Rakenduses liikumine</string>
+    <string name="no_app">Soovitud rakendust ei ole. Palun sisestage käsitsi.</string>
+    <string name="no_connection">Võrguõhendus puudub</string>
+    <string name="no_date_selected">Kuupäev valimata</string>
+    <string name="no_form_id_specified">Vormi ID määramata?</string>
+    <string name="no_form_loaded">&lt;vorm laadimata></string>
+    <string name="no_forms_uploaded">Vabandage, ühtegi vormi ei ole üles laetud.</string>
+    <string name="no_google_account">Google kontot ei ole valitud!</string>
+    <string name="no_items_display">Puudub sisu mida näidata.</string>
+    <string name="no_items_display_forms">Puudub sisu mida näidata.\n\nPalun lae vorm alla ja täida see.</string>
+    <string name="no_items_display_instances">Puudub sisu mida näidata.\n\nEnnem ära saatmist märgi salvestatud vormid lõpetatuks.</string>
+    <string name="no_items_display_sent_forms">Puudub sisu mida näidata.\n\nEnne vaatamist proovige saata lõpetatud vorm.</string>
+    <string name="no_printer">Soovitud printer ei ole paigaldatud. Palun paigaldage printer.</string>
+    <string name="north">N %1$s%2$s%3$s</string>
+    <string name="noselect_error">Kahjuks ei ole te ühtegi vormi valinud!</string>
+    <string name="not_exactly_one_blank_form_for_this_form_id">Ei leidu täpselt ühte tühja vormi, mis vastaks jr_form_id.</string>
+    <string name="not_exactly_one_record_for_this_instance">Ei leidu täpselt üks kirje!</string>
+    <string msgid="6573031135582639649" name="not_set">"Määramata"</string>
+    <string name="ok">OK</string>
+    <string name="open_url">Ava veebiaadress</string>
+    <string name="openmap_cartodb_darkmatter">CartoDB Dark Matter</string>
+    <string name="openmap_cartodb_positron">CartoDB Positron</string>
+    <string name="openmap_stamen_terrain">Stamen Terrain</string>
+    <string name="openmap_usgs_topo">USGS National Map Topo</string>
+    <string name="parent_form_not_present">Salvestatud vormi ei õnnestu muuta kuna vormi, kas ei ole olemas või on kustutatud. \n\nVormi ID: %1$s</string>
+    <string name="parse_error">Kahjuks ei ole vormi töötlemine võimalik.</string>
+    <string name="parser_exception">XPathParser Viga: \"%s\"</string>
+    <string name="password">Salasõna</string>
+    <string name="password_error_whitespace">Salasõna alguses või lõpus ei ole lubatud kasutada tühikut</string>
+    <string name="password_toggle_content_description">Parooli kuvamine</string>
+    <string name="phone_does_not_support_rsa">Telefon ei toeta RSA krüpteerimist.</string>
+    <string name="play_video">Mängi videot</string>
+    <string name="please_wait">Palun oodake.</string>
+    <string name="please_wait_long">Palun oodake. See võib võtta mõne minuti.</string>
+    <string name="polygon_validator">Polügooni loomiseks on vaja vähemalt 3 punkti</string>
+    <string msgid="6685851473431805375" name="preference_copied">"„<ns1:g id="SUMMARY">%1$s</ns1:g>” on lõikelauale kopeeritud."</string>
+    <string name="provider_disabled_error">Kahjuks on asukoha küsimine maha keeratud!</string>
+    <string name="quit_application">Välju %s</string>
+    <string name="quit_entry">Salvesta vorm ja välju</string>
+    <string name="recapture_osm">Korda OSM sildistamist</string>
+    <string name="refresh">Värskenda</string>
+    <string name="replace_barcode">Asenda triipkood</string>
+    <string name="replace_bearing">Asenda suund</string>
+    <string name="required_answer_error">Vabandage, vastus on kohustuslik!</string>
+    <string name="reset_app_state_result">Lähtesta tulemused</string>
+    <string name="reset_app_state_warning">Kogu valitud andmestik kustutatakse jäädavalt. </string>
+    <string name="reset_blank_forms">Sisestusvormid (vormide kaust, vormide andmebaas, andmekogud)</string>
+    <string name="reset_blank_forms_result">Tühjad vormid :: %s</string>
+    <string name="reset_cache">Vormi laadimise vahemälu (.cache kaust)</string>
+    <string name="reset_cache_result">Vormi laadimise vahemälu :: %s</string>
+    <string name="reset_image">Lähtesta</string>
+    <string name="reset_in_progress">Lähtestamine…</string>
+    <string name="reset_layers">Kaardikihid (kihtide kaust)</string>
+    <string name="reset_layers_result">Kaardikihid :: %s</string>
+    <string name="reset_project_settings_title">Lähtesta</string>
+    <string name="reset_saved_forms">Salvestatud vormid (kirjete kaust, kirjete andmebaas)</string>
+    <string name="reset_saved_forms_result">Salvestatud vormid :: %s</string>
+    <string name="reset_settings">Kõik seaded (sisemised seaded, salvestatud seaded)</string>
+    <string name="reset_settings_button_reset">Lähtesta</string>
+    <string name="reset_settings_dialog_title">Vali mida lähtestada</string>
+    <string name="reset_settings_result">Kõik seaded :: %s</string>
+    <string name="review_data">Muuda salvestatud vormi</string>
+    <string name="review_data_button">Muuda salvestatud vormi (%s)</string>
+    <string name="satellite">Satelliit</string>
+    <string name="save_all_answers">Salvesta vorm</string>
+    <string name="save_and_close">Salvesta ja sulge</string>
+    <string name="save_as_error">Salvestatud nimi ei tohi tühjaks jääda!</string>
+    <string name="save_enter_data_description">Olete %s lõpus</string>
+    <string name="save_form_as">Vormi nimi</string>
+    <string name="save_mid">Salvesta vorm</string>
+    <string name="save_point_error">Vea parndamise taastuspunkt %s </string>
+    <string name="saved_on_date_at_time">\'Salvestatud\' EEE, MMM dd, yyyy \'kell\' HH:mm</string>
+    <string name="savepoint_used">Salvestamata muudatused on taastatud!</string>
+    <string name="saving_form">Vormi salvestamine</string>
+    <string msgid="5659570757430909869" name="screen_lock_prompt_message">"Jätkamiseks sisestage oma ekraanilukk"</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Otsing"</string>
+    <string name="select_all">Vali kõik</string>
+    <string name="select_answer">Vali vastus</string>
+    <string name="select_date">Vali kuupäev</string>
+    <string name="select_odk_shortcut">Vali ODK otsetee</string>
+    <string name="selected">Valitud:</string>
+    <string name="selected_google_account_text">Google konto</string>
+    <string name="selected_invalid_image">Valitud fail ei ole pilt</string>
+    <string name="send_data">Saada lõpetatud vorm</string>
+    <string name="send_data_button">Saada lõpetatud vorm (%s)</string>
+    <string name="send_in_progress">Taustal jookseb andmete saatmine. Palun proovige varsti uuesti</string>
+    <string name="send_selected_data">Saada valitud</string>
+    <string name="sending_failed_on_date_at_time">\'Saatmine ebaõnnestus\' EEE, MMM dd, yyyy \'kell\' HH:mm</string>
+    <string name="sending_items">%1$s / %2$s vormist saadetud</string>
+    <string name="sent_on_date_at_time">\'Saadetud\' EEE, MMM dd, yyyy \'kell\' HH:mm</string>
+    <string name="server_platform_google_sheets">Google Drive, Google Sheets</string>
+    <string name="server_preferences">Serveri seaded</string>
+    <string name="server_requires_auth">Server nõuab autentimist</string>
+    <string name="server_url">Veebiaadress</string>
+    <string name="set_color">Värvi määramine</string>
+    <string name="show_sent_and_unsent_forms">Näita saadetud ja saatmata vorme</string>
+    <string name="show_unsent_forms">Näita </string>
+    <string name="sign_button">Allkirja kogumine</string>
+    <string name="south">S %1$s%2$s%3$s</string>
+    <string name="start">Alusta</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="streets">Tänavad</string>
+    <string name="success">Õnnestus</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="survey_internal_error">Rakenduse sisene viga: liikumine erkaanile/valjale ebaõnnestus.</string>
+    <string name="survey_loading_reading_csv_message">CSV failide lugemine…</string>
+    <string name="survey_loading_reading_data_message">Uuringu andmete lugemine…</string>
+    <string name="survey_loading_reading_form_message">Vormi definitsooni lugemine…</string>
+    <string name="survey_multiple_forms_error">Olete alla laadinud kaks eri vormi millel on sama ID ja versioon. Võis juhtuda, et sama vorm oli üles laetud erinevatel aegadel või erinevatesse serveritesse. Igatahes peaksite ühe neist eemaldama.</string>
+    <string name="survey_saving_collecting_message">Andmete kogumine…</string>
+    <string name="survey_saving_encrypting_message">Andmete krüpteerimine</string>
+    <string name="survey_saving_finalizing_message">SD kaardi tegevuste lõpetamine…</string>
+    <string name="survey_saving_saving_message">SD kaardile salvestamine…</string>
+    <string name="survey_saving_validating_message">Vastuste valideerimine…</string>
+    <string name="swipe_buttons_navigation">Liikumiseks kasuta mõlemat libistamist (swipe) ja nuppe </string>
+    <string name="swipe_navigation">Liikumiseks kasuta libistamist (swipe) käeliigutust</string>
+    <string name="terrain">Maastik</string>
+    <string name="trigger">Ok. Palun jätkake.</string>
+    <string name="unrecognized_uri">Tundmatu veebiaadress: %s</string>
+    <string name="upload_results">Tulemuste üles laadimine</string>
+    <string name="uploading_data">Saadan vormi</string>
+    <string name="url_error">Vabandage, vale veebiaadress!</string>
+    <string msgid="6524145989441579428" name="use_biometric_label">"Kasuta biomeetrilisi andmeid"</string>
+    <string msgid="5385448280139639016" name="use_biometric_or_screen_lock_label">"Kasuta biomeetrilisi andmeid või ekraanilukku"</string>
+    <string msgid="6533512708069459542" name="use_face_label">"Kasuta nägu"</string>
+    <string msgid="2116180187159450292" name="use_face_or_screen_lock_label">"Kasuta nägu või ekraanilukku"</string>
+    <string msgid="6961788485681412417" name="use_fingerprint_label">"Kasuta sõrmejälge"</string>
+    <string msgid="7577690399303139443" name="use_fingerprint_or_screen_lock_label">"Kasuta sõrmejälge või ekraanilukku"</string>
+    <string msgid="5459869335976243512" name="use_screen_lock_label">"Kasuta ekraanilukku"</string>
+    <string name="username">Kasutajanimi</string>
+    <string name="username_error_whitespace">Kasutajanime alguses või lõpus ei ole lubatud kasutada tühikut</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"VÄLJAS"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"SEES"</string>
+    <string name="version">Versioon:</string>
+    <string name="version_number">Versoon: %s</string>
+    <string name="view_change_location">Vaata või muuda asukohta</string>
+    <string name="view_hierarchy">Liigu küsimusele</string>
+    <string name="view_sent_forms">Vaata saadetud vormi</string>
+    <string name="view_sent_forms_button">Vaata saadetud vormi (%s)</string>
+    <string name="west">W %1$s%2$s%3$s</string>
+</resources>

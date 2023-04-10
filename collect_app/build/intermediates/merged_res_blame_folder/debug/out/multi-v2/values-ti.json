@@ -4,7 +4,7 @@
             "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-ti/values-ti.xml",
             "map": [
                 {
-                    "source": "/Users/aurora/Documents/odk/odk/collect-master/strings/build/intermediates/packaged_res/debug/values-ti/values-ti.xml",
+                    "source": "/Users/aurora/Documents/odk/agaveodk/strings/build/intermediates/packaged_res/debug/values-ti/values-ti.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

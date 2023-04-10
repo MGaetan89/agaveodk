@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.odk.collect.android"
-    android:versionCode="1066" >
+    android:versionCode="1069"
+    android:versionName="4ec93dd-dirty" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -121,6 +122,7 @@
         android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.Collect"
         android:usesCleartextTraffic="true" >
         <provider

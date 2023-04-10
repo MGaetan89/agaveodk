@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item msgid="2178576254385739855" quantity="one">"morgen"</item>
+        <item msgid="2973062968038355991" quantity="other">"over <ns1:g id="COUNT">%d</ns1:g> dagen"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item msgid="3274708118124045246" quantity="one">"over 1 uur"</item>
+        <item msgid="3705373766798013406" quantity="other">"over <ns1:g id="COUNT">%d</ns1:g> uur"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item msgid="562786149928284878" quantity="one">"over 1 minuut"</item>
+        <item msgid="4216113292706568726" quantity="other">"over <ns1:g id="COUNT">%d</ns1:g> minuten"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item msgid="5842225370795066299" quantity="one">"over 1 seconde"</item>
+        <item msgid="5495880108825805108" quantity="other">"over <ns1:g id="COUNT">%d</ns1:g> seconden"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item msgid="8463161711492680309" quantity="one">"gisteren"</item>
+        <item msgid="3453342639616481191" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> dagen geleden"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item msgid="4796212039724722116" quantity="one">"1 uur geleden"</item>
+        <item msgid="6889970745748538901" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> uur geleden"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item msgid="6361490147113871545" quantity="one">"1 minuut geleden"</item>
+        <item msgid="851164968597150710" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minuten geleden"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item msgid="1849036840200069118" quantity="one">"1 seconde geleden"</item>
+        <item msgid="3699169366650930415" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> seconden geleden"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item msgid="8917467491248809972" quantity="one">"1 uur"</item>
+        <item msgid="3863962854246773930" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> uur"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item msgid="4915414002546085617" quantity="one">"1 minuut"</item>
+        <item msgid="3165187169224908775" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minuten"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item msgid="6962015528372969481" quantity="one">"1 seconde"</item>
+        <item msgid="1886107766577166786" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> seconden"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item msgid="5413088743009839518" quantity="one">"morgen"</item>
+        <item msgid="5109449375100953247" quantity="other">"over <ns1:g id="COUNT">%d</ns1:g> dagen"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item msgid="7164353342477769999" quantity="one">"over 1 uur"</item>
+        <item msgid="547290677353727389" quantity="other">"over <ns1:g id="COUNT">%d</ns1:g> uur"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item msgid="8793095251325200395" quantity="one">"over 1 minuut"</item>
+        <item msgid="3330713936399448749" quantity="other">"over <ns1:g id="COUNT">%d</ns1:g> minuten"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item msgid="2729745560954905102" quantity="one">"over 1 seconde"</item>
+        <item msgid="1241926116443974687" quantity="other">"over <ns1:g id="COUNT">%d</ns1:g> seconden"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item msgid="861358534398115820" quantity="one">"gisteren"</item>
+        <item msgid="2479586466153314633" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> dagen geleden"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item msgid="9150797944610821849" quantity="one">"1 uur geleden"</item>
+        <item msgid="2467273239587587569" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> uur geleden"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item msgid="3306787433088810191" quantity="one">"1 minuut geleden"</item>
+        <item msgid="2176942008915455116" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minuten geleden"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item msgid="4869870056547896011" quantity="one">"1 seconde geleden"</item>
+        <item msgid="3903706804349556379" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> seconden geleden"</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d nieuwe melding</item>
+    <item quantity="other">%d nieuwe meldingen</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Navigeren naar startpositie"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Omhoog navigeren"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Meer opties"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Klaar"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Alles tonen"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Een app selecteren"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"UIT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AAN"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Functie +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"spatie"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Zoeken…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Zoekopdracht wissen"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Zoekopdracht"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Zoeken"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Zoekopdracht verzenden"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Gesproken zoekopdracht"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Delen met"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Delen met <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Samenvouwen"</string>
+    <string name="about_preferences">Over</string>
+    <string name="accept_bearing">Richting vastleggen</string>
+    <string name="activity_not_found">Geen programma gevonden voor: %s</string>
+    <string name="add">Toevoegen</string>
+    <string name="add_another_menu">Voeg toe</string>
+    <string name="add_repeat">Toevoegen</string>
+    <string name="add_repeat_question">%s toevoegen?</string>
+    <string name="added_on_date_at_time">\'Toegevoegd op\' EEE dd MMM yyyy \'om\' HH:mm</string>
+    <string name="admin_password">Admin wachtwoord</string>
+    <string name="admin_password_changed">Admin wachtwoord gewijgd</string>
+    <string name="admin_password_disabled">Admin wachtwoord uitgeschakeld</string>
+    <string name="admin_password_incorrect">Wachtwoord onjuist!</string>
+    <string name="annotate_image">Aantekening maken bij afbeelding</string>
+    <string name="app_theme">Thema</string>
+    <string name="automatic_download">Automatische download</string>
+    <string name="automatic_download_summary">Automatische download van geüpdatet versies van formulieren. </string>
+    <string name="autosend">Automatisch versturen</string>
+    <string name="autosend_selector_title">Automatisch versturen</string>
+    <string name="basemap_source">Bron</string>
+    <string msgid="2102429900219199821" name="biometric_or_screen_lock_prompt_message">"Gebruik je biometrische gegevens of schermvergrendeling om door te gaan"</string>
+    <string msgid="1160635338192065472" name="biometric_prompt_message">"Gebruik je biometrische gegevens om door te gaan"</string>
+    <string name="bottomsheet_action_expand_halfway">Half uitvouwen</string>
+    <string name="buttons_navigation">Navigatie knoppen</string>
+    <string name="cancel">Terug</string>
+    <string name="cancel_loading_form">Terug</string>
+    <string name="cancel_location">Terug</string>
+    <string name="canceling">Wordt geannuleerd</string>
+    <string name="cannot_edit_completed_form">Dit formulier kan niet worden aangepast nadat het als afgewerkt is aangeduid. Mogelijk is het versleuteld.</string>
+    <string name="capture_audio">Audio vastleggen</string>
+    <string name="capture_image">Foto nemen</string>
+    <string name="capture_osm">OpenMapKit starten</string>
+    <string name="capture_video">Video vastleggen</string>
+    <string name="change_admin_password">Wijzig Admin wachtwoord</string>
+    <string name="change_font_size">Tekstgrootte</string>
+    <string name="change_language">Taal wijzigen</string>
+    <string name="change_location">Locatie wijzigen</string>
+    <string name="change_password">Wachtwoord</string>
+    <string name="change_server_url">Server URL</string>
+    <string name="change_username">ODK Username</string>
+    <string name="change_view">Wijzig weergave</string>
+    <string name="character_counter_content_description">%1$d van %2$d tekens opgegeven</string>
+    <string name="character_counter_overflowed_content_description">Tekenlimiet heeft %1$d van %2$d overschreden</string>
+    <string name="choose_file">Bestand Kiezen</string>
+    <string name="choose_image">Selecteer afbeelding</string>
+    <string name="choose_sound">Selecteer audio</string>
+    <string name="choose_video">Selecteer video</string>
+    <string name="clear_answer">Verwijder antwoord</string>
+    <string name="clear_answer_ask">Verwijder dit antwoord?</string>
+    <string name="clear_answer_no">Terug</string>
+    <string name="clear_text_end_icon_content_description">Tekst wissen</string>
+    <string name="clearanswer_confirm">Verwijder het antwoord voor \"%s\"?</string>
+    <string name="client">Gebruikersinterface</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aanzetten</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s werkt niet, tenzij je Google Play-services inschakelt.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play-services aanzetten</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installeren</string>
+    <string name="common_google_play_services_install_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die je nog niet op je apparaat hebt.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play-services ophalen</string>
+    <string name="common_google_play_services_notification_channel_name">Beschikbaarheid van Google Play-services</string>
+    <string name="common_google_play_services_notification_ticker">Fout met Google Play-services</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ondervindt problemen met Google Play-services. Probeer het opnieuw.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die niet worden ondersteund op je apparaat.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Updaten</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s kan niet worden uitgevoerd, tenzij je Google Play-services updatet.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play-services updaten</string>
+    <string name="common_google_play_services_updating_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die momenteel worden geüpdatet.</string>
+    <string name="common_google_play_services_wear_update_text">Er is een nieuwe versie van Google Play-services vereist. De update wordt binnenkort automatisch uitgevoerd.</string>
+    <string name="common_open_on_phone">Openen op telefoon</string>
+    <string name="common_signin_button_text">Inloggen</string>
+    <string name="common_signin_button_text_long">Inloggen met Google</string>
+    <string msgid="5912733858573823945" name="confirm_device_credential_password">"Wachtwoord gebruiken"</string>
+    <string name="constraint_behavior">Verwerking van beperkingen</string>
+    <string name="constraint_behavior_on_finalize">Controleer bij afronden</string>
+    <string name="constraint_behavior_on_swipe">Controleer bij doorgaan</string>
+    <string msgid="6083905920877235314" name="copy">"Kopiëren"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link naar klembord gekopieerd"</string>
+    <string name="dark" ns2:ignore="UnusedResources">Donker</string>
+    <string name="data">Opgeslagen formulieren</string>
+    <string name="data_saved_error">Sorry, formulier opslaan mislukt!</string>
+    <string name="data_saved_ok">Formulier is opgeslagen!</string>
+    <string name="default_completed">Standaard definitief</string>
+    <string name="default_completed_summary">Formulier standaard als definitief markeren</string>
+    <string msgid="4776854077120974966" name="default_error_msg">"Onbekende fout"</string>
+    <string name="delete_after_send">Verwijderen na versturen</string>
+    <string name="delete_after_send_summary">Verwijderd afgeronde formulieren en media na verzending</string>
+    <string name="delete_confirm">%s formulier(en) verwijderen?</string>
+    <string name="delete_file">Verwijder selectie</string>
+    <string name="delete_no">Niet verwijderen</string>
+    <string name="delete_project_no">Nee</string>
+    <string name="delete_repeat">Groep verwijderen
+</string>
+    <string name="delete_repeat_ask">Deze groep verwijderen?</string>
+    <string name="delete_repeat_confirm">Groep \"%s\" en alle subgroepen verwijderen?</string>
+    <string name="delete_repeat_no">Annuleer</string>
+    <string name="delete_yes">Verwijderen</string>
+    <string name="deleted_form">Verwijderd formulier</string>
+    <string name="deleted_on_date_at_time">\'Verwijderd op\' EEE dd MMM yyyy \'om\' HH:mm</string>
+    <string name="device_defined">Apparaat gedefinieerd</string>
+    <string name="device_id">Apparaat ID</string>
+    <string name="discard_answer">Verwijder antwoord</string>
+    <string name="discard_group">Verwijder groep</string>
+    <string name="do_not_change">Annuleer</string>
+    <string name="do_not_exit">Annuleer</string>
+    <string name="dont_add_repeat">Niet toevoegen</string>
+    <string name="download">Download selectie</string>
+    <string name="download_forms_result">Download resultaten</string>
+    <string name="downloading_data">Verbinden met server</string>
+    <string name="draw_image">Sketch Image</string>
+    <string name="edit_prompt">Edit Prompt</string>
+    <string name="email">emailadres</string>
+    <string name="encrypted_form">Versleuteld formulier</string>
+    <string name="enter_admin_password">Geef admin wachtwoord</string>
+    <string name="enter_data">Nieuw formulier invullen</string>
+    <string name="enter_data_button">Nieuw formulier</string>
+    <string name="enter_new_password">Nieuw wachtwoord</string>
+    <string name="error_attaching_binary_file">Er is een fout opgetreden bij het koppelen van media: %s</string>
+    <string name="error_icon_content_description">Fout</string>
+    <string name="error_occured">Fout opgetreden</string>
+    <string name="every_24_hours">Elke 24 uur</string>
+    <string name="every_fifteen_minutes">Elke vijftien minuten</string>
+    <string name="every_one_hour">Elk uur</string>
+    <string name="every_six_hours">Elke zes uur</string>
+    <string name="exit">Verlaten</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Geavanceerd"</string>
+    <string name="exposed_dropdown_menu_content_description">Dropdownmenu tonen</string>
+    <string name="ext_assign_value_error">Kon de waarde niet toewijzen bij \'%s\'.</string>
+    <string name="ext_conflicting_columns_error">Kolommen %s komen overeen!</string>
+    <string name="ext_file_no_data_error">Het bestand is leeg!</string>
+    <string name="ext_import_cancelled_message">Data lezen geannuleerd</string>
+    <string name="ext_import_completed_message">Data inlezen voltooid!</string>
+    <string name="ext_import_csv_missing_error">Externe data voor %1$s kon niet ingelezen worden. Misschien was het bestand %2$s.csv niet beschikbaar bij het formulier?</string>
+    <string name="ext_import_finalizing_message">Afronden vooraf ingevulde data…</string>
+    <string name="ext_import_generic_error">Kon geen data importeren uit %1$s. Oorzaak: %2$s</string>
+    <string name="ext_import_progress_message">Vooraf inlezen data \'%1$s\', een ogenblik geduld… %2$s</string>
+    <string name="ext_not_initialized_error">De ExternalDataManager is niet opstart.</string>
+    <string name="ext_search_bad_function_error">Fout in search() functie: \'%s\' werd niet als functie geavalueerd.</string>
+    <string name="ext_search_generic_error">Fout in search() functie: %s</string>
+    <string name="ext_search_wrong_arguments_error">Fout in search() functie: De functie moet 1, 4 of 6 parameters hebben.</string>
+    <string name="ext_search_wrong_function_error">Fout in search() functie: Onbekende functie \'%s\'.</string>
+    <string name="ext_sortBy_numeric_error">Gesorteerde kolom mag alleen numerieke waarden bevatten. Foutieve waarde was \'%s\'.</string>
+    <string msgid="4562557128765735254" name="face_or_screen_lock_prompt_message">"Gebruik je gezicht of schermvergrendeling om door te gaan"</string>
+    <string msgid="2282389249605674226" name="face_prompt_message">"Gebruik je gezicht om door te gaan"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Link kopiëren"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Openen in browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Link delen"</string>
+    <string name="file_delete_in_progress">Sorry, er is nog een verwijder opdracht actief!</string>
+    <string name="file_deleted_error">Sorry, %1$s van de %2$s geselecteerde formulier(en) kon niet worden verwijderd!</string>
+    <string name="file_deleted_ok">%s formulier(en) verwijderd!</string>
+    <string name="file_invalid">Bestand: %s is ongeldig.</string>
+    <string name="file_missing">Bestand: %s niet gevonden.</string>
+    <string name="filter_the_list">Lijst filteren</string>
+    <string name="finalized_on_date_at_time">\'Afgerond op\' EEE dd MMM yyyy \'om\' HH:mm</string>
+    <string msgid="5462024216548165325" name="fingerprint_dialog_icon_description">"Vingerafdrukicoon"</string>
+    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"Raak de vingerafdruksensor aan"</string>
+    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"Hardware voor vingerafdruk niet beschikbaar."</string>
+    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"Dit apparaat heeft geen vingerafdruksensor"</string>
+    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"Te veel pogingen. Probeer het later opnieuw."</string>
+    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"Geen vingerafdrukken geregistreerd."</string>
+    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"Vingerafdrukverificatie geannuleerd door gebruiker."</string>
+    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"Niet herkend"</string>
+    <string msgid="8382576858490514495" name="fingerprint_or_screen_lock_prompt_message">"Gebruik je vingerafdruk of schermvergrendeling om door te gaan"</string>
+    <string msgid="7449360011861769080" name="fingerprint_prompt_message">"Gebruik je vingerafdruk om door te gaan"</string>
+    <string name="finished_disk_scan">Klaar met scannen, alle formulieren geladen.</string>
+    <string name="font_size">Tekstgrootte</string>
+    <string name="font_size_extra_large">Extra groot</string>
+    <string name="font_size_extra_small">Extra klein</string>
+    <string name="font_size_large">Groot</string>
+    <string name="font_size_medium">Nomaal</string>
+    <string name="font_size_small">Klein</string>
+    <string name="form_backward">Terug</string>
+    <string name="form_download_progress">%1$s. Getting media files: %2$s of %3$s</string>
+    <string name="form_forward">Verder</string>
+    <string name="form_metadata">Formulier metadata</string>
+    <string name="form_metadata_title">Formulier Metadata</string>
+    <string name="form_update_category">Formulier update</string>
+    <string name="form_updates_available">Formulier updates beschikbaar</string>
+    <string name="forms">Lege Formulieren</string>
+    <string name="found_in_main">Uitvinken om te verbergen in hoofdmenu</string>
+    <string name="fs_create_media_folder_error">Kon media directory \'%s\' niet aanmaken.</string>
+    <string name="fs_delete_media_path_if_file_error">Kon bestand \'%s\' niet verwijderen. Verwijd het bestand handmatig en download het formulier opnieuw.</string>
+    <string name="fs_file_copy_error">Kon \'%1$s\' niet over \'%2$s\' kopieren. Oorzaak: %3$s</string>
+    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"Geen pincode, patroon of wachtwoord ingesteld."</string>
+    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"Dit apparaat ondersteunt geen pincode, patroon of wachtwoord."</string>
+    <string msgid="7309881387583143581" name="generic_error_user_canceled">"Verificatie geannuleerd door gebruiker."</string>
+    <string name="get_barcode">Scan barcode</string>
+    <string name="get_bearing">Richting vastleggen</string>
+    <string name="get_forms">Download leeg formulier </string>
+    <string name="get_location">Positie vastleggen</string>
+    <string name="getting_bearing">Richting bepalen</string>
+    <string name="go_drive">Mijn Drive</string>
+    <string name="go_shared">Gedeeld met mij</string>
+    <string name="go_to_settings">Ga naar instellingen</string>
+    <string name="google_auth_io_exception_msg">Niet instaat om API te bereiken. Als dit gebeurt in een local build, meer informatie in de readme van het project.</string>
+    <string name="group_label">Groep</string>
+    <string name="guidance_no">Nee</string>
+    <string name="hide_old_form_versions_setting_summary">Alleen de nieuwste versie zal verschijnen in Vul Leeg Formulier In. </string>
+    <string name="hide_old_form_versions_setting_title">Verberg oude formulier versies. </string>
+    <string name="high_resolution_summary">Hoge resolutie video opnames toestaan</string>
+    <string name="hybrid">Hybride</string>
+    <string name="icon_content_description">Icoon voor dialoogvenster</string>
+    <string name="image_size_large">Groot (3072px)</string>
+    <string name="image_size_medium">Gemiddeld (2048px)</string>
+    <string name="image_size_original">Orginele grote van de camera (standaard)</string>
+    <string name="image_size_small">Klein (1024px)</string>
+    <string name="image_size_very_small">Erg klein (640px)</string>
+    <string name="instance_scan_count">%1$d formulieren toegevoegd.</string>
+    <string name="invalid_answer_error">Sorry, dit antwoord is ongeldig!</string>
+    <string name="invalid_rsa_public_key">Ongeldige publieke RSA sleutel</string>
+    <string name="invalid_space_in_answer_plural">Waarschuwing: de onderliggende waardes, %s, hebben spaties</string>
+    <string name="invalid_space_in_answer_singular">Waarschuwing: de onderliggende waarde, %s, heeft spaties</string>
+    <string name="item_view_role_description">Tabblad</string>
+    <string name="joda_time_android_date_time">%2$s %1$s</string>
+    <string msgid="9093949757757445117" name="joda_time_android_preposition_for_date">"op <ns1:g id="DATE">%s</ns1:g>"</string>
+    <string msgid="5506831244263083793" name="joda_time_android_preposition_for_time">"om <ns1:g id="TIME">%s</ns1:g>"</string>
+    <string msgid="1818557177829411417" name="joda_time_android_relative_time">"<ns1:g id="DATE">%1$s</ns1:g>, <ns1:g id="TIME">%2$s</ns1:g>"</string>
+    <string name="jump_to_beginning">Naar begin</string>
+    <string name="jump_to_end">Naar einde</string>
+    <string name="jump_to_previous">Ga terug</string>
+    <string name="keep_changes">Wijzigingen opslaan</string>
+    <string name="language">Taal</string>
+    <string name="launch_app">Starten</string>
+    <string name="launch_printer">Start printen</string>
+    <string name="leave_a_review">Schrijf een review op de Google Play Store.</string>
+    <string name="leave_a_review_msg">Jouw (hopelijk positieve) review vergroot de zichtbaarheid van de Applicatie in de Play Store</string>
+    <string name="light" ns2:ignore="UnusedResources">Licht</string>
+    <string name="loading_form">Formulier laden</string>
+    <string name="main_menu_settings">Hoofdmenu instellingen</string>
+    <string name="manage_files">Verwijder formulieren</string>
+    <string name="map_style_label">%s kaartstijl</string>
+    <string name="mark_finished">Definitief maken</string>
+    <string name="markup_image">Markup Image</string>
+    <string name="material_clock_toggle_content_description">Selecteer a.m. of p.m.</string>
+    <string name="material_hour_selection">Selecteer uur</string>
+    <string name="material_hour_suffix">%1$s uur</string>
+    <string name="material_minute_selection">Minuten selecteren</string>
+    <string name="material_minute_suffix">%1$s minuten</string>
+    <string name="material_timepicker_am">a.m.</string>
+    <string name="material_timepicker_clock_mode_description">Schakel naar de klokmodus om de tijd in te voeren.</string>
+    <string name="material_timepicker_hour">Uur</string>
+    <string name="material_timepicker_minute">Minuut</string>
+    <string name="material_timepicker_pm">p.m.</string>
+    <string name="material_timepicker_select_time">Tijd selecteren</string>
+    <string name="material_timepicker_text_input_mode_description">Schakel naar de tekstinvoermodus om de tijd in te voeren.</string>
+    <string name="modified_on_date_at_time">\'Gewijzigd op\' EEE dd MMM yyyy \'om\' HH:mm</string>
+    <string name="mtrl_badge_numberless_content_description">Nieuwe melding</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s verwijderen</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Meer dan %1$d nieuwe meldingen</string>
+    <string name="mtrl_picker_a11y_next_month">Naar volgende maand gaan</string>
+    <string name="mtrl_picker_a11y_prev_month">Naar vorige maand gaan</string>
+    <string name="mtrl_picker_announce_current_selection">Huidige selectie: %1$s</string>
+    <string name="mtrl_picker_cancel">Annuleren</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Selecteer een datum</string>
+    <string name="mtrl_picker_date_header_unselected">Geselecteerde datum</string>
+    <string name="mtrl_picker_day_of_week_column_header">Kolom met dagen: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Ongeldige indeling.</string>
+    <string name="mtrl_picker_invalid_format_example">Voorbeeld: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Gebruik: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Ongeldig bereik.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Naar jaar %1$s navigeren</string>
+    <string name="mtrl_picker_out_of_range">Valt buiten bereik: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Startdatum - %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – einddatum</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Selecteer een periode</string>
+    <string name="mtrl_picker_range_header_unselected">Startdatum - einddatum</string>
+    <string name="mtrl_picker_save">Opslaan</string>
+    <string name="mtrl_picker_text_input_date_hint">Datum</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Einddatum</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Startdatum</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">j</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Overschakelen naar agenda-invoermodus</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tik om naar dagselectie te schakelen</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Overschakelen naar tekstinvoermodus</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tik om naar jaarselectie te schakelen</string>
+    <string name="mtrl_timepicker_cancel">Annuleren</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Omhoog navigeren"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Zijmenu openen"</string>
+    <string name="navigation">Navigatie</string>
+    <string name="no">Nee</string>
+    <string name="no_app">Benodigde applicatie ontbreekt. Voer de waarde handmatig in.</string>
+    <string name="no_connection">Geen internet verbinding beschikbaar</string>
+    <string name="no_date_selected">Geen datum geselecteerd</string>
+    <string name="no_forms_uploaded">Sorry, no form was uploaded.</string>
+    <string name="no_google_account">Geen Google account geselecteerd!</string>
+    <string name="no_items_display">Leeg</string>
+    <string name="no_items_display_forms">Leeg.\n\nDownload eerst een formulier en vul dat in.</string>
+    <string name="no_items_display_instances">Leeg\n\nEen formulier moet als voltooid zijn gemarkeerd voordat u het kunt verzenden.</string>
+    <string name="no_items_display_sent_forms">Leeg.\n\nVerstuur eerst afgeronde formulieren om deze te kunnen bekijken.</string>
+    <string name="no_printer">De gevraagde printer is niet geinstalleerd. Installeer de printer.</string>
+    <string name="no_time_selected">Geen tijd geselecteerd</string>
+    <string name="noselect_error">Sorry, u heeft geen formulier gekozen!</string>
+    <string msgid="6573031135582639649" name="not_set">"Niet ingesteld"</string>
+    <string name="notification_channel_name">Algemene notificaties</string>
+    <string name="odk_website">Bezoek de ODK website</string>
+    <string name="off">Uit</string>
+    <string name="ok">OK</string>
+    <string name="open_file">Open bestand</string>
+    <string name="open_url">Open Url</string>
+    <string name="outdoors" ns2:ignore="UnusedResources">Buiten</string>
+    <string name="parent_form_not_present">Opgeslagen formulier kan niet bewerkt worden omdat het benodigde lege formulier niet gevonden kon worden of was verwijderd.\n\nForm ID: %1$s</string>
+    <string name="parse_error">Formulier inlezen mislukt.</string>
+    <string name="password">Wachtwoord</string>
+    <string name="password_toggle_content_description">Wachtwoord tonen</string>
+    <string name="phone_number">Telefoonnummer</string>
+    <string name="play_video">Bekijk video</string>
+    <string name="please_wait">Een moment geduld alstublieft.</string>
+    <string name="please_wait_long">Geduld, dit kan enkele minuten duren.</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\'<ns1:g id="SUMMARY">%1$s</ns1:g>\' is gekopieerd naar het klembord."</string>
+    <string name="provider_disabled_error">Sorry, GPS is uitgeschakeld!</string>
+    <string name="quit_application">Sluit %s af</string>
+    <string name="quit_entry">Opslaan en afsluiten</string>
+    <string name="recapture_osm">OSM Tagging opnieuw uitvoeren</string>
+    <string name="refresh">Ververs</string>
+    <string name="repeatable_group_label">Herhalende groep</string>
+    <string name="replace_barcode">Vervang barcode</string>
+    <string name="replace_bearing">Vervang richting</string>
+    <string name="required_answer_error">Sorry, deze vraag is verplicht!</string>
+    <string name="reset_blank_forms_result">Lege formulieren ::%s </string>
+    <string name="reset_image">Reset</string>
+    <string name="reset_layers_result">Kaartlagen:: %s</string>
+    <string name="reset_project_settings_title">Reset</string>
+    <string name="reset_saved_forms_result">Opgeslagen formulieren :: 1%s</string>
+    <string name="reset_settings_button_reset">Reset</string>
+    <string name="reset_settings_result">Alle instellingen ::%s</string>
+    <string name="review_data">Wijzig formulier</string>
+    <string name="review_data_button">Wijzig opgeslagen formulier (%s)</string>
+    <string name="save_all_answers">Formulier opslaan</string>
+    <string name="save_and_close">Opslaan en sluiten</string>
+    <string name="save_as_error">Formuliernaam mag niet leeg zijn!</string>
+    <string name="save_enter_data_description">U bent aan het einde van \"%s\".</string>
+    <string name="save_form_as">Geef dit formulier een naam:</string>
+    <string name="save_mid">Formulier opslaan</string>
+    <string name="save_point_error">Fout bij maken herstelpunt: %s</string>
+    <string name="saved_forms">Opgeslagen formulieren</string>
+    <string name="saved_on_date_at_time">\'Opgeslagen op\' EEE dd MMM yyyy \'om\' HH:mm</string>
+    <string name="savepoint_used">Unsaved changes recovered from savepoint!</string>
+    <string name="saving_form">Formulier opslaan</string>
+    <string msgid="5659570757430909869" name="screen_lock_prompt_message">"Geef je schermvergrendeling op om door te gaan"</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Zoeken"</string>
+    <string name="select_all">Selecteer Alles</string>
+    <string name="select_answer">Kies een antwoord</string>
+    <string name="select_date">Selecteer datum</string>
+    <string name="select_time">Selecteer tijd</string>
+    <string name="selected">Gekozen:</string>
+    <string name="selected_google_account_text">Google Account</string>
+    <string name="send_data">Verstuur Afgeronde Formulieren</string>
+    <string name="send_data_button">Upload afgerond formulier (%s)</string>
+    <string name="send_selected_data">Verstuur selectie</string>
+    <string name="sending_failed_on_date_at_time">\'Verzenden mislukt op\' EEE dd MMM yyyy \'om\' HH:mm</string>
+    <string name="sending_items">Verzenden: %1$s van %2$s formulier(en)</string>
+    <string name="sent_on_date_at_time">\'Verzonden op\' EEE dd MMM yyyy \'om\' HH:mm</string>
+    <string name="server_auth_credentials">Ongeldige gebruikersnaam of wachtwoord voor server: %s</string>
+    <string name="server_platform_google_sheets">Google Drive, Google Sheets</string>
+    <string name="server_preferences">Server</string>
+    <string name="server_requires_auth">Server vereist authenticatie</string>
+    <string name="server_settings_title">Server</string>
+    <string name="server_url">URL</string>
+    <string name="set_color">Set Color</string>
+    <string name="share">Deel</string>
+    <string name="show_password">Wachtwoord tonen</string>
+    <string name="show_sent_and_unsent_forms">Verzonden en niet-verzonden formulieren</string>
+    <string name="show_unsent_forms">Alleen niet-verzonden formulieren</string>
+    <string name="sign_button">Zet handtekening</string>
+    <string name="signature_capture">Handtekening vastleggen</string>
+    <string name="sort_by">Sorteer op</string>
+    <string name="sort_by_date_asc">Datum, oudste eerst</string>
+    <string name="sort_by_date_desc">Datum, nieuwste eerst</string>
+    <string name="sort_by_name_asc">Naam, A-Z</string>
+    <string name="sort_by_name_desc">Naam, Z-A</string>
+    <string name="sort_by_status_asc">Status, afgeronde eerst</string>
+    <string name="sort_by_status_desc">Status, niet-afgeronde eerst</string>
+    <string name="sort_the_list">Sorteer de lijst</string>
+    <string name="start">Start</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="streets">Straten</string>
+    <string name="submission_deleted">Ingediend formulier verwijderd</string>
+    <string name="success">Voltooid</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="survey_internal_error">Interne fout: doorgaan naar invoer mislukt.</string>
+    <string name="survey_loading_reading_csv_message">Inlezen CSV bestanden…</string>
+    <string name="survey_loading_reading_data_message">Formulier gegevens inlezen…</string>
+    <string name="survey_loading_reading_form_message">Inlezen formulier definitie..</string>
+    <string name="survey_multiple_forms_error">Je hebt twee formulieren met een identieke form ID en versie. Misschien zijn ze op verschillende tijden of verschillende servers geupload. Je moet er één verwijderen.</string>
+    <string name="survey_saving_collecting_message">Data verzamelen…</string>
+    <string name="survey_saving_encrypting_message">Data versleutelen…</string>
+    <string name="survey_saving_finalizing_message">Afronden naar SD-kaart…</string>
+    <string name="survey_saving_saving_message">Opslaan naar SD-kaart…</string>
+    <string name="survey_saving_validating_message">Valideren antwoorden…</string>
+    <string name="swipe_buttons_navigation">Gebruik knoppen en vegen</string>
+    <string name="swipe_navigation">Horizontaal vegen</string>
+    <string name="tell_your_friends">Deel ODK Collect</string>
+    <string name="tell_your_friends_msg">Verzamelen jouw collega\'s nog steeds data op papier? Deel ODK Collect met hen. </string>
+    <string name="terrain">Terrein</string>
+    <string name="theme_dark">Donker thema</string>
+    <string name="theme_light">Licht thema</string>
+    <string name="trigger">OK. Ga door.</string>
+    <string name="type">Type</string>
+    <string name="upload_results">Upload Results</string>
+    <string name="uploading_data">Formulier verzenden</string>
+    <string name="url_error">Sorry, ongeldige URL!</string>
+    <string msgid="6524145989441579428" name="use_biometric_label">"Biometrische gegevens gebruiken"</string>
+    <string msgid="5385448280139639016" name="use_biometric_or_screen_lock_label">"Biometrische gegevens of schermvergrendeling gebruiken"</string>
+    <string msgid="6533512708069459542" name="use_face_label">"Gezicht gebruiken"</string>
+    <string msgid="2116180187159450292" name="use_face_or_screen_lock_label">"Gezicht of schermgrendeling gebruiken"</string>
+    <string msgid="6961788485681412417" name="use_fingerprint_label">"Vingerafdruk gebruiken"</string>
+    <string msgid="7577690399303139443" name="use_fingerprint_or_screen_lock_label">"Vingerafdruk of schermvergrendeling gebruiken"</string>
+    <string msgid="5459869335976243512" name="use_screen_lock_label">"Schermvergrendeling gebruiken"</string>
+    <string name="user_defined">gebruiker gedefineerd</string>
+    <string name="user_settings">Gebruikersinstellingen</string>
+    <string name="username">Gebruikersnaam</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"UIT"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"AAN"</string>
+    <string name="version">Versie:</string>
+    <string name="view_change_location">Bekijk of wijzig positie</string>
+    <string name="view_hierarchy">Ga naar vraag</string>
+    <string name="view_sent_forms">Bekijk verzonden formulier</string>
+    <string name="view_sent_forms_button">Bekijk verzonden formulier (%s)</string>
+    <string name="xform_parse_error">Fout tijdens XForm parse voor %1$s: %2$s ontbreekt of is ongeldig</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Sorry, er is een probleem met de Android-camera. Probeer je telefoon opnieuw op te starten.</string>
+    <string name="zxing_msg_default_status">Plaats een barcode binnen de rechthoek om deze te scannen.</string>
+</resources>
