@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Value from build type: debug -->
+    <string name="GOOGLE_MAPS_API_KEY" translatable="false"></string>
+    <!-- Value from build type: debug -->
+    <string name="mapbox_access_token" translatable="false"></string>
+
+</resources>

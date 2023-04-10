@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-ar-rEG/values-ar-rEG.xml",
+            "map": [
+                {
+                    "source": "/Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/res/values-ar-rEG/values-ar-rEG.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

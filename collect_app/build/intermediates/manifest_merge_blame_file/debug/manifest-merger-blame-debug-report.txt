@@ -1,0 +1,1405 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.odk.collect.android"
+4    android:versionCode="1066" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="21"
+8        android:targetSdkVersion="33" />
+9
+10    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+10-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/debug/AndroidManifest.xml:5:5-74
+10-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/debug/AndroidManifest.xml:5:22-72
+11
+12    <!-- Allows changing locales -->
+13    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+13-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/debug/AndroidManifest.xml:8:5-115
+13-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/debug/AndroidManifest.xml:8:22-76
+14
+15    <uses-feature
+15-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:14:5-16:36
+16        android:name="android.hardware.location"
+16-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:15:9-49
+17        android:required="false" />
+17-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:16:9-33
+18    <uses-feature
+18-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:17:5-19:36
+19        android:name="android.hardware.location.network"
+19-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:18:9-57
+20        android:required="false" />
+20-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:19:9-33
+21    <uses-feature
+21-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:20:5-22:36
+22        android:name="android.hardware.location.gps"
+22-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:21:9-53
+23        android:required="false" />
+23-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:22:9-33
+24    <uses-feature
+24-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:23:5-25:36
+25        android:name="android.hardware.telephony"
+25-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:24:9-50
+26        android:required="false" />
+26-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:25:9-33
+27    <uses-feature
+27-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:26:5-28:36
+28        android:name="android.hardware.wifi"
+28-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:27:9-45
+29        android:required="false" /> <!-- Dangerous permissions -->
+29-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:28:9-33
+30    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+30-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:31:5-79
+30-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:31:22-76
+31    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+31-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:32:5-81
+31-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:32:22-78
+32    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+32-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:33:5-80
+32-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:33:22-77
+33    <uses-permission android:name="android.permission.CAMERA" />
+33-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:34:5-65
+33-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:34:22-62
+34    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+34-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:35:5-75
+34-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:35:22-72
+35    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+35-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:36:5-71
+35-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:36:22-68
+36    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- Normal permissions -->
+36-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:37:5-71
+36-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:37:22-68
+37    <uses-permission android:name="android.permission.INTERNET" />
+37-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:40:5-67
+37-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:40:22-64
+38    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+38-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:41:5-76
+38-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:41:22-73
+39    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+39-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:42:5-79
+39-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:42:22-76
+40    <uses-permission android:name="android.permission.WAKE_LOCK" />
+40-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:43:5-68
+40-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:43:22-65
+41    <!--
+42        Since we use Scoped Storage, we should not need this permission. However, we discovered that
+43        this might be required in some rare cases, probably due to bugs in Android OS.
+44        See: https://github.com/getodk/collect/issues/5145
+45    -->
+46    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Removed in API 23 -->
+46-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:50:5-81
+46-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:50:22-78
+47    <uses-permission
+47-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:53:5-55:38
+48        android:name="android.permission.USE_CREDENTIALS"
+48-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:54:9-58
+49        android:maxSdkVersion="22" />
+49-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:55:9-35
+50    <uses-permission
+50-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:56:5-58:38
+51        android:name="android.permission.MANAGE_ACCOUNTS"
+51-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:57:9-58
+52        android:maxSdkVersion="22" />
+52-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:58:9-35
+53
+54    <uses-feature
+54-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:60:5-62:36
+55        android:name="android.hardware.camera"
+55-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:61:9-47
+56        android:required="false" />
+56-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:62:9-33
+57    <uses-feature
+57-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:63:5-65:36
+58        android:name="android.hardware.camera.autofocus"
+58-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:64:9-57
+59        android:required="false" />
+59-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:65:9-33
+60    <uses-feature
+60-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:66:5-68:36
+61        android:name="android.hardware.screen.portrait"
+61-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:67:9-56
+62        android:required="false" />
+62-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:68:9-33
+63
+64    <supports-screens
+64-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:70:5-76:40
+65        android:anyDensity="true"
+65-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:71:9-34
+66        android:largeScreens="true"
+66-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:72:9-36
+67        android:normalScreens="true"
+67-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:73:9-37
+68        android:resizeable="true"
+68-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:74:9-34
+69        android:smallScreens="true"
+69-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:75:9-36
+70        android:xlargeScreens="true" />
+70-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:76:9-37
+71
+72    <queries>
+72-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:361:5-365:15
+73        <intent>
+73-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:362:9-364:18
+74            <action android:name="android.intent.action.MAIN" />
+74-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:105:17-69
+74-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:105:25-66
+75        </intent>
+76        <!-- Needs to be explicitly declared on Android R+ -->
+77        <package android:name="com.google.android.apps.maps" />
+77-->[com.google.android.gms:play-services-maps:18.1.0] /Users/aurora/.gradle/caches/transforms-3/3af652d8e361dd9c0651dc7590fa4e4a/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+77-->[com.google.android.gms:play-services-maps:18.1.0] /Users/aurora/.gradle/caches/transforms-3/3af652d8e361dd9c0651dc7590fa4e4a/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+78        <package android:name="androidx.test.orchestrator" />
+78-->[androidx.test:runner:1.5.2] /Users/aurora/.gradle/caches/transforms-3/e9452c73eded017bd1605e6d8554549a/transformed/runner-1.5.2/AndroidManifest.xml:25:9-62
+78-->[androidx.test:runner:1.5.2] /Users/aurora/.gradle/caches/transforms-3/e9452c73eded017bd1605e6d8554549a/transformed/runner-1.5.2/AndroidManifest.xml:25:18-59
+79        <package android:name="androidx.test.services" />
+79-->[androidx.test:runner:1.5.2] /Users/aurora/.gradle/caches/transforms-3/e9452c73eded017bd1605e6d8554549a/transformed/runner-1.5.2/AndroidManifest.xml:26:9-58
+79-->[androidx.test:runner:1.5.2] /Users/aurora/.gradle/caches/transforms-3/e9452c73eded017bd1605e6d8554549a/transformed/runner-1.5.2/AndroidManifest.xml:26:18-55
+80        <package android:name="com.google.android.apps.common.testing.services" />
+80-->[androidx.test:runner:1.5.2] /Users/aurora/.gradle/caches/transforms-3/e9452c73eded017bd1605e6d8554549a/transformed/runner-1.5.2/AndroidManifest.xml:27:9-83
+80-->[androidx.test:runner:1.5.2] /Users/aurora/.gradle/caches/transforms-3/e9452c73eded017bd1605e6d8554549a/transformed/runner-1.5.2/AndroidManifest.xml:27:18-80
+81    </queries>
+82
+83    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+83-->[:audiorecorder] /Users/aurora/Documents/odk/odk/collect-master/audiorecorder/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-77
+83-->[:audiorecorder] /Users/aurora/Documents/odk/odk/collect-master/audiorecorder/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-74
+84    <uses-permission android:name="android.permission.REORDER_TASKS" />
+84-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:25:5-72
+84-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:25:22-69
+85    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+85-->[androidx.biometric:biometric:1.2.0-alpha05] /Users/aurora/.gradle/caches/transforms-3/931289eb20732649b7414c5a1128b24e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:22:5-72
+85-->[androidx.biometric:biometric:1.2.0-alpha05] /Users/aurora/.gradle/caches/transforms-3/931289eb20732649b7414c5a1128b24e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:22:22-69
+86    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+86-->[androidx.biometric:biometric:1.2.0-alpha05] /Users/aurora/.gradle/caches/transforms-3/931289eb20732649b7414c5a1128b24e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:25:5-74
+86-->[androidx.biometric:biometric:1.2.0-alpha05] /Users/aurora/.gradle/caches/transforms-3/931289eb20732649b7414c5a1128b24e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:25:22-71
+87
+88    <uses-feature
+88-->[com.google.android.gms:play-services-maps:18.1.0] /Users/aurora/.gradle/caches/transforms-3/3af652d8e361dd9c0651dc7590fa4e4a/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+89        android:glEsVersion="0x00020000"
+89-->[com.google.android.gms:play-services-maps:18.1.0] /Users/aurora/.gradle/caches/transforms-3/3af652d8e361dd9c0651dc7590fa4e4a/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+90        android:required="true" />
+90-->[com.google.android.gms:play-services-maps:18.1.0] /Users/aurora/.gradle/caches/transforms-3/3af652d8e361dd9c0651dc7590fa4e4a/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+91
+92    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+92-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:5-110
+92-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:22-107
+93    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+93-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/aurora/.gradle/caches/transforms-3/df3402fb853812ef2167e28d6ea1babc/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:5-79
+93-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/aurora/.gradle/caches/transforms-3/df3402fb853812ef2167e28d6ea1babc/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:22-76
+94    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+94-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:25:5-81
+94-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:25:22-78
+95
+96    <permission
+96-->[androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+97        android:name="org.odk.collect.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+97-->[androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+98        android:protectionLevel="signature" />
+98-->[androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+99
+100    <uses-permission android:name="org.odk.collect.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- To allow posting notifications on Android 13 -->
+100-->[androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+100-->[androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+101    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+101-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:29:5-77
+101-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:29:22-74
+102
+103    <uses-feature
+103-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
+104        android:name="android.hardware.camera.front"
+104-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
+105        android:required="false" />
+105-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
+106    <uses-feature
+106-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
+107        android:name="android.hardware.camera.flash"
+107-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
+108        android:required="false" />
+108-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
+109    <uses-feature
+109-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
+110        android:name="android.hardware.screen.landscape"
+110-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
+111        android:required="false" />
+111-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
+112
+113    <application
+113-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:78:5-359:19
+114        android:name="org.odk.collect.android.application.Collect"
+114-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:79:9-44
+115        android:allowBackup="true"
+115-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:80:9-35
+116        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+116-->[androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+117        android:debuggable="true"
+118        android:icon="@drawable/delifood"
+118-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:81:9-42
+119        android:installLocation="auto"
+119-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:82:9-39
+120        android:label="DeliFood"
+120-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:83:9-33
+121        android:largeHeap="true"
+121-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:84:9-33
+122        android:networkSecurityConfig="@xml/network_security_config"
+122-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:85:9-69
+123        android:supportsRtl="true"
+123-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:86:9-35
+124        android:theme="@style/Theme.Collect"
+124-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:88:9-45
+125        android:usesCleartextTraffic="true" >
+125-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:87:9-44
+126        <provider
+127            android:name="androidx.core.content.FileProvider"
+128            android:authorities="org.odk.collect.android.provider"
+129            android:exported="false"
+130            android:grantUriPermissions="true" >
+131            <meta-data
+131-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:37:13-39:66
+132                android:name="android.support.FILE_PROVIDER_PATHS"
+132-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:38:17-67
+133                android:resource="@xml/provider_paths" />
+133-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:39:17-63
+134        </provider>
+135
+136        <activity
+136-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:100:9-109:20
+137            android:name="org.odk.collect.android.activities.LaunchActivity"
+137-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:101:13-54
+138            android:exported="true"
+138-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:103:13-36
+139            android:theme="@style/Theme.Collect.SplashScreen" >
+139-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:102:13-62
+140            <intent-filter>
+140-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:104:13-108:29
+141                <action android:name="android.intent.action.MAIN" />
+141-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:105:17-69
+141-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:105:25-66
+142
+143                <category android:name="android.intent.category.DEFAULT" />
+143-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+143-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+144                <category android:name="android.intent.category.LAUNCHER" />
+144-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:17-77
+144-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:27-74
+145            </intent-filter>
+146        </activity>
+147        <activity android:name="org.odk.collect.android.activities.LoginActivity" >
+147-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:111:9-113:20
+147-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:112:13-53
+148        </activity>
+149        <activity android:name="org.odk.collect.android.activities.ErrorAccessActivity" >
+149-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:115:9-117:20
+149-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:116:13-59
+150        </activity>
+151        <activity android:name="org.odk.collect.android.activities.PinAuthenticationActivity" >
+151-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:119:9-121:20
+151-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:120:13-65
+152        </activity>
+153        <activity android:name="org.odk.collect.android.activities.FirstLaunchActivity" >
+153-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:123:9-125:20
+153-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:124:13-59
+154        </activity>
+155        <activity android:name="org.odk.collect.android.activities.AuthenticationVerifyActivity" >
+155-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:127:9-129:20
+155-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:128:13-68
+156        </activity>
+157        <activity android:name="org.odk.collect.android.activities.MainMenuActivity" >
+157-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:131:9-133:20
+157-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:132:13-56
+158        </activity>
+159        <activity android:name="org.odk.collect.android.activities.CrashHandlerActivity" />
+159-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:135:9-92
+159-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:135:19-89
+160        <activity
+160-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:137:9-141:63
+161            android:name="org.odk.collect.android.activities.ScannerWithFlashlightActivity"
+161-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:138:13-69
+162            android:screenOrientation="portrait"
+162-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:139:13-49
+163            android:stateNotNeeded="true"
+163-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:140:13-42
+164            android:windowSoftInputMode="stateAlwaysHidden" />
+164-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:141:13-60
+165        <activity
+165-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:142:9-145:58
+166            android:name="org.odk.collect.android.activities.FormEntryActivity"
+166-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:143:13-57
+167            android:theme="@style/Theme.Collect.FormEntry"
+167-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:144:13-59
+168            android:windowSoftInputMode="adjustResize" />
+168-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:145:13-55
+169
+170        <activity-alias
+170-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:255:9-260:26
+171            android:name="org.odk.collect.android.activities.FormEntryActivity"
+171-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:256:13-57
+172            android:exported="true"
+172-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:259:13-36
+173            android:targetActivity="org.odk.collect.android.activities.FormEntryActivity" >
+173-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:257:13-67
+174        </activity-alias>
+175
+176        <activity
+176-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:146:9-148:53
+177            android:name="org.odk.collect.android.draw.DrawActivity"
+177-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:147:13-46
+178            android:screenOrientation="landscape" />
+178-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:148:13-50
+179        <activity
+179-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:149:9-152:57
+180            android:name="org.odk.collect.android.gdrive.GoogleDriveActivity"
+180-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:150:13-55
+181            android:configChanges="orientation|screenSize"
+181-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:151:13-59
+182            android:windowSoftInputMode="stateHidden" />
+182-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:152:13-54
+183        <activity android:name="org.odk.collect.android.activities.InstanceChooserList" />
+183-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:153:9-68
+183-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:153:19-65
+184
+185        <activity-alias
+185-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:262:9-276:26
+186            android:name="org.odk.collect.android.activities.InstanceChooserList"
+186-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:263:13-59
+187            android:exported="true"
+187-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:265:13-36
+188            android:targetActivity="org.odk.collect.android.activities.InstanceChooserList" >
+188-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:264:13-69
+189            <intent-filter>
+189-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:267:13-275:29
+190                <action android:name="android.intent.action.VIEW" />
+190-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:17-69
+190-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:25-66
+191                <action android:name="android.intent.action.EDIT" />
+191-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:269:17-69
+191-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:269:25-66
+192                <action android:name="android.intent.action.PICK" />
+192-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:270:17-69
+192-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:270:25-66
+193
+194                <category android:name="android.intent.category.DEFAULT" />
+194-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+194-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+195
+196                <data android:mimeType="vnd.android.cursor.dir/vnd.odk.instance" />
+196-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+196-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:23-81
+197            </intent-filter>
+198        </activity-alias>
+199
+200        <activity
+200-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:154:9-156:46
+201            android:name="org.odk.collect.android.formlists.blankformlist.BlankFormListActivity"
+201-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:155:13-74
+202            android:launchMode="singleTop" />
+202-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:156:13-43
+203
+204        <activity-alias
+204-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:278:9-292:26
+205            android:name="org.odk.collect.android.activities.FormChooserList"
+205-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:279:13-55
+206            android:exported="true"
+206-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:281:13-36
+207            android:targetActivity="org.odk.collect.android.formlists.blankformlist.BlankFormListActivity" >
+207-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:280:13-84
+208            <intent-filter>
+208-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:283:13-291:29
+209                <action android:name="android.intent.action.VIEW" />
+209-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:17-69
+209-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:25-66
+210                <action android:name="android.intent.action.EDIT" />
+210-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:269:17-69
+210-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:269:25-66
+211                <action android:name="android.intent.action.PICK" />
+211-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:270:17-69
+211-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:270:25-66
+212
+213                <category android:name="android.intent.category.DEFAULT" />
+213-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+213-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+214
+215                <data android:mimeType="vnd.android.cursor.dir/vnd.odk.form" />
+215-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+215-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:23-81
+216            </intent-filter>
+217        </activity-alias>
+218
+219        <activity android:name="org.odk.collect.android.activities.FormDownloadListActivity" />
+219-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:157:9-73
+219-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:157:19-70
+220
+221        <activity-alias
+221-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:294:9-303:26
+222            android:name="org.odk.collect.android.activities.FormDownloadList"
+222-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:295:13-56
+223            android:exported="true"
+223-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:297:13-36
+224            android:targetActivity="org.odk.collect.android.activities.FormDownloadListActivity" >
+224-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:296:13-74
+225            <intent-filter>
+225-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:298:13-302:29
+226                <action android:name="org.odk.collect.android.FORM_DOWNLOAD" />
+226-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:299:17-80
+226-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:299:25-77
+227
+228                <category android:name="android.intent.category.DEFAULT" />
+228-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+228-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+229
+230                <data android:mimeType="vnd.android.cursor.dir/vnd.odk.form" />
+230-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+230-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:23-81
+231            </intent-filter>
+232        </activity-alias>
+233
+234        <activity
+234-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:158:9-160:62
+235            android:name="org.odk.collect.android.activities.DeleteSavedFormActivity"
+235-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:159:13-63
+236            android:configChanges="orientation|screenSize" />
+236-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:160:13-59
+237        <activity
+237-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:161:9-163:62
+238            android:name="org.odk.collect.android.gdrive.GoogleSheetsUploaderActivity"
+238-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:162:13-64
+239            android:configChanges="orientation|screenSize" />
+239-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:163:13-59
+240        <activity
+240-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:164:9-166:62
+241            android:name="org.odk.collect.android.activities.InstanceUploaderListActivity"
+241-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:165:13-68
+242            android:configChanges="orientation|screenSize" />
+242-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:166:13-59
+243
+244        <activity-alias
+244-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:305:9-315:26
+245            android:name="org.odk.collect.android.activities.InstanceUploaderList"
+245-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:306:13-60
+246            android:exported="true"
+246-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:308:13-36
+247            android:targetActivity="org.odk.collect.android.activities.InstanceUploaderListActivity" >
+247-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:307:13-78
+248            <intent-filter>
+248-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:309:13-314:29
+249                <action android:name="android.intent.action.VIEW" />
+249-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:17-69
+249-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:25-66
+250                <action android:name="android.intent.action.EDIT" />
+250-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:269:17-69
+250-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:269:25-66
+251
+252                <category android:name="android.intent.category.DEFAULT" />
+252-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+252-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+253            </intent-filter>
+254        </activity-alias>
+255
+256        <activity android:name="org.odk.collect.android.activities.InstanceUploaderActivity" />
+256-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:167:9-73
+256-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:167:19-70
+257
+258        <activity-alias
+258-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:317:9-326:26
+259            android:name="org.odk.collect.android.activities.InstanceUploaderActivity"
+259-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:318:13-64
+260            android:exported="true"
+260-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:320:13-36
+261            android:targetActivity="org.odk.collect.android.activities.InstanceUploaderActivity" >
+261-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:319:13-74
+262            <intent-filter>
+262-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:321:13-325:29
+263                <action android:name="org.odk.collect.android.INSTANCE_UPLOAD" />
+263-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:322:17-82
+263-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:322:25-79
+264
+265                <category android:name="android.intent.category.DEFAULT" />
+265-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+265-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+266
+267                <data android:mimeType="vnd.android.cursor.dir/vnd.odk.instance" />
+267-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+267-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:23-81
+268            </intent-filter>
+269        </activity-alias>
+270
+271        <activity android:name="org.odk.collect.android.activities.AboutActivity" />
+271-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:168:9-62
+271-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:168:19-59
+272        <activity android:name="org.odk.collect.android.configure.qr.QRCodeTabsActivity" />
+272-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:169:9-69
+272-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:169:19-66
+273        <activity
+273-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:170:9-172:61
+274            android:name="org.odk.collect.android.preferences.screens.ProjectPreferencesActivity"
+274-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:171:13-75
+275            android:theme="@style/Theme.Collect.Settings" />
+275-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:172:13-58
+276        <activity android:name="org.odk.collect.android.activities.FormHierarchyActivity" />
+276-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:173:9-70
+276-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:173:19-67
+277        <activity android:name="org.odk.collect.android.activities.ViewOnlyFormHierarchyActivity" />
+277-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:174:9-78
+277-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:174:19-75
+278        <activity
+278-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:175:9-178:45
+279            android:name="org.odk.collect.geo.geopoint.GeoPointActivity"
+279-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:176:13-73
+280            android:theme="@style/Theme.Collect" />
+280-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:177:13-49
+281        <activity
+281-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:179:9-182:45
+282            android:name="org.odk.collect.geo.geopoint.GeoPointMapActivity"
+282-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:180:13-76
+283            android:theme="@style/Theme.Collect" />
+283-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:181:13-49
+284        <activity
+284-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:183:9-186:45
+285            android:name="org.odk.collect.geo.geopoly.GeoPolyActivity"
+285-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:184:13-71
+286            android:theme="@style/Theme.Collect" />
+286-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:185:13-49
+287        <activity
+287-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:187:9-190:45
+288            android:name="org.odk.collect.errors.ErrorActivity"
+288-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:188:13-64
+289            android:theme="@style/Theme.Collect" />
+289-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:189:13-49
+290        <activity
+290-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:192:9-195:45
+291            android:name="org.odk.collect.entities.EntityBrowserActivity"
+291-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:193:13-74
+292            android:theme="@style/Theme.Collect" />
+292-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:194:13-49
+293        <activity android:name="org.odk.collect.android.activities.FormMapActivity" />
+293-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:197:9-64
+293-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:197:19-61
+294        <activity android:name="org.odk.collect.android.activities.BearingActivity" />
+294-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:198:9-64
+294-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:198:19-61
+295        <activity android:name="org.odk.collect.android.activities.WebViewActivity" />
+295-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:199:9-64
+295-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:199:19-61
+296        <activity
+296-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:200:9-205:20
+297            android:name="org.odk.collect.selfiecamera.CaptureSelfieActivity"
+297-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:201:13-78
+298            android:screenOrientation="portrait"
+298-->[:selfie-camera] /Users/aurora/Documents/odk/odk/collect-master/selfie-camera/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-49
+299            android:theme="@style/Theme.Collect" >
+299-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:202:13-49
+300        </activity>
+301
+302        <!-- Configure this key by setting GOOGLE_MAPS_API_KEY in secrets.properties. -->
+303        <meta-data
+303-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:208:9-210:59
+304            android:name="com.google.android.geo.API_KEY"
+304-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:209:13-58
+305            android:value="@string/GOOGLE_MAPS_API_KEY" />
+305-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:210:13-56
+306        <meta-data
+306-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:211:9-214:45
+307            android:name="com.google.android.gms.version"
+307-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:212:13-58
+308            android:value="@integer/google_play_services_version" /> <!-- integer/google_play_services_version -->
+308-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:213:13-66
+309
+310        <meta-data
+310-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:216:9-218:37
+311            android:name="firebase_analytics_collection_enabled"
+311-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:217:13-65
+312            android:value="false" />
+312-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:218:13-34
+313        <meta-data
+313-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:220:9-222:37
+314            android:name="firebase_crashlytics_collection_enabled"
+314-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:221:13-67
+315            android:value="false" />
+315-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:222:13-34
+316        <meta-data
+316-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:224:9-226:37
+317            android:name="google_analytics_adid_collection_enabled"
+317-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:225:13-68
+318            android:value="false" />
+318-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:226:13-34
+319        <meta-data
+319-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:228:9-230:37
+320            android:name="google_analytics_ssaid_collection_enabled"
+320-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:229:13-69
+321            android:value="false" />
+321-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:230:13-34
+322
+323        <uses-library
+323-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:232:9-234:40
+324            android:name="com.google.android.maps"
+324-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:233:13-51
+325            android:required="false" />
+325-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:234:13-37
+326
+327        <!--
+328             ******************External API, DO NOT CHANGE BEFORE DISCUSSING***********************
+329             * The providers and activities below are available for external applications to      *
+330             * integrate with and are actively in use. If one of these needs to change for some   *
+331             * reason, it needs to be placed on a deprecation path so users can adapt before the  *
+332             * change. If an activity needs to be renamed internally, use an activity-alias. If   *
+333             * the external API needs to be expanded, introduce carefully-named actions.          *
+334             **************************************************************************************
+335        -->
+336
+337        <provider
+337-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:246:9-249:39
+338            android:name="org.odk.collect.android.external.FormsProvider"
+338-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:247:13-51
+339            android:authorities="org.odk.collect.android.provider.odk.forms"
+339-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:248:13-77
+340            android:exported="true" />
+340-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:249:13-36
+341        <provider
+341-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:250:9-253:39
+342            android:name="org.odk.collect.android.external.InstanceProvider"
+342-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:251:13-54
+343            android:authorities="org.odk.collect.android.provider.odk.instances"
+343-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:252:13-81
+344            android:exported="true" />
+344-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:253:13-36
+345
+346        <!-- Enable Shortcuts for Command Actions -->
+347        <activity
+347-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:329:9-339:20
+348            android:name="org.odk.collect.android.external.AndroidShortcutsActivity"
+348-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:330:13-62
+349            android:exported="true"
+349-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:333:13-36
+350            android:label="ODK Form"
+350-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:331:13-37
+351            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" >
+351-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:332:13-78
+352            <intent-filter>
+352-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:334:13-338:29
+353                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+353-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:335:17-80
+353-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:335:25-77
+354
+355                <category android:name="android.intent.category.DEFAULT" />
+355-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+355-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+356            </intent-filter>
+357        </activity>
+358
+359        <!--
+360        Supports VIEW and EDIT actions for forms and instances (documented at
+361        https://docs.getodk.org/launch-collect-from-app/#using-a-uri-to-edit-a-form-or-instance).
+362        Do not use the activity directly as its name/package might change.
+363        -->
+364        <activity
+364-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:344:9-357:20
+365            android:name="org.odk.collect.android.external.FormUriActivity"
+365-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:345:13-53
+366            android:exported="true" >
+366-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:346:13-36
+367            <intent-filter>
+367-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:349:13-356:29
+368                <action android:name="android.intent.action.VIEW" />
+368-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:17-69
+368-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:25-66
+369                <action android:name="android.intent.action.EDIT" />
+369-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:269:17-69
+369-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:269:25-66
+370
+371                <category android:name="android.intent.category.DEFAULT" />
+371-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+371-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+372
+373                <data android:mimeType="vnd.android.cursor.item/vnd.odk.form" />
+373-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+373-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:23-81
+374                <data android:mimeType="vnd.android.cursor.item/vnd.odk.instance" />
+374-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+374-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:23-81
+375            </intent-filter>
+376        </activity>
+377
+378        <service android:name="org.odk.collect.audiorecorder.recording.AudioRecorderService" />
+378-->[:audiorecorder] /Users/aurora/Documents/odk/odk/collect-master/audiorecorder/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-96
+378-->[:audiorecorder] /Users/aurora/Documents/odk/odk/collect-master/audiorecorder/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-93
+379        <service
+379-->[:location] /Users/aurora/Documents/odk/odk/collect-master/location/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:56
+380            android:name="org.odk.collect.location.tracker.LocationTrackerService"
+380-->[:location] /Users/aurora/Documents/odk/odk/collect-master/location/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-83
+381            android:foregroundServiceType="location" />
+381-->[:location] /Users/aurora/Documents/odk/odk/collect-master/location/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-53
+382
+383        <activity android:name="org.odk.collect.androidshared.ui.ReturnToAppActivity" />
+383-->[:androidshared] /Users/aurora/Documents/odk/odk/collect-master/androidshared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-89
+383-->[:androidshared] /Users/aurora/Documents/odk/odk/collect-master/androidshared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:19-86
+384        <activity
+384-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:28:9-37:20
+385            android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity"
+385-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:29:13-96
+386            android:exported="true"
+386-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:30:13-36
+387            android:multiprocess="true"
+387-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:31:13-40
+388            android:taskAffinity=""
+388-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:32:13-36
+389            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" >
+389-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:33:13-78
+390            <intent-filter>
+390-->[androidx.fragment:fragment-testing:1.5.5] /Users/aurora/.gradle/caches/transforms-3/0a492fb16805d842020ac02e60c9ee01/transformed/jetified-fragment-testing-1.5.5/AndroidManifest.xml:34:13-36:29
+391                <action android:name="android.intent.action.MAIN" />
+391-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:105:17-69
+391-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:105:25-66
+392            </intent-filter>
+393        </activity>
+394        <activity
+394-->[com.karumi:dexter:6.2.3] /Users/aurora/.gradle/caches/transforms-3/55b98ee35d6dbf6e6adcabc39c3d8652/transformed/jetified-dexter-6.2.3/AndroidManifest.xml:27:9-29:72
+395            android:name="com.karumi.dexter.DexterActivity"
+395-->[com.karumi:dexter:6.2.3] /Users/aurora/.gradle/caches/transforms-3/55b98ee35d6dbf6e6adcabc39c3d8652/transformed/jetified-dexter-6.2.3/AndroidManifest.xml:28:13-60
+396            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+396-->[com.karumi:dexter:6.2.3] /Users/aurora/.gradle/caches/transforms-3/55b98ee35d6dbf6e6adcabc39c3d8652/transformed/jetified-dexter-6.2.3/AndroidManifest.xml:29:13-69
+397        <activity
+397-->[com.google.android.gms:play-services-oss-licenses:17.0.0] /Users/aurora/.gradle/caches/transforms-3/4b4b5460f6a89f0222a29cb471e4329e/transformed/jetified-play-services-oss-licenses-17.0.0/AndroidManifest.xml:23:9-25:57
+398            android:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity"
+398-->[com.google.android.gms:play-services-oss-licenses:17.0.0] /Users/aurora/.gradle/caches/transforms-3/4b4b5460f6a89f0222a29cb471e4329e/transformed/jetified-play-services-oss-licenses-17.0.0/AndroidManifest.xml:24:13-87
+399            android:label="@string/oss_license_title" />
+399-->[com.google.android.gms:play-services-oss-licenses:17.0.0] /Users/aurora/.gradle/caches/transforms-3/4b4b5460f6a89f0222a29cb471e4329e/transformed/jetified-play-services-oss-licenses-17.0.0/AndroidManifest.xml:25:13-54
+400        <activity android:name="com.google.android.gms.oss.licenses.OssLicensesActivity" />
+400-->[com.google.android.gms:play-services-oss-licenses:17.0.0] /Users/aurora/.gradle/caches/transforms-3/4b4b5460f6a89f0222a29cb471e4329e/transformed/jetified-play-services-oss-licenses-17.0.0/AndroidManifest.xml:26:9-92
+400-->[com.google.android.gms:play-services-oss-licenses:17.0.0] /Users/aurora/.gradle/caches/transforms-3/4b4b5460f6a89f0222a29cb471e4329e/transformed/jetified-play-services-oss-licenses-17.0.0/AndroidManifest.xml:26:19-89
+401        <activity
+401-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:23:9-27:75
+402            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+402-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:24:13-93
+403            android:excludeFromRecents="true"
+403-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:25:13-46
+404            android:exported="false"
+404-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:26:13-37
+405            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+405-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:27:13-72
+406        <!--
+407            Service handling Google Sign-In user revocation. For apps that do not integrate with
+408            Google Sign-In, this service will never be started.
+409        -->
+410        <service
+410-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:33:9-37:51
+411            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+411-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:34:13-89
+412            android:exported="true"
+412-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:35:13-36
+413            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+413-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:36:13-107
+414            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+414-->[com.google.android.gms:play-services-auth:20.4.1] /Users/aurora/.gradle/caches/transforms-3/c468a03e4af8705f92cdf42344ac9932/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:37:13-48
+415        <uses-library
+415-->[com.google.android.gms:play-services-maps:18.1.0] /Users/aurora/.gradle/caches/transforms-3/3af652d8e361dd9c0651dc7590fa4e4a/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+416            android:name="org.apache.http.legacy"
+416-->[com.google.android.gms:play-services-maps:18.1.0] /Users/aurora/.gradle/caches/transforms-3/3af652d8e361dd9c0651dc7590fa4e4a/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+417            android:required="false" />
+417-->[com.google.android.gms:play-services-maps:18.1.0] /Users/aurora/.gradle/caches/transforms-3/3af652d8e361dd9c0651dc7590fa4e4a/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+418
+419        <activity
+419-->[com.google.android.gms:play-services-base:18.0.1] /Users/aurora/.gradle/caches/transforms-3/553a5ceecfc23434237af891d0fbf9b9/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+420            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+420-->[com.google.android.gms:play-services-base:18.0.1] /Users/aurora/.gradle/caches/transforms-3/553a5ceecfc23434237af891d0fbf9b9/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+421            android:exported="false"
+421-->[com.google.android.gms:play-services-base:18.0.1] /Users/aurora/.gradle/caches/transforms-3/553a5ceecfc23434237af891d0fbf9b9/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+422            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+422-->[com.google.android.gms:play-services-base:18.0.1] /Users/aurora/.gradle/caches/transforms-3/553a5ceecfc23434237af891d0fbf9b9/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+423
+424        <receiver
+424-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:29:9-33:20
+425            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+425-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:30:13-85
+426            android:enabled="true"
+426-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:31:13-35
+427            android:exported="false" >
+427-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:32:13-37
+428        </receiver>
+429
+430        <service
+430-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:35:9-38:40
+431            android:name="com.google.android.gms.measurement.AppMeasurementService"
+431-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:36:13-84
+432            android:enabled="true"
+432-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:37:13-35
+433            android:exported="false" />
+433-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:38:13-37
+434        <service
+434-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:39:9-43:72
+435            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+435-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:40:13-87
+436            android:enabled="true"
+436-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:41:13-35
+437            android:exported="false"
+437-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:42:13-37
+438            android:permission="android.permission.BIND_JOB_SERVICE" />
+438-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/aurora/.gradle/caches/transforms-3/0de19bb94e42c906b3c44a87a43f0119/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:43:13-69
+439        <service
+439-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/aurora/.gradle/caches/transforms-3/df3402fb853812ef2167e28d6ea1babc/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:28:9-34:19
+440            android:name="com.google.firebase.components.ComponentDiscoveryService"
+440-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/aurora/.gradle/caches/transforms-3/df3402fb853812ef2167e28d6ea1babc/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:29:13-84
+441            android:directBootAware="true"
+441-->[com.google.firebase:firebase-common:20.3.0] /Users/aurora/.gradle/caches/transforms-3/9857bed8326eea56705d55bb563be997/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:34:13-43
+442            android:exported="false" >
+442-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/aurora/.gradle/caches/transforms-3/df3402fb853812ef2167e28d6ea1babc/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:30:13-37
+443            <meta-data
+443-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/aurora/.gradle/caches/transforms-3/df3402fb853812ef2167e28d6ea1babc/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:31:13-33:85
+444                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+444-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/aurora/.gradle/caches/transforms-3/df3402fb853812ef2167e28d6ea1babc/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:32:17-139
+445                android:value="com.google.firebase.components.ComponentRegistrar" />
+445-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/aurora/.gradle/caches/transforms-3/df3402fb853812ef2167e28d6ea1babc/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:33:17-82
+446            <meta-data
+446-->[com.google.firebase:firebase-crashlytics:18.3.5] /Users/aurora/.gradle/caches/transforms-3/409ee2314b263aea039e3b626f653f07/transformed/jetified-firebase-crashlytics-18.3.5/AndroidManifest.xml:17:13-19:85
+447                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+447-->[com.google.firebase:firebase-crashlytics:18.3.5] /Users/aurora/.gradle/caches/transforms-3/409ee2314b263aea039e3b626f653f07/transformed/jetified-firebase-crashlytics-18.3.5/AndroidManifest.xml:18:17-115
+448                android:value="com.google.firebase.components.ComponentRegistrar" />
+448-->[com.google.firebase:firebase-crashlytics:18.3.5] /Users/aurora/.gradle/caches/transforms-3/409ee2314b263aea039e3b626f653f07/transformed/jetified-firebase-crashlytics-18.3.5/AndroidManifest.xml:19:17-82
+449            <meta-data
+449-->[com.google.firebase:firebase-installations:17.1.2] /Users/aurora/.gradle/caches/transforms-3/9afc6519b588cfaf06d78c85caf70867/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:17:13-19:85
+450                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+450-->[com.google.firebase:firebase-installations:17.1.2] /Users/aurora/.gradle/caches/transforms-3/9afc6519b588cfaf06d78c85caf70867/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:18:17-127
+451                android:value="com.google.firebase.components.ComponentRegistrar" />
+451-->[com.google.firebase:firebase-installations:17.1.2] /Users/aurora/.gradle/caches/transforms-3/9afc6519b588cfaf06d78c85caf70867/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:19:17-82
+452        </service>
+453
+454        <provider
+454-->[com.google.firebase:firebase-common:20.3.0] /Users/aurora/.gradle/caches/transforms-3/9857bed8326eea56705d55bb563be997/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:25:9-30:39
+455            android:name="com.google.firebase.provider.FirebaseInitProvider"
+455-->[com.google.firebase:firebase-common:20.3.0] /Users/aurora/.gradle/caches/transforms-3/9857bed8326eea56705d55bb563be997/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:26:13-77
+456            android:authorities="org.odk.collect.android.firebaseinitprovider"
+456-->[com.google.firebase:firebase-common:20.3.0] /Users/aurora/.gradle/caches/transforms-3/9857bed8326eea56705d55bb563be997/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:27:13-72
+457            android:directBootAware="true"
+457-->[com.google.firebase:firebase-common:20.3.0] /Users/aurora/.gradle/caches/transforms-3/9857bed8326eea56705d55bb563be997/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:28:13-43
+458            android:exported="false"
+458-->[com.google.firebase:firebase-common:20.3.0] /Users/aurora/.gradle/caches/transforms-3/9857bed8326eea56705d55bb563be997/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:29:13-37
+459            android:initOrder="100" />
+459-->[com.google.firebase:firebase-common:20.3.0] /Users/aurora/.gradle/caches/transforms-3/9857bed8326eea56705d55bb563be997/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:30:13-36
+460        <provider
+460-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:29:9-37:20
+461            android:name="androidx.startup.InitializationProvider"
+461-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:30:13-67
+462            android:authorities="org.odk.collect.android.androidx-startup"
+462-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:31:13-68
+463            android:exported="false" >
+463-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:32:13-37
+464            <meta-data
+464-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:34:13-36:52
+465                android:name="androidx.work.WorkManagerInitializer"
+465-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:35:17-68
+466                android:value="androidx.startup" />
+466-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:36:17-49
+467            <meta-data
+467-->[androidx.emoji2:emoji2:1.2.0] /Users/aurora/.gradle/caches/transforms-3/7a25ef720230685226b97c68803374a6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+468                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+468-->[androidx.emoji2:emoji2:1.2.0] /Users/aurora/.gradle/caches/transforms-3/7a25ef720230685226b97c68803374a6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+469                android:value="androidx.startup" />
+469-->[androidx.emoji2:emoji2:1.2.0] /Users/aurora/.gradle/caches/transforms-3/7a25ef720230685226b97c68803374a6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+470            <meta-data
+470-->[androidx.lifecycle:lifecycle-process:2.6.0] /Users/aurora/.gradle/caches/transforms-3/0cce8eaac797dd09f4bfc3c6107cbc22/transformed/jetified-lifecycle-process-2.6.0/AndroidManifest.xml:29:13-31:52
+471                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+471-->[androidx.lifecycle:lifecycle-process:2.6.0] /Users/aurora/.gradle/caches/transforms-3/0cce8eaac797dd09f4bfc3c6107cbc22/transformed/jetified-lifecycle-process-2.6.0/AndroidManifest.xml:30:17-78
+472                android:value="androidx.startup" />
+472-->[androidx.lifecycle:lifecycle-process:2.6.0] /Users/aurora/.gradle/caches/transforms-3/0cce8eaac797dd09f4bfc3c6107cbc22/transformed/jetified-lifecycle-process-2.6.0/AndroidManifest.xml:31:17-49
+473            <meta-data
+473-->[net.danlew:android.joda:2.12.1.1] /Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/AndroidManifest.xml:16:13-18:52
+474                android:name="net.danlew.android.joda.JodaTimeInitializer"
+474-->[net.danlew:android.joda:2.12.1.1] /Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/AndroidManifest.xml:17:17-75
+475                android:value="androidx.startup" />
+475-->[net.danlew:android.joda:2.12.1.1] /Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/AndroidManifest.xml:18:17-49
+476            <meta-data
+476-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:30:13-32:52
+477                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+477-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:31:17-85
+478                android:value="androidx.startup" />
+478-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:32:17-49
+479        </provider>
+480
+481        <service
+481-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:39:9-45:35
+482            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+482-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:40:13-88
+483            android:directBootAware="false"
+483-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:41:13-44
+484            android:enabled="@bool/enable_system_alarm_service_default"
+484-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:42:13-72
+485            android:exported="false" />
+485-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:43:13-37
+486        <service
+486-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:46:9-52:35
+487            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+487-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:47:13-84
+488            android:directBootAware="false"
+488-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:48:13-44
+489            android:enabled="@bool/enable_system_job_service_default"
+489-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:49:13-70
+490            android:exported="true"
+490-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:50:13-36
+491            android:permission="android.permission.BIND_JOB_SERVICE" />
+491-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:51:13-69
+492        <service
+492-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:53:9-59:35
+493            android:name="androidx.work.impl.foreground.SystemForegroundService"
+493-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:54:13-81
+494            android:directBootAware="false"
+494-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:55:13-44
+495            android:enabled="@bool/enable_system_foreground_service_default"
+495-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:56:13-77
+496            android:exported="false" />
+496-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:57:13-37
+497
+498        <receiver
+498-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:61:9-66:35
+499            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+499-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:62:13-88
+500            android:directBootAware="false"
+500-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:63:13-44
+501            android:enabled="true"
+501-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:64:13-35
+502            android:exported="false" />
+502-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:65:13-37
+503        <receiver
+503-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:67:9-77:20
+504            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+504-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:68:13-106
+505            android:directBootAware="false"
+505-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:69:13-44
+506            android:enabled="false"
+506-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:70:13-36
+507            android:exported="false" >
+507-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:71:13-37
+508            <intent-filter>
+508-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:73:13-76:29
+509                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+509-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:74:17-87
+509-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:74:25-84
+510                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+510-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:75:17-90
+510-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:75:25-87
+511            </intent-filter>
+512        </receiver>
+513        <receiver
+513-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:78:9-88:20
+514            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+514-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:79:13-104
+515            android:directBootAware="false"
+515-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:80:13-44
+516            android:enabled="false"
+516-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:81:13-36
+517            android:exported="false" >
+517-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:82:13-37
+518            <intent-filter>
+518-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:84:13-87:29
+519                <action android:name="android.intent.action.BATTERY_OKAY" />
+519-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:85:17-77
+519-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:85:25-74
+520                <action android:name="android.intent.action.BATTERY_LOW" />
+520-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:86:17-76
+520-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:86:25-73
+521            </intent-filter>
+522        </receiver>
+523        <receiver
+523-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:89:9-99:20
+524            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+524-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:90:13-104
+525            android:directBootAware="false"
+525-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:91:13-44
+526            android:enabled="false"
+526-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:92:13-36
+527            android:exported="false" >
+527-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:93:13-37
+528            <intent-filter>
+528-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:95:13-98:29
+529                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+529-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:96:17-83
+529-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:96:25-80
+530                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+530-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:97:17-82
+530-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:97:25-79
+531            </intent-filter>
+532        </receiver>
+533        <receiver
+533-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:100:9-109:20
+534            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+534-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:101:13-103
+535            android:directBootAware="false"
+535-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:102:13-44
+536            android:enabled="false"
+536-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:103:13-36
+537            android:exported="false" >
+537-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:104:13-37
+538            <intent-filter>
+538-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:106:13-108:29
+539                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+539-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:107:17-79
+539-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:107:25-76
+540            </intent-filter>
+541        </receiver>
+542        <receiver
+542-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:110:9-121:20
+543            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+543-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:111:13-88
+544            android:directBootAware="false"
+544-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:112:13-44
+545            android:enabled="false"
+545-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:113:13-36
+546            android:exported="false" >
+546-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:114:13-37
+547            <intent-filter>
+547-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:116:13-120:29
+548                <action android:name="android.intent.action.BOOT_COMPLETED" />
+548-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:17-79
+548-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:25-76
+549                <action android:name="android.intent.action.TIME_SET" />
+549-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:118:17-73
+549-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:118:25-70
+550                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+550-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:119:17-81
+550-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:119:25-78
+551            </intent-filter>
+552        </receiver>
+553        <receiver
+553-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:122:9-131:20
+554            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+554-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:123:13-99
+555            android:directBootAware="false"
+555-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:124:13-44
+556            android:enabled="@bool/enable_system_alarm_service_default"
+556-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:125:13-72
+557            android:exported="false" >
+557-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:126:13-37
+558            <intent-filter>
+558-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:128:13-130:29
+559                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+559-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:129:17-98
+559-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:129:25-95
+560            </intent-filter>
+561        </receiver>
+562        <receiver
+562-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:132:9-142:20
+563            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+563-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:133:13-78
+564            android:directBootAware="false"
+564-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:134:13-44
+565            android:enabled="true"
+565-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:135:13-35
+566            android:exported="true"
+566-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:136:13-36
+567            android:permission="android.permission.DUMP" >
+567-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:137:13-57
+568            <intent-filter>
+568-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:139:13-141:29
+569                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+569-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:140:17-88
+569-->[androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/transforms-3/853c608772bf54c55d62a986c36edca2/transformed/work-runtime-2.8.0/AndroidManifest.xml:140:25-85
+570            </intent-filter>
+571        </receiver>
+572
+573        <service
+573-->[androidx.camera:camera-camera2:1.2.1] /Users/aurora/.gradle/caches/transforms-3/3d75f2a06132eb48748c760f9520d255/transformed/jetified-camera-camera2-1.2.1/AndroidManifest.xml:24:9-33:19
+574            android:name="androidx.camera.core.impl.MetadataHolderService"
+574-->[androidx.camera:camera-camera2:1.2.1] /Users/aurora/.gradle/caches/transforms-3/3d75f2a06132eb48748c760f9520d255/transformed/jetified-camera-camera2-1.2.1/AndroidManifest.xml:25:13-75
+575            android:enabled="false"
+575-->[androidx.camera:camera-camera2:1.2.1] /Users/aurora/.gradle/caches/transforms-3/3d75f2a06132eb48748c760f9520d255/transformed/jetified-camera-camera2-1.2.1/AndroidManifest.xml:26:13-36
+576            android:exported="false" >
+576-->[androidx.camera:camera-camera2:1.2.1] /Users/aurora/.gradle/caches/transforms-3/3d75f2a06132eb48748c760f9520d255/transformed/jetified-camera-camera2-1.2.1/AndroidManifest.xml:27:13-37
+577            <meta-data
+577-->[androidx.camera:camera-camera2:1.2.1] /Users/aurora/.gradle/caches/transforms-3/3d75f2a06132eb48748c760f9520d255/transformed/jetified-camera-camera2-1.2.1/AndroidManifest.xml:30:13-32:89
+578                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+578-->[androidx.camera:camera-camera2:1.2.1] /Users/aurora/.gradle/caches/transforms-3/3d75f2a06132eb48748c760f9520d255/transformed/jetified-camera-camera2-1.2.1/AndroidManifest.xml:31:17-103
+579                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+579-->[androidx.camera:camera-camera2:1.2.1] /Users/aurora/.gradle/caches/transforms-3/3d75f2a06132eb48748c760f9520d255/transformed/jetified-camera-camera2-1.2.1/AndroidManifest.xml:32:17-86
+580        </service>
+581
+582        <activity
+582-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:27:9-34:20
+583            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+583-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:28:13-99
+584            android:exported="true"
+584-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:29:13-36
+585            android:theme="@style/WhiteBackgroundTheme" >
+585-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:30:13-56
+586            <intent-filter android:priority="-100" >
+586-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:13-33:29
+586-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:28-51
+587                <category android:name="android.intent.category.LAUNCHER" />
+587-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:17-77
+587-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:27-74
+588            </intent-filter>
+589        </activity>
+590        <activity
+590-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:35:9-42:20
+591            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+591-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:36:13-95
+592            android:exported="true"
+592-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:37:13-36
+593            android:theme="@style/WhiteBackgroundTheme" >
+593-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:38:13-56
+594            <intent-filter android:priority="-100" >
+594-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:13-33:29
+594-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:28-51
+595                <category android:name="android.intent.category.LAUNCHER" />
+595-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:17-77
+595-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:27-74
+596            </intent-filter>
+597        </activity>
+598        <activity
+598-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:43:9-50:20
+599            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+599-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:44:13-103
+600            android:exported="true"
+600-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:45:13-36
+601            android:theme="@style/WhiteBackgroundDialogTheme" >
+601-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:46:13-62
+602            <intent-filter android:priority="-100" >
+602-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:13-33:29
+602-->[androidx.test:core:1.5.0] /Users/aurora/.gradle/caches/transforms-3/106c469348dc50668c3d22c82e2603b5/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:28-51
+603                <category android:name="android.intent.category.LAUNCHER" />
+603-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:17-77
+603-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:27-74
+604            </intent-filter>
+605        </activity>
+606
+607        <uses-library
+607-->[androidx.window:window:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e44e45c0c5ae7f757abac16c07d1c295/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+608            android:name="androidx.window.extensions"
+608-->[androidx.window:window:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e44e45c0c5ae7f757abac16c07d1c295/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+609            android:required="false" />
+609-->[androidx.window:window:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e44e45c0c5ae7f757abac16c07d1c295/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+610        <uses-library
+610-->[androidx.window:window:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e44e45c0c5ae7f757abac16c07d1c295/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+611            android:name="androidx.window.sidecar"
+611-->[androidx.window:window:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e44e45c0c5ae7f757abac16c07d1c295/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+612            android:required="false" />
+612-->[androidx.window:window:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e44e45c0c5ae7f757abac16c07d1c295/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+613
+614        <service
+614-->[androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+615            android:name="androidx.room.MultiInstanceInvalidationService"
+615-->[androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+616            android:directBootAware="true"
+616-->[androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+617            android:exported="false" />
+617-->[androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+618
+619        <provider
+619-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:32:9-40:20
+620            android:name="leakcanary.internal.LeakCanaryFileProvider"
+620-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:33:13-70
+621            android:authorities="com.squareup.leakcanary.fileprovider.org.odk.collect.android"
+621-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:34:13-88
+622            android:exported="false"
+622-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:35:13-37
+623            android:grantUriPermissions="true" >
+623-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:36:13-47
+624            <meta-data
+624-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:37:13-39:66
+625                android:name="android.support.FILE_PROVIDER_PATHS"
+625-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:38:17-67
+626                android:resource="@xml/leak_canary_file_paths" />
+626-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:39:17-63
+627        </provider>
+628
+629        <activity
+629-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:42:9-73:20
+630            android:name="leakcanary.internal.activity.LeakActivity"
+630-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:43:13-69
+631            android:exported="true"
+631-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:44:13-36
+632            android:icon="@mipmap/leak_canary_icon"
+632-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:45:13-52
+633            android:label="@string/leak_canary_display_activity_label"
+633-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:46:13-71
+634            android:taskAffinity="com.squareup.leakcanary.org.odk.collect.android"
+634-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:47:13-76
+635            android:theme="@style/leak_canary_LeakCanary.Base" >
+635-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:48:13-63
+636            <intent-filter android:label="@string/leak_canary_import_hprof_file" >
+636-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:49:13-72:29
+636-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:49:28-81
+637                <action android:name="android.intent.action.VIEW" />
+637-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:17-69
+637-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:268:25-66
+638
+639                <category android:name="android.intent.category.DEFAULT" />
+639-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:17-76
+639-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:106:27-73
+640                <category android:name="android.intent.category.BROWSABLE" />
+640-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:53:17-78
+640-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:53:27-75
+641
+642                <data android:scheme="file" />
+642-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+643                <data android:scheme="content" />
+643-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+644                <data android:mimeType="*/*" />
+644-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+644-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:23-81
+645                <data android:host="*" />
+645-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+646                <data android:pathPattern=".*\\.hprof" />
+646-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+647                <data android:pathPattern=".*\\..*\\.hprof" />
+647-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+648                <data android:pathPattern=".*\\..*\\..*\\.hprof" />
+648-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+649                <data android:pathPattern=".*\\..*\\..*\\..*\\.hprof" />
+649-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+650                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.hprof" />
+650-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+651                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
+651-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+652                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
+652-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:274:17-84
+653                <!--
+654            Since hprof isn't a standard MIME type, we have to declare such patterns.
+655            Most file providers will generate URIs including their own package name,
+656            which contains `.` characters that must be explicitly escaped in pathPattern.
+657            @see https://stackoverflow.com/a/31028507/703646
+658                -->
+659            </intent-filter>
+660        </activity>
+661
+662        <activity-alias
+662-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:75:9-92:26
+663            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+663-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:76:13-77
+664            android:banner="@drawable/leak_canary_tv_icon"
+664-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:77:13-59
+665            android:enabled="@bool/leak_canary_add_launcher_icon"
+665-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:78:13-66
+666            android:exported="true"
+666-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:79:13-36
+667            android:icon="@mipmap/leak_canary_icon"
+667-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:80:13-52
+668            android:label="@string/leak_canary_display_activity_label"
+668-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:81:13-71
+669            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+669-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:82:13-79
+670            android:taskAffinity="com.squareup.leakcanary.org.odk.collect.android"
+670-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:83:13-76
+671            android:theme="@style/leak_canary_LeakCanary.Base" >
+671-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:84:13-63
+672            <intent-filter>
+672-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:85:13-91:29
+673                <action android:name="android.intent.action.MAIN" />
+673-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:105:17-69
+673-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:105:25-66
+674
+675                <category android:name="android.intent.category.LAUNCHER" />
+675-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:17-77
+675-->/Users/aurora/Documents/odk/odk/collect-master/collect_app/src/main/AndroidManifest.xml:107:27-74
+676                <!-- Android TV launcher intent -->
+677                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+677-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:90:17-86
+677-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:90:27-83
+678            </intent-filter>
+679        </activity-alias>
+680
+681        <activity
+681-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:94:9-100:68
+682            android:name="leakcanary.internal.RequestPermissionActivity"
+682-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:95:13-73
+683            android:excludeFromRecents="true"
+683-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:96:13-46
+684            android:icon="@mipmap/leak_canary_icon"
+684-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:97:13-52
+685            android:label="@string/leak_canary_storage_permission_activity_label"
+685-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:98:13-82
+686            android:taskAffinity="com.squareup.leakcanary.org.odk.collect.android"
+686-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:99:13-76
+687            android:theme="@style/leak_canary_Theme.Transparent" />
+687-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:100:13-65
+688
+689        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+689-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:102:9-77
+689-->[com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:102:19-74
+690        <receiver
+690-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:35:9-47:20
+691            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+691-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:36:13-76
+692            android:directBootAware="false"
+692-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:37:13-44
+693            android:enabled="true"
+693-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:38:13-35
+694            android:exported="true"
+694-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:39:13-36
+695            android:permission="android.permission.DUMP" >
+695-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:40:13-57
+696            <intent-filter>
+696-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:41:13-43:29
+697                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+697-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:42:17-91
+697-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:42:25-88
+698            </intent-filter>
+699            <intent-filter>
+699-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:44:13-46:29
+700                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+700-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:45:17-85
+700-->[androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:45:25-82
+701            </intent-filter>
+702        </receiver>
+703
+704        <activity
+704-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+705            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+705-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+706            android:clearTaskOnLaunch="true"
+706-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+707            android:screenOrientation="sensorLandscape"
+707-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+708            android:stateNotNeeded="true"
+708-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+709            android:theme="@style/zxing_CaptureTheme"
+709-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+710            android:windowSoftInputMode="stateAlwaysHidden" />
+710-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+711
+712        <service
+712-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aurora/.gradle/caches/transforms-3/6f01cafabe1b05ad99b06f6814283b39/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+713            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+713-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aurora/.gradle/caches/transforms-3/6f01cafabe1b05ad99b06f6814283b39/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+714            android:exported="false" >
+714-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aurora/.gradle/caches/transforms-3/6f01cafabe1b05ad99b06f6814283b39/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+715            <meta-data
+715-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aurora/.gradle/caches/transforms-3/6f01cafabe1b05ad99b06f6814283b39/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+716                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+716-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aurora/.gradle/caches/transforms-3/6f01cafabe1b05ad99b06f6814283b39/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+717                android:value="cct" />
+717-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/aurora/.gradle/caches/transforms-3/6f01cafabe1b05ad99b06f6814283b39/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+718        </service>
+719        <service
+719-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+720            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+720-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+721            android:exported="false"
+721-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+722            android:permission="android.permission.BIND_JOB_SERVICE" >
+722-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+723        </service>
+724
+725        <receiver
+725-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+726            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+726-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+727            android:exported="false" />
+727-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+728
+729        <provider
+729-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:8:9-12:40
+730            android:name="leakcanary.internal.MainProcessAppWatcherInstaller"
+730-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:9:13-78
+731            android:authorities="org.odk.collect.android.leakcanary-installer"
+731-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:10:13-72
+732            android:enabled="@bool/leak_canary_watcher_auto_install"
+732-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:11:13-69
+733            android:exported="false" />
+733-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:12:13-37
+734        <provider
+734-->[com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:8:9-12:40
+735            android:name="leakcanary.internal.PlumberInstaller"
+735-->[com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:9:13-64
+736            android:authorities="org.odk.collect.android.plumber-installer"
+736-->[com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:10:13-69
+737            android:enabled="@bool/leak_canary_plumber_auto_install"
+737-->[com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:11:13-69
+738            android:exported="false" />
+738-->[com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:12:13-37
+739    </application>
+740
+741</manifest>

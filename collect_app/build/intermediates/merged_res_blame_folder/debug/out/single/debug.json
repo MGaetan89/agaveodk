@@ -1,0 +1,1022 @@
+[
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_manual_project_creator_dialog_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/manual_project_creator_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_chooser_list.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_chooser_list.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_information_outline.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/information_outline.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_question_widget.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/question_widget.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_select_image_map_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_image_map_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_range_widget_vertical.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/range_widget_vertical.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_project_icon_background.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/project_icon_background.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable-v22_inset_check_box.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable-v22/inset_check_box.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_ex_video_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/ex_video_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_chooser_list_item_multiple_choice.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_chooser_list_item_multiple_choice.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_edit_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_edit_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_ondemand_video_black_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_ondemand_video_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_sort_by_last_saved.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_sort_by_last_saved.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_network_security_config.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_google_drive_deprecation_banner.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/google_drive_deprecation_banner.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_user_settings_access_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/user_settings_access_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable-xhdpi_notes.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable-xhdpi/notes.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_audio_recording_controller_fragment.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/audio_recording_controller_fragment.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_select_minimal_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_minimal_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_form_list_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/form_list_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_delifood.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/delifood.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_range_picker_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/range_picker_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_range_widget_horizontal.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/range_widget_horizontal.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_chat_bubble_black_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_chat_bubble_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_first_launch_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/first_launch_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_number_picker_dialog.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/number_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_submission_failed_48dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_form_state_submission_failed_48dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_reset_dialog_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/reset_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_show_qrcode_fragment.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/show_qrcode_fragment.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_saved_circle.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_saved_circle.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_color_lens_white.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_color_lens_white.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_cloud_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_cloud_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_navigate_forward_wrapped.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_navigate_forward_wrapped.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_chooser_list_item_map_button.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_chooser_list_item_map_button.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_launch_activity_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/launch_activity_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/anim_push_left_out.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/anim/push_left_out.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_inset_check_box.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/inset_check_box.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_odk_server_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/odk_server_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_dev_tools_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/dev_tools_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_captioned_list_dialog.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/captioned_list_dialog.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_provider_paths.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_changes_reason_dialog.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/changes_reason_dialog.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_project_display_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/project_display_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_chooser_list_item_text.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_chooser_list_item_text.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_main_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/main_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_color_lens_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_color_lens_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_save_white.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_save_white.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_arbitrary_file_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/arbitrary_file_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_submitted_circle.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_submitted_circle.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_waveform_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/waveform_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_folder_open.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_folder_open.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_map_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_map_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_select_minimal_dialog_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/select_minimal_dialog_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_instance_uploader_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/instance_uploader_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_project_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/project_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_launch_text_2.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/launch_text_2.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_instance_uploader_list.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/instance_uploader_list.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_person_black_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_person_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_hierarchy_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/hierarchy_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_menu_share.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_menu_share.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_about_item_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/about_item_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_no_buttons_item_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/no_buttons_item_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_close.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_search_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_trigger_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/trigger_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_refresh_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_refresh_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_access_control_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/access_control_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/color_slider_tick_tint_list.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/color/slider_tick_tint_list.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_assignment_late.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_assignment_late.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_clear_white.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_clear_white.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_info_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_info_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_item_view_option.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/item_view_option.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_lock_open_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_lock_open_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_audio_controller_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/audio_controller_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_identify_user_dialog.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/identify_user_dialog.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_delete_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_delete_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_assignment_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_assignment_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_entry.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_entry.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_pause_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_pause_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable-xxhdpi_notes.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable-xxhdpi/notes.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_ranking_item.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/ranking_item.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_launch_icon.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/launch_icon.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_refresh_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_refresh_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_menu_goto_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_menu_goto_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_delete_menu_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_delete_menu_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_select_multi_item.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_multi_item.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_odk_logo.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/odk_logo.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_login_activity_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/login_activity_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_share_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_share_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_transparent_progress_screen.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/transparent_progress_screen.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_map_activity.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_map_activity.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_sort_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_sort_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/anim_fade_out.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/anim/fade_out.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_current_project_menu_icon.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/current_project_menu_icon.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_finalized_circle.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_finalized_circle.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_save_menu_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_save_menu_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_project_management_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/project_management_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_help_outline_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_help_outline_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_authentication_verify_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/authentication_verify_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_activity_preferences_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/activity_preferences_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_odk_view.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/odk_view.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_captioned_item.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/captioned_item.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_help_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/help_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_identity_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/identity_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_project_list_item.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/project_list_item.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_audio_video_image_text_label.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/audio_video_image_text_label.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_select_one_from_map_dialog_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_one_from_map_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_launch_text_3.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/launch_text_3.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_repeat.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_repeat.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_rate_review_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_rate_review_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/anim_push_left_in.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/anim/push_left_in.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_sort.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_sort.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_file_manager_list.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/file_manager_list.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_arrow_up.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/arrow_up.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_complete_48dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_form_state_complete_48dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_project_settings_dialog_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/project_settings_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_form_hierarchy_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/form_hierarchy_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_stop_black_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_stop_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_label_widget.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/label_widget.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_entry_end.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_entry_end.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_pill_filled.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/pill_filled.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_vpn_key_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_vpn_key_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_settings_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_settings_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_bearing_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/bearing_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_incomplete_48dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_form_state_incomplete_48dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_form_metadata_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/form_metadata_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_chooser_list_item.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_chooser_list_item.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_add_circle_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_add_circle_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_visibility.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_password_dialog_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/password_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_error_access_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/error_access_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/raw_isrgrootx1.pem.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/raw/isrgrootx1.pem"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_splash_screen_icon.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/splash_screen_icon.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_experimental_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/experimental_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_delete_outline_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_delete_outline_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_user_interface_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/user_interface_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/color_slider_track_tint_list.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/color/slider_track_tint_list.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_ex_arbitrary_file_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/ex_arbitrary_file_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_add_white.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_add_white.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_cancel.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_cancel.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_project_icon_view.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/project_icon_view.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_server_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/server_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_submitted_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_form_state_submitted_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_select_list_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_list_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_date_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/date_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_folder.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_folder.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_splash_launch.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/splash_launch.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable-v22_inset_radio_button.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable-v22/inset_radio_button.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_app_bar_with_progress_bar_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/app_bar_with_progress_bar_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_navigate_forward.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_navigate_forward.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_reference_layer_help_footer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/reference_layer_help_footer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_geo_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/geo_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_draw_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/draw_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_google_drive_list.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/google_drive_list.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_forum_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_forum_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable-hdpi_notes.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable-hdpi/notes.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_edit.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_main_background.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_main_background.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_verify.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/verify.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_phonelink_setup_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_phonelink_setup_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_menu_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_menu_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_select_one_item.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_one_item.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_pin_authentication_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/pin_authentication_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_refresh_error_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_refresh_error_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_audio_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/audio_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_select_item_border.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/select_item_border.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_activity_blank_form_list.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/activity_blank_form_list.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_select_minimal_dialog_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_minimal_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_background_audio_help_fragment_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/background_audio_help_fragment_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_date_time_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/date_time_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_form_management_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/form_management_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_face_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_face_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_fragment_scan.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/fragment_scan.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_ex_audio_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/ex_audio_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_chooser_list_item_icon.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_chooser_list_item_icon.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_hierarchy_element.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/hierarchy_element.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/raw_third_party_licenses.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-debug-93:/raw/third_party_licenses"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_submission_failed_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_form_state_submission_failed_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_submission_failed_circle.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_submission_failed_circle.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable-mdpi_notes.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable-mdpi/notes.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_inset_radio_button.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/inset_radio_button.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_ex_image_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/ex_image_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_submited.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_submited.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_map.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_map.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_google_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/google_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_form_download_list.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/form_download_list.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_activity_web_view.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/activity_web_view.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/raw_third_party_license_metadata.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-debug-93:/raw/third_party_license_metadata"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_mic_off_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_mic_off_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_pw_authentication.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/pw_authentication.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_saved.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_saved.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_custom_date_picker_dialog.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/custom_date_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_audio_player_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/audio_player_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_submission_failed.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_submission_failed.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_qr_code_scanner_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_qr_code_scanner_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_main_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_admin_password_dialog_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/admin_password_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_incomplete_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_form_state_incomplete_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_form_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/form_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_about_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/about_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_assignment_turned_in.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_assignment_turned_in.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/anim_fade_in.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/anim/fade_in.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_time_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/time_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_inset_divider_64dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/inset_divider_64dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_blank_form_list_item.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/blank_form_list_item.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_verify_img.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/verify_img.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_select_one_from_map_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_one_from_map_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_submitted_48dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_form_state_submitted_48dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_navigate_back.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_navigate_back.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_finalized.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_finalized.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_barcode_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/barcode_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_project_preferences_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/project_preferences_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_qr_code_project_creator_dialog_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/qr_code_project_creator_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_list_item_divider.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/list_item_divider.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_bottom_sheet.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/bottom_sheet.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_progress_bar_view.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/progress_bar_view.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_activity_custom_scanner.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/activity_custom_scanner.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_server_auth_dialog.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/server_auth_dialog.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_maps_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/maps_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/menu_qr_code_scan_menu.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/menu/qr_code_scan_menu.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/anim_push_right_out.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/anim/push_right_out.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_arrow_drop_down.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_arrow_drop_down.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_widget_answer_button.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/widget_answer_button.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_info_small.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_info_small.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_lock_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_lock_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_settings_applications_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_settings_applications_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_navigate_back_wrapped.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_navigate_back_wrapped.xml"
+    },
+    {
+        "merged": "org.odk.collect.android.collect_app-merged_res-96:/layout_login_activity_layout.xml.flat",
+        "source": "org.odk.collect.android.collect_app-main-98:/layout/login_activity_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_volume_up_black_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_volume_up_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_rating_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/rating_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable-xxxhdpi_notes.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable-xxxhdpi/notes.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_stars_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_stars_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_access_time.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_access_time.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_form_entry_access_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/form_entry_access_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_complete_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_form_state_complete_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_url_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/url_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_sort_item_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/sort_item_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_osm_widget_answer.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/osm_widget_answer.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_changes_reason_dialog.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/changes_reason_dialog.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_attachment.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_attachment.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/anim_push_right_in.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/anim/push_right_in.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/xml_main_menu_access_preferences.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/xml/main_menu_access_preferences.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_named_view_ids.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/named_view_ids.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_play_arrow_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_play_arrow_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_black_24dp.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_room_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_warning_accent_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_warning_accent_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_lock_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_lock_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_arrow_back.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_form_state_blank_circle.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/form_state_blank_circle.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_qr_code_scanner_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_qr_code_scanner_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_splash_screen_launch.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/splash_screen_launch.png"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_sort_by_alpha.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_sort_by_alpha.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_tabs_layout.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/tabs_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_website_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_website_24.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_pill_unfilled.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/pill_unfilled.xml"
+    }
+]

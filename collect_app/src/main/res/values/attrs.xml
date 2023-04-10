@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Collect">
+        <attr name="iconColor" format="color" />
+        <attr name="dividerCompat" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="Waveform">
+        <attr name="mini" format="boolean" />
+    </declare-styleable>
+</resources>

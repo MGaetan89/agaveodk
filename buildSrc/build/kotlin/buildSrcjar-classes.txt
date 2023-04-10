@@ -1,0 +1,1 @@
+/Users/aurora/Documents/odk/odk/collect-master/buildSrc/build/classes/kotlin/main/dependencies/Dependencies.class:/Users/aurora/Documents/odk/odk/collect-master/buildSrc/build/classes/kotlin/main/dependencies/Versions.class
