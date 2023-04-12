@@ -2951,6 +2951,7 @@ drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
 drawable ic_main_background
+drawable ic_main_launch
 drawable ic_map
 drawable ic_map_marker_big
 drawable ic_map_marker_small

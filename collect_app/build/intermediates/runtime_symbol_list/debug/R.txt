@@ -2950,6 +2950,7 @@ int drawable ic_m3_chip_check 0x7f0800d7
 int drawable ic_m3_chip_checked_circle 0x7f0800d8
 int drawable ic_m3_chip_close 0x7f0800d9
 int drawable ic_main_background 0x7f0800da
+int drawable ic_main_launch 0x7f0801ac
 int drawable ic_map 0x7f0800db
 int drawable ic_map_marker_big 0x7f0800dc
 int drawable ic_map_marker_small 0x7f0800dd

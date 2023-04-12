@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="org.odk.collect.android"
 4    android:versionCode="1071"
-5    android:versionName="14a3a57-dirty" >
+5    android:versionName="633d822-dirty" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
