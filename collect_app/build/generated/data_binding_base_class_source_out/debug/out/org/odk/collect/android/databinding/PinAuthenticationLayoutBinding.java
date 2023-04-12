@@ -39,13 +39,10 @@ public final class PinAuthenticationLayoutBinding implements ViewBinding {
   @NonNull
   public final TextView textView5;
 
-  @NonNull
-  public final TextView textView6;
-
   private PinAuthenticationLayoutBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText editTextPin, @NonNull ImageView imageView2,
       @NonNull ConstraintLayout pinAuthentication, @NonNull TextView textView,
-      @NonNull TextView textView2, @NonNull TextView textView5, @NonNull TextView textView6) {
+      @NonNull TextView textView2, @NonNull TextView textView5) {
     this.rootView = rootView;
     this.editTextPin = editTextPin;
     this.imageView2 = imageView2;
@@ -53,7 +50,6 @@ public final class PinAuthenticationLayoutBinding implements ViewBinding {
     this.textView = textView;
     this.textView2 = textView2;
     this.textView5 = textView5;
-    this.textView6 = textView6;
   }
 
   @Override
@@ -115,14 +111,8 @@ public final class PinAuthenticationLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
-        break missingId;
-      }
-
       return new PinAuthenticationLayoutBinding((ConstraintLayout) rootView, editTextPin,
-          imageView2, pinAuthentication, textView, textView2, textView5, textView6);
+          imageView2, pinAuthentication, textView, textView2, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

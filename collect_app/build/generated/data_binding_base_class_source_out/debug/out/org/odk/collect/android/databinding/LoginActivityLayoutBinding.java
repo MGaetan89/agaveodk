@@ -31,24 +31,16 @@ public final class LoginActivityLayoutBinding implements ViewBinding {
   public final TextView textView;
 
   @NonNull
-  public final TextView textView2;
-
-  @NonNull
   public final TextView textView5;
-
-  @NonNull
-  public final TextView textView6;
 
   private LoginActivityLayoutBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button biometricLogin, @NonNull ImageView imageView2, @NonNull TextView textView,
-      @NonNull TextView textView2, @NonNull TextView textView5, @NonNull TextView textView6) {
+      @NonNull TextView textView5) {
     this.rootView = rootView;
     this.biometricLogin = biometricLogin;
     this.imageView2 = imageView2;
     this.textView = textView;
-    this.textView2 = textView2;
     this.textView5 = textView5;
-    this.textView6 = textView6;
   }
 
   @Override
@@ -96,26 +88,14 @@ public final class LoginActivityLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
-        break missingId;
-      }
-
       id = R.id.textView5;
       TextView textView5 = ViewBindings.findChildViewById(rootView, id);
       if (textView5 == null) {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
-        break missingId;
-      }
-
       return new LoginActivityLayoutBinding((ConstraintLayout) rootView, biometricLogin, imageView2,
-          textView, textView2, textView5, textView6);
+          textView, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

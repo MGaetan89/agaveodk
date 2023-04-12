@@ -3033,6 +3033,7 @@ drawable inset_check_box
 drawable inset_divider_64dp
 drawable inset_radio_button
 drawable launch_icon
+drawable launch_img
 drawable launch_text_2
 drawable launch_text_3
 drawable leak_canary_count_background
@@ -3261,7 +3262,6 @@ id audio_controller
 id audio_player
 id audio_recording_controller
 id audio_video_image_text_label_container
-id authentication_verify
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3534,6 +3534,8 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageView4
+id imageView5
 id imageView6
 id image_map
 id image_text_label_container
@@ -3942,6 +3944,8 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
+id textView4
 id textView5
 id textView6
 id text_container

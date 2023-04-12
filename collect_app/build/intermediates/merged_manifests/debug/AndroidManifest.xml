@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.odk.collect.android"
     android:versionCode="1071"
-    android:versionName="633d822-dirty" >
+    android:versionName="9438a2e-dirty" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -122,7 +122,6 @@
         android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.Collect"
         android:usesCleartextTraffic="true" >
         <provider

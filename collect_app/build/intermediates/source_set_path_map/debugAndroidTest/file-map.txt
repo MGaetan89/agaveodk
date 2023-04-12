@@ -40,9 +40,9 @@ org.odk.collect.android.test.collect_app-lifecycle-livedata-2.6.0-38 /Users/auro
 org.odk.collect.android.test.collect_app-material-1.7.0-39 /Users/aurora/.gradle/caches/transforms-3/f7b5d9dd80c01b42e3b8da4221ef6ea9/transformed/material-1.7.0/res
 org.odk.collect.android.test.collect_app-work-testing-2.8.0-40 /Users/aurora/.gradle/caches/transforms-3/fc26555109ce82847aa26a421e89cded/transformed/work-testing-2.8.0/res
 org.odk.collect.android.test.collect_app-jetified-lifecycle-runtime-ktx-2.6.0-41 /Users/aurora/.gradle/caches/transforms-3/fce467214b54a2167b818be7cd599de2/transformed/jetified-lifecycle-runtime-ktx-2.6.0/res
-org.odk.collect.android.test.collect_app-packaged_res-42 /Users/aurora/Documents/odk/odk/collect-master/androidtest/build/intermediates/packaged_res/debug
-org.odk.collect.android.test.collect_app-androidTest-43 /Users/aurora/Documents/odk/odk/collect-master/collect_app/build/generated/res/resValues/androidTest/debug
-org.odk.collect.android.test.collect_app-androidTest-44 /Users/aurora/Documents/odk/odk/collect-master/collect_app/build/generated/res/rs/androidTest/debug
-org.odk.collect.android.test.collect_app-mergeDebugAndroidTestResources-45 /Users/aurora/Documents/odk/odk/collect-master/collect_app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-org.odk.collect.android.test.collect_app-mergeDebugAndroidTestResources-46 /Users/aurora/Documents/odk/odk/collect-master/collect_app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-org.odk.collect.android.test.collect_app-merged_res-47 /Users/aurora/Documents/odk/odk/collect-master/collect_app/build/intermediates/merged_res/debugAndroidTest
+org.odk.collect.android.test.collect_app-packaged_res-42 /Users/aurora/Documents/odk/agaveodk/androidtest/build/intermediates/packaged_res/debug
+org.odk.collect.android.test.collect_app-androidTest-43 /Users/aurora/Documents/odk/agaveodk/collect_app/build/generated/res/resValues/androidTest/debug
+org.odk.collect.android.test.collect_app-androidTest-44 /Users/aurora/Documents/odk/agaveodk/collect_app/build/generated/res/rs/androidTest/debug
+org.odk.collect.android.test.collect_app-mergeDebugAndroidTestResources-45 /Users/aurora/Documents/odk/agaveodk/collect_app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+org.odk.collect.android.test.collect_app-mergeDebugAndroidTestResources-46 /Users/aurora/Documents/odk/agaveodk/collect_app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+org.odk.collect.android.test.collect_app-merged_res-47 /Users/aurora/Documents/odk/agaveodk/collect_app/build/intermediates/merged_res/debugAndroidTest

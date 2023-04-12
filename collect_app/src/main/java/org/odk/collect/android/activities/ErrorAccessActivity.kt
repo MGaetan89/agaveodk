@@ -14,10 +14,10 @@ class ErrorAccessActivity : LocalizedActivity() {
         setContentView(R.layout.error_access_layout)
 
         MaterialAlertDialogBuilder(this)
-            .setTitle("DeliFood isn't responding")
-            .setMessage("Do you want to close it?")
-            .setPositiveButton("Close") { _, _ -> returnLogin() }
-            .setNegativeButton("Wait") { _, _ -> retry() }
+            .setTitle("DeliFood no responde")
+            .setMessage("¿Quieres cerrar la aplicación?")
+            .setPositiveButton("Cerrar") { _, _ -> returnLogin() }
+            .setNegativeButton("Esperar") { _, _ -> retry() }
             .create()
             .show()
     }

@@ -61,7 +61,7 @@ class LoginActivity : LocalizedActivity() {
             .setTitle("Biometric login")
             .setSubtitle("Log in using your biometric credential")
             .setAllowedAuthenticators(BIOMETRIC_STRONG)
-            .setNegativeButtonText("Use pin")
+            .setNegativeButtonText("Usar pin")
             .build()
 
         val canAuthenticate = BiometricManager.from(applicationContext).canAuthenticate(BIOMETRIC_STRONG)
@@ -80,7 +80,6 @@ class LoginActivity : LocalizedActivity() {
     }
 
     private fun loginWithPassword() {
-        Timber.d("********* use Pin: ");
         ActivityUtils.startActivityAndCloseAllOthers(
             this@LoginActivity,
             PinAuthenticationActivity::class.java

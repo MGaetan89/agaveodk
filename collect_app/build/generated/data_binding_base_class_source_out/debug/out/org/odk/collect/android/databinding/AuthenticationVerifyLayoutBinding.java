@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,21 +21,20 @@ public final class AuthenticationVerifyLayoutBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView authenticationVerify;
-
-  @NonNull
   public final ImageView delifood;
 
   @NonNull
   public final ImageView imageView6;
 
+  @NonNull
+  public final TextView textView6;
+
   private AuthenticationVerifyLayoutBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView authenticationVerify, @NonNull ImageView delifood,
-      @NonNull ImageView imageView6) {
+      @NonNull ImageView delifood, @NonNull ImageView imageView6, @NonNull TextView textView6) {
     this.rootView = rootView;
-    this.authenticationVerify = authenticationVerify;
     this.delifood = delifood;
     this.imageView6 = imageView6;
+    this.textView6 = textView6;
   }
 
   @Override
@@ -64,12 +64,6 @@ public final class AuthenticationVerifyLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.authentication_verify;
-      ImageView authenticationVerify = ViewBindings.findChildViewById(rootView, id);
-      if (authenticationVerify == null) {
-        break missingId;
-      }
-
       id = R.id.delifood;
       ImageView delifood = ViewBindings.findChildViewById(rootView, id);
       if (delifood == null) {
@@ -82,8 +76,14 @@ public final class AuthenticationVerifyLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AuthenticationVerifyLayoutBinding((ConstraintLayout) rootView,
-          authenticationVerify, delifood, imageView6);
+      id = R.id.textView6;
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
+      if (textView6 == null) {
+        break missingId;
+      }
+
+      return new AuthenticationVerifyLayoutBinding((ConstraintLayout) rootView, delifood,
+          imageView6, textView6);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

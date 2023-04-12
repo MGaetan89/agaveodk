@@ -332,10 +332,6 @@
         "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/launch_icon.xml"
     },
     {
-        "merged": "org.odk.collect.android.collect_app-merged_res-96:/layout_launch_activity_layout.xml.flat",
-        "source": "org.odk.collect.android.collect_app-main-98:/layout/launch_activity_layout.xml"
-    },
-    {
         "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_outline_refresh_accent_24.xml.flat",
         "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_outline_refresh_accent_24.xml"
     },
@@ -656,12 +652,12 @@
         "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/select_one_item.xml"
     },
     {
-        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_refresh_error_24.xml.flat",
-        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_refresh_error_24.xml"
-    },
-    {
         "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_pin_authentication_layout.xml.flat",
         "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/pin_authentication_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_baseline_refresh_error_24.xml.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/ic_baseline_refresh_error_24.xml"
     },
     {
         "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_audio_widget_answer.xml.flat",
@@ -794,6 +790,10 @@
     {
         "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_admin_password_dialog_layout.xml.flat",
         "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/admin_password_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_launch_img.png.flat",
+        "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/drawable/launch_img.png"
     },
     {
         "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/drawable_ic_room_form_state_incomplete_24dp.xml.flat",
@@ -946,6 +946,10 @@
     {
         "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_url_widget_answer.xml.flat",
         "source": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-main-98:/layout/url_widget_answer.xml"
+    },
+    {
+        "merged": "org.odk.collect.android.collect_app-merged_res-96:/layout_authentication_verify_layout.xml.flat",
+        "source": "org.odk.collect.android.collect_app-main-98:/layout/authentication_verify_layout.xml"
     },
     {
         "merged": "/Users/aurora/.gradle/daemon/8.0.2/org.odk.collect.android.collect_app-merged_res-96:/layout_sort_item_layout.xml.flat",
