@@ -1,13 +1,14 @@
 package org.odk.collect.android.activities
 
 import android.os.Bundle
-import android.os.Handler
 import org.odk.collect.android.R
 import org.odk.collect.strings.localization.LocalizedActivity
+import android.os.Handler
 
 class AuthenticationVerifyActivity : LocalizedActivity() {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.authentication_verify_layout)
 

@@ -83,10 +83,7 @@
     </style>
 
     <style name="Theme.Collect.SplashScreen" parent="Theme.SplashScreen">
-        <!--<item name="windowSplashScreenBackground">@color/colorSurface</item>-->
-        <!--<item name="windowSplashScreenAnimatedIcon">@drawable/splash_launch</item>-->
-        <!--<item name="postSplashScreenTheme">@style/Theme.Collect</item>-->
-        <item name="android:windowBackground">@drawable/splash_screen_launch</item>
+        <item name="android:windowBackground">@drawable/splash_launch</item>
     </style>
 
     <!-- Need to duplicate these values as they reset due to the parent. Only needed for AlertDialog.Builder. -->

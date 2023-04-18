@@ -1460,6 +1460,7 @@ color color6
 color color7
 color color8
 color color9
+color colorBackground
 color colorError
 color colorOnError
 color colorOnPrimary

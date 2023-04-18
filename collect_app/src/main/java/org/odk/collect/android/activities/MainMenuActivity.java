@@ -88,7 +88,8 @@ public class MainMenuActivity extends LocalizedActivity {
           with the ThemeUtils#setDarkModeForCurrentProject call.
          */
         if (Build.VERSION.SDK_INT < 31) {
-            SplashScreen.installSplashScreen(this);
+            //SplashScreen.installSplashScreen(this);
+            setTheme(R.style.Theme_AppCompat);
         } else {
             setTheme(R.style.Theme_Collect);
         }

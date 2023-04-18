@@ -14,6 +14,7 @@
     <bool name="lightStatusBar">true</bool>
 
     <color name="colorVerify">#4CAF50</color>
+    <color name="colorBackground">#FEFBF1</color>
 
     <!-- This color is used for buttons that should have a similar color to colorSurface (but still
     stand out from the background).

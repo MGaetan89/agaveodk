@@ -1,5 +1,6 @@
 package org.odk.collect.android.activities
 
+import android.os.Build
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -7,12 +8,12 @@ import android.widget.EditText
 import androidx.core.content.ContextCompat
 import org.odk.collect.android.R
 import org.odk.collect.strings.localization.LocalizedActivity
-import timber.log.Timber
 
 
 class PinAuthenticationActivity : LocalizedActivity() {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pin_authentication_layout)
 

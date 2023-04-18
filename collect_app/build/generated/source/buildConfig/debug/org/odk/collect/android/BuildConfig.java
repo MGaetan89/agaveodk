@@ -8,5 +8,5 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "org.odk.collect.android";
   public static final String BUILD_TYPE = "debug";
   public static final int VERSION_CODE = 1071;
-  public static final String VERSION_NAME = "9438a2e-dirty";
+  public static final String VERSION_NAME = "979388b-dirty";
 }
