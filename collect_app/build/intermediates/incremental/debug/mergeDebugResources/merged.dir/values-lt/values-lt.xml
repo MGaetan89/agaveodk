@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item msgid="2178576254385739855" quantity="one">"rytoj"</item>
+        <item msgid="2973062968038355991" quantity="other">"po <ns1:g id="COUNT">%d</ns1:g> d."</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item msgid="3274708118124045246" quantity="one">"po 1 val."</item>
+        <item msgid="3705373766798013406" quantity="other">"po <ns1:g id="COUNT">%d</ns1:g> val."</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item msgid="562786149928284878" quantity="one">"po 1 min."</item>
+        <item msgid="4216113292706568726" quantity="other">"po <ns1:g id="COUNT">%d</ns1:g> min."</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item msgid="5842225370795066299" quantity="one">"po 1 sek."</item>
+        <item msgid="5495880108825805108" quantity="other">"po <ns1:g id="COUNT">%d</ns1:g> sek."</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item msgid="8463161711492680309" quantity="one">"vakar"</item>
+        <item msgid="3453342639616481191" quantity="other">"Prieš <ns1:g id="COUNT">%d</ns1:g> d."</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item msgid="4796212039724722116" quantity="one">"Prieš 1 valandą"</item>
+        <item msgid="6889970745748538901" quantity="other">"Prieš <ns1:g id="COUNT">%d</ns1:g> val."</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item msgid="6361490147113871545" quantity="one">"Prieš 1 min."</item>
+        <item msgid="851164968597150710" quantity="other">"Prieš <ns1:g id="COUNT">%d</ns1:g> min."</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item msgid="1849036840200069118" quantity="one">"Prieš 1 sek."</item>
+        <item msgid="3699169366650930415" quantity="other">"Prieš <ns1:g id="COUNT">%d</ns1:g> sek."</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item msgid="8917467491248809972" quantity="one">"1 val."</item>
+        <item msgid="3863962854246773930" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> val."</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item msgid="4915414002546085617" quantity="one">"1 min."</item>
+        <item msgid="3165187169224908775" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> min."</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item msgid="6962015528372969481" quantity="one">"1 sek."</item>
+        <item msgid="1886107766577166786" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sek."</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item msgid="5413088743009839518" quantity="one">"rytoj"</item>
+        <item msgid="5109449375100953247" quantity="other">"po <ns1:g id="COUNT">%d</ns1:g> d."</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item msgid="7164353342477769999" quantity="one">"po 1 val."</item>
+        <item msgid="547290677353727389" quantity="other">"po <ns1:g id="COUNT">%d</ns1:g> val."</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item msgid="8793095251325200395" quantity="one">"po 1 min."</item>
+        <item msgid="3330713936399448749" quantity="other">"po <ns1:g id="COUNT">%d</ns1:g> min."</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item msgid="2729745560954905102" quantity="one">"po 1 sek."</item>
+        <item msgid="1241926116443974687" quantity="other">"po <ns1:g id="COUNT">%d</ns1:g> sek."</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item msgid="861358534398115820" quantity="one">"vakar"</item>
+        <item msgid="2479586466153314633" quantity="other">"Prieš <ns1:g id="COUNT">%d</ns1:g> d."</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item msgid="9150797944610821849" quantity="one">"Prieš 1 valandą"</item>
+        <item msgid="2467273239587587569" quantity="other">"Prieš <ns1:g id="COUNT">%d</ns1:g> val."</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item msgid="3306787433088810191" quantity="one">"Prieš 1 minutę"</item>
+        <item msgid="2176942008915455116" quantity="other">"Prieš <ns1:g id="COUNT">%d</ns1:g> min."</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item msgid="4869870056547896011" quantity="one">"Prieš 1 sek."</item>
+        <item msgid="3903706804349556379" quantity="other">"Prieš <ns1:g id="COUNT">%d</ns1:g> sek."</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d naujas pranešimas</item>
+    <item quantity="few">%d nauji pranešimai</item>
+    <item quantity="many">%d naujo pranešimo</item>
+    <item quantity="other">%d naujų pranešimų</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Eiti į pagrindinį puslapį"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Naršyti aukštyn"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Daugiau parinkčių"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Atlikta"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Žr. viską"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Pasirinkite programą"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"IŠJUNGTI"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ĮJUNGTI"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"„Alt“ +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"„Ctrl“ +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"„delete“"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"„enter“"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"„Function“ +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"„Meta“ +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"„Shift“ +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"„space“"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"„Sym“ +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"„Menu“ +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Ieškoti…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Išvalyti užklausą"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Paieškos užklausa"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Ieškoti"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Pateikti užklausą"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Paieška balsu"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Bendrinti su"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Bendrinti naudojant programą „<ns1:g id="APPLICATION_NAME">%s</ns1:g>“"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Sutraukti"</string>
+    <string name="activity_not_found">Nerasta, kas galėtų valdyti: %s</string>
+    <string name="added_on_date_at_time">\'Sukurta\' EEE, MMM dd, yyyy HH:mm</string>
+    <string name="admin_password_changed">Administratoriaus slaptažodis sėkmingai pakeistas</string>
+    <string name="admin_password_disabled">Administratoriaus slaptažodis išjungtas</string>
+    <string name="admin_password_incorrect">Neteisingas slaptažodis!</string>
+    <string msgid="2102429900219199821" name="biometric_or_screen_lock_prompt_message">"Jei norite tęsti, naudokite biometrinius duomenis arba ekrano užraktą"</string>
+    <string msgid="1160635338192065472" name="biometric_prompt_message">"Norėdami tęsti, naudokite biometrinius duomenis"</string>
+    <string name="bottomsheet_action_expand_halfway">Išskleisti iki pusės</string>
+    <string name="buttons_navigation">Use forward/backward buttons</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="cancel_loading_form">Atšaukti</string>
+    <string name="cancel_location">Atšaukti</string>
+    <string name="capture_audio">Įrašyti garsą</string>
+    <string name="capture_image">Užfiksuoti kadrą</string>
+    <string name="capture_video">Įrašyti video</string>
+    <string name="change_font_size">Teksto šrifto dydis</string>
+    <string name="change_language">Pakeisti kalbą</string>
+    <string name="change_password">Slaptažodis</string>
+    <string name="change_server_url">Serverio URL</string>
+    <string name="change_username">ODK naudotojo vardas</string>
+    <string name="change_view">Keisti vaizdą</string>
+    <string name="character_counter_content_description">Įvesta simbolių: %1$d iš %2$d</string>
+    <string name="character_counter_overflowed_content_description">Viršytas simbolių skaičius: %1$d iš %2$d</string>
+    <string name="choose_image">Pasirinkite paveikslėlį</string>
+    <string name="choose_sound">Pasirinkite garsą</string>
+    <string name="choose_video">Pasirinkite video</string>
+    <string name="clear_answer">Pašalinti atsakymą</string>
+    <string name="clear_answer_ask">Pašalinti šį atsakymą?</string>
+    <string name="clear_answer_no">Atšaukti</string>
+    <string name="clear_text_end_icon_content_description">Išvalyti tekstą</string>
+    <string name="clearanswer_confirm">Pašalinti atsakymą į \"%s\"?</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Įgalinti</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">„%1$s“ neveiks, jei neįgalinsite „Google Play“ paslaugų.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Įgalinkite „Google Play“ paslaugas</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Įdiegti</string>
+    <string name="common_google_play_services_install_text">Programa „%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurių nėra įrenginyje.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Gaukite „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_notification_channel_name">„Google Play“ paslaugų pasiekiamumas</string>
+    <string name="common_google_play_services_notification_ticker">„Google Play“ paslaugų klaida</string>
+    <string name="common_google_play_services_unknown_issue">Naudojant programą „%1$s“ kilo problemų dėl „Google Play“ paslaugų. Bandykite dar kartą.</string>
+    <string name="common_google_play_services_unsupported_text">Programa „%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurių jūsų įrenginys nepalaiko.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Atnaujinti</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">„%1$s“ nebus paleidžiama, jei neatnaujinsite „Google Play“ paslaugų.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Atnaujinkite „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_updating_text">„%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurios šiuo metu atnaujinamos.</string>
+    <string name="common_google_play_services_wear_update_text">Reikia naujos versijos „Google Play“ paslaugų. Jos netrukus bus atnaujintos.</string>
+    <string name="common_open_on_phone">Atidaryti telefone</string>
+    <string name="common_signin_button_text">Prisijungti</string>
+    <string name="common_signin_button_text_long">Prisijungti naudojant „Google“</string>
+    <string msgid="5912733858573823945" name="confirm_device_credential_password">"Naudoti slaptažodį"</string>
+    <string msgid="6083905920877235314" name="copy">"Kopijuoti"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Nuoroda nukopijuota į iškarpinę"</string>
+    <string name="data">Išsaugotos formos</string>
+    <string name="data_saved_error">Deja, formos išsaugoti nepavyko!</string>
+    <string name="data_saved_ok">Forma sėkmingai išsaugota!</string>
+    <string name="default_completed">Numatyta kaip užbaigta</string>
+    <string name="default_completed_summary">Numatytuoju atveju pažymėti formą kaip užbaigtą</string>
+    <string msgid="4776854077120974966" name="default_error_msg">"Nežinoma klaida"</string>
+    <string name="delete_confirm">Ištrinti %s formą(-as)?</string>
+    <string name="delete_file">Ištrinti pažymėtas</string>
+    <string name="delete_no">Neištrinti</string>
+    <string name="delete_repeat">Pašalinti grupę</string>
+    <string name="delete_repeat_ask">Pašalinti šią grupę?</string>
+    <string name="delete_repeat_confirm">Pašalinti grupę \"%s\" ir visus jos pogrupius?</string>
+    <string name="delete_repeat_no">Atšaukti</string>
+    <string name="delete_yes">Ištrinti formas</string>
+    <string name="discard_answer">Pašalinti atsakymą</string>
+    <string name="discard_group">Pašalinti grupę</string>
+    <string name="do_not_change">Atšaukti</string>
+    <string name="do_not_exit">Atšaukti</string>
+    <string name="download">Atsiųsti parinktas</string>
+    <string name="downloading_data">Jungiamasi prie serverio</string>
+    <string name="draw_image">Braižyti</string>
+    <string name="edit_prompt">Keisti atsakymą</string>
+    <string name="enter_admin_password">Įveskite administratoriaus slaptažodį</string>
+    <string name="enter_data">Pildyti tuščią formą</string>
+    <string name="enter_data_button">Pildyti tuščią formą</string>
+    <string name="enter_new_password">Įveskite naują slaptažodį</string>
+    <string name="error_icon_content_description">Klaida</string>
+    <string name="error_occured">Įvyko klaida</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Išplėstiniai"</string>
+    <string name="exposed_dropdown_menu_content_description">Rodyti išskleidžiamąjį meniu</string>
+    <string msgid="4562557128765735254" name="face_or_screen_lock_prompt_message">"Jei norite tęsti, naudokite veido atpažinimo funkciją arba ekrano užraktą"</string>
+    <string msgid="2282389249605674226" name="face_prompt_message">"Jei norite tęsti, naudokite veido atpažinimo funkciją"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopijuoti nuorodą"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Atidaryti naršyklėje"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Bendrinti nuorodą"</string>
+    <string name="file_delete_in_progress">Deja, šiuo metu vyksta formos trynimo procesas!</string>
+    <string name="file_deleted_error">Deja, nepavyko ištrinti %1$s iš %2$s parinktų formų!</string>
+    <string name="file_deleted_ok">%s forma(-os) sėkmingai ištrintos!</string>
+    <string name="file_invalid">Failas: %s yra netinkamas.</string>
+    <string name="file_missing">Failas: %s nėra.</string>
+    <string name="finalized_on_date_at_time">\'Užbaigta\' EEE, MMM dd, yyyy HH:mm</string>
+    <string msgid="5462024216548165325" name="fingerprint_dialog_icon_description">"Kontrolinio kodo piktograma"</string>
+    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"Palieskite piršto antspaudo jutiklį"</string>
+    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"Piršto antspaudo aparatinė įranga nepasiekiama."</string>
+    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"Šiame įrenginyje nėra piršto antspaudo jutiklio"</string>
+    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"Per daug bandymų. Vėliau bandykite dar kartą."</string>
+    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"Neužregistruota jokių kontrolinių kodų."</string>
+    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"Piršto antspaudo operaciją atšaukė naudotojas."</string>
+    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"Neatpažinta"</string>
+    <string msgid="8382576858490514495" name="fingerprint_or_screen_lock_prompt_message">"Jei norite tęsti, naudokite kontrolinį kodą arba ekrano užraktą"</string>
+    <string msgid="7449360011861769080" name="fingerprint_prompt_message">"Jei norite tęsti, naudokite kontrolinį kodą"</string>
+    <string name="finished_disk_scan">Skenavimas baigtas. Visos formos įkeltos.</string>
+    <string name="font_size">Teksto šrifto dydis</string>
+    <string name="font_size_extra_large">Labai didelis</string>
+    <string name="font_size_extra_small">Labai mažas</string>
+    <string name="font_size_large">Didelis</string>
+    <string name="font_size_medium">Vidutinis</string>
+    <string name="font_size_small">Mažas</string>
+    <string name="form_download_progress">%1$s. Siunčiami medijos failai: %2$s iš %3$s</string>
+    <string name="form_forward">Next</string>
+    <string name="forms">Tuščios formos</string>
+    <string name="found_in_main">Uncheck to hide from Main Menu</string>
+    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"Nenustatytas PIN kodas, atrakinimo piešinys arba slaptažodis."</string>
+    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"Šis įrenginys nepalaiko PIN kodo, šablono ar slaptažodžio."</string>
+    <string msgid="7309881387583143581" name="generic_error_user_canceled">"Autentifikavimą atšaukė naudotojas."</string>
+    <string name="get_barcode">Nuskaityti brūkšninį kodą</string>
+    <string name="get_forms">Atsisiųsti tuščią formą</string>
+    <string name="get_location">Įrašyti vietovę</string>
+    <string name="icon_content_description">Dialogo lango piktograma</string>
+    <string name="invalid_answer_error">Deja, šis atsakymas yra netinkamas!</string>
+    <string name="item_view_role_description">Skirtukas</string>
+    <string name="joda_time_android_date_time">%2$s %1$s</string>
+    <string msgid="9093949757757445117" name="joda_time_android_preposition_for_date">"<ns1:g id="DATE">%s</ns1:g>"</string>
+    <string msgid="5506831244263083793" name="joda_time_android_preposition_for_time">"<ns1:g id="TIME">%s</ns1:g>"</string>
+    <string msgid="1818557177829411417" name="joda_time_android_relative_time">"<ns1:g id="DATE">%1$s</ns1:g>, <ns1:g id="TIME">%2$s</ns1:g>"</string>
+    <string name="jump_to_beginning">Eiti į pradžią</string>
+    <string name="jump_to_end">Eiti į pabaigą</string>
+    <string name="jump_to_previous">Eiti į viršų</string>
+    <string name="keep_changes">Išsaugoti pakeitimus</string>
+    <string name="launch_app">Paleisti</string>
+    <string name="launch_printer">Initiate Printing</string>
+    <string name="loading_form">Įkeliama forma</string>
+    <string name="manage_files">Ištrinti užpildytą formą</string>
+    <string name="mark_finished">Pažymėti formą kaip užbaigtą</string>
+    <string name="markup_image">Anotuoti paveikslėlį</string>
+    <string name="material_clock_toggle_content_description">Pasirinkite „iki pietų“ arba „po pietų“</string>
+    <string name="material_hour_selection">Pasirinkite valandą</string>
+    <string name="material_hour_suffix">%1$s val.</string>
+    <string name="material_minute_selection">Pasirinkite minutes</string>
+    <string name="material_minute_suffix">%1$s min.</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Laiko įvestį pateikti perjungus į laikrodžio režimą.</string>
+    <string name="material_timepicker_hour">Valanda</string>
+    <string name="material_timepicker_minute">Minutė</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Pasirinkite laiką</string>
+    <string name="material_timepicker_text_input_mode_description">Laiko įvestį pateikti perjungus į teksto įvesties režimą.</string>
+    <string name="mtrl_badge_numberless_content_description">Naujas pranešimas</string>
+    <string name="mtrl_chip_close_icon_content_description">Pašalinti %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Naujų pranešimų: daugiau nei %1$d</string>
+    <string name="mtrl_picker_a11y_next_month">Pakeisti į kitą mėnesį</string>
+    <string name="mtrl_picker_a11y_prev_month">Pakeisti į ankstesnį mėnesį</string>
+    <string name="mtrl_picker_announce_current_selection">Dabartinis pasirinkimas: %1$s</string>
+    <string name="mtrl_picker_cancel">Atšaukti</string>
+    <string name="mtrl_picker_confirm">Gerai</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Pasirinkite datą</string>
+    <string name="mtrl_picker_date_header_unselected">Pasirinkta data</string>
+    <string name="mtrl_picker_day_of_week_column_header">Dienų stulpelis: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Netinkamas formatas.</string>
+    <string name="mtrl_picker_invalid_format_example">Pavyzdys: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Naudoti: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Netinkamas diapazonas.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Eiti į %1$s metus</string>
+    <string name="mtrl_picker_out_of_range">Nepatenka į diapazoną: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Pradžios data–%1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s–pabaigos data</string>
+    <string name="mtrl_picker_range_header_selected">%1$s–%2$s</string>
+    <string name="mtrl_picker_range_header_title">Pasirinkite diapazoną</string>
+    <string name="mtrl_picker_range_header_unselected">Pradžios data–pabaigos data</string>
+    <string name="mtrl_picker_save">Išsaugoti</string>
+    <string name="mtrl_picker_text_input_date_hint">Data</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Pabaigos data</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Pradžios data</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Perjungti į kalendoriaus įvesties režimą</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Palieskite, kad perjungtumėte į dienos pasirinkimą</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Perjungti į teksto įvesties režimą</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Palieskite, kad perjungtumėte į metų pasirinkimą</string>
+    <string name="mtrl_timepicker_cancel">Atšaukti</string>
+    <string name="mtrl_timepicker_confirm">Gerai</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Naršyti aukštyn"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Atidaryti naršymo juostą"</string>
+    <string name="navigation">Navigation</string>
+    <string name="no_app">Nerasta nurodyta programa. Atskaitą įveskite rankiniu būdu.</string>
+    <string name="no_connection">Nėra interneto ryšio</string>
+    <string name="no_forms_uploaded">Deja, formos nepavyko išsiųsti.</string>
+    <string name="no_items_display">Nėra ką rodyti</string>
+    <string name="no_printer">The requested printer is not installed. Please install the printer.</string>
+    <string name="noselect_error">Deja, Jūs nepažymėjote jokių formų!</string>
+    <string msgid="6573031135582639649" name="not_set">"Nenustatyta"</string>
+    <string name="ok">Gerai</string>
+    <string name="parse_error">Deja, nepavyko apdoroti formos.</string>
+    <string name="password">Slaptažodis</string>
+    <string name="password_toggle_content_description">Rodyti slaptažodį</string>
+    <string name="play_video">Groti video</string>
+    <string name="please_wait">Prašome šiek tiek palaukti.</string>
+    <string name="please_wait_long">Prašome palaukti. Tai gali užtrukti kelias minutes.</string>
+    <string msgid="6685851473431805375" name="preference_copied">"Suvestinė „<ns1:g id="SUMMARY">%1$s</ns1:g>“ nukopijuota į iškarpinę."</string>
+    <string name="provider_disabled_error">Deja, padėties valdikliai yra išjungti!</string>
+    <string name="quit_application">Išeiti %s</string>
+    <string name="quit_entry">Išsaugoti formą ir išeiti</string>
+    <string name="refresh">Atnaujinti</string>
+    <string name="replace_barcode">Pakeisti brūkšninį kodą</string>
+    <string name="required_answer_error">Atsakymas į šį klausimą yra privalomas!</string>
+    <string name="reset_image">Atstatyti</string>
+    <string name="reset_project_settings_title">Atstatyti</string>
+    <string name="review_data">Taisyti užpildytą formą</string>
+    <string name="review_data_button">Taisyti užpildytą formą (%s)</string>
+    <string name="save_all_answers">Išsaugoti formą</string>
+    <string name="save_and_close">Išsaugoti ir uždaryti</string>
+    <string name="save_as_error">Pavadinimas negali būti tuščias!</string>
+    <string name="save_enter_data_description">Jūs esate \"%s\" pabaigoje.</string>
+    <string name="save_form_as">Pavadinkite šią formą:</string>
+    <string name="save_mid">Nebaigtos formos išsaugojimas</string>
+    <string name="saved_on_date_at_time">\'Išsaugota\' EEE, MMM dd, yyyy HH:mm</string>
+    <string name="savepoint_used">Neišsaugoti pakeitimai atkurti pagal išsaugojimo tašką!</string>
+    <string name="saving_form">Forma išsaugoma</string>
+    <string msgid="5659570757430909869" name="screen_lock_prompt_message">"Jei norite tęsti, įveskite ekrano užraktą"</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Ieškoti"</string>
+    <string name="select_answer">Pažymėkite atsakymą</string>
+    <string name="selected">Parinkta:</string>
+    <string name="selected_google_account_text">Google sąskaita</string>
+    <string name="send_data">Išsiųsti užbaigtą formą</string>
+    <string name="send_data_button">Išsiųsti užbaigtą formą (%s)</string>
+    <string name="send_selected_data">Išsiųsti pažymėtas</string>
+    <string name="sending_failed_on_date_at_time">\'Išsiųsti nepavyko\' EEE, MMM dd, yyyy HH:mm</string>
+    <string name="sending_items">Siunčiama %1$s iš %2$s formų</string>
+    <string name="sent_on_date_at_time">\'Išsiųsta\' EEE, MMM dd, yyyy HH:mm</string>
+    <string name="server_preferences">Serveris</string>
+    <string name="server_requires_auth">Serveris reikalauja autentifikavimo</string>
+    <string name="server_url">URL</string>
+    <string name="set_color">Nustatyti spalvą</string>
+    <string name="show_sent_and_unsent_forms">Išsiųstos ir neišsiųstos formos</string>
+    <string name="show_unsent_forms">Tik neišsiųstos formos</string>
+    <string name="sign_button">Paimti parašą</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="success">Sėkmingai</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="swipe_buttons_navigation">Use swipes and buttons</string>
+    <string name="swipe_navigation">Use horizontal swipes</string>
+    <string name="trigger">Gerai. Prašome tęsti.</string>
+    <string name="upload_results">Išsiuntimo rezultatai</string>
+    <string name="uploading_data">Siunčiama forma</string>
+    <string name="url_error">Netinkamas URL!</string>
+    <string msgid="6524145989441579428" name="use_biometric_label">"Naudoti biometrinius duomenis"</string>
+    <string msgid="5385448280139639016" name="use_biometric_or_screen_lock_label">"Naudoti biometrinius duomenis arba ekrano užraktą"</string>
+    <string msgid="6533512708069459542" name="use_face_label">"Naudoti veido atpažinimo funkciją"</string>
+    <string msgid="2116180187159450292" name="use_face_or_screen_lock_label">"Naudoti veido atpažinimo funkciją arba ekrano užraktą"</string>
+    <string msgid="6961788485681412417" name="use_fingerprint_label">"Naudoti kontrolinį kodą"</string>
+    <string msgid="7577690399303139443" name="use_fingerprint_or_screen_lock_label">"Naudoti kontrolinį kodą arba ekrano užraktą"</string>
+    <string msgid="5459869335976243512" name="use_screen_lock_label">"Naudoti ekrano užraktą"</string>
+    <string name="username">Naudotojo vardas</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"IŠJUNGTA"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ĮJUNGTA"</string>
+    <string name="version">Versija:</string>
+    <string name="view_hierarchy">Atsakymų sąrašas</string>
+</resources>

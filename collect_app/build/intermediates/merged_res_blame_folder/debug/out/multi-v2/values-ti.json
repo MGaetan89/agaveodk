@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-ti/values-ti.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-ti/values-ti.xml",
             "map": [
                 {
                     "source": "/Users/aurora/Documents/odk/agaveodk/strings/build/intermediates/packaged_res/debug/values-ti/values-ti.xml",

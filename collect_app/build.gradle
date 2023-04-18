@@ -416,7 +416,7 @@ dependencies {
     }
 
     // Real LeakCanary for debug builds only: notifications, analysis, etc
-    debugImplementation Dependencies.leakcanary
+    //debugImplementation Dependencies.leakcanary
 }
 
 // Must be at bottom to prevent dependency collisions

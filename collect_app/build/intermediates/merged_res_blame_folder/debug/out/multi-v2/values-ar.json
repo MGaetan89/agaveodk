@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-ar/values-ar.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "/Users/aurora/Documents/odk/agaveodk/strings/build/intermediates/packaged_res/debug/values-ar/values-ar.xml",

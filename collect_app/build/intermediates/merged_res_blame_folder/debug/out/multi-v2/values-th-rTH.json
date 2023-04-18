@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-th-rTH/values-th-rTH.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-th-rTH/values-th-rTH.xml",
             "map": [
                 {
                     "source": "/Users/aurora/Documents/odk/agaveodk/strings/build/intermediates/packaged_res/debug/values-th-rTH/values-th-rTH.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/Users/aurora/.gradle/caches/transforms-3/3cf1e45c2471cfe51056045e3f7272f2/transformed/navigation-ui-2.5.3/res/values-en-rAU/values-en-rAU.xml",

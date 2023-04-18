@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-night-v8/values-night-v8.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/aurora/Documents/odk/agaveodk/collect_app/src/main/res/values-night/colors.xml",

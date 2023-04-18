@@ -129,8 +129,6 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0] /Users/aurora/.gr
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.0] /Users/aurora/.gradle/caches/transforms-3/8f28dfc9fdc24fcb4b8d1b79dc23c662/transformed/jetified-lifecycle-livedata-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0] /Users/aurora/.gradle/caches/transforms-3/fce467214b54a2167b818be7cd599de2/transformed/jetified-lifecycle-runtime-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:17:1-31:12
-MERGED from [com.squareup.leakcanary:leakcanary-android:2.10] /Users/aurora/.gradle/caches/transforms-3/f4270a0cf06f912ea6075b70ff50b8ce/transformed/jetified-leakcanary-android-2.10/AndroidManifest.xml:17:1-22:12
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:17:1-105:12
 MERGED from [:nbistubs] /Users/aurora/Documents/odk/agaveodk/nbistubs/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [net.danlew:android.joda:2.12.1.1] /Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/AndroidManifest.xml:2:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:17:1-50:12
@@ -166,15 +164,7 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/aurora/.gradle/caches
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/aurora/.gradle/caches/transforms-3/45f76eaf01b5e6d7ad9cb1d3bf0f6dc4/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/aurora/.gradle/caches/transforms-3/6e6e54e77e98defde05070e791dfb2aa/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e9e55a0a90a72c7d486019839f91b757/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:2:1-15:12
-MERGED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:2:1-15:12
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-androidx:2.10] /Users/aurora/.gradle/caches/transforms-3/294f83701aaf4a253da35c2b521b1a9c/transformed/jetified-leakcanary-object-watcher-android-androidx-2.10/AndroidManifest.xml:2:1-7:12
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-support-fragments:2.10] /Users/aurora/.gradle/caches/transforms-3/2c34116c4d7e32b10681c5d44204f2c5/transformed/jetified-leakcanary-object-watcher-android-support-fragments-2.10/AndroidManifest.xml:2:1-7:12
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/4722c46678bb0fbe0a023c0ea71c2d5f/transformed/jetified-leakcanary-object-watcher-android-core-2.10/AndroidManifest.xml:2:1-7:12
-MERGED from [com.squareup.leakcanary:plumber-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/14bd94b8a54ca2264edd2f98bb9a53bd/transformed/jetified-plumber-android-core-2.10/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/aurora/.gradle/caches/transforms-3/98b8f5e837779f0bb3b52dea1fc1be60/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.squareup.leakcanary:leakcanary-android-utils:2.10] /Users/aurora/.gradle/caches/transforms-3/d43aa4ef144e97ac9eb7d3e970922ca5/transformed/jetified-leakcanary-android-utils-2.10/AndroidManifest.xml:2:1-7:12
-MERGED from [com.squareup.curtains:curtains:1.2.4] /Users/aurora/.gradle/caches/transforms-3/14cd661696dcf3fd2ad0202dc5456275/transformed/jetified-curtains-1.2.4/AndroidManifest.xml:2:1-9:12
 MERGED from [com.caverock:androidsvg-aar:1.4] /Users/aurora/.gradle/caches/transforms-3/e85edcdaf4e004d89820bdcb7e5df46b/transformed/jetified-androidsvg-aar-1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/aurora/.gradle/caches/transforms-3/84b94369ae9a04c6f9ea05d6ad3bd7bd/transformed/jetified-osmdroid-android-6.1.14/AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.45] /Users/aurora/.gradle/caches/transforms-3/23cb5f8f68e3f4708b45ed6360852e91/transformed/jetified-dagger-lint-aar-2.45/AndroidManifest.xml:16:1-19:12
@@ -251,8 +241,6 @@ ADDED from /Users/aurora/Documents/odk/agaveodk/collect_app/src/main/AndroidMani
 		ADDED from /Users/aurora/Documents/odk/agaveodk/collect_app/src/main/AndroidManifest.xml:32:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/aurora/Documents/odk/agaveodk/collect_app/src/main/AndroidManifest.xml:33:5-80
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:25:5-80
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:25:5-80
 	android:name
 		ADDED from /Users/aurora/Documents/odk/agaveodk/collect_app/src/main/AndroidManifest.xml:33:22-77
 uses-permission#android.permission.CAMERA
@@ -343,8 +331,6 @@ MERGED from [androidx.work:work-runtime:2.8.0] /Users/aurora/.gradle/caches/tran
 		ADDED from /Users/aurora/Documents/odk/agaveodk/collect_app/src/main/AndroidManifest.xml:43:22-65
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/aurora/Documents/odk/agaveodk/collect_app/src/main/AndroidManifest.xml:50:5-81
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:26:5-81
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:26:5-81
 	android:name
 		ADDED from /Users/aurora/Documents/odk/agaveodk/collect_app/src/main/AndroidManifest.xml:50:22-78
 uses-permission#android.permission.USE_CREDENTIALS
@@ -481,8 +467,6 @@ MERGED from [androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3
 MERGED from [androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:31:5-103:19
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:31:5-103:19
 MERGED from [net.danlew:android.joda:2.12.1.1] /Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/AndroidManifest.xml:10:5-20:19
 MERGED from [net.danlew:android.joda:2.12.1.1] /Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/AndroidManifest.xml:10:5-20:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.2.1] /Users/aurora/.gradle/caches/transforms-3/805fd7e89d8a739cda9d19b2c6c871b1/transformed/jetified-profileinstaller-1.2.1/AndroidManifest.xml:24:5-48:19
@@ -505,10 +489,6 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/au
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:25:5-39:19
 MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] /Users/aurora/.gradle/caches/transforms-3/c4369cd9eadf07bd09979f0c661c11f7/transformed/jetified-gifdecoder-4.15.1/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] /Users/aurora/.gradle/caches/transforms-3/c4369cd9eadf07bd09979f0c661c11f7/transformed/jetified-gifdecoder-4.15.1/AndroidManifest.xml:9:5-20
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:7:5-13:19
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:7:5-13:19
-MERGED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:7:5-13:19
-MERGED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:7:5-13:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
@@ -1180,10 +1160,6 @@ MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0] /Users/aurora/.grad
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0] /Users/aurora/.gradle/caches/transforms-3/fce467214b54a2167b818be7cd599de2/transformed/jetified-lifecycle-runtime-ktx-2.6.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-android:2.10] /Users/aurora/.gradle/caches/transforms-3/f4270a0cf06f912ea6075b70ff50b8ce/transformed/jetified-leakcanary-android-2.10/AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-android:2.10] /Users/aurora/.gradle/caches/transforms-3/f4270a0cf06f912ea6075b70ff50b8ce/transformed/jetified-leakcanary-android-2.10/AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:20:5-22:41
-MERGED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:20:5-22:41
 MERGED from [:nbistubs] /Users/aurora/Documents/odk/agaveodk/nbistubs/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:nbistubs] /Users/aurora/Documents/odk/agaveodk/nbistubs/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [net.danlew:android.joda:2.12.1.1] /Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/AndroidManifest.xml:6:5-8:41
@@ -1254,24 +1230,8 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/aurora/.gradle/caches/transforms-3/6e6e54e77e98defde05070e791dfb2aa/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e9e55a0a90a72c7d486019839f91b757/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/aurora/.gradle/caches/transforms-3/e9e55a0a90a72c7d486019839f91b757/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-androidx:2.10] /Users/aurora/.gradle/caches/transforms-3/294f83701aaf4a253da35c2b521b1a9c/transformed/jetified-leakcanary-object-watcher-android-androidx-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-androidx:2.10] /Users/aurora/.gradle/caches/transforms-3/294f83701aaf4a253da35c2b521b1a9c/transformed/jetified-leakcanary-object-watcher-android-androidx-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-support-fragments:2.10] /Users/aurora/.gradle/caches/transforms-3/2c34116c4d7e32b10681c5d44204f2c5/transformed/jetified-leakcanary-object-watcher-android-support-fragments-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-support-fragments:2.10] /Users/aurora/.gradle/caches/transforms-3/2c34116c4d7e32b10681c5d44204f2c5/transformed/jetified-leakcanary-object-watcher-android-support-fragments-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/4722c46678bb0fbe0a023c0ea71c2d5f/transformed/jetified-leakcanary-object-watcher-android-core-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-object-watcher-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/4722c46678bb0fbe0a023c0ea71c2d5f/transformed/jetified-leakcanary-object-watcher-android-core-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:plumber-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/14bd94b8a54ca2264edd2f98bb9a53bd/transformed/jetified-plumber-android-core-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:plumber-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/14bd94b8a54ca2264edd2f98bb9a53bd/transformed/jetified-plumber-android-core-2.10/AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/aurora/.gradle/caches/transforms-3/98b8f5e837779f0bb3b52dea1fc1be60/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/aurora/.gradle/caches/transforms-3/98b8f5e837779f0bb3b52dea1fc1be60/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-android-utils:2.10] /Users/aurora/.gradle/caches/transforms-3/d43aa4ef144e97ac9eb7d3e970922ca5/transformed/jetified-leakcanary-android-utils-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-android-utils:2.10] /Users/aurora/.gradle/caches/transforms-3/d43aa4ef144e97ac9eb7d3e970922ca5/transformed/jetified-leakcanary-android-utils-2.10/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.curtains:curtains:1.2.4] /Users/aurora/.gradle/caches/transforms-3/14cd661696dcf3fd2ad0202dc5456275/transformed/jetified-curtains-1.2.4/AndroidManifest.xml:5:5-7:41
-MERGED from [com.squareup.curtains:curtains:1.2.4] /Users/aurora/.gradle/caches/transforms-3/14cd661696dcf3fd2ad0202dc5456275/transformed/jetified-curtains-1.2.4/AndroidManifest.xml:5:5-7:41
 MERGED from [com.caverock:androidsvg-aar:1.4] /Users/aurora/.gradle/caches/transforms-3/e85edcdaf4e004d89820bdcb7e5df46b/transformed/jetified-androidsvg-aar-1.4/AndroidManifest.xml:7:5-9:41
 MERGED from [com.caverock:androidsvg-aar:1.4] /Users/aurora/.gradle/caches/transforms-3/e85edcdaf4e004d89820bdcb7e5df46b/transformed/jetified-androidsvg-aar-1.4/AndroidManifest.xml:7:5-9:41
 MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/aurora/.gradle/caches/transforms-3/84b94369ae9a04c6f9ea05d6ad3bd7bd/transformed/jetified-osmdroid-android-6.1.14/AndroidManifest.xml:5:5-7:41
@@ -1830,92 +1790,6 @@ ADDED from [androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/trans
 		ADDED from [androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
 	android:name
 		ADDED from [androidx.room:room-runtime:2.5.0] /Users/aurora/.gradle/caches/transforms-3/3cf8365b1d4fabd6e41115783ee1ce03/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
-uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:29:5-77
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:29:22-74
-provider#leakcanary.internal.LeakCanaryFileProvider
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:32:9-40:20
-	android:grantUriPermissions
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:36:13-47
-	android:authorities
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:34:13-88
-	android:exported
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:35:13-37
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:33:13-70
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:37:13-39:66
-	android:resource
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:39:17-63
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:38:17-67
-activity#leakcanary.internal.activity.LeakActivity
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:42:9-73:20
-	android:label
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:46:13-71
-	android:exported
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:44:13-36
-	android:icon
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:45:13-52
-	android:theme
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:48:13-63
-	android:taskAffinity
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:47:13-76
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:43:13-69
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:*+data:mimeType:*/*+data:pathPattern:.*\\..*\\..*\\..*\\..*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\..*\\..*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\..*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\..*\\.hprof+data:pathPattern:.*\\..*\\.hprof+data:pathPattern:.*\\.hprof+data:scheme:content+data:scheme:file
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:49:13-72:29
-	android:label
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:49:28-81
-category#android.intent.category.BROWSABLE
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:53:17-78
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:53:27-75
-activity-alias#leakcanary.internal.activity.LeakLauncherActivity
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:75:9-92:26
-	android:enabled
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:78:13-66
-	android:label
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:81:13-71
-	android:exported
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:79:13-36
-	android:targetActivity
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:82:13-79
-	android:icon
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:80:13-52
-	android:banner
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:77:13-59
-	android:theme
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:84:13-63
-	android:taskAffinity
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:83:13-76
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:76:13-77
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:85:13-91:29
-category#android.intent.category.LEANBACK_LAUNCHER
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:90:17-86
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:90:27-83
-activity#leakcanary.internal.RequestPermissionActivity
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:94:9-100:68
-	android:label
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:98:13-82
-	android:excludeFromRecents
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:96:13-46
-	android:icon
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:97:13-52
-	android:theme
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:100:13-65
-	android:taskAffinity
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:99:13-76
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:95:13-73
-receiver#leakcanary.internal.NotificationReceiver
-ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:102:9-77
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android-core:2.10] /Users/aurora/.gradle/caches/transforms-3/16b92ebee94cb6c9d22f7af60c703903/transformed/jetified-leakcanary-android-core-2.10/AndroidManifest.xml:102:19-74
 meta-data#net.danlew.android.joda.JodaTimeInitializer
 ADDED from [net.danlew:android.joda:2.12.1.1] /Users/aurora/.gradle/caches/transforms-3/cae9941631099cb8f60d7309fb924dd0/transformed/jetified-android.joda-2.12.1.1/AndroidManifest.xml:16:13-18:52
 	android:value
@@ -2024,23 +1898,3 @@ ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/aur
 		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
 	android:name
 		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/aurora/.gradle/caches/transforms-3/7560cf07b64def8c98ba825ca804759c/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
-provider#leakcanary.internal.MainProcessAppWatcherInstaller
-ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:8:9-12:40
-	android:enabled
-		ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:11:13-69
-	android:authorities
-		ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:10:13-72
-	android:exported
-		ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:12:13-37
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-object-watcher-android:2.10] /Users/aurora/.gradle/caches/transforms-3/7a6ec138751bfb82b521628c710aeb38/transformed/jetified-leakcanary-object-watcher-android-2.10/AndroidManifest.xml:9:13-78
-provider#leakcanary.internal.PlumberInstaller
-ADDED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:8:9-12:40
-	android:enabled
-		ADDED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:11:13-69
-	android:authorities
-		ADDED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:10:13-69
-	android:exported
-		ADDED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:12:13-37
-	android:name
-		ADDED from [com.squareup.leakcanary:plumber-android:2.10] /Users/aurora/.gradle/caches/transforms-3/184dc5b55368e7341eaa472b0cf7c8f9/transformed/jetified-plumber-android-2.10/AndroidManifest.xml:9:13-64

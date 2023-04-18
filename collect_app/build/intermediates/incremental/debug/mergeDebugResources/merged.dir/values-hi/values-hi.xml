@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item msgid="2178576254385739855" quantity="one">"आने वाला कल"</item>
+        <item msgid="2973062968038355991" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> दिन में"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item msgid="3274708118124045246" quantity="one">"1 घंटे में"</item>
+        <item msgid="3705373766798013406" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> घंटे में"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item msgid="562786149928284878" quantity="one">"1 मिनट में"</item>
+        <item msgid="4216113292706568726" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> मिनट में"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item msgid="5842225370795066299" quantity="one">"1 सेकंड में"</item>
+        <item msgid="5495880108825805108" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> सेकंड में"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item msgid="8463161711492680309" quantity="one">"बीता कल"</item>
+        <item msgid="3453342639616481191" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> दिन पहले"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item msgid="4796212039724722116" quantity="one">"1 घंटे पहले"</item>
+        <item msgid="6889970745748538901" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> घंटे पहले"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item msgid="6361490147113871545" quantity="one">"1 मिनट पहले"</item>
+        <item msgid="851164968597150710" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> मिनट पहले"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item msgid="1849036840200069118" quantity="one">"1 सेकंड पहले"</item>
+        <item msgid="3699169366650930415" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> सेकंड पहले"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item msgid="8917467491248809972" quantity="one">"1 घंटा"</item>
+        <item msgid="3863962854246773930" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> घंटे"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item msgid="4915414002546085617" quantity="one">"1 मिनट"</item>
+        <item msgid="3165187169224908775" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> मिनट"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item msgid="6962015528372969481" quantity="one">"1 सेकंड"</item>
+        <item msgid="1886107766577166786" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> सेकंड"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item msgid="5413088743009839518" quantity="one">"आने वाला कल"</item>
+        <item msgid="5109449375100953247" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> दिन में"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item msgid="7164353342477769999" quantity="one">"1 घंटे में"</item>
+        <item msgid="547290677353727389" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> घंटे में"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item msgid="8793095251325200395" quantity="one">"1 मिनट में"</item>
+        <item msgid="3330713936399448749" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> मिनट में"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item msgid="2729745560954905102" quantity="one">"1 सेकंड में"</item>
+        <item msgid="1241926116443974687" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> सेकंड में"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item msgid="861358534398115820" quantity="one">"बीता कल"</item>
+        <item msgid="2479586466153314633" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> दिन पहले"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item msgid="9150797944610821849" quantity="one">"1 घंटे पहले"</item>
+        <item msgid="2467273239587587569" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> घंटे पहले"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item msgid="3306787433088810191" quantity="one">"1 मिनट पहले"</item>
+        <item msgid="2176942008915455116" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> मिनट पहले"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item msgid="4869870056547896011" quantity="one">"1 सेकंड पहले"</item>
+        <item msgid="3903706804349556379" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> सेकंड पहले"</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d नई सूचनाएं</item>
+    <item quantity="other">%d नई सूचनाएं</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"होम पेज पर जाएं"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"वापस जाएं"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"ज़्यादा विकल्प"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"हो गया"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"सभी देखें"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"कोई ऐप्लिकेशन चुनें"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"बंद"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"चालू"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"खोजें…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"क्‍वेरी हटाएं"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"सर्च क्वेरी"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"खोजें"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"क्वेरी सबमिट करें"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"बोलकर खोजें"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"इससे शेयर करें:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> से शेयर करें"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"छोटा करें"</string>
+    <string name="about_preferences">बारे में </string>
+    <string name="accept_bearing">रिकॉर्ड असर</string>
+    <string name="activity_not_found">%s:के नियंत्रण के लिए कोई गतिविधि नहीं  मिली</string>
+    <string name="added_on_date_at_time">EEE, MMM dd, yyyy \'पर जोड़ा\' HH:mm \'पर\' </string>
+    <string name="admin_password">एडमिन पासवर्ड </string>
+    <string name="admin_password_changed">एडमिन पासवर्ड सफलतापूर्वक बदल दिया गया</string>
+    <string name="admin_password_disabled">एडमिन पासवर्ड असक्षम</string>
+    <string name="admin_password_incorrect">क्षमा करें, पासवर्ड  गलत है!</string>
+    <string name="alert">चेतावनी</string>
+    <string name="analytics">अनाम उपयोग डेटा एकत्र करें</string>
+    <string name="analytics_preferences">डेटा का उपयोग</string>
+    <string name="annotate_image">इमेज पर टिप्पणी करें</string>
+    <string name="autosend">स्वतः भेजें</string>
+    <string name="autosend_selector_title">स्वतः भेजें</string>
+    <string name="bad_uri">खराब URl: %s</string>
+    <string name="basemap">बेसमैप</string>
+    <string name="bearing">बीअरिंग: %.3f</string>
+    <string msgid="2102429900219199821" name="biometric_or_screen_lock_prompt_message">"जारी रखने के लिए, बायोमेट्रिक या स्क्रीन लॉक क्रेडेंशियल का इस्तेमाल करें"</string>
+    <string msgid="1160635338192065472" name="biometric_prompt_message">"जारी रखने के लिए, बायोमेट्रिक का इस्तेमाल करें"</string>
+    <string name="bottomsheet_action_expand_halfway">पूरी तरह बड़ा करें</string>
+    <string name="buttons_navigation">आगे / पीछे बटन का प्रयोग करें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="cancel_loading_form">रद्द करें</string>
+    <string name="cancel_location">रद्द करें</string>
+    <string name="cannot_edit_completed_form">एक बार फाइनल होने के बाद यह फॉर्म संशोधित नहीं किया जा सकता. इसे एन्क्रिप्ट किया जा सकता है.</string>
+    <string name="capture_audio">आवाज़ रिकार्ड करे </string>
+    <string name="capture_image">फोटो खींचें</string>
+    <string name="capture_osm">OpenMapKit लॉन्च करें </string>
+    <string name="capture_video">विडियो रिकार्ड करे</string>
+    <string name="cellular_autosend"> केवल सेलुलर</string>
+    <string name="change_admin_password">एडमिन पासवर्ड  बदलें</string>
+    <string name="change_font_size">अक्षर फॉन्ट आकार</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="change_password">odk पासवर्ड</string>
+    <string name="change_server_url">सर्वर URL</string>
+    <string name="change_username">ODK उपयोगकर्ता नाम</string>
+    <string name="change_view">व्यू बदलें</string>
+    <string name="character_counter_content_description">%2$d वर्णों में से %1$d वर्ण दर्ज किए गए</string>
+    <string name="character_counter_overflowed_content_description">अभी %1$d वर्ण हैं जबकि %2$d से ज़्यादा नहीं होने चाहिए</string>
+    <string name="choose_image">इमेज चुनें</string>
+    <string name="choose_sound">ध्वनि चुनें</string>
+    <string name="choose_video">वीडियो चुनें</string>
+    <string name="clear">स्पष्ट</string>
+    <string name="clear_all">सभी साफ करें</string>
+    <string name="clear_answer">प्रतिउत्तर हटायें</string>
+    <string name="clear_answer_ask"> यह प्रतिउत्तर हटायें क्या?</string>
+    <string name="clear_answer_no">रद्द करें</string>
+    <string name="clear_text_end_icon_content_description">टेक्स्ट मिटाएं</string>
+    <string name="clearanswer_confirm">\"%s\" के लिए प्रतिउत्तर को हटायें क्या?</string>
+    <string name="client">यूजर इंटरफेस</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">चालू करें</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">जब तक आप Google Play सेवाएं चालू नहीं करते, %1$s काम नहीं करेगा.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play सेवाएं चालू करें</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">इंस्टॉल करें</string>
+    <string name="common_google_play_services_install_text">%1$s उन Google Play सेवाओं के बिना नहीं चलेगा जो आपके डिवाइस में उपलब्ध नहीं हैं.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play सेवाएं इंस्टॉल करें</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play सेवाएं उपलब्ध हैं</string>
+    <string name="common_google_play_services_notification_ticker">Google Play सेवाओं से जुड़ी गड़बड़ी</string>
+    <string name="common_google_play_services_unknown_issue">%1$s को Google Play सेवाओं के साथ समस्या आ रही है. कृपया फिर से कोशिश करें.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s उन Google Play सेवाओं के बिना नहीं चलेगा, जो आपके डिवाइस पर काम नहीं करती हैं.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">अपडेट करें</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s तब तक नहीं चलेगा जब तक आप Google Play सेवाओं को अपडेट नहीं करते.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play सेवाओं को अपडेट करें</string>
+    <string name="common_google_play_services_updating_text">%1$s उन Google Play सेवाओं के बिना नहीं चलेगा जो अभी अपडेट हो रही हैं.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play सेवाओं के नए वर्शन की ज़रूरत है. यह जल्द ही अपने आप अपडेट हो जाएगा.</string>
+    <string name="common_open_on_phone">फ़ोन पर खोलें</string>
+    <string name="common_signin_button_text">साइन इन करें</string>
+    <string name="common_signin_button_text_long">Google के ज़रिए साइन इन करें</string>
+    <string msgid="5912733858573823945" name="confirm_device_credential_password">"पासवर्ड का इस्तेमाल करें"</string>
+    <string name="constraint_behavior">प्रसंस्करण व्यवहार बाधा </string>
+    <string name="constraint_behavior_on_finalize">जब तक फाइनल नही होता मान्यता नहीं दें</string>
+    <string name="constraint_behavior_on_swipe">फारवर्ड  स्वाइप पर मान्य करें</string>
+    <string name="constraint_behavior_title">बाधा प्रसंस्करण</string>
+    <string msgid="6083905920877235314" name="copy">"कॉपी करें"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"लिंक क्लिपबोर्ड पर कॉपी किया गया"</string>
+    <string name="data">संरक्षित फॉर्म</string>
+    <string name="data_saved_error">क्षमा करें, फॉर्म संरक्षण असफल!</string>
+    <string name="data_saved_ok">फॉर्म सफलतापूर्वक संरक्षित!</string>
+    <string name="default_completed">फाइनल करने हेतु डिफ़ॉल्ट </string>
+    <string name="default_completed_summary">फॉर्म को डिफ़ॉल्ट फाइनल जैसे मार्क करें  </string>
+    <string msgid="4776854077120974966" name="default_error_msg">"अनजान गड़बड़ी"</string>
+    <string name="delete_after_send">भेजने के बाद मिटायें</string>
+    <string name="delete_after_send_summary">सर्वर को भेजने के बाद अंतिम फॉर्म और मीडिया मिटाता है</string>
+    <string name="delete_confirm">फॉर्म(s)%s मिटाएं क्या?</string>
+    <string name="delete_file">चयन मिटाएं</string>
+    <string name="delete_no">न मिटाएं</string>
+    <string name="delete_project_no">नहीं</string>
+    <string name="delete_project_yes">हाँ</string>
+    <string name="delete_repeat">समूह हटायें</string>
+    <string name="delete_repeat_ask">यह समूह हटायें?</string>
+    <string name="delete_repeat_confirm">समूह  \"%s\" को हटायें और इसके अन्दर के समूहों को भी?</string>
+    <string name="delete_repeat_no">रद्द करें</string>
+    <string name="delete_yes">फॉर्म मिटाएं</string>
+    <string name="deleted_form">समाप्त फॉर्म</string>
+    <string name="deleted_on_date_at_time">EEE, MMM dd, yyyy \'पर मिटाया\'  HH:mm \'पर\' </string>
+    <string name="device_defined">डिवाइस-से-परिभाषित</string>
+    <string name="device_id">डिवाइस आईडी</string>
+    <string name="direction">दिशा: %s</string>
+    <string name="discard">छोड़ दें </string>
+    <string name="discard_answer">प्रतिउत्तर हटायें</string>
+    <string name="discard_group">समूह हटायें</string>
+    <string name="do_not_change">रद्द करें</string>
+    <string name="do_not_exit">रद्द करें </string>
+    <string name="download">चयनित प्राप्त करें</string>
+    <string name="download_forms_result">परिणाम डाउनलोड करें</string>
+    <string name="download_selected">डाउनलोड चयनित</string>
+    <string name="downloading_data">सर्वर से कनेक्ट हो रहा है</string>
+    <string name="draw_image">स्केच इमेज</string>
+    <string name="drive_get_file"> %1$sऔर मीडिया फाइलों को प्राप्त कर रहा है.</string>
+    <string name="east">पू. %1$s%2$s%3$s</string>
+    <string name="edit_prompt">Prompt को संशोधित करें</string>
+    <string name="edited_osm_file">संपादित OSM XML फाइल:</string>
+    <string name="email">इमेल एड्रेस </string>
+    <string name="enable_gps">जीपीएस सक्षम करें</string>
+    <string name="encoding_max_limit" ns2:ignore="UnusedResources">अधिकतम वर्ण सीमा आ गयी: सभी सेटिंग्स के लिए क्यूआर कोड नहीं बनाया जा सकता</string>
+    <string name="encrypted_form">एन्क्रिप्ट किए गए फॉर्म</string>
+    <string name="encryption_error_message">%s फॉर्म फाइनल के जैसे संरक्षित नहीं गया है.</string>
+    <string name="enter_admin_password">एडमिन पासवर्ड  दर्ज करें</string>
+    <string name="enter_data">खाली फॉर्म भरें</string>
+    <string name="enter_data_button">खाली फॉर्म भरें</string>
+    <string name="enter_new_password"> नया पासवर्ड दर्ज करें </string>
+    <string name="error_attaching_binary_file">मीडिया को जोड़ते समय एक गलती हुई%s</string>
+    <string name="error_icon_content_description">गड़बड़ी</string>
+    <string name="error_occured">गलती हुई</string>
+    <string name="exit">बाहर आयें</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"बेहतर सेटिंग"</string>
+    <string name="exposed_dropdown_menu_content_description">ड्रॉपडाउन मेन्यू दिखाएं</string>
+    <string name="ext_assign_value_error">\'%s\' पर वैल्यू नहीं दे सकता.</string>
+    <string name="ext_conflicting_columns_error">कॉलम %sमैच!</string>
+    <string name="ext_file_no_data_error">फाइल में कोई डेटा नहीं!</string>
+    <string name="ext_import_completed_message">पूर्व लोड किए गए डेटा को फाइनल कर रहा …</string>
+    <string name="ext_import_csv_missing_error">%1$sके लिए बाह्य डेटा आयात नहीं किया गया.  शायद आप अपने फॉर्म के साथ%2$s.csv फाइल को शामिल करना भूल गए? </string>
+    <string name="ext_import_finalizing_message">पूर्व लोड किए डेटा को फाइनल कर रहा …</string>
+    <string name="ext_import_generic_error"> %1$sसे डेटा आयात नहीं किया जा सका . कारण: %2$s</string>
+    <string name="ext_import_progress_message">\'%1$s\' से पूर्व लोडेड डेटा, कृपया प्रतीक्षा करें… %2$s</string>
+    <string name="ext_not_initialized_error">एक्सटर्नल डाटा मैनेजर को प्रारंभ नहीं किया गया है।</string>
+    <string name="ext_search_bad_function_error">खोज () फ़ंक्शन में सिंटैक्स त्रुटि: %s का मूल्यांकन फ़ंक्शन के रूप में नहीं किया गया</string>
+    <string name="ext_search_generic_error">खोज () फ़ंक्शन: %sमें सिंटैक्स त्रुटि</string>
+    <string name="ext_search_return_error">खोज हैंडलर ने \'%s\' प्रकार का ऑब्जेक्ट वापस कर दिया .</string>
+    <string name="ext_search_wrong_arguments_error">खोज () फ़ंक्शन में सिंटैक्स त्रुटि: फ़ंक्शन में 1, 4 या 6 आर्गुमेंट की आवश्यकता है। \'</string>
+    <string name="ext_search_wrong_function_error">खोज () फ़ंक्शन में सिंटैक्स त्रुटि: %s फ़ंक्शन की की पहचान नहीं\' </string>
+    <string name="ext_sortBy_numeric_error">आपके sortby कॉलम में केवल संख्यात्मक मान शामिल होने चाहिए। ली गयी वैल्यू \'%s\' थी </string>
+    <string msgid="4562557128765735254" name="face_or_screen_lock_prompt_message">"जारी रखने के लिए, अपना चेहरा दिखाएं या स्क्रीन लॉक क्रेडेंशियल का इस्तेमाल करें"</string>
+    <string msgid="2282389249605674226" name="face_prompt_message">"जारी रखने के लिए, अपना चेहरा दिखाएं"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"लिंक कॉपी करें"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ब्राउज़र में खोलें"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"लिंक शेयर करें"</string>
+    <string name="fetching_file">%3$sफॉर्म(s) का%1$s.\n\nफॉर्म %2$sमिल रहा है.</string>
+    <string name="file_delete_in_progress">क्षमा करें, फॉर्म मिटाने की कार्रवाई पहले से ही प्रगति में है!</string>
+    <string name="file_deleted_error">क्षमा करें, चयनित %2$sफॉर्म() का %1$sमिटाने में असफल!</string>
+    <string name="file_deleted_ok">%s फॉर्म(s) सफलतापूर्वक मिटाये!</string>
+    <string name="file_invalid">फाइल: %s अमान्य है</string>
+    <string name="file_missing">फाइल: %sनहीं मिल रही</string>
+    <string name="filter_the_list">सूची को फ़िल्टर करें</string>
+    <string name="finalized_on_date_at_time">EEE, MMM dd, yyyy \'पर फाइनल हुआ\'  HH:mm \'पर\' </string>
+    <string msgid="5462024216548165325" name="fingerprint_dialog_icon_description">"फ़िंगरप्रिंट आइकॉन"</string>
+    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"फ़िंगरप्रिंट सेंसर को छुएं"</string>
+    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"फ़िंगरप्रिंट हार्डवेयर मौजूद नहीं है."</string>
+    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"इस डिवाइस में फ़िंगरप्रिंट सेंसर नहीं है"</string>
+    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"कई बार कोशिश की जा चुकी है. कृपया बाद में फिर से कोशिश करें."</string>
+    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"कोई फ़िंगरप्रिंट रजिस्टर नहीं किया गया है."</string>
+    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"उपयोगकर्ता ने फिंगरप्रिंट की पुष्टि की कार्रवाई रद्द कर दी है."</string>
+    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"पहचान नहीं हो पाई"</string>
+    <string msgid="8382576858490514495" name="fingerprint_or_screen_lock_prompt_message">"जारी रखने के लिए, फ़िंगरप्रिंट या स्क्रीन लॉक क्रेडेंशियल का इस्तेमाल करें"</string>
+    <string msgid="7449360011861769080" name="fingerprint_prompt_message">"जारी रखने के लिए, फ़िंगरप्रिंट का इस्तेमाल करें"</string>
+    <string name="finished_disk_scan">स्कैनिंग समाप्त. सभी फॉर्म लोड हो गए</string>
+    <string name="font_size">अक्षर फॉन्ट आकार</string>
+    <string name="font_size_extra_large">ज्यादा बड़ा</string>
+    <string name="font_size_extra_small">ज्यादा छोटा</string>
+    <string name="font_size_large">बड़ा</string>
+    <string name="font_size_medium">मझला</string>
+    <string name="font_size_small">छोटा</string>
+    <string name="form_download_progress">%1$s. %3$sकी %2$sमीडिया फाइलें मिल रही हैं: </string>
+    <string name="form_entry">फॉर्म एंट्री से छुपाने के लिए चेक हटायें</string>
+    <string name="form_entry_setting">फॉर्म एंट्री सेटिंग</string>
+    <string name="form_filling_category">फॉर्म भरना</string>
+    <string name="form_forward">आगामी</string>
+    <string name="form_import_category">फॉर्म आयात </string>
+    <string name="form_management_preferences">फॉर्म मैनेजमेंट</string>
+    <string name="form_metadata">फॉर्म मेटाडेटा</string>
+    <string name="form_metadata_summary">इन मानों को उन फ़ॉर्म में जोड़ा जाएगा जिनमें डेटा जमा करने वाले व्यक्ति की पहचान के लिये प्रयोक्ता नाम, ईमेल और / या टेलीफ़ोन पहले से लोड किए गए फ़ील्ड हैं। </string>
+    <string name="form_metadata_title">फॉर्म मेटाडेटा</string>
+    <string name="form_submission_category">फॉर्म भेजना</string>
+    <string name="forms">खाली फॉर्म</string>
+    <string name="found_in_main">मुख्य मेनू से छुपाने के लिए अनचेक करें</string>
+    <string name="fs_create_media_folder_error">\'%s\' मीडिया फ़ोल्डर नहीं बना सका.</string>
+    <string name="fs_delete_media_path_if_file_error">%sको नहीं मिटाया जा सका. कृपया फाइल को स्वयं हटा दें और फ़ॉर्म को पुनः डाउनलोड करें.</string>
+    <string name="fs_file_copy_error">\'%2$s\' पर \'%1$s\' की नकल नहीं कर सकता. कारण: %3$s</string>
+    <string name="generate">उत्पन्न</string>
+    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"पिन, पैटर्न या पासवर्ड सेट नहीं है."</string>
+    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"इस डिवाइस को पिन, पैटर्न या पासवर्ड की मदद से लॉक/अनलॉक नहीं किया जा सकता."</string>
+    <string msgid="7309881387583143581" name="generic_error_user_canceled">"उपयोगकर्ता ने पुष्टि करने की प्रक्रिया रद्द की."</string>
+    <string name="geo_clear_warning">फीचर पहले से ही बना है. क्या आप फीचर को क्लियर करना चाहेंगे?</string>
+    <string name="geo_exit_warning">परिवर्तनों को रद्द करें और वापस ODK पर लौटें?</string>
+    <string name="geopoint_instruction">प्लेस मार्क के लिए लंबे समय तक दबाएं या मार्कर बटन जोड़ने के लिए टैप करें।</string>
+    <string name="geopoint_no_draggable_instruction">मार्कर बटन जोड़ें पर टैप करें</string>
+    <string name="geopoint_view_read_only">जिओपॉइंट  देखे</string>
+    <string name="geoshape_title">जिओशेप</string>
+    <string name="geoshape_view_change_location">जिओ शेप देखें या बदलें </string>
+    <string name="geotrace_title">जिओ ट्रेस</string>
+    <string name="geotrace_view_change_location">जिओ ट्रेस देखें या बदलें </string>
+    <string name="get_barcode">बारकोड प्राप्त करें</string>
+    <string name="get_bearing">बीअरिंग रिकॉर्ड करें</string>
+    <string name="get_forms">खाली फॉर्म प्राप्त करें</string>
+    <string name="get_location">लोकेशन  रिकार्ड करें </string>
+    <string name="get_point"> जिओपॉइंट शुरू करे </string>
+    <string name="get_shape">जिओशेप शुरू करे </string>
+    <string name="get_trace">जीओट्रेस प्रारंभ करें</string>
+    <string name="getting_bearing">लोडिंग असर</string>
+    <string name="go_back">वापस जायें</string>
+    <string name="go_drive">माई ड्राइव</string>
+    <string name="go_shared">मेरे साथ साझा किया हुआ </string>
+    <string name="google_auth_io_exception_msg">API कॉल करने में असमर्थ यदि आप स्थानीय बिल्ड चला रहे हैं, तो कृपया  परियोजना readme की समीक्षा करें।</string>
+    <string name="google_play_services_error_occured">गूगल मानचित्र तक पहुंचने में असमर्थ क्या गूगल प्ले सर्विस इनस्टॉल है?</string>
+    <string name="google_search_browse">फ़ॉर्म के लिए खोजें. या ब्राउज़ करने के लिए नीचे \'माय ड्राइव\' चुनें।</string>
+    <string name="google_sheets_access_denied">पहुंच अस्वीकृत। कृपया सुनिश्चित करें कि स्प्रैडशीट ओनर ने आपको संपादन अधिकार दिए हैं।</string>
+    <string name="google_sheets_missing_columns">स्प्रेडशीट में निम्न कॉलम लापता हैं: %1$s</string>
+    <string name="google_sheets_url">फ़ॉलबैक सबमिशन URL</string>
+    <string name="google_sheets_url_hint">फॉर्म को एक सबमिशन URL सेट करना होगा यदि नहीं तो इस URL का उपयोग किया जाएगा।</string>
+    <string name="gps_result">अक्षांश: %1$s \n देशांतर: %2$s \n ऊंचाई: %3$sm \n शुद्धता: %4$sm</string>
+    <string name="guidance_no">नहीं</string>
+    <string name="high_resolution_summary">उच्च-रिज़ॉल्यूशन वीडियो रिकॉर्डिंग सक्षम करें</string>
+    <string name="high_resolution_title">उच्च रेज़ोल्युशन वीडियो</string>
+    <string name="hybrid">हाइब्रिड </string>
+    <string name="icon_content_description">डायलॉग का आइकॉन</string>
+    <string name="include_password_dialog">पासवर्ड कोड में शामिल </string>
+    <string name="install_openmapkit">कृपया ओपेन मैप किट  इनस्टॉल करें!</string>
+    <string name="instance_scan_count">%1$dफॉर्म जोड दिया.</string>
+    <string name="invalid_answer_error">क्षमा करें, प्रतिउत्तर अमान्य है </string>
+    <string name="invalid_osm_data">कुछ गलत हो गया। हमें मान्य OSM डेटा नहीं मिला</string>
+    <string name="invalid_qrcode">QR कोड में मान्य सेटिंग्स शामिल नहीं हैं I</string>
+    <string name="invalid_range_widget">इस विजेट में अमान्य मापदंड हैं!</string>
+    <string name="invalid_rsa_public_key">अमान्य RSA पब्लिक कुंजी</string>
+    <string name="invalid_sheet_id">अमान्य शीट आईडी: %1$s</string>
+    <string name="item_view_role_description">टैब</string>
+    <string name="joda_time_android_date_time">%2$s %1$s</string>
+    <string msgid="9093949757757445117" name="joda_time_android_preposition_for_date">"<ns1:g id="DATE">%s</ns1:g> को"</string>
+    <string msgid="5506831244263083793" name="joda_time_android_preposition_for_time">"<ns1:g id="TIME">%s</ns1:g> पर"</string>
+    <string msgid="1818557177829411417" name="joda_time_android_relative_time">"<ns1:g id="DATE">%1$s</ns1:g>, <ns1:g id="TIME">%2$s</ns1:g>"</string>
+    <string name="jump_to_beginning">शुरु पर जाएं</string>
+    <string name="jump_to_end">अंत पर जाएं</string>
+    <string name="jump_to_previous">ऊपर जाएं</string>
+    <string name="keep_changes">बदलाव संरक्षित करें</string>
+    <string name="language">भाषा</string>
+    <string name="launch_app">जारी करें</string>
+    <string name="launch_printer">प्रिंटिंग शुरू करें</string>
+    <string name="loading_form">फॉर्म लोड हो रहा है </string>
+    <string name="main_menu_settings">मुख्य मेनू सेटिंग्स</string>
+    <string name="manage_files">संरक्षित फॉर्म मिटायें</string>
+    <string name="mark_finished">फॉर्म पूरा करें</string>
+    <string name="markup_image">मार्कअप इमेज</string>
+    <string name="material_clock_toggle_content_description">AM या PM चुनें</string>
+    <string name="material_hour_selection">घंटा चुनें</string>
+    <string name="material_hour_suffix">%1$s बजे</string>
+    <string name="material_minute_selection">मिनट चुनें</string>
+    <string name="material_minute_suffix">%1$s मिनट</string>
+    <string name="material_timepicker_am">पूर्वाह्न</string>
+    <string name="material_timepicker_clock_mode_description">समय इनपुट के लिए घड़ी मोड पर जाएं.</string>
+    <string name="material_timepicker_hour">घंटा</string>
+    <string name="material_timepicker_minute">मिनट</string>
+    <string name="material_timepicker_pm">अपराह्न</string>
+    <string name="material_timepicker_select_time">समय चुनें</string>
+    <string name="material_timepicker_text_input_mode_description">समय इनपुट के लिए लेख इनपुट मोड पर जाएं.</string>
+    <string name="modified_on_date_at_time">EEE, MMM dd, yyyy \'पर संशोधित\' HH:mm \'पर\' </string>
+    <string name="moving_backwards_title">पीछे की ओर बढ़ रहा है</string>
+    <string name="mtrl_badge_numberless_content_description">नई सूचना</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s हटाएं</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d से ज़्यादा नई सूचनाएं</string>
+    <string name="mtrl_picker_a11y_next_month">अगले महीने पर जाएं</string>
+    <string name="mtrl_picker_a11y_prev_month">पिछले महीने पर जाएं</string>
+    <string name="mtrl_picker_announce_current_selection">फ़िलहाल, यह चुना गया है: %1$s</string>
+    <string name="mtrl_picker_cancel">रद्द करें</string>
+    <string name="mtrl_picker_confirm">ठीक है</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">तारीख चुनें</string>
+    <string name="mtrl_picker_date_header_unselected">चुनी गई तारीख</string>
+    <string name="mtrl_picker_day_of_week_column_header">दिनों का कॉलम: %1$s</string>
+    <string name="mtrl_picker_invalid_format">गलत फ़ॉर्मैट.</string>
+    <string name="mtrl_picker_invalid_format_example">उदाहरण: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">%1$s का इस्तेमाल करें</string>
+    <string name="mtrl_picker_invalid_range">तारीखों की अमान्य सीमा.</string>
+    <string name="mtrl_picker_navigate_to_year_description">साल %1$s पर जाएं</string>
+    <string name="mtrl_picker_out_of_range">तारीख की मान्य सीमा से बाहर: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">शुरू होने की तारीख – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – खत्म होने की तारीख</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">रेंज चुनें</string>
+    <string name="mtrl_picker_range_header_unselected">शुरू होने की तारीख – खत्म होने की तारीख</string>
+    <string name="mtrl_picker_save">सेव करें</string>
+    <string name="mtrl_picker_text_input_date_hint">तारीख</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">खत्म होने की तारीख</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">शुरू होने की तारीख</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">कैलेंडर के इनपुट मोड पर स्विच करें</string>
+    <string name="mtrl_picker_toggle_to_day_selection">\'दिन चुनना\' पर स्विच करने के लिए टैप करें</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">टेक्स्ट के इनपुट मोड पर स्विच करें</string>
+    <string name="mtrl_picker_toggle_to_year_selection">\'साल चुनना\' पर स्विच करने के लिए टैप करें</string>
+    <string name="mtrl_timepicker_cancel">रद्द करें</string>
+    <string name="mtrl_timepicker_confirm">ठीक है</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"वापस जाएं"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"नेविगेशन पैनल खोलें"</string>
+    <string name="navigation">पथ प्रदर्शन</string>
+    <string name="no">नहीं</string>
+    <string name="no_app">अनुरोधित एप्लिकेशन लापता है कृपया रीडिंग स्वयं दर्ज करें।</string>
+    <string name="no_connection">कोई नेटवर्क कनेक्शन उपलब्ध नहीं</string>
+    <string name="no_date_selected">कोई दिनांक चयनित नहीं</string>
+    <string name="no_form_id_specified">कोई FormId निर्दिष्ट नहीं ???</string>
+    <string name="no_form_loaded">&amp; Lt; कोई फॉर्म लोड नहीं हुआ &amp; gt;</string>
+    <string name="no_forms_uploaded">क्षमा करें, कोई फॉर्म अपलोड नहीं किया गया.</string>
+    <string name="no_google_account">कोई गूगल अकाउंट नही चुना!</string>
+    <string name="no_items_display">प्रदर्शित करने के लिए कुछ भी उपलब्ध नहीं है</string>
+    <string name="no_items_display_forms">प्रदर्शित करने के लिए कुछ भी उपलब्ध नहीं है.\n\nरिक्त फॉर्म प्राप्त कर उसे  भरने का प्रयास हो रहा.</string>
+    <string name="no_items_display_instances">प्रदर्शित करने के लिए कुछ भी उपलब्ध नहीं.\n\nभेजने से पहले संरक्षित फॉर्म को अंतिम रूप देने का प्रयास हो रहा.</string>
+    <string name="no_items_display_sent_forms">प्रदर्शित करने के लिए कुछ भी उपलब्ध नहीं है.\n\nदेखने से पहले अंतिम फॉर्म भेजने का प्रयास हो रहा.</string>
+    <string name="no_printer">अनुरोधित प्रिंटर इंस्टॉल नहीं है कृपया प्रिंटर इंस्टॉल करें</string>
+    <string name="no_time_selected">कोई समय चयनित नहीं</string>
+    <string name="north">उ. %1$s%2$s%3$s</string>
+    <string name="noselect_error">क्षमा करें, आपने कोई फॉर्म नही चुना है!</string>
+    <string name="not_exactly_one_blank_form_for_this_form_id">jr_form_id से एक खाली फॉर्म भी सही मैच नहीं करता है।</string>
+    <string name="not_exactly_one_record_for_this_instance">इस इंस्टैंस के लिए बिल्कुल सही एक रिकॉर्ड नहीं है!</string>
+    <string msgid="6573031135582639649" name="not_set">"सेट नहीं है"</string>
+    <string name="odk_forum">ODK फोरम ज्वाइन करें</string>
+    <string name="odk_website">ODK वेबसाइट विजिट करें</string>
+    <string name="off">बंद </string>
+    <string name="ok">ओके</string>
+    <string name="open_url">Url खोलें</string>
+    <string name="openmap_cartodb_darkmatter">CartoDB डार्क मैटर</string>
+    <string name="openmap_cartodb_positron">CartoDB Positron</string>
+    <string name="openmap_stamen_terrain">स्टैमन टेरेन</string>
+    <string name="openmap_usgs_topo">USGS National Map Topo</string>
+    <string name="parent_form_not_present">इस संरक्षित फॉर्म को संपादित करने में असमर्थ क्योंकि सम्बंधित रिक्त फॉर्म मौजूद नहीं है या हटा दिया गया है। \ N \ n फ़ॉर्म आईडी:%1$s</string>
+    <string name="parse_error">क्षमा करें, फॉर्म पार्स करने में असमर्थ</string>
+    <string name="parser_exception">XPathParser अपवाद:\"%s\"</string>
+    <string name="password">पासवर्ड</string>
+    <string name="password_error_whitespace">पासवर्ड में अग्रणी या अनुगामी व्हाइटस्पेस की अनुमति नहीं है</string>
+    <string name="password_toggle_content_description">पासवर्ड दिखाएं</string>
+    <string name="phone_does_not_support_rsa">फोन RSA एन्क्रिप्शन का समर्थन नहीं करता है</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="play_video">वीडियो चलाएं</string>
+    <string name="please_wait">कृपया कुछ क्षण प्रतीक्षा करें</string>
+    <string name="please_wait_long">कृपया प्रतीक्षा करें। इसमें कुछ मिनट लग सकते हैं।</string>
+    <string name="polygon_validator">बहुभुज बनाने के लिए कम से कम 3 पॉइंट होने चाहिए</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" क्लिपबोर्ड पर कॉपी किया गया."</string>
+    <string name="provider_disabled_error">क्षमा करें, लोकेशन प्रदाता सक्षम नही हैं!</string>
+    <string name="quit_application">बाहर आयें %s</string>
+    <string name="quit_entry">फॉर्म संरक्षित करें और बाहर आयें</string>
+    <string name="recapture_osm">OSM टैगिंग दुबारा करें</string>
+    <string name="refresh">रिफ्रेश </string>
+    <string name="replace_barcode">बारकोड बदलें</string>
+    <string name="replace_bearing">असर बदलें</string>
+    <string name="required_answer_error">क्षमा करें , यह प्रतिउत्तर जरुरी है</string>
+    <string name="reset_app_state_result">परिणाम रीसेट करें</string>
+    <string name="reset_app_state_warning">सभी चयनित डेटा को स्थायी रूप से मिटा दिया जाएगा. वापस नहीं ला सकते</string>
+    <string name="reset_blank_forms">रिक्त फॉर्म (फॉर्म फ़ोल्डर, फॉर्म डेटाबेस, आइटम सेट डेटाबेस)</string>
+    <string name="reset_blank_forms_result">खाली  फॉर्म:: %s</string>
+    <string name="reset_cache">फॉर्म लोड कैश (.कैश फोल्डर)</string>
+    <string name="reset_cache_result">फॉर्म लोड कैश :: %s</string>
+    <string name="reset_image">रीसेट</string>
+    <string name="reset_in_progress">रीसेट किया जा रहा …</string>
+    <string name="reset_layers">मानचित्र लेयरें (लेयर फ़ोल्डर)</string>
+    <string name="reset_layers_result">मानचित्र लेयरें :: %s</string>
+    <string name="reset_project_settings_title">रीसेट</string>
+    <string name="reset_saved_forms">संरक्षित फॉर्म (इंस्टैंस फोल्डर, इंस्टैंस डेटाबेस)</string>
+    <string name="reset_saved_forms_result">संरक्षित फॉर्म :: %s</string>
+    <string name="reset_settings">सभी सेटिंग (आंतरिक सेटिंग, संरक्षित  सेटिंग)</string>
+    <string name="reset_settings_button_reset">रीसेट</string>
+    <string name="reset_settings_dialog_title">क्या रीसेट करना है, चुनें</string>
+    <string name="reset_settings_result">सभी सेटिंग्स :: %s</string>
+    <string name="review_data">संरक्षित फॉर्म संशोधित करें</string>
+    <string name="review_data_button">संरक्षित फॉर्म (%s) संशोधित करें </string>
+    <string name="satellite">उपग्रह</string>
+    <string name="save_all_answers">फॉर्म संरक्षित करें </string>
+    <string name="save_and_close">संरक्षित करें और बंद करें</string>
+    <string name="save_as_error">संरक्षित नाम रिक्त नहीं होना चाहिए!</string>
+    <string name="save_enter_data_description">आप %s के समापन पर हैं</string>
+    <string name="save_form_as">इस फॉर्म को नाम दें</string>
+    <string name="save_mid">फॉर्म संरक्षित करें</string>
+    <string name="save_point_error">रिकवरी बिंदु %sसंरक्षण में त्रुटि है  </string>
+    <string name="saved_on_date_at_time">EEE, MMM dd, yyyy \' पर संरक्षित\' HH:mm \'पर\' </string>
+    <string name="savepoint_used">सहेजे गए परिवर्तन से बचे हुए परिवर्तनों को लिया गया!</string>
+    <string name="saving_form">फॉर्म संरक्षित हो रहा है </string>
+    <string msgid="5659570757430909869" name="screen_lock_prompt_message">"जारी रखने के लिए, अपना स्क्रीन लॉक क्रेडेंशियल डालें"</string>
+    <string name="search">खोज</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"खोजें"</string>
+    <string name="select_all">सभी का चयन करे</string>
+    <string name="select_answer">जवाब चुनें</string>
+    <string name="select_date">तारीख़ चुनें</string>
+    <string name="select_odk_shortcut">ODK शॉर्टकट चयन करें</string>
+    <string name="select_time">समय चुनें</string>
+    <string name="selected">चयनित: </string>
+    <string name="selected_google_account_text">गूगल अकाउंट</string>
+    <string name="selected_invalid_image">चयनित फाइल मान्य इमेज नहीं है</string>
+    <string name="send_data">फाइनल हो चुके फॉर्म भेजें</string>
+    <string name="send_data_button">फाइनल हो चुका फॉर्म (%s) भेजें</string>
+    <string name="send_in_progress">पृष्ठभूमि में भेजना जारी, कृपया शीघ्र पुनः प्रयास करें</string>
+    <string name="send_selected_data">चुने हुए फॉर्म भेजें</string>
+    <string name="sending_failed_on_date_at_time">EEE, MMM dd, yyyy \'पर भेजना विफल रहा\' HH:mm \'पर\' </string>
+    <string name="sending_items">फॉर्म(s)  %1$s/%2$s भेजे जा रहे हैं</string>
+    <string name="sent_on_date_at_time">EEE, MMM dd, yyyy \'पर भेजा गया\' HH:mm \'पर\' </string>
+    <string name="server_auth_credentials">सर्वर के लिए प्रयोगकर्ता नाम या पासवर्ड अमान्य है: %s</string>
+    <string name="server_password">सर्वर पासवर्ड</string>
+    <string name="server_platform_google_sheets">गूगल ड्राइव, गूगल शीट्</string>
+    <string name="server_preferences">सर्वर सेटिंग</string>
+    <string name="server_requires_auth">सर्वर प्रमाणीकरण की आवश्यकता</string>
+    <string name="server_settings_title">सर्वर</string>
+    <string name="server_url">URL</string>
+    <string name="set_color">रंग सेट करें</string>
+    <string name="share">शेयर</string>
+    <string name="show_password">पासवर्ड दिखायें </string>
+    <string name="show_sent_and_unsent_forms">भेजे गए और न भेजे गए फॉर्म दिखाएं</string>
+    <string name="show_unsent_forms">नहीं भेजे हुए फॉर्म दिखाएं</string>
+    <string name="sign_button">हस्ताक्षर  इकट्ठा  करें</string>
+    <string name="sort_by_date_asc">दिनांक, सबसे पुराना पहले</string>
+    <string name="sort_by_date_desc">दिनांक, नयी पहले </string>
+    <string name="sort_by_name_asc">नाम, A-Z</string>
+    <string name="sort_by_name_desc">नाम, Z-A</string>
+    <string name="sort_by_status_desc">अवस्था, बिना फाइनल हुए शब्द</string>
+    <string name="sort_the_list">सूची को सॉर्ट करें</string>
+    <string name="south">द. %1$s%2$s%3$s</string>
+    <string name="start">शुरु करे</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="streets">स्ट्रीट</string>
+    <string name="success">सफल</string>
+    <string name="successfully_imported_settings">सेटिंग सफलतापूर्वक आयातित की गईं</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="survey_internal_error">आतंरिक त्रुटि: prompt के स्टेप असफल.</string>
+    <string name="survey_loading_reading_csv_message">सीएसवी फाइल पढ़ रहा…</string>
+    <string name="survey_loading_reading_data_message">सर्वे डेटा पढ़ रहा… </string>
+    <string name="survey_loading_reading_form_message">फॉर्म की परिभाषा पढ़ रहा…</string>
+    <string name="survey_multiple_forms_error">आपने एक ही फॉर्म आईडी और संस्करण के साथ दो अलग-अलग फॉर्म डाउनलोड किए हैं। हो सकता है कि वे अलग-अलग समय या अलग-अलग सर्वरों पर अपलोड किए गए समान फॉर्म थे. किसी भी मामले में, आपको एक को हटाना होगा.</string>
+    <string name="survey_saving_collecting_message">डेटा एकत्रित कर रहा है…</string>
+    <string name="survey_saving_encrypting_message">डेटा एन्क्रिप्ट कर रहा है…</string>
+    <string name="survey_saving_finalizing_message">एसडी कार्ड में फाइनल कर रहा है …</string>
+    <string name="survey_saving_saving_message">एसडी कार्ड में सहेज रहा है…</string>
+    <string name="survey_saving_validating_message">उत्तर मान्य कर रहा है…</string>
+    <string name="swipe_buttons_navigation">स्वाइप और बटन का प्रयोग करें</string>
+    <string name="swipe_navigation">क्षैतिज स्वाइप प्रयोग करें</string>
+    <string name="take_picture_instruction">तस्वीर लेने के लिए स्क्रीन को टैप करें</string>
+    <string name="terrain"> भूभाग</string>
+    <string name="trigger">ओके। कृपया जारी रखें।</string>
+    <string name="turn_off_flashlight">टॉर्च को बंद करें</string>
+    <string name="turn_on_flashlight">टॉर्च चालू करें</string>
+    <string name="type">प्रकार</string>
+    <string name="unrecognized_uri">अपरिचित URl: %s</string>
+    <string name="upload_results">परिणाम अपलोड करें</string>
+    <string name="uploading_data">फॉर्म भेजा जा रहा हे</string>
+    <string name="url_error">क्षमा करें,अमान्य URL!</string>
+    <string msgid="6524145989441579428" name="use_biometric_label">"बायोमेट्रिक्स का इस्तेमाल करें"</string>
+    <string msgid="5385448280139639016" name="use_biometric_or_screen_lock_label">"बायोमेट्रिक्स या स्क्रीन लॉक क्रेडेंशियल का इस्तेमाल करें"</string>
+    <string name="use_device_language">डिवाइस की भाषा प्रयोग करें </string>
+    <string msgid="6533512708069459542" name="use_face_label">"चेहरा दिखाएं"</string>
+    <string msgid="2116180187159450292" name="use_face_or_screen_lock_label">"चेहरा दिखाएं या स्क्रीन लॉक क्रेडेंशियल का इस्तेमाल करें"</string>
+    <string msgid="6961788485681412417" name="use_fingerprint_label">"फ़िंगरप्रिंट का इस्तेमाल करें"</string>
+    <string msgid="7577690399303139443" name="use_fingerprint_or_screen_lock_label">"फ़िंगरप्रिंट या स्क्रीन लॉक क्रेडेंशियल का इस्तेमाल करें"</string>
+    <string msgid="5459869335976243512" name="use_screen_lock_label">"स्क्रीन लॉक क्रेडेंशियल का इस्तेमाल करें"</string>
+    <string name="user_and_device_identity_title">प्रयोगकर्ता और डिवाइस पहचान</string>
+    <string name="user_defined">उपयोगकर्ता-परिभाषित</string>
+    <string name="user_settings">प्रयोगकर्ता सेटिंग</string>
+    <string name="username">प्रयोगकर्ता नाम </string>
+    <string name="username_error_whitespace">उपयोगकर्ता नामों में अग्रणी या अनुगामी श्वेत स्थान की अनुमति नहीं है</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"बंद"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"चालू"</string>
+    <string name="version">संस्करण:</string>
+    <string name="version_number">संस्करण: %s</string>
+    <string name="view_change_location">लोकेशन देखें या बदलें</string>
+    <string name="view_hierarchy">Prompt पर जायें</string>
+    <string name="view_sent_forms">भेज चुके फॉर्म देखें</string>
+    <string name="view_sent_forms_button">भेज चुके फॉर्म (%s) देखें </string>
+    <string name="west">प. %1$s%2$s%3$s</string>
+    <string name="wifi_autosend">केवल वाई-फाई </string>
+    <string name="wifi_cellular_autosend">वाई-फाई या सेलुलर</string>
+    <string name="xform_parse_error">%1$sके लिए XForm पार्स गलती: %2$sलापता या अमान्य है. </string>
+    <string name="yes">हाँ</string>
+    <string name="zxing_app_name">बारकोड स्कैनर</string>
+    <string name="zxing_button_ok">ठीक है</string>
+    <string name="zxing_msg_camera_framework_bug">क्षमा करें, Android कैमरा एक समस्या का सामना करना पड़ा. आप डिवाइस को पुनरारंभ करने की आवश्यकता हो सकती है.</string>
+    <string name="zxing_msg_default_status">दृश्यदर्शी आयत के अंदर एक बारकोड प्लेस इसे स्कैन.</string>
+</resources>

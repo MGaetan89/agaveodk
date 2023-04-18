@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item msgid="2178576254385739855" quantity="one">"môre"</item>
+        <item msgid="2973062968038355991" quantity="other">"oor <ns1:g id="COUNT">%d</ns1:g> dae"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item msgid="3274708118124045246" quantity="one">"oor 1 uur"</item>
+        <item msgid="3705373766798013406" quantity="other">"oor <ns1:g id="COUNT">%d</ns1:g> uur"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item msgid="562786149928284878" quantity="one">"oor 1 min."</item>
+        <item msgid="4216113292706568726" quantity="other">"oor <ns1:g id="COUNT">%d</ns1:g> minute"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item msgid="5842225370795066299" quantity="one">"oor 1 sek."</item>
+        <item msgid="5495880108825805108" quantity="other">"oor <ns1:g id="COUNT">%d</ns1:g> sek."</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item msgid="8463161711492680309" quantity="one">"gister"</item>
+        <item msgid="3453342639616481191" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> dae gelede"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item msgid="4796212039724722116" quantity="one">"1 uur gelede"</item>
+        <item msgid="6889970745748538901" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> uur gelede"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item msgid="6361490147113871545" quantity="one">"1 min. gelede"</item>
+        <item msgid="851164968597150710" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> min. gelede"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item msgid="1849036840200069118" quantity="one">"1 sek. gelede"</item>
+        <item msgid="3699169366650930415" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sek. gelede"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item msgid="8917467491248809972" quantity="one">"1 uur"</item>
+        <item msgid="3863962854246773930" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> ure"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item msgid="4915414002546085617" quantity="one">"1 minuut"</item>
+        <item msgid="3165187169224908775" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minute"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item msgid="6962015528372969481" quantity="one">"1 sekonde"</item>
+        <item msgid="1886107766577166786" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sekondes"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item msgid="5413088743009839518" quantity="one">"môre"</item>
+        <item msgid="5109449375100953247" quantity="other">"oor <ns1:g id="COUNT">%d</ns1:g> dae"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item msgid="7164353342477769999" quantity="one">"oor 1 uur"</item>
+        <item msgid="547290677353727389" quantity="other">"oor <ns1:g id="COUNT">%d</ns1:g> uur"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item msgid="8793095251325200395" quantity="one">"oor 1 minuut"</item>
+        <item msgid="3330713936399448749" quantity="other">"oor <ns1:g id="COUNT">%d</ns1:g> minute"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item msgid="2729745560954905102" quantity="one">"oor 1 sekonde"</item>
+        <item msgid="1241926116443974687" quantity="other">"oor <ns1:g id="COUNT">%d</ns1:g> sekondes"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item msgid="861358534398115820" quantity="one">"gister"</item>
+        <item msgid="2479586466153314633" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> dae gelede"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item msgid="9150797944610821849" quantity="one">"1 uur gelede"</item>
+        <item msgid="2467273239587587569" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> uur gelede"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item msgid="3306787433088810191" quantity="one">"1 minuut gelede"</item>
+        <item msgid="2176942008915455116" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> minute gelede"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item msgid="4869870056547896011" quantity="one">"1 sekonde gelede"</item>
+        <item msgid="3903706804349556379" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> sekondes gelede"</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d nuwe kennisgewing</item>
+    <item quantity="other">%d nuwe kennisgewings</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Gaan na tuisskerm"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Gaan op"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Nog opsies"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Klaar"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Sien alles"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Kies \'n program"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"AF"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AAN"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Funksie+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"spasiebalk"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Simbool+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Kieslys+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Soek …"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Vee navraag uit"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Soektognavraag"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Soek"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Dien navraag in"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Stemsoektog"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Deel met"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Deel met <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Vou in"</string>
+    <string name="accept_bearing">Stoor rigting van beweging</string>
+    <string name="activity_not_found">Geen aktiwiteit om te hanteer nie: %s</string>
+    <string name="added_on_date_at_time">\'Bygevoeg op\' EEE, MMM dd, yyyy \'om\' HH:mm</string>
+    <string name="admin_password_changed">Admin wagwoord suksesvol verander</string>
+    <string name="admin_password_disabled">Admin wagwoord afgeskakel.</string>
+    <string name="admin_password_incorrect">Jammer, wagwoord is verkeerd!</string>
+    <string msgid="2102429900219199821" name="biometric_or_screen_lock_prompt_message">"Gebruik jou biometriese data of skermslot om voort te gaan"</string>
+    <string msgid="1160635338192065472" name="biometric_prompt_message">"Gebruik jou biometrie om voort te gaan"</string>
+    <string name="bottomsheet_action_expand_halfway">Vou halfpad uit</string>
+    <string name="buttons_navigation">Gebruik vorentoe/agtertoe knoppies</string>
+    <string name="cancel">Kanselleer</string>
+    <string name="cancel_loading_form">Kanselleer</string>
+    <string name="cancel_location">Kanselleer</string>
+    <string name="capture_audio">Neem klank op</string>
+    <string name="capture_image">Neem foto</string>
+    <string name="capture_osm">Loods OpenMapKit</string>
+    <string name="capture_video">Neem video</string>
+    <string name="change_font_size">Teks font grootte</string>
+    <string name="change_language">Verander Taal</string>
+    <string name="change_password">ODK Wagwoord</string>
+    <string name="change_server_url">Server URL</string>
+    <string name="change_username">ODK Gebruikersnaam</string>
+    <string name="change_view">Verander Vertoning</string>
+    <string name="character_counter_content_description">Karakters ingevoer: %1$d van %2$d</string>
+    <string name="character_counter_overflowed_content_description">Karakterlimiet oorskry %1$d van %2$d</string>
+    <string name="choose_image">Kies Prentjie</string>
+    <string name="choose_sound">Kies Klank</string>
+    <string name="choose_video">Kies Video</string>
+    <string name="clear_answer">Verwyder antwoord</string>
+    <string name="clear_answer_ask">Verwyder hierdie antwoord?</string>
+    <string name="clear_answer_no">Kanselleer</string>
+    <string name="clear_text_end_icon_content_description">Vee teks uit</string>
+    <string name="clearanswer_confirm">Verwyer die antwoord op \"%s\"?</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktiveer</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s sal nie werk nie tensy jy Google Play Dienste aktiveer.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Aktiveer Google Play Dienste</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installeer</string>
+    <string name="common_google_play_services_install_text">%1$s sal nie sonder Google Play Dienste werk nie, wat nie op jou toestel is nie.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Kry Google Play Dienste</string>
+    <string name="common_google_play_services_notification_channel_name">Beskikbaarheid van Google Play Dienste</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Services-fout</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ondervind probleme met Google Play Dienste. Probeer asseblief weer.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s sal nie werk sonder Google Play Dienste nie, wat nie deur jou toestel gesteun word nie.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Dateer op</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s sal nie werk nie tensy jy Google Play Dienste opdateer.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Dateer Google Play Dienste op</string>
+    <string name="common_google_play_services_updating_text">%1$s sal nie sonder Google Play Dienste werk nie, wat tans opdateer.</string>
+    <string name="common_google_play_services_wear_update_text">Nuwe weergawe van Google Play Dienste is nodig. Dit sal binnekort self opdateer.</string>
+    <string name="common_open_on_phone">Maak oop op foon</string>
+    <string name="common_signin_button_text">Meld aan</string>
+    <string name="common_signin_button_text_long">Meld aan met Google</string>
+    <string msgid="5912733858573823945" name="confirm_device_credential_password">"Gebruik wagwoord"</string>
+    <string name="constraint_behavior">Constraint proseseringsgedrag</string>
+    <string name="constraint_behavior_on_finalize">Stel toetsing uit tot finalisering</string>
+    <string name="constraint_behavior_on_swipe">Toets tydens vorentoe swipe</string>
+    <string msgid="6083905920877235314" name="copy">"Kopieer"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Skakel is na knipbord gekopieer"</string>
+    <string name="data">Gestoorde Vorms</string>
+    <string name="data_saved_error">Jammer, stoor van vorm het misluk!</string>
+    <string name="data_saved_ok">Vorm suksesvol gestoor!</string>
+    <string name="default_completed">Default na gefinaliseer</string>
+    <string name="default_completed_summary">Merk vorm as gefinaliseer as default</string>
+    <string msgid="4776854077120974966" name="default_error_msg">"Onbekende fout"</string>
+    <string name="delete_after_send">Verwyder na stuur</string>
+    <string name="delete_after_send_summary">Verwyder gefinaliseerde vorms en media nadat dit server toe gestuur is</string>
+    <string name="delete_confirm">Verwyder %s vorm(s)?</string>
+    <string name="delete_file">Verwyder Geselekteerde</string>
+    <string name="delete_no">Moenie Verwyder Nie</string>
+    <string name="delete_repeat">Verwyder groep</string>
+    <string name="delete_repeat_ask">Veryder Hierdie Groep?</string>
+    <string name="delete_repeat_confirm">Verwyder groep \"%s\" en al sy sub-groepe?</string>
+    <string name="delete_repeat_no">Kanselleer</string>
+    <string name="delete_yes">Verwyder Vorms</string>
+    <string name="discard_answer">Verwyder antwoord</string>
+    <string name="discard_group">Verwyder groep</string>
+    <string name="do_not_change">Kanselleer</string>
+    <string name="do_not_exit">Kanselleer</string>
+    <string name="download">Haal geselekteerdes</string>
+    <string name="downloading_data">Besig om aan server te konnekteer</string>
+    <string name="draw_image">Teken Prentjie</string>
+    <string name="drive_get_file">Besig om %1$s en media leêrs te haal.</string>
+    <string name="edit_prompt">Wysig Vraag</string>
+    <string name="enter_admin_password">Voer Admin wagwoord in</string>
+    <string name="enter_data">Vul Leë Vorm In</string>
+    <string name="enter_data_button">Vul Leë Vorm In</string>
+    <string name="enter_new_password">Voer nuwe wagwoord in</string>
+    <string name="error_attaching_binary_file">\'n Fout het gebeur tydens aanheg van media: %s</string>
+    <string name="error_icon_content_description">Fout</string>
+    <string name="error_occured">Daar was \'n fout</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Gevorderd"</string>
+    <string name="exposed_dropdown_menu_content_description">Wys aftrekkieslys</string>
+    <string name="ext_assign_value_error">Kan nie die waarde by \'%s\' toeken nie</string>
+    <string name="ext_conflicting_columns_error">Kolomme %s pas!</string>
+    <string name="ext_file_no_data_error">Die leêr het niks data nie!</string>
+    <string name="ext_import_completed_message">Lees van data voltooi!</string>
+    <string name="ext_import_csv_missing_error">Eksterne data vir %1$s is nie ingetrek nie. Miskien het u vergeet om die %2$s.csv leêr met u vorm in te sluit?</string>
+    <string name="ext_import_finalizing_message">Besig om vooraf-gelaaide data te finaliseer…</string>
+    <string name="ext_import_generic_error">Kon nie data van %1$s intrek nie. Rede: %2$s</string>
+    <string name="ext_import_progress_message">Laai data vanaf \'%1$s\', wag asseblief… %2$s</string>
+    <string name="ext_not_initialized_error">Die ExternalDataManager is nie geïnisialiseer nie.</string>
+    <string name="ext_search_bad_function_error">Sintaks fout in search() funksie: \'%s\' is nie as \'n funksie ge-evalueer nie.</string>
+    <string name="ext_search_generic_error">Sintaks fout in search() funksie: %s</string>
+    <string name="ext_search_return_error">Die search handler het \'n voorwerp van tipe \'%s\' teruggestuur.</string>
+    <string name="ext_search_wrong_arguments_error">Sintaks fout in search() funksie: Die funksie benodig 1, 4 of 6 velde (Eng:arguments).</string>
+    <string name="ext_search_wrong_function_error">Sintaks fout in search() funksie: Herken nie funksie \'%s\' nie.</string>
+    <string name="ext_sortBy_numeric_error">U sortby kolom mag net numeriese waardes bevat. Probleemwaarde was \'%s\'.</string>
+    <string msgid="4562557128765735254" name="face_or_screen_lock_prompt_message">"Gebruik jou gesig of skermslot om voort te gaan"</string>
+    <string msgid="2282389249605674226" name="face_prompt_message">"Gebruik jou gesig om voort te gaan"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopieer skakel"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Maak in blaaier oop"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Deel skakel"</string>
+    <string name="fetching_file">Besig om %1$s te haal.\n\nVorm %2$s van %3$s vorm(s).</string>
+    <string name="file_delete_in_progress">Jammer, daar is klaar \'n aksie aan die gang om \'n vorm te verwyder!</string>
+    <string name="file_deleted_error">Jammer, verwydering van %1$s van %2$s geselekteerde vorm(s) het misluk!</string>
+    <string name="file_deleted_ok">%s vorm(s) suksesvol verwyder!</string>
+    <string name="file_invalid">Leêr: %s is ongeldig.</string>
+    <string name="file_missing">Leêr: %s word vermis.</string>
+    <string name="finalized_on_date_at_time">\'Gefinaliseer op\' EEE, MMM dd, yyyy \'om\' HH:mm</string>
+    <string msgid="5462024216548165325" name="fingerprint_dialog_icon_description">"Vingerafdrukikoon"</string>
+    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"Raak die vingerafdruksensor"</string>
+    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"Vingerafdrukhardeware is nie beskikbaar nie."</string>
+    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"Hierdie toetstel het nie \'n vingerafdruksensor nie"</string>
+    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"Te veel pogings. Probeer later weer."</string>
+    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"Geen vingerafdrukke is geregistreer nie."</string>
+    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"Vingerafdrukhandeling is deur gebruiker gekanselleer."</string>
+    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"Nie herken nie"</string>
+    <string msgid="8382576858490514495" name="fingerprint_or_screen_lock_prompt_message">"Gebruik jou vingerafdruk of skermslot om voort te gaan"</string>
+    <string msgid="7449360011861769080" name="fingerprint_prompt_message">"Gebruik jou vingerafdruk om voort te gaan"</string>
+    <string name="finished_disk_scan">Klaar ge-scan. Alle vorms is gelaai.</string>
+    <string name="font_size">Teks font grootte</string>
+    <string name="font_size_extra_large">Extra Large</string>
+    <string name="font_size_extra_small">Extra Small</string>
+    <string name="font_size_large">Large</string>
+    <string name="font_size_medium">Medium</string>
+    <string name="font_size_small">Small</string>
+    <string name="form_download_progress">%1$s. Besig om media leërs te haal: %2$s van %3$s</string>
+    <string name="form_forward">Volgende</string>
+    <string name="forms">Leë Vorms</string>
+    <string name="found_in_main">Deselekteer om van Hoofkieslys af te haal</string>
+    <string name="fs_create_media_folder_error">Kon nie media-folder \'%s\' skep nie</string>
+    <string name="fs_delete_media_path_if_file_error">Kon nie \'%s\' verwyder nie. Verwyder self die leêr en laai die vorm weer af. </string>
+    <string name="fs_file_copy_error">Kon nie \'%1$s\' oor \'%2$s\' skryf nie. Rede: %3$s</string>
+    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"Geen PIN, patroon of wagwoord is gestel nie."</string>
+    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"Hierdie toestel ondersteun nie PIN, patroon of wagwoord nie."</string>
+    <string msgid="7309881387583143581" name="generic_error_user_canceled">"Gebruiker het stawing gekanselleer."</string>
+    <string name="get_barcode">Lees Barcode In</string>
+    <string name="get_bearing">Stoor rigting van beweging</string>
+    <string name="get_forms">Haal Leë Vorm</string>
+    <string name="get_location">Stoor Posisie</string>
+    <string name="getting_bearing">Besig om rigting van beweging te laai</string>
+    <string name="go_drive">My Skyf</string>
+    <string name="go_shared">Met my gedeel</string>
+    <string name="high_resolution_summary">Laat hoë-resolusie video opnames toe</string>
+    <string name="icon_content_description">Dialoogikoon</string>
+    <string name="invalid_answer_error">Jammer, hierdie antwoord is nie geldig nie!</string>
+    <string name="item_view_role_description">Oortjie</string>
+    <string name="joda_time_android_date_time">%2$s %1$s</string>
+    <string msgid="9093949757757445117" name="joda_time_android_preposition_for_date">"op <ns1:g id="DATE">%s</ns1:g>"</string>
+    <string msgid="5506831244263083793" name="joda_time_android_preposition_for_time">"by <ns1:g id="TIME">%s</ns1:g>"</string>
+    <string msgid="1818557177829411417" name="joda_time_android_relative_time">"<ns1:g id="DATE">%1$s</ns1:g>, <ns1:g id="TIME">%2$s</ns1:g>"</string>
+    <string name="jump_to_beginning">Gaan na Begin</string>
+    <string name="jump_to_end">Gaan na Einde</string>
+    <string name="jump_to_previous">Gaan op</string>
+    <string name="keep_changes">Stoor Veranderinge</string>
+    <string name="launch_app">Loods</string>
+    <string name="launch_printer">Begin druk</string>
+    <string name="loading_form">Besig om vorm te laai</string>
+    <string name="manage_files">Verwyder Gestoorde Vorm</string>
+    <string name="mark_finished">Merk vorm as gefinaliseer</string>
+    <string name="markup_image">Edit Prentjie</string>
+    <string name="material_clock_toggle_content_description">Kies vm. of nm.</string>
+    <string name="material_hour_selection">Kies uur</string>
+    <string name="material_hour_suffix">%1$s-uur</string>
+    <string name="material_minute_selection">Kies minute</string>
+    <string name="material_minute_suffix">%1$s minute</string>
+    <string name="material_timepicker_am">VM.</string>
+    <string name="material_timepicker_clock_mode_description">Skakel oor na horlosiemodus vir die tydinvoer.</string>
+    <string name="material_timepicker_hour">Uur</string>
+    <string name="material_timepicker_minute">Minuut</string>
+    <string name="material_timepicker_pm">NM.</string>
+    <string name="material_timepicker_select_time">Kies tyd</string>
+    <string name="material_timepicker_text_input_mode_description">Skakel oor na teksmodus vir die tydinvoer.</string>
+    <string name="modified_on_date_at_time">\'Verander op\' EEE, MMM dd, yyyy \'om\' HH:mm</string>
+    <string name="mtrl_badge_numberless_content_description">Nuwe kennisgewing</string>
+    <string name="mtrl_chip_close_icon_content_description">Verwyder %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Meer as %1$d nuwe kennisgewings</string>
+    <string name="mtrl_picker_a11y_next_month">Verander na volgende maand</string>
+    <string name="mtrl_picker_a11y_prev_month">Verander na vorige maand</string>
+    <string name="mtrl_picker_announce_current_selection">Huidige keuse: %1$s</string>
+    <string name="mtrl_picker_cancel">Kanselleer</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Kies datum</string>
+    <string name="mtrl_picker_date_header_unselected">Gekose datum</string>
+    <string name="mtrl_picker_day_of_week_column_header">Kolom van dae: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Ongeldige formaat.</string>
+    <string name="mtrl_picker_invalid_format_example">Voorbeeld: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Gebruik: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Ongeldige reeks.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Gaan na jaar %1$s</string>
+    <string name="mtrl_picker_out_of_range">Buite reeks: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Begindatum – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Einddatum</string>
+    <string name="mtrl_picker_range_header_selected">%1$s-%2$s</string>
+    <string name="mtrl_picker_range_header_title">Kies datumreeks</string>
+    <string name="mtrl_picker_range_header_unselected">Begindatum – Einddatum</string>
+    <string name="mtrl_picker_save">Stoor</string>
+    <string name="mtrl_picker_text_input_date_hint">Datum</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Einddatum</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Begindatum</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">j</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Skakel oor na kalenderinvoermodus</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tik om oor te skakel na die kies van \'n dag</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Skakel oor na teksinvoermodus</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tik om oor te skakel na die kies van \'n jaar</string>
+    <string name="mtrl_timepicker_cancel">Kanselleer</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Gaan op"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Maak navigasielaai oop"</string>
+    <string name="navigation">Navigasie</string>
+    <string name="no_app">Die program of app wat u aangevra het word vermis. Tik asb self die lesing in.</string>
+    <string name="no_connection">Geen netwerk konneksie beskikbaar nie</string>
+    <string name="no_forms_uploaded">Jammer, geen vorm is opgelaai nie.</string>
+    <string name="no_google_account">Geen Google rekening geselekteer nie!</string>
+    <string name="no_items_display">Niks beskikbaar om te vertoon nie</string>
+    <string name="no_items_display_forms">Niks beskikbaar om te vertoon nie.\n\nProbeer om \'n leë vorm te haal en in te vul.</string>
+    <string name="no_items_display_instances">Niks beskikbaar om te vertoon nie.\n\nProbeer om gestoorde vorms te finaliseer voordat u stuur.</string>
+    <string name="no_printer">Die aangevraagde drukker is nie geïnstalleer nie. Installeer asseblief die drukker .</string>
+    <string name="noselect_error">Jammer, u het nie enige vorms geselekteer nie!</string>
+    <string msgid="6573031135582639649" name="not_set">"Nie gestel nie"</string>
+    <string name="ok">OK</string>
+    <string name="open_url">Maak Url oop</string>
+    <string name="parent_form_not_present">Kon nie hierdie gestoorde vorm wysig nie omdat die ooreenstemmende vorm of nie teenwoordig is nie of uitgevee is.\n\nVorm ID: %1$s</string>
+    <string name="parse_error">Jammer, kon nie vorm verwerk nie.</string>
+    <string name="password">Wagwoord</string>
+    <string name="password_toggle_content_description">Wys wagwoord</string>
+    <string name="play_video">Speel Video</string>
+    <string name="please_wait">Wag asseblief \'n paar sekondes.</string>
+    <string name="please_wait_long">Wag asseblief. Hierdie kan dalk \'n paar minute neem.</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" is na knipbord gekopieer."</string>
+    <string name="provider_disabled_error">Jammer, Posisie-verskaffers is afgeskakel!</string>
+    <string name="quit_application">Verlaat %s</string>
+    <string name="quit_entry">Stoor Vorm en Verlaat</string>
+    <string name="recapture_osm">Doen OSM-tagging oor</string>
+    <string name="refresh">Verfris</string>
+    <string name="replace_barcode">Vervang Barcode</string>
+    <string name="replace_bearing">Vervang Rigting van beweging</string>
+    <string name="required_answer_error">Jammer, hierdie antwoord word benodig!</string>
+    <string name="reset_image">Reset</string>
+    <string name="reset_project_settings_title">Reset</string>
+    <string name="review_data">Wysig Gestoorde Vorm</string>
+    <string name="review_data_button">Wysig Gestoorde Vorm (%s)</string>
+    <string name="save_all_answers">Stoor Vorm</string>
+    <string name="save_and_close">Stoor en maak toe</string>
+    <string name="save_as_error">Gestoorde naam mag nie leeg wees nie!</string>
+    <string name="save_enter_data_description">U is aan die einde van %s.</string>
+    <string name="save_form_as">Gee hierdie vorm \'n naam</string>
+    <string name="save_mid">Stoor Vorm</string>
+    <string name="save_point_error">Fout tydens stoor van herstel-punt: %s</string>
+    <string name="saved_on_date_at_time">\'Gestoor op\' EEE, MMM dd, yyyy \'om\' HH:mm</string>
+    <string name="savepoint_used">Ongestoorde veranderinge is herstel vanaf stoor-punt!</string>
+    <string name="saving_form">Besig om vorm te stoor</string>
+    <string msgid="5659570757430909869" name="screen_lock_prompt_message">"Voer jou skermslot in om voort te gaan"</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Soek"</string>
+    <string name="select_answer">Kies Antwoord</string>
+    <string name="selected">Gekies:</string>
+    <string name="selected_google_account_text">Google rekening</string>
+    <string name="send_data">Stuur Gefinaliseerde Vorm</string>
+    <string name="send_data_button">Stuur Gefinaliseerde Vorm (%s)</string>
+    <string name="send_selected_data">Stuur Geselekteerde</string>
+    <string name="sending_failed_on_date_at_time">\'Stuur het misluk op\' EEE, MMM dd, yyyy \'om\' HH:mm</string>
+    <string name="sending_items">Besig om %1$s van %2$s vorm(s) te stuur</string>
+    <string name="sent_on_date_at_time">\'Gestuur op\' EEE, MMM dd, yyyy \'om\' HH:mm</string>
+    <string name="server_preferences">Server Verstellings</string>
+    <string name="server_requires_auth">Server Benodig Authentication</string>
+    <string name="server_url">URL</string>
+    <string name="set_color">Verstel Kleur</string>
+    <string name="show_sent_and_unsent_forms">Wys Gestuurde en Ongestuurde Vorms</string>
+    <string name="show_unsent_forms">Wys Ongestuurde Vorms</string>
+    <string name="sign_button">Verkry Handtekening</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="success">Sukses</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="survey_internal_error">Interne fout: aanstap na die vraag het misluk</string>
+    <string name="survey_loading_reading_csv_message">Lees CSV leêrs…</string>
+    <string name="survey_loading_reading_data_message">Lees opname data…</string>
+    <string name="survey_loading_reading_form_message">Lees vorm definisie…</string>
+    <string name="survey_multiple_forms_error">U het twee verskillende vorms afgelaai met dieselfde Vorm ID en weergawe. Miskien is dit dieselfde vorm wat of op verskillende tye of na verskillende servers opgelaai is. U moet in enige geval een verwyder.</string>
+    <string name="survey_saving_collecting_message">Versamel data…</string>
+    <string name="survey_saving_encrypting_message">Enkripteer data…</string>
+    <string name="survey_saving_finalizing_message">Finaliseer na SD kaart…</string>
+    <string name="survey_saving_saving_message">Stoor na SD kaart…</string>
+    <string name="survey_saving_validating_message">Toets antwoorde…</string>
+    <string name="swipe_buttons_navigation">Gebruik swipes en knoppies</string>
+    <string name="swipe_navigation">Gebruik horisontale swipes</string>
+    <string name="trigger">OK. Gaan asseblief voort.</string>
+    <string name="upload_results">Oplaai Resultate</string>
+    <string name="uploading_data">Besig om vorm te stuur</string>
+    <string name="url_error">Jammer, ongeldige URL!</string>
+    <string msgid="6524145989441579428" name="use_biometric_label">"Gebruik biometrie"</string>
+    <string msgid="5385448280139639016" name="use_biometric_or_screen_lock_label">"Gebruik biometrie of skermslot"</string>
+    <string msgid="6533512708069459542" name="use_face_label">"Gebruik gesig"</string>
+    <string msgid="2116180187159450292" name="use_face_or_screen_lock_label">"Gebruik gesigslot of skermslot"</string>
+    <string msgid="6961788485681412417" name="use_fingerprint_label">"Gebruik vingerafdruk"</string>
+    <string msgid="7577690399303139443" name="use_fingerprint_or_screen_lock_label">"Gebruik vingerafdruk of skermslot"</string>
+    <string msgid="5459869335976243512" name="use_screen_lock_label">"Gebruik skermslot"</string>
+    <string name="username">Gebruikersnaam</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"AF"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"AAN"</string>
+    <string name="version">Weergawe:</string>
+    <string name="view_change_location">Vertoon of Verander Posisie</string>
+    <string name="view_hierarchy">Gaan Na Vraag</string>
+    <string name="xform_parse_error">XForm verwerkingsfout. %1$s vermis element %2$s</string>
+</resources>

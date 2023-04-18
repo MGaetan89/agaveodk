@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-he/values-he.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-he/values-he.xml",
             "map": [
                 {
                     "source": "/Users/aurora/.gradle/caches/transforms-3/9c876f1c233fa81d709ec87e81451c32/transformed/jetified-zxing-android-embedded-4.3.0/res/values-he/values-he.xml",

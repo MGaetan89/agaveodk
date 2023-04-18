@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-ne-rNP/values-ne-rNP.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-ne-rNP/values-ne-rNP.xml",
             "map": [
                 {
                     "source": "/Users/aurora/Documents/odk/agaveodk/strings/build/intermediates/packaged_res/debug/values-ne-rNP/values-ne-rNP.xml",

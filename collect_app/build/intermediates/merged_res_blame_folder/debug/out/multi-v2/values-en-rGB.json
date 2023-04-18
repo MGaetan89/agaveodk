@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/Users/aurora/.gradle/caches/transforms-3/931289eb20732649b7414c5a1128b24e/transformed/biometric-1.2.0-alpha05/res/values-en-rGB/values-en-rGB.xml",

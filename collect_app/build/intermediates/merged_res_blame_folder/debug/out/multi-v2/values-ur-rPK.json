@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-ur-rPK/values-ur-rPK.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-ur-rPK/values-ur-rPK.xml",
             "map": [
                 {
                     "source": "/Users/aurora/Documents/odk/agaveodk/strings/build/intermediates/packaged_res/debug/values-ur-rPK/values-ur-rPK.xml",

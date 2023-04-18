@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item msgid="2178576254385739855" quantity="one">"ነገ"</item>
+        <item msgid="2973062968038355991" quantity="other">"በ<ns1:g id="COUNT">%d</ns1:g> ቀናት"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item msgid="3274708118124045246" quantity="one">"በ  1 ሰዓት"</item>
+        <item msgid="3705373766798013406" quantity="other">"በ <ns1:g id="COUNT">%d</ns1:g> ሰዓቶች"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item msgid="562786149928284878" quantity="one">"በ1 ደቂቃ ውስጥ"</item>
+        <item msgid="4216113292706568726" quantity="other">"በ<ns1:g id="COUNT">%d</ns1:g> ደቂቃዎች ውስጥ"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item msgid="5842225370795066299" quantity="one">"በ1 ሴኮንድ"</item>
+        <item msgid="5495880108825805108" quantity="other">"በ<ns1:g id="COUNT">%d</ns1:g> ሰከንዶች ውስጥ"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item msgid="8463161711492680309" quantity="one">"ትላንትና"</item>
+        <item msgid="3453342639616481191" quantity="other">"ከ <ns1:g id="COUNT">%d</ns1:g>ቀን በፊት"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item msgid="4796212039724722116" quantity="one">"ከ1 ሰዓት በፊት"</item>
+        <item msgid="6889970745748538901" quantity="other">"ከ <ns1:g id="COUNT">%d</ns1:g> ሰዓት በፊት"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item msgid="6361490147113871545" quantity="one">"ከ 1 ደቂቃ በፊት"</item>
+        <item msgid="851164968597150710" quantity="other">"ከ <ns1:g id="COUNT">%d</ns1:g> ደቂቃዎች በፊት"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item msgid="1849036840200069118" quantity="one">"1 ሴኮንድ በፊት"</item>
+        <item msgid="3699169366650930415" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> ሰከንዶች በፊት"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item msgid="8917467491248809972" quantity="one">"1 ሰዓት"</item>
+        <item msgid="3863962854246773930" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> ሰዓቶች"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item msgid="4915414002546085617" quantity="one">"1 ደቂቃ"</item>
+        <item msgid="3165187169224908775" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> ደቂቃዎች"</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item msgid="6962015528372969481" quantity="one">"1 ሴኮንድ"</item>
+        <item msgid="1886107766577166786" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> ሰከንዶች"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item msgid="5413088743009839518" quantity="one">"ነገ"</item>
+        <item msgid="5109449375100953247" quantity="other">"በ<ns1:g id="COUNT">%d</ns1:g> ቀናት"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item msgid="7164353342477769999" quantity="one">"በ  1 ሰዓት"</item>
+        <item msgid="547290677353727389" quantity="other">"በ <ns1:g id="COUNT">%d</ns1:g> ሰዓቶች"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item msgid="8793095251325200395" quantity="one">"በ1 ደቂቃ ውስጥ"</item>
+        <item msgid="3330713936399448749" quantity="other">"በ<ns1:g id="COUNT">%d</ns1:g> ደቂቃዎች ውስጥ"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item msgid="2729745560954905102" quantity="one">"በ1 ሴኮንድ"</item>
+        <item msgid="1241926116443974687" quantity="other">"በ<ns1:g id="COUNT">%d</ns1:g> ሰከንዶች ውስጥ"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item msgid="861358534398115820" quantity="one">"ትላንትና"</item>
+        <item msgid="2479586466153314633" quantity="other">"ከ <ns1:g id="COUNT">%d</ns1:g>ቀን በፊት"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item msgid="9150797944610821849" quantity="one">"ከ1 ሰዓት በፊት"</item>
+        <item msgid="2467273239587587569" quantity="other">"ከ <ns1:g id="COUNT">%d</ns1:g> ሰዓት በፊት"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item msgid="3306787433088810191" quantity="one">"ከ 1 ደቂቃ በፊት"</item>
+        <item msgid="2176942008915455116" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> ደቂቃዎች በፊት"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item msgid="4869870056547896011" quantity="one">"ከ1 ሴኮንድ በፊት"</item>
+        <item msgid="3903706804349556379" quantity="other">"<ns1:g id="COUNT">%d</ns1:g> ሰኮንዶች በፊት"</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d አዲስ ማሳወቂያዎች</item>
+    <item quantity="other">%d አዲስ ማሳወቂያዎች</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"መነሻ ዳስስ"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"ወደ ላይ ያስሱ"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"ተጨማሪ አማራጮች"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"ተከናውኗል"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"ሁሉንም ይመልከቱ"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"አንድ መተግበሪያ ይምረጡ"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"አጥፋ"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"አብራ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"ሰርዝ"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"ክፍተት"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"ይፈልጉ…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"መጠይቅ አጽዳ"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"የፍለጋ መጠይቅ"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"ፍለጋ"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"መጠይቅ አስገባ"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"የድምጽ ፍለጋ"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"አጋራ በ"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"ለ<ns1:g id="APPLICATION_NAME">%s</ns1:g> አጋራ"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"ሰብስብ"</string>
+    <string name="about_preferences">ስለ</string>
+    <string name="activity_not_found">የሚስተናገዱ ምንም እንቅስቃሴዎች አልተገኙም: 1 %s</string>
+    <string name="added_on_date_at_time">\'ታክሏል በ\' EEE፣ ወወወ ቀቀ፣ ዓዓዓዓ \'በ\' ሰሰ:ደደ</string>
+    <string name="admin_password">የአስተዳዳሪ ይለፍ ቃል</string>
+    <string name="admin_password_changed">የአስተዳዳሪ የይለፍ ቃል በተሳካ ሁኔታ ተለውጧል</string>
+    <string name="admin_password_disabled">የአስተዳዳሪ ይለፍ ቃል ተዘግቷል</string>
+    <string name="admin_password_incorrect">ይቅርታ፣ የይለፍ ቃል ትክክል አይደለም!</string>
+    <string name="alert">ማንቂያ</string>
+    <string name="analytics_preferences">የአጠቃቀም ውሂብ</string>
+    <string msgid="2102429900219199821" name="biometric_or_screen_lock_prompt_message">"ለመቀጠል የእርስዎን የባዮሜትሪክ ወይም የማያ ገጽ መቆለፊያ ይጠቀሙ"</string>
+    <string msgid="1160635338192065472" name="biometric_prompt_message">"ለመቀጠል የእርስዎን ባዮሜትሪክ ይጠቀሙ"</string>
+    <string name="bottomsheet_action_expand_halfway">ግማሽ መንገድ ዘርጋ</string>
+    <string name="buttons_navigation">ወደፊት/ወደኋላ አዝራሮችን ይጠቀሙ</string>
+    <string name="cancel">ሰርዝ</string>
+    <string name="cancel_loading_form">ሰርዝ</string>
+    <string name="cancel_location">ሰርዝ</string>
+    <string name="cannot_edit_completed_form">ይህ ቅጽ እንደተጠናቀቀ ምልክት ከተደረገ በኋላ አርትዕ ሊደረግ አይችልም. ቅፁ ምናልባት የተመሳጠረ ሊሆን ይችላል፡፡</string>
+    <string name="capture_audio">ድምጽ ቅረፅ</string>
+    <string name="capture_image">ፎቶ አንሳ</string>
+    <string name="capture_osm">OpenMapKitን አስጀምር</string>
+    <string name="capture_video">ቪዲዮ ቅዳ</string>
+    <string name="change_admin_password">የአስተዳዳሪ የይለፍ ቃል ለውጥ</string>
+    <string name="change_font_size">የጽሑፍ ቅርጸ ቁምፊ መጠን</string>
+    <string name="change_language">ቋንቋ ይቀይሩ</string>
+    <string name="change_password">ODK የይለፍ ቃል</string>
+    <string name="change_username">ODK የተጠቃሚ ስም</string>
+    <string name="change_view">እይታን ለውጥ</string>
+    <string name="character_counter_content_description">ቁምፊዎች %1$d ከ%2$d ገብተዋል</string>
+    <string name="character_counter_overflowed_content_description">የቁምፊ ገደብ %1$d ከ%2$d አልፏል</string>
+    <string name="choose_image">ምስል ይምረጡ</string>
+    <string name="choose_sound">ድምጽ ይምረጡ</string>
+    <string name="choose_video">ቪዲዮ ይምረጡ</string>
+    <string name="clear">አጽዳ</string>
+    <string name="clear_all">ሁሉንም ያፅዱ</string>
+    <string name="clear_answer">ምላሹን አስወግድ</string>
+    <string name="clear_answer_ask">ይህ ምላሽ ይወገድ?</string>
+    <string name="clear_answer_no">ሰርዝ</string>
+    <string name="clear_text_end_icon_content_description">ጽሑፍን አጽዳ</string>
+    <string name="clearanswer_confirm">የ \" 1 %s \" ምላሽ ይወግድ?</string>
+    <string name="client">የተጠቃሚ በይነገጽ</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">አንቃ</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Google Play አገልግሎቶችን ካላነቁ በስተቀር %1$s አይሰራም።</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play አገልግሎቶችን ያንቁ</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">ጫን</string>
+    <string name="common_google_play_services_install_text">%1$s ያለ Google Play አገልግሎቶች አይሰራም፣ እነሱ ደግሞ በመሣሪያዎ ላይ የሉም።</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play አገልግሎቶችን ያግኙ</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play አገልግሎቶች ተገኝነት</string>
+    <string name="common_google_play_services_notification_ticker">የGoogle Play አገልግሎቶች ስህተት</string>
+    <string name="common_google_play_services_unknown_issue">%1$s በGoogle Play አገልግሎቶች ላይ ችግሮች እያጋጠሙት ነው። እባክዎ እንደገና ይሞክሩ።</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ያለGoogle Play አገልግሎቶች አይሄድም፣ እነዚህም በመሣሪያዎ አይደገፉም።</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">ያዘምኑ</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Google Play አገልግሎቶችን ካላዘመኑ በስተቀር ድረስ %1$s አይሰራም።</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play አገልግሎቶችን ያዘምኑ</string>
+    <string name="common_google_play_services_updating_text">%1$s ያለ Google Play አገልግሎቶች አይሰራም፣ እነሱ ደግሞ በአሁኑ ጊዜ በመዘመን ላይ ናቸው።</string>
+    <string name="common_google_play_services_wear_update_text">አዲስ የGoogle Play አገልግሎቶች ስሪት ያስፈልጋል። በቅርቡ እራሱን ያዘምናል።</string>
+    <string name="common_open_on_phone">ስልክ ላይ ክፈት</string>
+    <string name="common_signin_button_text">ግባ</string>
+    <string name="common_signin_button_text_long">በGoogle ይግቡ</string>
+    <string msgid="5912733858573823945" name="confirm_device_credential_password">"የይለፍ ቃል ተጠቀም"</string>
+    <string msgid="6083905920877235314" name="copy">"ቅዳ"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"አገናኝ ወደ ቅንጥብ ሰሌዳ ተቀድቷል"</string>
+    <string name="data">የተቀመጡ ቅጾች</string>
+    <string name="data_saved_error">ይቅርታ፣ ቅፁን ማስቀመጥ አልተሳካም!</string>
+    <string name="data_saved_ok">ቅፁ በተሳካ ሁኔታ ተቀምጧል!</string>
+    <string msgid="4776854077120974966" name="default_error_msg">"ያልታወቀ ስህተት"</string>
+    <string name="delete_after_send">ከላክ በኋላ ይሰርዙ</string>
+    <string name="delete_after_send_summary">ወደ ሰርቨር ከተላኩ በኋላ የተጠናቀቁ ቅጾችን እና ሚዲያዎችን ይሰርዛል</string>
+    <string name="delete_confirm">የ 1 %s ቅጽ (ዎች) ይወገድ?</string>
+    <string name="delete_file">የተመረጠውን ሰርዝ</string>
+    <string name="delete_no">አትሰርዝ</string>
+    <string name="delete_project_no">አይ</string>
+    <string name="delete_project_yes">አዎ</string>
+    <string name="delete_repeat">ቡድን አስወግድ</string>
+    <string name="delete_repeat_ask">ይህ ቡድን ይወገድ?</string>
+    <string name="delete_repeat_confirm">ቡድን \" 1%s \" ን እና ሁሉንም ንዑስ ቡድኖቹን አስወግድ?</string>
+    <string name="delete_repeat_no">ሰርዝ</string>
+    <string name="delete_yes">ቅጾችን ሰርዝ</string>
+    <string name="deleted_form">የተሰረዘ ቅጽ</string>
+    <string name="deleted_on_date_at_time">\'የተሰረዘዉ በ\' EEE፣ ወወወ ቀቀ ዓዓዓዓ \'በ\' ሰሰ:ደደ</string>
+    <string name="direction">አቅጣጫ: 1 %s</string>
+    <string name="discard">አስወግድ</string>
+    <string name="discard_answer">ምላሹን አስወግድ</string>
+    <string name="discard_group">ቡድን አስወግድ</string>
+    <string name="do_not_change">ሰርዝ</string>
+    <string name="do_not_exit">ሰርዝ</string>
+    <string name="download">የተመረጠውን ያግኙ</string>
+    <string name="download_selected">የተመረጠውን አውርድ</string>
+    <string name="downloading_data">ከአገልጋይ ኮምፒውተር ጋር በመገናኘት ላይ</string>
+    <string name="draw_image">ንድፍ ምስል</string>
+    <string name="email">የ ኢሜል አድራሻ</string>
+    <string name="enable_gps">GPSን አንቃ</string>
+    <string name="encrypted_form">የተመሳጠረ ቅጽ</string>
+    <string name="enter_admin_password">የአስተዳዳሪ የይለፍ ቃል ያስገቡ</string>
+    <string name="enter_data">ባዶዉን ቅጽ ሙላ</string>
+    <string name="enter_data_button">ባዶ ቅጽ መሙላት</string>
+    <string name="enter_new_password">አዲስ የይለፍ ቃል ያስገቡ</string>
+    <string name="error_attaching_binary_file">ሚደያዉን በማያያዝ ላይ ስህተት ተከስቷል 1 %s</string>
+    <string name="error_icon_content_description">ስህተት</string>
+    <string name="error_occured">ስህተት ተከስቷል</string>
+    <string name="ethiopian_month_1">መስከረም</string>
+    <string name="ethiopian_month_10">ሰኔ</string>
+    <string name="ethiopian_month_11">ሐምሌ</string>
+    <string name="ethiopian_month_12">ነሐሴ</string>
+    <string name="ethiopian_month_13">ጳጉሜን</string>
+    <string name="ethiopian_month_2">ጥቅምት</string>
+    <string name="ethiopian_month_3">ኅዳር</string>
+    <string name="ethiopian_month_4">ታኅሣሥ</string>
+    <string name="ethiopian_month_5">ጥር</string>
+    <string name="ethiopian_month_6">የካቲት</string>
+    <string name="ethiopian_month_7">መጋቢት</string>
+    <string name="ethiopian_month_8">ሚያዝያ</string>
+    <string name="ethiopian_month_9">ግንቦት</string>
+    <string name="exit">ውጣ</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"የላቀ"</string>
+    <string name="exposed_dropdown_menu_content_description">ተቆልቋይ ምናሌን አሳይ</string>
+    <string name="ext_conflicting_columns_error">አምዶች 1 %s ይመሳሰላሉ!</string>
+    <string name="ext_file_no_data_error">ፋይሉ ምንም ውሂብ አልያዘም!</string>
+    <string name="ext_import_completed_message">የንባብ ውሂብ ተጠናቅቋል!</string>
+    <string name="ext_import_finalizing_message">ቀድሞ የተጫነ ውሂብ በማጠናቀቅ ላይ …</string>
+    <string name="ext_import_generic_error">ከ 1 %1$s ውሂብ ማስመጣት አልተቻለም፡፡ ምክንያት፣ 2 %2$s</string>
+    <string name="ext_not_initialized_error">ውጫዊ ውሂብ አደራጅ አልተነሳም</string>
+    <string msgid="4562557128765735254" name="face_or_screen_lock_prompt_message">"ለመቀጠል የእርስዎን መልክ ወይም የማያ ገጽ መቆለፊያ ይጠቀሙ"</string>
+    <string msgid="2282389249605674226" name="face_prompt_message">"ለመቀጠል የእርስዎን መልክ ይጠቀሙ"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"አገናኝ ቅዳ"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"በአሳሽ ውስጥ ክፈት"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"አገናኝ አጋራ"</string>
+    <string name="file_delete_in_progress">ይቅርታ፣ ቅጽ የመሰረዝ እርምጃ አስቀድሞ በሂደት ላይ ነው!</string>
+    <string name="file_deleted_error">እናዝናለን፣ የተመረጠው 1 %1$s የ 2 %2$s ቅጽ (ዎች) መሰረዝ አልተሳካም!</string>
+    <string name="file_deleted_ok">1 %s ቅጽ (ዎች) በተሳካ ሁኔታ ተሰርዘዋል!</string>
+    <string name="file_invalid">ፋይል፡ 1 %s ልክ ያልኾነ ነው</string>
+    <string name="file_missing">ፋይል፡ 1 %s ይጎድላል</string>
+    <string name="finalized_on_date_at_time">\'የተጠናቀቀዉ በ\' EEE፣ ወወወ ቀቀ ዓዓዓዓ \'በ\' ሰሰ:ደደ</string>
+    <string msgid="5462024216548165325" name="fingerprint_dialog_icon_description">"የጣት አሻራ አዶ"</string>
+    <string msgid="1072308044213194243" name="fingerprint_dialog_touch_sensor">"የጣት አሻራ ዳሳሹን ይንኩ"</string>
+    <string msgid="8216738333501875566" name="fingerprint_error_hw_not_available">"የጣት አሻራ ሃርድዌር የለም።"</string>
+    <string msgid="6306988885793029438" name="fingerprint_error_hw_not_present">"ይህ መሣሪያ የጣት አሻራ ዳሳሽ የለውም"</string>
+    <string msgid="7291787166416782245" name="fingerprint_error_lockout">"በጣም ብዙ ሙከራዎች። እባክዎ ቆይተው እንደገና ይሞክሩ።"</string>
+    <string msgid="7520712796891883488" name="fingerprint_error_no_fingerprints">"ምንም የጣት አሻራዎች አልተመዘገቡም።"</string>
+    <string msgid="7627716295344353987" name="fingerprint_error_user_canceled">"የጣት አሻራ ክወና በተጠቃሚ ተሰርዟል።"</string>
+    <string msgid="3873359464293253009" name="fingerprint_not_recognized">"አልታወቀም"</string>
+    <string msgid="8382576858490514495" name="fingerprint_or_screen_lock_prompt_message">"ለመቀጠል የእርስዎን የጣት አሻራ ወይም የማያ ገጽ መቆለፊያ ይጠቀሙ"</string>
+    <string msgid="7449360011861769080" name="fingerprint_prompt_message">"ለመቀጠል የእርስዎን የጣት አሻራ ይጠቀሙ"</string>
+    <string name="finished_disk_scan">ስካን ተጠናቋል፡፡ ሁሉም ቅጾች ተጭነዋል፡፡</string>
+    <string name="font_size">የጽሑፍ ቅርጸ ቁምፊ መጠን</string>
+    <string name="font_size_extra_large">በጣም ትልቅ</string>
+    <string name="font_size_extra_small">በጣም ትንሽ</string>
+    <string name="font_size_large">ትልቅ</string>
+    <string name="font_size_medium">መካከለኛ</string>
+    <string name="font_size_small">ትንሽ</string>
+    <string name="form_filling_category">የቅጽ መሙላት</string>
+    <string name="form_forward">ቀጣይ</string>
+    <string name="form_management_preferences">የቅጽ ማስተዳደር</string>
+    <string name="form_submission_category">የቅጽ ማስረከብ</string>
+    <string name="forms">ባዶ ቅጾች</string>
+    <string name="found_in_main">ከመደበኛው ምናሌ ለመደበቅ አትምረጥ</string>
+    <string name="generate">ፍጠር</string>
+    <string msgid="3791785319221634505" name="generic_error_no_device_credential">"ምንም ፒን፣ ሥርዓተ ጥለት ወይም የይለፍ ቃል አልተቀናበረም።"</string>
+    <string msgid="1807436368654974044" name="generic_error_no_keyguard">"ይህ መሣሪያ ፒን፣ ስርዓተ-ጥለት ወይም የይለፍ ቃል አይደግፍም።"</string>
+    <string msgid="7309881387583143581" name="generic_error_user_canceled">"ማረጋገጫ በተጠቃሚ ተሰርዟል።"</string>
+    <string name="geoshape_view_change_location">GeoShapeን ይመልከቱ ወይም ይቀይሩ</string>
+    <string name="geotrace_view_change_location">GeoTraceን ይመልከቱ ወይም ይቀይሩ</string>
+    <string name="get_barcode">ባርኮድ ያግኙ</string>
+    <string name="get_forms">አዲስ ቅጽ</string>
+    <string name="get_location">ቦታን መዝግብ</string>
+    <string name="go_back">ተመለስ</string>
+    <string name="go_drive">የእኔ Drive</string>
+    <string name="go_shared">ከእኔ ጋር የተጋሩ</string>
+    <string name="google_search_browse">ቅጾችን ይፈልጉ፡፡ ወይም ለማሰስ ከታች \"የእኔ Drive\" ን ይምረጡ.</string>
+    <string name="guidance_no">አይ</string>
+    <string name="high_resolution_summary">ባለከፍተኛ ጥራት ቪዲዮ ቀረጻዎችን ያንቁ</string>
+    <string name="high_resolution_title">ከፍተኛ ጥራት ቪዲዮ</string>
+    <string name="icon_content_description">የንግግር አዶ</string>
+    <string name="image_size_large">ትልቅ (3072 ፒክስል)</string>
+    <string name="image_size_medium">መካከለኛ (2048 ፒክሰል)</string>
+    <string name="image_size_small">ትንሽ (1024 ፒክሰል)</string>
+    <string name="image_size_title">የምስል መጠን</string>
+    <string name="image_size_very_small">በጣም ትንሽ (640 ፒክሰል)</string>
+    <string name="install_openmapkit">እባክዎ OpenMapKitን ይጫኑ!</string>
+    <string name="invalid_answer_error">ይቅርታ፣ ይህ ምላሽ ልክ አይደለም!</string>
+    <string name="item_view_role_description">ትር</string>
+    <string name="joda_time_android_date_time">%2$s %1$s</string>
+    <string msgid="9093949757757445117" name="joda_time_android_preposition_for_date">"በ <ns1:g id="DATE">%s</ns1:g>"</string>
+    <string msgid="5506831244263083793" name="joda_time_android_preposition_for_time">"በ <ns1:g id="TIME">%s</ns1:g>"</string>
+    <string msgid="1818557177829411417" name="joda_time_android_relative_time">"<ns1:g id="DATE">%1$s</ns1:g>, <ns1:g id="TIME">%2$s</ns1:g>"</string>
+    <string name="jump_to_beginning">ወደ መጀመሪያ ይሂዱ</string>
+    <string name="jump_to_end">ወደ መጨረሻ ይሂዱ</string>
+    <string name="jump_to_previous">ወደ ላይ ውጣ</string>
+    <string name="keep_changes">ለውጦችን አስቀምጥ</string>
+    <string name="language">ቋንቋ</string>
+    <string name="launch_app">አስጀምር</string>
+    <string name="launch_printer">ማተምን ያስጀምሩ</string>
+    <string name="loading_form">ቅጽ በመጫን ላይ</string>
+    <string name="manage_files">የተሞላዉን ቅጽ ያጥፉ</string>
+    <string name="mark_finished">ቅጹን እንደተጠናቀቀ ምልክት አድርግ</string>
+    <string name="material_clock_toggle_content_description">AM ወይም PM ይምረጡ</string>
+    <string name="material_hour_selection">ሰዓትን ይምረጡ</string>
+    <string name="material_hour_suffix">%1$s ሰዓት</string>
+    <string name="material_minute_selection">ደቂቃዎችን ይምረጡ</string>
+    <string name="material_minute_suffix">%1$s ደቂቃዎች</string>
+    <string name="material_timepicker_am">ጥዋት</string>
+    <string name="material_timepicker_clock_mode_description">ለጊዜ ግቤቱ ወደ የሰዓት ሁነታ ቀይር።</string>
+    <string name="material_timepicker_hour">ሰዓት</string>
+    <string name="material_timepicker_minute">ደቂቃ</string>
+    <string name="material_timepicker_pm">ከሰዓት</string>
+    <string name="material_timepicker_select_time">ጊዜ ምረጥ</string>
+    <string name="material_timepicker_text_input_mode_description">ለጊዜ ግቤቱ ወደ የጽሑፍ ግቤት ሁነታ ቀይር።</string>
+    <string name="moving_backwards_disabled_title">ወደኋላ መሄድ አልተመረጠም</string>
+    <string name="moving_backwards_enabled_title">ወደኋላ መሄድ ተመርጧል</string>
+    <string name="moving_backwards_title">ወደኋላ መሄድ</string>
+    <string name="mtrl_badge_numberless_content_description">አዲስ ማሳወቂያ</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$sን አስወግድ</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">ከ%1$d በላይ አዲስ ማሳወቂያዎች</string>
+    <string name="mtrl_picker_a11y_next_month">ወደ የሚቀጥለው ወር ቀይር</string>
+    <string name="mtrl_picker_a11y_prev_month">ወደ ቀዳሚው ወር ቀይር</string>
+    <string name="mtrl_picker_announce_current_selection">የአሁኑ ምርጫ፦ %1$s</string>
+    <string name="mtrl_picker_cancel">ይቅር</string>
+    <string name="mtrl_picker_confirm">እሺ</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">ቀን ይምረጡ</string>
+    <string name="mtrl_picker_date_header_unselected">የተመረጠው ቀን</string>
+    <string name="mtrl_picker_day_of_week_column_header">የቀኖች ዓምድ፦ %1$s</string>
+    <string name="mtrl_picker_invalid_format">ልክ ያልሆነ ቅርጸት</string>
+    <string name="mtrl_picker_invalid_format_example">ምሳሌ፦ %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">%1$s ን ይጠቀሙ</string>
+    <string name="mtrl_picker_invalid_range">ልክ ያልኾነ ክልል።</string>
+    <string name="mtrl_picker_navigate_to_year_description">ወደ ዓመት %1$s አሰስ</string>
+    <string name="mtrl_picker_out_of_range">ከክልል ውጪ፦ %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">መጀመሪያ ቀን – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – መጨረሻ ቀን</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">ክልል ይምረጡ</string>
+    <string name="mtrl_picker_range_header_unselected">የመጀመሪያ ቀን – የመጨረሻ ቀን</string>
+    <string name="mtrl_picker_save">አስቀምጥ</string>
+    <string name="mtrl_picker_text_input_date_hint">ቀን</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">የማብቂያ ቀን</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">መጀመሪያ ቀን</string>
+    <string name="mtrl_picker_text_input_day_abbr">ቀ</string>
+    <string name="mtrl_picker_text_input_month_abbr">ደ</string>
+    <string name="mtrl_picker_text_input_year_abbr">ዓ</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">ወደ የቀን መቁጠሪያ ግቤት ሁነታ ቀይር</string>
+    <string name="mtrl_picker_toggle_to_day_selection">ወደ ቀን መምረጥ ለመቀየር መታ ያድርጉ</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">ወደ ጽሑፍ ግቤት ሁነታ ቀይር</string>
+    <string name="mtrl_picker_toggle_to_year_selection">ወደ ዓመት መምረጥ ለመቀየር መታ ያድርጉ</string>
+    <string name="mtrl_timepicker_cancel">ይቅር</string>
+    <string name="mtrl_timepicker_confirm">እሺ</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"ወደ ላይ ያስሱ"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"የአሰሳ መሣቢያውን ክፈት"</string>
+    <string name="navigation">ዳሰሳ</string>
+    <string name="no">አይ</string>
+    <string name="no_connection">ምንም የአውታረ መረብ ግንኙነት የለም</string>
+    <string name="no_form_loaded">&amp;lt፣ምንም ቅጽ አልተጫነም&amp;gt፣</string>
+    <string name="no_forms_uploaded">ይቅርታ፣ ምንም ቅጽ አልተጫነም፡፡</string>
+    <string name="no_google_account">ምንም የ Google መለያ አልተመረጠም!</string>
+    <string name="no_items_display">ምንም የሚታይ የለም</string>
+    <string name="no_items_display_forms">ምንም የሚታይ ነገር የለም:: \n\n አንድ ባዶ ቅጽ በማግኘትና በመሙላት ይሞክሩ::</string>
+    <string name="no_items_display_instances">ምንም የሚታይ ነገር የለም:: \n\n ከመላኩ በፊት የተቀመጡ ቅጾች ማጠናቀቅ ይሞክሩ</string>
+    <string name="no_items_display_sent_forms">ምንም የሚታይ ነገር የለም:: \n\n ከማየትዎ በፊት የተጠናቀቁ ቅጾችን ይላኩ::</string>
+    <string name="noselect_error">ይቅርታ፣ ምንም ቅጽ አልመረጡም!</string>
+    <string msgid="6573031135582639649" name="not_set">"አልተዘጋጀም"</string>
+    <string name="odk_forum">የODKን መድረክ ይቀላቀሉ</string>
+    <string name="odk_website">የODKን ድረ ገፅ ይጎብኙ</string>
+    <string name="off">ጠፍቷል</string>
+    <string name="ok">እሺ</string>
+    <string name="open_url">ዩአርኤል ይክፈቱ</string>
+    <string name="parse_error">ይቅርታ፣ ቅፁን ለመተንተን አልተቻለም</string>
+    <string name="password">የይለፍ ቃል</string>
+    <string name="password_toggle_content_description">የይለፍ ቃል አሳይ</string>
+    <string name="persian_month_4">ጥር</string>
+    <string name="phone_number">ስልክ ቁጥር</string>
+    <string name="play_video">ቪድዮ አጫውት</string>
+    <string name="please_wait">እባክዎ ጥቂት ጊዜ ይጠብቁ</string>
+    <string name="please_wait_long">እባክዎ ትንሽ ይጠብቁ፡፡ ይሄ ጥቂት ደቂቃዎችን ሊወስድ ይችላል፡፡</string>
+    <string msgid="6685851473431805375" name="preference_copied">"«<ns1:g id="SUMMARY">%1$s</ns1:g>» ወደ የቅንጥብ ሰሌዳ ተቀድቷል።"</string>
+    <string name="provider_disabled_error">ይቅርታ፣ የአካባቢ አቅራቢዎች አይሰሩም፡፡</string>
+    <string name="quit_application">ከ 1 %s ይውጡ</string>
+    <string name="quit_entry">ቅጹን አስቀምጠዉ ይውጡ</string>
+    <string name="refresh">አድስ</string>
+    <string name="replace_barcode">ባርኮዱን ተካ</string>
+    <string name="required_answer_error">ይቅርታ፣ ይህ ምላሽ ያስፈልጋል!</string>
+    <string name="reset_app_state_result">ውጤቶችን ዳግም ያስጀምሩ</string>
+    <string name="reset_blank_forms_result">ባዶ ቅጾች :: %s</string>
+    <string name="reset_image">ዳግም አስጀምር</string>
+    <string name="reset_in_progress">እንደገና በማስጀመር ላይ …</string>
+    <string name="reset_project_settings_title">ዳግም አስጀምር</string>
+    <string name="reset_saved_forms_result">የተቀመጡ ቅጾች :: %s</string>
+    <string name="reset_settings_button_reset">ዳግም አስጀምር</string>
+    <string name="reset_settings_dialog_title">ምን ዳግም ለመጀመር ይምረጡ</string>
+    <string name="reset_settings_result">ሁሉም ቅንብሮች :: %s</string>
+    <string name="review_data">የተቀመጠ ቅጽን ያርትዑ</string>
+    <string name="review_data_button">የተቀመጠ ቅጽ ( %s) ያርትዑ</string>
+    <string name="satellite">ሳተላይት</string>
+    <string name="save_all_answers">ቅጽ አስቀምጥ</string>
+    <string name="save_and_close">አስቀምጥ እና ዝጋ</string>
+    <string name="save_as_error">የተቀመጠው ስም ባዶ መሆን የለበትም!</string>
+    <string name="save_enter_data_description">በ 1 %s መጨረሻ ላይ ነዎት</string>
+    <string name="save_form_as">ይህን ቅጽ ይሰይሙ</string>
+    <string name="save_mid">ቅጽ አስቀምጥ</string>
+    <string name="save_point_error">የመልሶ ማግኛ ነጥብ ማስቀመጥ አልተቻለም፡ 1 %s</string>
+    <string name="saved_on_date_at_time">\'የተመዘገበዉ በ\' EEE፣ ወወወ ቀቀ ዓዓዓዓ \'በ\' ሰሰ:ደደ</string>
+    <string name="savepoint_used">ያልተቀመጡ ለውጦች በጥንቃቄ ተመልሰዋል!</string>
+    <string name="saving_form">ቅጽን በማስቀመጥ ላይ</string>
+    <string msgid="5659570757430909869" name="screen_lock_prompt_message">"ለመቀጠል የእርስዎን የማያ ገጽ ቁልፍ ያስገቡ"</string>
+    <string name="search">ፈልግ</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"ፍለጋ"</string>
+    <string name="select_all">ሁሉንም ምረጥ</string>
+    <string name="select_answer">መልሱን ይምረጡ</string>
+    <string name="select_date">ቀን ምረጥ</string>
+    <string name="select_time">ሰዓት ምረጥ</string>
+    <string name="selected">ተመርጧል:</string>
+    <string name="selected_google_account_text">የ Google መለያ</string>
+    <string name="selected_invalid_image">የተመረጠው ፋይል ትክክለኛ ምስል አይደለም</string>
+    <string name="send_data">ተጠናቆ የተሞላ  ቅጽ ላክ</string>
+    <string name="send_data_button">ተጠናቆ የተሞላ ቅጽ ላክ (%s)</string>
+    <string name="send_selected_data">የተመረጠውን ላክ</string>
+    <string name="sending_failed_on_date_at_time">\'በመላክ ላይ ያልተሳካዉ በ\'  EEE፣ ወወወ ቀቀ ዓዓዓዓ \'በ\' ሰሰ:ደደ</string>
+    <string name="sending_items">1 %1$s ከ 2 %2$s ቅጽ (ዎች) በመላክ ላይ</string>
+    <string name="sent_on_date_at_time">\'የተላከወዉ በ\' EEE፣ ወወወ ቀቀ ዓዓዓዓ \'በ\' ሰሰ:ደደ</string>
+    <string name="server_auth_credentials">ልክ ያልሆነ የተጠቃሚ ስም ወይም የይለፍ ቃል ለሰርቨሩ፣ 1 %s</string>
+    <string name="server_platform_google_sheets">ጉግል Drive, ጉግል ሉሆች</string>
+    <string name="server_preferences">የሰርቨር ቅንብሮች</string>
+    <string name="server_requires_auth">ሰርቨር ማረጋገጫ ያስፈልገዋል</string>
+    <string name="server_url">URL</string>
+    <string name="set_color">ቀለም አዘጋጅ</string>
+    <string name="share">አጋራ</string>
+    <string name="show_password">የይለፍ ቃሉን አሳይ</string>
+    <string name="show_sent_and_unsent_forms">የተላኩ እና ያልተላኩ ቅጾችን አሳይ</string>
+    <string name="show_unsent_forms">ያልተላኩ ቅጾችን አሳይ</string>
+    <string name="sign_button">ፊርማ ያሰባስቡ</string>
+    <string name="sort_by">ቅደምተከተሉ የተስተካከለው</string>
+    <string name="sort_by_name_asc">ስም፣ ሀ-ፐ</string>
+    <string name="sort_by_name_desc">ስም፣ ፐ-ሀ</string>
+    <string name="start">ይጀምሩ</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="streets">መንገዶች</string>
+    <string name="success">ስኬት</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>፣ <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="survey_loading_reading_data_message">የዳሰሳ ጥናት ውሂብ በማንበብ ላይ …</string>
+    <string name="survey_loading_reading_form_message">የቅፅ ፍቺ በማንበብ ላይ …</string>
+    <string name="survey_saving_collecting_message">ውሂብ በመሰብሰብ ላይ …</string>
+    <string name="survey_saving_encrypting_message">ውሂብ በማመስጠር ላይ …</string>
+    <string name="survey_saving_finalizing_message">ወደ SD ካርድ በማጠናቀቅ ላይ …</string>
+    <string name="survey_saving_saving_message">ወደ SD ካርድ በማስቀመጥ ላይ …</string>
+    <string name="survey_saving_validating_message">መልሶችን በማረጋገጥ ላይ …</string>
+    <string name="swipe_buttons_navigation">ማጠፊያዎችን እና አዝራሮችን ይጠቀሙ</string>
+    <string name="swipe_navigation">አግድም ማጠፊያዎችን ይጠቀሙ</string>
+    <string name="terrain">መልከአ ምድር</string>
+    <string name="trigger">እሺ:: እባክዎ ይቀጥሉ::</string>
+    <string name="upload_results">ውጤቶችን ጫን</string>
+    <string name="uploading_data">ቅጹን በመላክ ላይ</string>
+    <string name="url_error">ይቅርታ፣ ልክ ያልሆነ URL!</string>
+    <string msgid="6524145989441579428" name="use_biometric_label">"ባዮሜትሪኮችን ተጠቀም"</string>
+    <string msgid="5385448280139639016" name="use_biometric_or_screen_lock_label">"ባዮሜትሪኮችን ወይም ማያ ገጽ መቆለፊያን ይጠቀሙ"</string>
+    <string msgid="6533512708069459542" name="use_face_label">"መልክን ተጠቀም"</string>
+    <string msgid="2116180187159450292" name="use_face_or_screen_lock_label">"የመልክ ወይም የማያ ገጽ መቆለፊያን ተጠቀም"</string>
+    <string msgid="6961788485681412417" name="use_fingerprint_label">"የጣት አሻራን ተጠቀም"</string>
+    <string msgid="7577690399303139443" name="use_fingerprint_or_screen_lock_label">"የጣት አሻራን ወይም የማያ ገጽ መቆለፊያን ይጠቀሙ"</string>
+    <string msgid="5459869335976243512" name="use_screen_lock_label">"የማያ ገጽ መቆለፊያን ተጠቀም"</string>
+    <string name="username">የተጠቃሚ ስም</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"ጠፍቷል"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"በርቷል"</string>
+    <string name="version">ስሪት:</string>
+    <string name="version_number">ሥሪት: 1 %s</string>
+    <string name="view_change_location">አካባቢን ይመልከቱ ወይም ይቀይሩ</string>
+    <string name="view_sent_forms">ተሞልቶ የተላከዉን  ቅጽ ይመልከቱ</string>
+    <string name="view_sent_forms_button">ተሞልቶ የተላከዉን ቅጽ ( 1 %s ) ይመልከቱ</string>
+    <string name="west">ም 1 %1$s  2 %2$s  3%3$s</string>
+    <string name="yes">አዎ</string>
+</resources>

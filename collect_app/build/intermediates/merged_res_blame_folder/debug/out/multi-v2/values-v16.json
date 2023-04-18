@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-94:/values-v16/values-v16.xml",
+            "outputFile": "org.odk.collect.android.collect_app-mergeDebugResources-90:/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/Users/aurora/.gradle/caches/transforms-3/ecfb7646e7f3a2c2b09abc06f2800141/transformed/core-1.9.0/res/values-v16/values-v16.xml",
