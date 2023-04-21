@@ -7,6 +7,6 @@ public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
   public static final String APPLICATION_ID = "org.odk.collect.android";
   public static final String BUILD_TYPE = "debug";
-  public static final int VERSION_CODE = 1071;
-  public static final String VERSION_NAME = "b9b8015-dirty";
+  public static final int VERSION_CODE = 1066;
+  public static final String VERSION_NAME = "993b690-dirty";
 }
