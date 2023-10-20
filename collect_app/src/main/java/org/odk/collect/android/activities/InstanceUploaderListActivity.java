@@ -16,9 +16,14 @@ package org.odk.collect.android.activities;
 
 import static org.odk.collect.settings.keys.ProjectKeys.KEY_PROTOCOL;
 
+import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -38,24 +43,35 @@ import androidx.work.WorkManager;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.android.R;
 import org.odk.collect.android.adapters.InstanceUploaderAdapter;
 import org.odk.collect.android.backgroundwork.FormUpdateAndInstanceSubmitScheduler;
 import org.odk.collect.android.backgroundwork.InstanceSubmitScheduler;
 import org.odk.collect.android.dao.CursorLoaderFactory;
+import org.odk.collect.android.database.instances.DatabaseInstanceColumns;
 import org.odk.collect.android.databinding.InstanceUploaderListBinding;
 import org.odk.collect.android.formlists.sorting.FormListSortingOption;
 import org.odk.collect.android.gdrive.GoogleSheetsUploaderActivity;
 import org.odk.collect.android.injection.DaggerUtils;
+import org.odk.collect.android.utilities.FileUtils;
+import org.odk.collect.android.utilities.FormsRepositoryProvider;
+import org.odk.collect.android.utilities.InstancesRepositoryProvider;
 import org.odk.collect.androidshared.network.NetworkStateProvider;
 import org.odk.collect.android.preferences.screens.ProjectPreferencesActivity;
 import org.odk.collect.android.projects.CurrentProjectProvider;
 import org.odk.collect.android.utilities.PlayServicesChecker;
 import org.odk.collect.androidshared.ui.ToastUtils;
 import org.odk.collect.androidshared.ui.multiclicksafe.MultiClickGuard;
+import org.odk.collect.forms.Form;
+import org.odk.collect.forms.FormsRepository;
+import org.odk.collect.forms.instances.Instance;
 import org.odk.collect.settings.SettingsProvider;
 import org.odk.collect.settings.keys.ProjectKeys;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.List;
 
@@ -73,10 +89,12 @@ import timber.log.Timber;
 
 public class InstanceUploaderListActivity extends InstanceListActivity implements
         OnLongClickListener, AdapterView.OnItemClickListener, LoaderManager.LoaderCallbacks<Cursor> {
+    public static final String PENDING_REPORTS = "pendingReports";
     private static final String SHOW_ALL_MODE = "showAllMode";
     private static final String INSTANCE_UPLOADER_LIST_SORTING_ORDER = "instanceUploaderListSortingOrder";
 
     private static final int INSTANCE_UPLOADER = 0;
+    private static Bundle networkReports = new Bundle();
 
     InstanceUploaderListBinding binding;
 
@@ -112,9 +130,10 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
         binding.uploadButton.setOnClickListener(v -> onUploadButtonsClicked());
         if (savedInstanceState != null) {
             showAllMode = savedInstanceState.getBoolean(SHOW_ALL_MODE);
+            networkReports = savedInstanceState.getBundle(PENDING_REPORTS);
         }
 
-        init();
+        init(savedInstanceState);
     }
 
     public void onUploadButtonsClicked() {
@@ -143,7 +162,7 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
         }
     }
 
-    void init() {
+    void init(Bundle savedInstanceState) {
         binding.uploadButton.setText(R.string.send_selected_data);
 
         binding.toggleButton.setLongClickable(true);
@@ -191,6 +210,8 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
 
         getSupportLoaderManager().initLoader(LOADER_ID, null, this);
 
+//        createNetworkReport(savedInstanceState);
+
         // Start observer that sets autoSendOngoing field based on AutoSendWorker status
         updateAutoSendStatus();
     }
@@ -225,12 +246,16 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
     private void uploadSelectedFiles(long[] instanceIds) {
         String server = settingsProvider.getUnprotectedSettings().getString(KEY_PROTOCOL);
 
+        //first, send network data
+
+        //then, send forms
         if (server.equalsIgnoreCase(ProjectKeys.PROTOCOL_GOOGLE_SHEETS)) {
             // if it's Sheets, start the Sheets uploader
             // first make sure we have a google account selected
             if (new PlayServicesChecker().isGooglePlayServicesAvailable(this)) {
                 Intent i = new Intent(this, GoogleSheetsUploaderActivity.class);
                 i.putExtra(FormEntryActivity.KEY_INSTANCES, instanceIds);
+                i.putExtra(PENDING_REPORTS, networkReports);
                 startActivityForResult(i, INSTANCE_UPLOADER);
             } else {
                 new PlayServicesChecker().showGooglePlayServicesAvailabilityErrorDialog(this);
@@ -239,6 +264,7 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
             // otherwise, do the normal aggregate/other thing.
             Intent i = new Intent(this, InstanceUploaderActivity.class);
             i.putExtra(FormEntryActivity.KEY_INSTANCES, instanceIds);
+            i.putExtra(PENDING_REPORTS, networkReports);
             startActivityForResult(i, INSTANCE_UPLOADER);
         }
     }
@@ -288,6 +314,7 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putBoolean(SHOW_ALL_MODE, showAllMode);
+        outState.putBundle(PENDING_REPORTS, networkReports);
     }
 
     @Override
@@ -344,6 +371,7 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
         listAdapter.changeCursor(cursor);
         checkPreviouslyCheckedItems();
         toggleButtonLabel(findViewById(R.id.toggle_button), listView);
+//        updateInstances();
     }
 
     @Override
@@ -387,5 +415,48 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
                 }).create();
         alertDialog.show();
         return true;
+    }
+
+    private void createNetworkReport(Bundle savedInstanceState) {
+        try {
+            NetworkMapManager.getManager().stopScans();
+            Bundle bundle;
+            if (savedInstanceState != null) {
+                bundle = savedInstanceState;
+            } else {
+                bundle = new Bundle();
+            }
+            final NetworkMapManager.NetworkFile filePath = NetworkMapManager.getManager().writeFile(bundle);
+            networkReports.putString(filePath.getID(), filePath.getFilename());
+
+        } catch (InterruptedException e) {
+            Timber.e(e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Inject
+    InstancesRepositoryProvider instancesRepositoryProvider;
+
+    @Inject
+    FormsRepositoryProvider formsRepositoryProvider;
+    private FormsRepository formsRepository;
+
+    private void updateInstances() {
+        formsRepository = formsRepositoryProvider.get();
+        Cursor cursor = listAdapter.getCursor();
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                long instanceId = cursor.getLong(cursor.getColumnIndex(DatabaseInstanceColumns._ID));
+                Instance instance = instancesRepositoryProvider.get().get(instanceId);
+                Timber.i(instance.toString());
+
+                List<Form> candidateForms = formsRepository.getAllByFormIdAndVersion(instance.getFormId(), instance.getFormVersion());
+                String formPath = candidateForms.get(0).getFormFilePath();
+                final File formXml = new File(formPath);
+                final File formMediaDir = FileUtils.getFormMediaDir(formXml);
+
+            } while (cursor.moveToNext());
+        }
     }
 }

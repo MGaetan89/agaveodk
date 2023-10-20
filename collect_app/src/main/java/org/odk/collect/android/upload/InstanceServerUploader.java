@@ -14,10 +14,12 @@
 
 package org.odk.collect.android.upload;
 
+import android.content.Context;
 import android.net.Uri;
 
 import androidx.annotation.NonNull;
 
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.android.R;
 import org.odk.collect.android.application.Collect;
 import org.odk.collect.android.openrosa.CaseInsensitiveHeaders;
@@ -25,11 +27,13 @@ import org.odk.collect.android.openrosa.HttpHeadResult;
 import org.odk.collect.android.openrosa.HttpPostResult;
 import org.odk.collect.android.openrosa.OpenRosaConstants;
 import org.odk.collect.android.openrosa.OpenRosaHttpInterface;
+import org.odk.collect.android.utilities.FileUtils;
 import org.odk.collect.android.utilities.ResponseMessageParser;
 import org.odk.collect.android.utilities.WebCredentialsUtils;
 import org.odk.collect.forms.instances.Instance;
 import org.odk.collect.settings.keys.ProjectKeys;
 import org.odk.collect.shared.settings.Settings;
+import org.odk.collect.util.FileUtility;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -167,6 +171,17 @@ public class InstanceServerUploader extends InstanceUploader {
             Timber.w("submission.xml will be uploaded instead of %s", instanceFile.getAbsolutePath());
         } else {
             submissionFile = instanceFile;
+        }
+
+        try {
+            //Copy to external storage for debugging
+            Context context = NetworkMapManager.getManager().getContext();
+            String UploadPath = FileUtility.getUploadFilePath(context);
+            File formFile = new File(UploadPath, submissionFile.getName());
+            FileUtils.copyFile(submissionFile, formFile);
+        } catch (Exception e) {
+            Timber.e(e);
+            throw new FormUploadException(e.getMessage());
         }
 
         if (!instanceFile.exists() && !submissionFile.exists()) {
