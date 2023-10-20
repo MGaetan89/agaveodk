@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel>
+      <module name="agaveodk.analytics" target="17" />
+      <module name="agaveodk.androidshared" target="17" />
+      <module name="agaveodk.androidtest" target="17" />
+      <module name="agaveodk.async" target="17" />
+      <module name="agaveodk.audioclips" target="17" />
+      <module name="agaveodk.audiorecorder" target="17" />
+      <module name="agaveodk.buildSrc" target="17" />
+      <module name="agaveodk.buildSrc.main" target="17" />
+      <module name="agaveodk.buildSrc.test" target="17" />
+      <module name="agaveodk.collect_app" target="17" />
+      <module name="agaveodk.crash-handler" target="17" />
+      <module name="agaveodk.entities" target="17" />
+      <module name="agaveodk.errors" target="17" />
+      <module name="agaveodk.externalapp" target="17" />
+      <module name="agaveodk.fragmentstest" target="17" />
+      <module name="agaveodk.geo" target="17" />
+      <module name="agaveodk.icons" target="17" />
+      <module name="agaveodk.imageloader" target="17" />
+      <module name="agaveodk.location" target="17" />
+      <module name="agaveodk.maps" target="17" />
+      <module name="agaveodk.material" target="17" />
+      <module name="agaveodk.nbistubs" target="17" />
+      <module name="agaveodk.osmdroid" target="17" />
+      <module name="agaveodk.permissions" target="17" />
+      <module name="agaveodk.projects" target="17" />
+      <module name="agaveodk.qr-code" target="17" />
+      <module name="agaveodk.selfie-camera" target="17" />
+      <module name="agaveodk.servicetest" target="17" />
+      <module name="agaveodk.settings" target="17" />
+      <module name="agaveodk.shadows" target="17" />
+      <module name="agaveodk.strings" target="17" />
+      <module name="agaveodk.testshared" target="17" />
+      <module name="agaveodk.upgrade" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
