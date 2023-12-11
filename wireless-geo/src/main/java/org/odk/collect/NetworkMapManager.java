@@ -25,9 +25,11 @@ import android.location.LocationManager;
 import android.location.LocationProvider;
 import android.media.MediaPlayer;
 import android.net.TrafficStats;
+import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.PowerManager;
@@ -68,6 +70,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.nio.file.Path;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -109,6 +112,8 @@ public class NetworkMapManager {
     static Locale ORIG_LOCALE = Locale.getDefault();
     public static final String ENCODING = "ISO-8859-1";
     public static final String WIFI_LOCK_NAME = "odkWifiLock";
+
+    public static final String NETWORK_FILE_FIELD = "env_data";
     public static final long DEFAULT_BATTERY_KILL_PERCENT = 2L;
     public static final boolean DEBUG_CELL_DATA = false;
     public static final boolean DEBUG_BLUETOOTH_DATA = false;
@@ -1173,11 +1178,11 @@ public class NetworkMapManager {
 
     public class NetworkFile {
         private long maxID;
-        private String filename;
+        private Uri filepath;
 
-        public NetworkFile(long maxID, String filename) {
+        public NetworkFile(long maxID, String filepath) {
             this.maxID = maxID;
-            this.filename = filename;
+            this.filepath = Uri.parse(filepath);
         }
 
         public String getID() {
@@ -1185,7 +1190,10 @@ public class NetworkMapManager {
         }
 
         public String getFilename() {
-            return filename;
+            return filepath.getLastPathSegment();
+        }
+        public String getPath() {
+            return filepath.toString();
         }
     }
     public NetworkFile writeFile(final Bundle bundle) throws InterruptedException {
@@ -1203,11 +1211,21 @@ public class NetworkMapManager {
             final String absolutePath = hasSD ? file.getAbsolutePath() : context.getFileStreamPath(filename).getAbsolutePath();
 
             Timber.i("filepath: " + absolutePath);
+
+            File gz = new File(absolutePath);
+            String dirPath;
+            dirPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS).getAbsolutePath();
+
+            File externalFile = new File(dirPath);
+            FileUtility.copyFile(gz, externalFile);
+
             return new NetworkFile(maxId, absolutePath);
         } catch (Exception e) {
             Timber.e(e,"Exception");
             throw new RuntimeException(e);
         }
     }
+
+
 
 }

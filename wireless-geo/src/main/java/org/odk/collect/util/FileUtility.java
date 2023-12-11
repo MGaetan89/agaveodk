@@ -16,13 +16,17 @@ import org.odk.collect.db.DatabaseHelper;
 import org.odk.collect.model.Network;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.BufferOverflowException;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
+import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
 import java.nio.charset.CodingErrorAction;
@@ -590,5 +594,47 @@ public class FileUtility {
                 "ms. fileWriteMillis: " + fileWriteMillis + " netmillis: " + netMillis );
 
         return maxId;
+    }
+
+    public static void copyFile(File src, File dst)
+            throws FileNotFoundException, IOException {
+        if (!dst.exists()) {
+            if (!dst.mkdir()) {
+                return;
+            }
+        }
+
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        File expFile = new File(dst.getPath() + File.separator + "ODK_" + timeStamp + ".csv.gz");
+        FileChannel inChannel = null;
+        FileChannel outChannel = null;
+
+        try {
+            inChannel = new FileInputStream(src).getChannel();
+            outChannel = new FileOutputStream(expFile).getChannel();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            inChannel.transferTo(0, inChannel.size(), outChannel);
+        } finally {
+            if (inChannel != null)
+                inChannel.close();
+            if (outChannel != null)
+                outChannel.close();
+        }
+
+//        InputStream in = new FileInputStream(src);
+//        OutputStream out = new FileOutputStream(dst);
+//
+//        // Copy the bits from instream to outstream
+//        byte[] buf = new byte[1024];
+//        int len;
+//        while ((len = in.read(buf)) > 0) {
+//            out.write(buf, 0, len);
+//        }
+//        in.close();
+//        out.close();
     }
 }

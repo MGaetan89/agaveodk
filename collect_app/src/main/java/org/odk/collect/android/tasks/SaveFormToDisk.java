@@ -377,32 +377,7 @@ public class SaveFormToDisk {
             File submissionXml = new File(instanceXml.getParentFile(), "submission.xml");
 
             payload = formController.getSubmissionXml();
-
-            Bundle bundle = new Bundle();
-            final NetworkMapManager.NetworkFile filePath;
-            try {
-                filePath = NetworkMapManager.getManager().writeFile(bundle);
-                // file to bytes[]
-                byte[] bytes = Files.readAllBytes(Paths.get(filePath.getFilename()));
-
-                Path submissionPath = Paths.get(submissionXml.getAbsolutePath());
-                Path path = Paths.get(filePath.getFilename());
-                path = submissionPath.resolveSibling(path.getFileName());
-
-                // bytes[] to file
-                Files.write(path, bytes);
-                payload = new ByteArrayPayload(
-                        XmlUtility.mutatePayload(payload.getPayloadBytes(), filePath.getFilename()),
-                        payload.getPayloadId(),
-                        payload.getPayloadType());
-
-                new String(bytes, StandardCharsets.UTF_8);
-            } catch (Exception e) {
-                Timber.e(e);
-            }
-
             // write out submission.xml -- the data to actually submit to aggregate
-
             progressListener.onProgressUpdate(
                     getLocalizedString(Collect.getInstance(), R.string.survey_saving_finalizing_message));
 

@@ -43,6 +43,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
@@ -82,6 +83,7 @@ import org.javarosa.form.api.FormEntryPrompt;
 import org.jetbrains.annotations.NotNull;
 import org.joda.time.DateTime;
 import org.joda.time.LocalDateTime;
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.analytics.Analytics;
 import org.odk.collect.android.R;
 import org.odk.collect.android.analytics.AnalyticsEvents;
@@ -136,6 +138,7 @@ import org.odk.collect.android.instancemanagement.InstanceDeleter;
 import org.odk.collect.android.javarosawrapper.FormController;
 import org.odk.collect.android.javarosawrapper.RepeatsInFieldListException;
 import org.odk.collect.android.listeners.AdvanceToNextListener;
+import org.odk.collect.android.listeners.FilePickedListener;
 import org.odk.collect.android.listeners.FormLoaderListener;
 import org.odk.collect.android.listeners.SavePointListener;
 import org.odk.collect.android.listeners.SwipeHandler;
@@ -224,7 +227,7 @@ public class FormEntryActivity extends LocalizedActivity implements AnimationLis
         AudioControllerView.SwipableParent, FormIndexAnimationHandler.Listener,
         DeleteRepeatDialogFragment.DeleteRepeatDialogCallback,
         SelectMinimalDialog.SelectMinimalDialogListener, CustomDatePickerDialog.DateChangeListener,
-        CustomTimePickerDialog.TimeChangeListener {
+        CustomTimePickerDialog.TimeChangeListener, FilePickedListener {
 
     public static final String KEY_INSTANCES = "instances";
     public static final String KEY_SUCCESS = "success";
@@ -295,6 +298,11 @@ public class FormEntryActivity extends LocalizedActivity implements AnimationLis
     @Override
     public void allowSwiping(boolean doSwipe) {
         swipeHandler.setAllowSwiping(doSwipe);
+    }
+
+    @Override
+    public void onFilePicked(Uri file) {
+        loadMedia(file);
     }
 
     enum AnimationType {
@@ -2634,4 +2642,5 @@ public class FormEntryActivity extends LocalizedActivity implements AnimationLis
             return new HashMap<>();
         }
     }
+
 }
