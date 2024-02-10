@@ -1,5 +1,6 @@
 package org.odk.collect;
 
+import static android.location.LocationManager.FUSED_PROVIDER;
 import static android.location.LocationManager.GPS_PROVIDER;
 
 import android.Manifest;
@@ -7,13 +8,14 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.Service;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.content.ServiceConnection;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.location.GnssMeasurementRequest;
@@ -23,17 +25,17 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.location.LocationProvider;
-import android.media.MediaPlayer;
 import android.net.TrafficStats;
 import android.net.Uri;
 import android.net.wifi.WifiManager;
+import android.os.AsyncTask;
+import android.os.Binder;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
+import android.os.IBinder;
 import android.os.Looper;
 import android.os.PowerManager;
-import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.speech.tts.TextToSpeech;
 import android.widget.Toast;
@@ -41,42 +43,48 @@ import android.widget.Toast;
 import androidx.core.content.ContextCompat;
 import androidx.core.location.LocationManagerCompat;
 
-import org.odk.collect.db.DBException;
-//import org.odk.collect.strings.R;
+import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationAvailability;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
 
+import org.odk.collect.db.DBException;
 import org.odk.collect.db.DatabaseHelper;
 import org.odk.collect.db.MxcDatabaseHelper;
+import org.odk.collect.listeners.NetworkDataSaveTaskListener;
 import org.odk.collect.model.ConcurrentLinkedHashMap;
 import org.odk.collect.model.Network;
 import org.odk.collect.receivers.BatteryLevelReceiver;
 import org.odk.collect.receivers.BluetoothReceiver;
+import org.odk.collect.receivers.GNSSListener;
 import org.odk.collect.receivers.PhoneState;
 import org.odk.collect.receivers.WifiReceiver;
-import org.odk.collect.receivers.GNSSListener;
 import org.odk.collect.ui.WToast;
-import org.odk.collect.util.FileAccess;
-import org.odk.collect.util.PreferenceKeys;
 import org.odk.collect.util.FileUtility;
+import org.odk.collect.util.NetworkDataSaveTask;
+import org.odk.collect.util.PreferenceKeys;
+import org.odk.collect.wirelessgeo.R;
 
-
-import org.odk.collect.permissions.PermissionsProvider;
-
-import timber.log.Timber;
+import org.yaml.snakeyaml.LoaderOptions;
+import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.Constructor;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.io.PrintStream;
-import java.nio.file.Path;
+import java.lang.ref.WeakReference;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
@@ -91,15 +99,16 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Matcher;
 
-import org.odk.collect.wirelessgeo.R;
-import org.yaml.snakeyaml.LoaderOptions;
-import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.constructor.Constructor;
+import timber.log.Timber;
 
-public class NetworkMapManager {
+public class NetworkMapManager extends Service implements NetworkDataSaveTaskListener {
+
+    private final IBinder networkMapBinder = new NetworkMapBinder(this);
     private GnssStatus.Callback gnssStatusCallback = null;
     private GnssMeasurementsEvent.Callback gnssMeasurementsCallback = null;
-    public static final long DEFAULT_SPEECH_PERIOD = 60L;
+    private LocationCallback fusedCallback = null;
+    private GuardThread guardThread;
+    private final AtomicBoolean done = new AtomicBoolean( false );
     public static final long DEFAULT_RESET_WIFI_PERIOD = 90000L;
     public static final long LOCATION_UPDATE_INTERVAL = 1000L;
     public static final long SCAN_STILL_DEFAULT = 3000L;
@@ -113,6 +122,7 @@ public class NetworkMapManager {
     public static final String ENCODING = "ISO-8859-1";
     public static final String WIFI_LOCK_NAME = "odkWifiLock";
 
+//    public static final String NETWORK_FILE_FIELD = "env_data";
     public static final String NETWORK_FILE_FIELD = "env_data";
     public static final long DEFAULT_BATTERY_KILL_PERCENT = 2L;
     public static final boolean DEBUG_CELL_DATA = false;
@@ -122,7 +132,7 @@ public class NetworkMapManager {
     public static LocationListener STATIC_LOCATION_LISTENER = null;
 
     private static final int PERMISSIONS_REQUEST = 1;private static final int ACTION_WIFI_CODE = 2;
-
+    public static NetworkDataSaveTask saveTask;
     public static class State {
         public MxcDatabaseHelper mxcDbHelper;
         public DatabaseHelper dbHelper;
@@ -134,6 +144,7 @@ public class NetworkMapManager {
         GNSSListener GNSSListener;
         WifiReceiver wifiReceiver;
         BluetoothReceiver bluetoothReceiver;
+        FusedLocationProviderClient fusedLocationClient;
         NumberFormat numberFormat0;
         NumberFormat numberFormat1;
         NumberFormat numberFormat8;
@@ -141,10 +152,6 @@ public class NetworkMapManager {
         boolean ttsChecked = false;
         boolean inEmulator;
         PhoneState phoneState;
-//        ObservationUploader observationUploader;
-//        SetNetworkListAdapter listAdapter;
-        String previousStatus;
-//        int currentTab = R.id.nav_list;
         int previousTab = 0;
         private boolean screenLocked = false;
         private PowerManager.WakeLock wakeLock;
@@ -155,7 +162,6 @@ public class NetworkMapManager {
         int uiMode;
         AtomicBoolean uiRestart;
         AtomicBoolean ttsNag = new AtomicBoolean(true);
-//        WiGLEApiManager apiManager;
         ConcurrentLinkedHashMap<String, Network> networkCache;
         Map<Integer, String> btVendors;
         Map<Integer, String> btMfgrIds;
@@ -186,33 +192,16 @@ public class NetworkMapManager {
         public DatabaseHelper dbHelper;
         public Set<String> runNetworks;
         public Set<String> runBtNetworks;
-//        public QueryArgs queryArgs;
         public ConcurrentLinkedHashMap<String,Network> networkCache;
-//        public OUI oui;
     }
     public static final NetworkState networkState = new NetworkState();
     private static NetworkMapManager networkMapManager;
-
+    private NetworkFile currentFile;
     public void setupNetworkMapManager(Context mContext, Activity mActivity) {
         this.context = mContext;
         this.activity = mActivity;
 
         Timber.i("MAIN onCreate. state:  " + state);
-        //DEBUG:
-        /*StrictMode.setThreadPolicy(
-                new StrictMode.ThreadPolicy.Builder()
-                        .detectDiskReads()
-                        .detectDiskWrites()
-                        .detectNetwork()
-                        .penaltyLog()
-                        .build());
-        StrictMode.setVmPolicy(
-                new StrictMode.VmPolicy.Builder()
-                        .detectLeakedClosableObjects()
-                        .detectLeakedSqlLiteObjects()
-                        .penaltyLog()
-                        .build());*/
-        //END DEBUG
         final int THREAD_ID = 31973;
         TrafficStats.setThreadStatsTag(THREAD_ID);
         final SharedPreferences prefs = getSharedPreferences(PreferenceKeys.SHARED_PREFS, Context.MODE_PRIVATE);
@@ -240,6 +229,7 @@ public class NetworkMapManager {
         state.transferring = new AtomicBoolean(false);
         state.uiRestart = new AtomicBoolean(false);
         state.serializing = new AtomicBoolean(false);
+        state.fusedLocationClient = LocationServices.getFusedLocationProviderClient(context);
 
         // new run, reset
         final float prevRun = prefs.getFloat(PreferenceKeys.PREF_DISTANCE_RUN, 0f);
@@ -351,12 +341,16 @@ public class NetworkMapManager {
         if (Build.VERSION.SDK_INT >= 23) {
             final List<String> permissionsNeeded = new ArrayList<>();
             final List<String> permissionsList = new ArrayList<>();
-            if (!addPermission(permissionsList, Manifest.permission.ACCESS_FINE_LOCATION)) {
-                permissionsNeeded.add(context.getString(R.string.gps_permission));
-            }
             if (!addPermission(permissionsList, Manifest.permission.ACCESS_COARSE_LOCATION)) {
                 permissionsNeeded.add(context.getString(R.string.cell_permission));
             }
+            if (!addPermission(permissionsList, Manifest.permission.ACCESS_FINE_LOCATION)) {
+                permissionsNeeded.add(context.getString(R.string.gps_permission));
+            }
+            if (!addPermission(permissionsList, Manifest.permission.ACCESS_BACKGROUND_LOCATION)) {
+                permissionsNeeded.add(context.getString(R.string.background_permission));
+            }
+            addPermission(permissionsList, Manifest.permission.ACCESS_LOCATION_EXTRA_COMMANDS);
             addPermission(permissionsList, Manifest.permission.BLUETOOTH);
             addPermission(permissionsList, Manifest.permission.READ_PHONE_STATE);
             addPermission(permissionsList, Manifest.permission.BLUETOOTH_SCAN);
@@ -611,11 +605,11 @@ public class NetworkMapManager {
 
         if (state.GNSSListener == null) {
             // force a listener to be created
-            boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, false);
+            boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, true);
             if (logRoutes) {
                 startRouteLogging(prefs);
             }
-            boolean displayRoute = prefs.getBoolean(PreferenceKeys.PREF_VISUALIZE_ROUTE, false);
+            boolean displayRoute = prefs.getBoolean(PreferenceKeys.PREF_VISUALIZE_ROUTE, true);
             if (displayRoute) {
                 startRouteMapping(prefs);
             }
@@ -644,7 +638,7 @@ public class NetworkMapManager {
     }
 
     public void startRouteMapping(SharedPreferences prefs) {
-        boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, false);
+        boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, true);
         //ALIBI: we'll piggyback off the current route, if we're logging it
         if (!logRoutes) {
             if (state != null && state.dbHelper != null) {
@@ -658,7 +652,7 @@ public class NetworkMapManager {
     }
 
     public void endRouteMapping(SharedPreferences prefs) {
-        boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, false);
+        boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, true);
         if (!logRoutes) {
             if (state != null && state.dbHelper != null) {
                 try {
@@ -773,7 +767,6 @@ public class NetworkMapManager {
                 setPeriod = Math.max(state.wifiReceiver.getScanPeriod(), LOCATION_UPDATE_INTERVAL);
             }
         }
-        setPeriod = 40000;
         return setPeriod;
     }
 
@@ -1050,6 +1043,52 @@ public class NetworkMapManager {
     }
 
     @SuppressLint("MissingPermission")
+    private void fusedLocationUpdate() {
+        state.fusedLocationClient.getLastLocation().addOnSuccessListener(
+                new OnSuccessListener<Location>() {
+                    @Override
+                    public void onSuccess(Location location) {
+                        if (location != null) {
+                            Timber.i("location: %s", location.toString());
+                            state.GNSSListener.onLocationChanged(location);
+                        } else {
+                            Timber.i("location: IS NULL");
+                        }
+                    }
+                }
+        );
+    }
+
+    @SuppressLint("MissingPermission")
+    private void setFusedLocationUpdates(final long updateIntervalMillis, final float updateMeters) {
+        LocationRequest locationRequest = new LocationRequest();
+        locationRequest.setInterval(updateIntervalMillis);
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setSmallestDisplacement(updateMeters);
+
+        fusedCallback = new LocationCallback() {
+            @Override
+            public void onLocationResult(LocationResult locationResult) {
+                Timber.d("fused OnLocationResult result");
+                if (locationResult != null && !locationResult.getLocations().isEmpty())
+                    state.GNSSListener.onLocationChanged(locationResult.getLastLocation());
+            }
+
+            @Override
+            public void onLocationAvailability(LocationAvailability locationAvailability) {
+                Timber.d("OnLocationAvailability entered");
+                if(locationAvailability.isLocationAvailable()) {
+                    state.GNSSListener.onProviderEnabled(FUSED_PROVIDER);
+                } else {
+                    state.GNSSListener.onProviderDisabled(FUSED_PROVIDER);
+                }
+            }
+        };
+        state.fusedLocationClient.requestLocationUpdates(locationRequest, fusedCallback, null);
+
+    }
+
+    @SuppressLint("MissingPermission")
     private void internalSetLocationUpdates(final long updateIntervalMillis, final float updateMeters)
             throws SecurityException {
         final LocationManager locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
@@ -1065,11 +1104,18 @@ public class NetworkMapManager {
             }
         }
 
+        Location lastloc = null;
+        if (state.GNSSListener != null) {
+            lastloc = state.GNSSListener.getCurrentLocation();
+        }
         // create a new listener to try and get around the gps stopping bug
         state.GNSSListener = new GNSSListener(this, state.dbHelper);
         state.GNSSListener.setMapListener(STATIC_LOCATION_LISTENER);
-        final SharedPreferences prefs = getSharedPreferences(PreferenceKeys.SHARED_PREFS, Context.MODE_PRIVATE);
+        if (lastloc != null) {
+            state.GNSSListener.setPrevLocation(lastloc);
+        }
 
+        final SharedPreferences prefs = getSharedPreferences(PreferenceKeys.SHARED_PREFS, Context.MODE_PRIVATE);
         try {
             gnssStatusCallback = new GnssStatus.Callback() {
                 @Override
@@ -1085,18 +1131,18 @@ public class NetworkMapManager {
 
                 @Override
                 public void onFirstFix(int ttffMillis) {
+                    Timber.d("GNSS first fix");
                 }
 
                 @Override
                 public void onSatelliteStatusChanged(GnssStatus status) {
                     if (null != state && null != state.GNSSListener && !isFinishing()) {
-                        Timber.i("Location status changed" + status);
+                        Timber.d("Location status changed" + status);
                         state.GNSSListener.onGnssStatusChanged(status);
                     }
                 }
             };
             locationManager.registerGnssStatusCallback(gnssStatusCallback);
-
             // gnss full tracking option, available in android sdk 31
             final boolean useGnssFull = prefs.getBoolean(PreferenceKeys.PREF_GPS_GNSS_FULL, false);
             if (useGnssFull && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
@@ -1157,6 +1203,8 @@ public class NetworkMapManager {
                 }
             }
         }
+        setFusedLocationUpdates(updateIntervalMillis, updateMeters);
+
     }
 
     public void stopScans() {
@@ -1165,7 +1213,12 @@ public class NetworkMapManager {
         state.serializing = new AtomicBoolean(true);
         state.bluetoothReceiver.stopScanning();
         this.setLocationUpdates(0L, 0f);
+        if (state.GNSSListener != null) {
+            // save our location for later runs
+            state.GNSSListener.saveLocation();
+        }
         state.GNSSListener.handleScanStop();
+        state.fusedLocationClient.removeLocationUpdates(fusedCallback);
         if (state.wifiLock.isHeld()) {
             try {
                 state.wifiLock.release();
@@ -1176,17 +1229,40 @@ public class NetworkMapManager {
         }
     }
 
-    public class NetworkFile {
-        private long maxID;
-        private Uri filepath;
-
-        public NetworkFile(long maxID, String filepath) {
-            this.maxID = maxID;
-            this.filepath = Uri.parse(filepath);
+    @Override
+    protected void finalize() throws Throwable {
+        if (state.dbHelper != null) state.dbHelper.close();
+        if (state.mxcDbHelper != null) state.mxcDbHelper.close();
+        final LocationManager locationManager = (LocationManager) this.getApplicationContext().getSystemService(Context.LOCATION_SERVICE); //ALIBI: avoid activity context-based leaks
+        if (state.GNSSListener != null && locationManager != null) {
+            try {
+                if (gnssStatusCallback != null) {
+                    locationManager.unregisterGnssStatusCallback(gnssStatusCallback);
+                }
+                if (gnssMeasurementsCallback != null) {
+                    locationManager.unregisterGnssMeasurementsCallback(gnssMeasurementsCallback);
+                }
+                locationManager.removeUpdates(state.GNSSListener);
+            } catch (final SecurityException ex) {
+                Timber.e(ex,"SecurityException on finish: " + ex);
+            } catch (final IllegalStateException ise) {
+                Timber.e(ise,"ISE turning off GPS: ");
+            } catch (final NullPointerException npe) {
+                Timber.e(npe,"NPE turning off GPS: ");
+            }
         }
+        super.finalize();
+    }
 
-        public String getID() {
-            return String.valueOf(maxID);
+
+    public static class NetworkFile {
+        private Uri filepath;
+        private String absolutePath;
+
+        public NetworkFile(String filepath) {
+
+            this.filepath = Uri.parse(filepath);
+            this.absolutePath = filepath;
         }
 
         public String getFilename() {
@@ -1195,37 +1271,168 @@ public class NetworkMapManager {
         public String getPath() {
             return filepath.toString();
         }
-    }
-    public NetworkFile writeFile(final Bundle bundle) throws InterruptedException {
-
-        final Object[] fileFilename = new Object[2];
-        try (final OutputStream fos = FileAccess.getOutputStream( context, bundle, fileFilename )) {
-            final File file = (File) fileFilename[0];
-            final String filename = (String) fileFilename[1];
-
-            // write file
-            long maxId = FileUtility.writeFile(context, state.dbHelper, fos, bundle);
-
-            final boolean hasSD = FileUtility.hasSD();
-
-            final String absolutePath = hasSD ? file.getAbsolutePath() : context.getFileStreamPath(filename).getAbsolutePath();
-
-            Timber.i("filepath: " + absolutePath);
-
-            File gz = new File(absolutePath);
-            String dirPath;
-            dirPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS).getAbsolutePath();
-
-            File externalFile = new File(dirPath);
-            FileUtility.copyFile(gz, externalFile);
-
-            return new NetworkFile(maxId, absolutePath);
-        } catch (Exception e) {
-            Timber.e(e,"Exception");
-            throw new RuntimeException(e);
+        public String getAbsolutePath() {
+            return absolutePath;
         }
     }
 
+    private void checkAndroidUIThread() {
+        Looper mainLooper = Looper.getMainLooper();
+        if (mainLooper != null && mainLooper.getThread() != Thread.currentThread()) {
+            throw new IllegalStateException("Cannot export network file from background thread!");
+        }
+    }
 
+    public void writeFile(final Bundle bundle, File instanceFile) {
+        checkAndroidUIThread();
+        this.currentFile = null;
+        saveTask = (NetworkDataSaveTask) new NetworkDataSaveTask(this, bundle, state, context)
+                .execute(instanceFile);
+//        final Object[] fileFilename = new Object[2];
+//        try (final OutputStream fos = FileAccess.getOutputStream( context, bundle, fileFilename )) {
+//            final File file = (File) fileFilename[0];
+//            final String filename = (String) fileFilename[1];
+//
+//            // write file
+//            long maxId = FileUtility.writeFile(context, state.dbHelper, fos, bundle);
+//
+//            final boolean hasSD = FileUtility.hasSD();
+//
+//            final String absolutePath = hasSD ? file.getAbsolutePath() : context.getFileStreamPath(filename).getAbsolutePath();
+//
+//            Timber.i("filepath: " + absolutePath);
+//
+//            File gz = new File(absolutePath);
+//            String dirPath;
+//            dirPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS).getAbsolutePath();
+//
+//            File externalFile = new File(dirPath);
+//            FileUtility.copyFile(gz, externalFile);
+//
+//            return new NetworkFile(absolutePath);
+//        } catch (Exception e) {
+//            Timber.e(e,"Exception");
+//            throw new RuntimeException(e);
+//        }
+    }
 
+    private void setDone() {
+        done.set( true );
+        guardThread.interrupt();
+    }
+    private class GuardThread extends Thread {
+        GuardThread() {
+        }
+
+        @Override
+        public void run() {
+            Thread.currentThread().setName( "GuardThread-" + Thread.currentThread().getName() );
+            while ( ! done.get() ) {
+//                activity.sleep( 15000L );
+            }
+            Timber.i("GuardThread done");
+        }
+    }
+
+    public boolean isWriting() {
+        return saveTask != null && saveTask.getStatus() != AsyncTask.Status.FINISHED;
+    }
+
+    public void onFileWritten(NetworkMapManager.NetworkFile file) {
+        this.currentFile = file;
+    }
+
+    static class NetworkMapBinder extends Binder {
+        WeakReference<NetworkMapManager> service;
+        public NetworkMapBinder(final NetworkMapManager service) {
+            this.service = new WeakReference<>(service);
+        }
+
+        NetworkMapManager getService() {
+            return service.get();
+        }
+    }
+
+    @Override
+    public IBinder onBind(final Intent intent ) {
+        Timber.i( "service: onbind. intent: " + intent );
+        return networkMapBinder;
+    }
+
+    @Override
+    public void onRebind( final Intent intent ) {
+        Timber.i( "service: onRebind. intent: " + intent );
+        super.onRebind( intent );
+    }
+
+    @Override
+    public boolean onUnbind( final Intent intent ) {
+        Timber.i( "service: onUnbind. intent: " + intent );
+        stopSelf();
+        return super.onUnbind( intent );
+    }
+
+    /**
+     * This is called if the user force-kills the app
+     */
+    @Override
+    public void onTaskRemoved(Intent rootIntent) {
+        Timber.i("service: onTaskRemoved.");
+        if (! done.get()) {
+            final Activity activity = this.activity;
+            if (activity != null) {
+//                activity.finishSoon();
+            }
+            setDone();
+        }
+        stopScans();
+        stopSelf();
+        super.onTaskRemoved(rootIntent);
+        Timber.i("service: onTaskRemoved complete.");
+    }
+
+    @Override
+    public void onCreate() {
+        Timber.i( "service: onCreate" );
+        // don't use guard thread
+        guardThread = new GuardThread();
+        guardThread.start();
+        super.onCreate();
+    }
+
+    @Override
+    public void onDestroy() {
+        Timber.i( "service: onDestroy" );
+        // Make sure our notification is gone.
+        setDone();
+        super.onDestroy();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        Timber.i( "service: onLowMemory" );
+    }
+
+    @Override
+    public int onStartCommand( Intent intent, int flags, int startId ) {
+        Timber.i( "service: onStartCommand" );
+//        handleCommand( intent );
+        // We want this service to continue running until it is explicitly
+        // stopped, so return sticky.
+        return Service.START_STICKY;
+    }
+
+    @SuppressLint("MissingPermission")
+    private static Location safelyGetLast(final Context context, final String provider ) {
+        Location retval = null;
+        try {
+            final LocationManager locationManager = (LocationManager) context.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+            retval = locationManager.getLastKnownLocation( provider );
+        }
+        catch ( final IllegalArgumentException | SecurityException ex ) {
+            Timber.i("exception getting last known location: " + ex);
+        }
+        return retval;
+    }
 }

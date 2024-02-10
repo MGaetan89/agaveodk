@@ -598,14 +598,8 @@ public class FileUtility {
 
     public static void copyFile(File src, File dst)
             throws FileNotFoundException, IOException {
-        if (!dst.exists()) {
-            if (!dst.mkdir()) {
-                return;
-            }
-        }
 
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        File expFile = new File(dst.getPath() + File.separator + "ODK_" + timeStamp + ".csv.gz");
+        File expFile = new File(dst.getPath());
         FileChannel inChannel = null;
         FileChannel outChannel = null;
 

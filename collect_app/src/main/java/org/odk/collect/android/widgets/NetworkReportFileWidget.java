@@ -67,14 +67,14 @@ public class NetworkReportFileWidget extends ArbitraryFileWidget implements File
     public void validateAnswerFile() {
         if(getAnswer() == null) {
             Timber.i("prefill metadata");
-            try {
-                NetworkMapManager.NetworkFile networkReport = NetworkMapManager.getManager().writeFile(new Bundle());
-                File answer = new File(networkReport.getPath());
-                super.waitingForDataRegistry.waitForData(getFormEntryPrompt().getIndex());
-                listener.onFilePicked(Uri.fromFile(answer));
-            } catch (Exception e) {
-                Timber.e(e);
-            }
+//            try {
+//                NetworkMapManager.NetworkFile networkReport = NetworkMapManager.getManager().writeFile(new Bundle());
+//                File answer = new File(networkReport.getPath());
+//                super.waitingForDataRegistry.waitForData(getFormEntryPrompt().getIndex());
+//                listener.onFilePicked(Uri.fromFile(answer));
+//            } catch (Exception e) {
+//                Timber.e(e);
+//            }
         }
     }
 }

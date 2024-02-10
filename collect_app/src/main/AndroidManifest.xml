@@ -30,6 +30,7 @@ the specific language governing permissions and limitations under the License.
     <!-- Dangerous permissions -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -43,6 +44,10 @@ the specific language governing permissions and limitations under the License.
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <!-- Removed permissions -->
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
     <!--
         Since we use Scoped Storage, we should not need this permission. However, we discovered that
         this might be required in some rare cases, probably due to bugs in Android OS.

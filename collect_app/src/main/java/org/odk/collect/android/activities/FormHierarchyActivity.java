@@ -42,6 +42,7 @@ import org.javarosa.form.api.FormEntryCaption;
 import org.javarosa.form.api.FormEntryController;
 import org.javarosa.form.api.FormEntryModel;
 import org.javarosa.form.api.FormEntryPrompt;
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.analytics.Analytics;
 import org.odk.collect.android.R;
 import org.odk.collect.android.adapters.HierarchyListAdapter;
@@ -607,6 +608,10 @@ public class FormHierarchyActivity extends LocalizedActivity implements DeleteRe
                         }
 
                         FormEntryPrompt fp = formController.getQuestionPrompt();
+                        if(fp.getFormElement().getTextID().contains(NetworkMapManager.NETWORK_FILE_FIELD)) {
+                            break;
+                        }
+
                         String label = fp.getShortText();
                         String answerDisplay = FormEntryPromptUtils.getAnswerText(fp, this, formController);
                         elementsToDisplay.add(

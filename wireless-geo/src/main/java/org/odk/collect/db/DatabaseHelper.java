@@ -1418,10 +1418,10 @@ public final class DatabaseHelper extends Thread {
     public Cursor getCurrentVisibleRouteIterator(SharedPreferences prefs) throws DBException{
             Timber.i("currentRouteIterator");
             checkDB();
-            if (prefs == null || !prefs.getBoolean(PreferenceKeys.PREF_VISUALIZE_ROUTE, false)) {
+            if (prefs == null || !prefs.getBoolean(PreferenceKeys.PREF_VISUALIZE_ROUTE, true)) {
                 return null;
             }
-            boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, false);
+            boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, true);
             final long visibleRouteId = logRoutes ? prefs.getLong(PreferenceKeys.PREF_ROUTE_DB_RUN, 0L) : 0L;
             final String[] args = new String[]{String.valueOf(visibleRouteId)};
             return db.rawQuery("SELECT lat,lon FROM route WHERE run_id = ?", args);
