@@ -98,13 +98,14 @@ public class WifiReceiver extends BroadcastReceiver {
     private long prevScanPeriod;
     private boolean scanInFlight = false;
 
+    private Location lastLocation = null;
+
     public static final int CELL_MIN_STRENGTH = -113;
 
     public WifiReceiver(final NetworkMapManager manager, final DatabaseHelper dbHelper) {
         this.setNetworkMapManager(manager);
         this.dbHelper = dbHelper;
         prevScanPeriod = manager.getLocationSetPeriod();
-//        NetworkMapManager.networkState.runNetworks = runNetworks;
         // formats for speech
         numberFormat1 = NumberFormat.getNumberInstance( Locale.US );
         if ( numberFormat1 instanceof DecimalFormat ) {
@@ -235,6 +236,14 @@ public class WifiReceiver extends BroadcastReceiver {
                 }
                 somethingAdded |= added;
 
+                if (location != null
+                        && lastLocation != null
+                        && lastLocation.distanceTo(location) >
+                        GNSSListener.LERP_MAX_THRESHOLD_METERS * 2) {
+                    // if distance goes over allowed threshold, we null out location so observations
+                    // are sent to pending queue and lerped on next location capture
+                    location = null;
+                }
                 if ( location != null  ) {
                     // if in fast mode, only add new-for-run stuff to the db queue
                     if ( fastMode && ! added ) {
@@ -248,12 +257,12 @@ public class WifiReceiver extends BroadcastReceiver {
                             matches = bssidDbMatcher.find();
                         }
                         if (!matches) {
+                            network.setProvider(location.getProvider());
                             dbHelper.addObservation(network, location, added);
                         }
                         // }
                     }
                 } else {
-//                    Timber.i("No Location");
                     // no location
                     boolean matches = false;
                     if (bssidDbMatcher != null) {
@@ -267,6 +276,9 @@ public class WifiReceiver extends BroadcastReceiver {
                     }
                 }
             }
+            if(location != null ) {
+                lastLocation = location;
+            }
         }
 
         // check if there are more "New" nets
@@ -274,23 +286,6 @@ public class WifiReceiver extends BroadcastReceiver {
         final long newWifiCount = dbHelper.getNewWifiCount();
         final long newNetDiff = newWifiCount - prevNewNetCount;
         prevNewNetCount = newWifiCount;
-//        Timber.i("Wifi Count:" + newNetCount);
-//        Timber.i("new networks Count:" + newNetDiff);
-//        if ( ! manager.isMuted() ) {
-//            final boolean playRun = prefs.getBoolean( PreferenceKeys.PREF_FOUND_SOUND, true );
-//            final boolean playNew = prefs.getBoolean( PreferenceKeys.PREF_FOUND_NEW_SOUND, true );
-//            if ( newNetDiff > 0 && playNew ) {
-//                manager.playNewNetSound();
-//            }
-//            else if ( somethingAdded && playRun ) {
-//                manager.playRunNetSound();
-//            }
-//        }
-
-//        if ( manager.getPhoneState().isPhoneActive() ) {
-//            // a phone call is active, make sure we aren't speaking anything
-//            manager.interruptSpeak();
-//        }
 
         // TODO: this ties cell collection to WiFi collection - refactor cells onto their own timer
         // check cell tower info
@@ -361,25 +356,10 @@ public class WifiReceiver extends BroadcastReceiver {
 
         // info( savedStats );
 
-        // notify
-//        if (listAdapter != null) {
-//            listAdapter.notifyDataSetChanged();
-//        }
-
-//        manager.setScanStatusUI( resultSize, NetworkMapManager.networkState.currWifiScanDurMs);
-
 //        manager.setDBQueue(preQueueSize);
         // we've shown it, reset it to the nonstop time above, or min_value if nonstop wasn't set.
         scanRequestTime = nonstopScanRequestTime;
 
-//        if ( somethingAdded && ssidSpeak ) {
-//            ssidSpeaker.speak();
-//        }
-
-//        final long speechPeriod = prefs.getLong( PreferenceKeys.PREF_SPEECH_PERIOD, manager.DEFAULT_SPEECH_PERIOD );
-//        if ( speechPeriod != 0 && now - previousTalkTime > speechPeriod * 1000L ) {
-//            doAnnouncement( preQueueSize, newWifiCount, newCellCount, now );
-//        }
     }
 
 
@@ -632,6 +612,7 @@ public class WifiReceiver extends BroadcastReceiver {
             }
 
             if ( location != null ) {
+                network.setProvider(location.getProvider());
                 dbHelper.addObservation(network, location, newForRun);
             }
         }
@@ -661,60 +642,6 @@ public class WifiReceiver extends BroadcastReceiver {
         //DEBUG: manager.info("strength: " + strength + " dBm: " + retval);
         return retval;
     }
-
-    /**
-     * Voice announcement method for scan
-     */
-//    private void doAnnouncement( int preQueueSize, long newWifiCount, long newCellCount, long now ) {
-//        final SharedPreferences prefs = manager.getSharedPreferences( PreferenceKeys.SHARED_PREFS, 0 );
-//        StringBuilder builder = new StringBuilder();
-//
-//        if ( manager.getGPSListener().getCurrentLocation() == null && prefs.getBoolean( PreferenceKeys.PREF_SPEECH_GPS, true ) ) {
-//            builder.append(manager.getString(R.string.tts_no_gps_fix)).append(", ");
-//        }
-//
-//        // run, new, queue, miles, time, battery
-//        if ( prefs.getBoolean( PreferenceKeys.PREF_SPEAK_RUN, true ) ) {
-//            builder.append(manager.getString(R.string.run)).append(" ")
-//                    .append(runNetworks.size()).append( ", " );
-//        }
-//        if ( prefs.getBoolean( PreferenceKeys.PREF_SPEAK_NEW_WIFI, true ) ) {
-//            builder.append(manager.getString(R.string.tts_new_wifi)).append(" ")
-//                    .append(newWifiCount).append( ", " );
-//        }
-//        if ( prefs.getBoolean( PreferenceKeys.PREF_SPEAK_NEW_CELL, true ) ) {
-//            builder.append(manager.getString(R.string.tts_new_cell)).append(" ")
-//                    .append(newCellCount).append( ", " );
-//        }
-//        if ( preQueueSize > 0 && prefs.getBoolean( PreferenceKeys.PREF_SPEAK_QUEUE, true ) ) {
-//            builder.append(manager.getString(R.string.tts_queue)).append(" ")
-//                    .append(preQueueSize).append( ", " );
-//        }
-//        if ( prefs.getBoolean( PreferenceKeys.PREF_SPEAK_MILES, true ) ) {
-//            final float dist = prefs.getFloat( PreferenceKeys.PREF_DISTANCE_RUN, 0f );
-//            final String distString = UINumberFormat.metersToString(prefs, numberFormat1, manager, dist, false );
-//            builder.append(manager.getString(R.string.tts_from)).append(" ")
-//                    .append(distString).append( ", " );
-//        }
-//        if ( prefs.getBoolean( PreferenceKeys.PREF_SPEAK_TIME, true ) ) {
-//            String time = timeFormat.format( new Date() );
-//            // time is hard to say.
-//            time = time.replace(" 00", " " + manager.getString(R.string.tts_o_clock));
-//            time = time.replace(" 0", " " + manager.getString(R.string.tts_o) +  " ");
-//            builder.append( time ).append( ", " );
-//        }
-//        final int batteryLevel = manager.getBatteryLevelReceiver().getBatteryLevel();
-//        if ( batteryLevel >= 0 && prefs.getBoolean( PreferenceKeys.PREF_SPEAK_BATTERY, true ) ) {
-//            builder.append(manager.getString(R.string.tts_battery)).append(" ").append(batteryLevel).append(" ").append(manager.getString(R.string.tts_percent)).append(", ");
-//        }
-//
-//        final String speak = builder.toString();
-//        Timber.i( "speak: " + speak );
-//        if (! "".equals(speak)) {
-//            manager.speak( builder.toString() );
-//        }
-//        previousTalkTime = now;
-//    }
 
     public void setupWifiTimer( final boolean turnedWifiOn ) {
         Timber.i( "create wifi timer" );
@@ -831,11 +758,6 @@ public class WifiReceiver extends BroadcastReceiver {
                 if ( resetWifiPeriod > 0 && sinceLastScan > resetWifiPeriod ) {
                     Timber.w("Time since last scan: " + sinceLastScan + " milliseconds");
                     if ( now - lastWifiUnjamTime > resetWifiPeriod ) {
-//                        final boolean disableToast = prefs.getBoolean(PreferenceKeys.PREF_DISABLE_TOAST, false);
-//                        if (!disableToast) {
-//                            Handler handler = new Handler(Looper.getMainLooper());
-//                            handler.post(() -> WiGLEToast.showOverActivity(manager, R.string.error_general, manager.getString(R.string.wifi_jammed)));
-//                        }
                         scanInFlight = false;
                         try {
                             if (wifiManager != null) {
@@ -851,8 +773,6 @@ public class WifiReceiver extends BroadcastReceiver {
             }
         }
         else {
-//            // scanning is off. since we're the only timer, update the UI
-//            manager.setScanStatusUI(manager.getString(R.string.list_scanning_off));
             // keep the scan times from getting huge
             scanRequestTime = System.currentTimeMillis();
             // reset this
@@ -974,6 +894,7 @@ public class WifiReceiver extends BroadcastReceiver {
             }
 
             if ( location != null ) {
+                network.setProvider(location.getProvider());
                 dbHelper.addObservation(network, location, newForRun);
             }
         } catch (SQLException sex) {

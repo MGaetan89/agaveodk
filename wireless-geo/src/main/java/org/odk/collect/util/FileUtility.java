@@ -502,7 +502,7 @@ public class FileUtility {
                     continue;
                 }
 
-                String ssid = network.getSsid();
+                String ssid = network.getSsid() + " > " + network.getProvider();
                 if (ssid.contains(COMMA)) {
                     // comma isn't a legal ssid character, but just in case
                     ssid = ssid.replaceAll( COMMA, "_" );
@@ -618,17 +618,5 @@ public class FileUtility {
             if (outChannel != null)
                 outChannel.close();
         }
-
-//        InputStream in = new FileInputStream(src);
-//        OutputStream out = new FileOutputStream(dst);
-//
-//        // Copy the bits from instream to outstream
-//        byte[] buf = new byte[1024];
-//        int len;
-//        while ((len = in.read(buf)) > 0) {
-//            out.write(buf, 0, len);
-//        }
-//        in.close();
-//        out.close();
     }
 }

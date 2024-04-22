@@ -309,24 +309,6 @@ public class GNSSListener implements LocationListener {
             }
         }
 
-//        // for maps. so lame!
-//        NetworkMapManager.networkState.location = currentLocation;
-//        boolean scanScheduled = false;
-//        if ( currentLocation != null ) {
-//            final float currentSpeed = currentLocation.getSpeed();
-//            if ( (previousSpeed == 0f && currentSpeed > 0f)
-//                    || (previousSpeed < 5f && currentSpeed >= 5f)) {
-//                // moving faster now than before, schedule a scan because the timing config pry changed
-//                Timber.d("Going faster, scheduling scan");
-//                networkMapManager.scheduleScan();
-//                scanScheduled = true;
-//            }
-//            previousSpeed = currentSpeed;
-//        }
-//        else {
-//            previousSpeed = 0f;
-//        }
-
         if ( wasProviderChange ) {
             Timber.d( "wasProviderChange: satCount: " + satCount
                     + " newOK: " + newOK + " locOK: " + locOK + " netLocOK: " + netLocOK
@@ -409,7 +391,7 @@ public class GNSSListener implements LocationListener {
 
     private boolean horribleGps(final Location location) {
         // try to protect against some horrible gps's out there
-        // check if accuracy is under 10 miles
+        // check if accuracy is under 1 km
         boolean horrible = location.hasAccuracy() && location.getAccuracy() > 16000;
         horrible |= location.getLatitude() < -90 || location.getLatitude() > 90;
         horrible |= location.getLongitude() < -180 || location.getLongitude() > 180;

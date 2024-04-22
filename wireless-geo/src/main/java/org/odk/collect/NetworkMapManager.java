@@ -284,8 +284,6 @@ public class NetworkMapManager extends Service implements NetworkDataSaveTaskLis
             }
         }
 
-//        Timber.i("MAIN: setupService");
-//        setupService();
         Timber.i("MAIN: checkStorage");
         checkStorage();
         Timber.i("MAIN: setupCache");
@@ -294,8 +292,6 @@ public class NetworkMapManager extends Service implements NetworkDataSaveTaskLis
         setupDatabase(prefs);
         Timber.i("MAIN: setupBattery");
         setupBattery();
-//        Timber.i("MAIN: setupSound");
-//        setupSound();
         Timber.i("MAIN: setupActivationDialog");
         setupActivationDialog(prefs);
         Timber.i("MAIN: setupBluetooth");
@@ -305,22 +301,8 @@ public class NetworkMapManager extends Service implements NetworkDataSaveTaskLis
         Timber.i("MAIN: setupLocation"); // must be after setupWifi
         setupLocation(prefs);
         Timber.i("MAIN: setup tabs");
-//        if (savedInstanceState == null) {
-//            setupFragments();
-//        }
-//        setupFilters(prefs);
 
         Timber.i("MAIN: first install check");
-        // ALIBI: don't inherit MxC implant failures from backups.
-//        if (InstallUtility.isFirstInstall(this)) {
-//            SharedPreferences mySPrefs = PreferenceManager.getDefaultSharedPreferences(this.context);
-//            SharedPreferences.Editor editor = mySPrefs.edit();
-//            editor.remove(ListFragment.PREF_MXC_REINSTALL_ATTEMPTED);
-//            if (!isImperialUnitsLocale()) {
-//                editor.putBoolean(PreferenceKeys.PREF_METRIC, true);
-//            }
-//            editor.apply();
-//        }
 
         Timber.i("MAIN: cell data check");
         //TODO: if we can determine whether DB needs updating, we can avoid copying every time
@@ -444,6 +426,7 @@ public class NetworkMapManager extends Service implements NetworkDataSaveTaskLis
         if (state.mxcDbHelper == null) {
             state.mxcDbHelper = new MxcDatabaseHelper(context, prefs);
         }
+        state.dbHelper.startNewCapture();
     }
 
     private void setupWifi(final SharedPreferences prefs) {
@@ -1288,32 +1271,6 @@ public class NetworkMapManager extends Service implements NetworkDataSaveTaskLis
         this.currentFile = null;
         saveTask = (NetworkDataSaveTask) new NetworkDataSaveTask(this, bundle, state, context)
                 .execute(instanceFile);
-//        final Object[] fileFilename = new Object[2];
-//        try (final OutputStream fos = FileAccess.getOutputStream( context, bundle, fileFilename )) {
-//            final File file = (File) fileFilename[0];
-//            final String filename = (String) fileFilename[1];
-//
-//            // write file
-//            long maxId = FileUtility.writeFile(context, state.dbHelper, fos, bundle);
-//
-//            final boolean hasSD = FileUtility.hasSD();
-//
-//            final String absolutePath = hasSD ? file.getAbsolutePath() : context.getFileStreamPath(filename).getAbsolutePath();
-//
-//            Timber.i("filepath: " + absolutePath);
-//
-//            File gz = new File(absolutePath);
-//            String dirPath;
-//            dirPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS).getAbsolutePath();
-//
-//            File externalFile = new File(dirPath);
-//            FileUtility.copyFile(gz, externalFile);
-//
-//            return new NetworkFile(absolutePath);
-//        } catch (Exception e) {
-//            Timber.e(e,"Exception");
-//            throw new RuntimeException(e);
-//        }
     }
 
     private void setDone() {

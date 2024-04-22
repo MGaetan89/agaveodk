@@ -46,10 +46,6 @@ public class NetworkDataSaveTask extends AsyncTask<File, Void, NetworkMapManager
 
             Timber.i("filepath: " + absolutePath);
             File gz = new File(absolutePath);
-//            String dirPath;
-//            dirPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS).getAbsolutePath();
-
-//            File externalFile = new File(dirPath);
             File externalFile = new File(instanceFile.getParent()
                     + File.separator
                     + System.currentTimeMillis()
