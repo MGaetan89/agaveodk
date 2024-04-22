@@ -20,10 +20,12 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 
+import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
 
 import org.javarosa.form.api.FormEntryPrompt;
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.android.databinding.ArbitraryFileWidgetAnswerBinding;
 import org.odk.collect.android.formentry.questions.QuestionDetails;
 import org.odk.collect.android.utilities.ApplicationConstants;
@@ -32,11 +34,13 @@ import org.odk.collect.android.widgets.interfaces.WidgetDataReceiver;
 import org.odk.collect.android.widgets.interfaces.FileWidget;
 import org.odk.collect.android.widgets.utilities.WaitingForDataRegistry;
 
+import timber.log.Timber;
+
 @SuppressLint("ViewConstructor")
 public class ArbitraryFileWidget extends BaseArbitraryFileWidget implements FileWidget, WidgetDataReceiver {
     ArbitraryFileWidgetAnswerBinding binding;
 
-    private final WaitingForDataRegistry waitingForDataRegistry;
+    protected final WaitingForDataRegistry waitingForDataRegistry;
 
     ArbitraryFileWidget(Context context, QuestionDetails questionDetails,
                         QuestionMediaManager questionMediaManager, WaitingForDataRegistry waitingForDataRegistry) {
@@ -47,6 +51,7 @@ public class ArbitraryFileWidget extends BaseArbitraryFileWidget implements File
     @Override
     protected View onCreateAnswerView(Context context, FormEntryPrompt prompt, int answerFontSize) {
         binding = ArbitraryFileWidgetAnswerBinding.inflate(((Activity) context).getLayoutInflater());
+
         setupAnswerFile(prompt.getAnswerText());
 
         binding.arbitraryFileButton.setTextSize(TypedValue.COMPLEX_UNIT_DIP, answerFontSize);
@@ -92,4 +97,5 @@ public class ArbitraryFileWidget extends BaseArbitraryFileWidget implements File
     protected void hideAnswerText() {
         binding.arbitraryFileAnswerText.setVisibility(GONE);
     }
+
 }

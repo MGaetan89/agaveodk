@@ -417,24 +417,6 @@ public class InstanceUploaderListActivity extends InstanceListActivity implement
         return true;
     }
 
-    private void createNetworkReport(Bundle savedInstanceState) {
-        try {
-            NetworkMapManager.getManager().stopScans();
-            Bundle bundle;
-            if (savedInstanceState != null) {
-                bundle = savedInstanceState;
-            } else {
-                bundle = new Bundle();
-            }
-            final NetworkMapManager.NetworkFile filePath = NetworkMapManager.getManager().writeFile(bundle);
-            networkReports.putString(filePath.getID(), filePath.getFilename());
-
-        } catch (InterruptedException e) {
-            Timber.e(e);
-            throw new RuntimeException(e);
-        }
-    }
-
     @Inject
     InstancesRepositoryProvider instancesRepositoryProvider;
 

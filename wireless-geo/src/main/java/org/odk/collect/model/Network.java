@@ -36,6 +36,7 @@ public final class Network implements ClusterItem {
 
     private final String bssid;
     private String ssid;
+    private String provider;
     private final String capabilities;
     private final String showCapabilities;
     private final int crypto;
@@ -69,6 +70,9 @@ public final class Network implements ClusterItem {
     public static final int CRYPTO_WPA2 = 3;
     public static final int CRYPTO_WPA3 = 4;
 
+    public void setProvider(final String value) {
+        this.provider = value;
+    }
     public enum NetworkBand {
         WIFI_2_4_GHZ, WIFI_5_GHZ, WIFI_6_GHZ, WIFI_60_GHZ, CELL_2_3_GHZ, UNDEFINED
     }
@@ -160,6 +164,11 @@ public final class Network implements ClusterItem {
     public String getSsid() {
         return ssid;
     }
+
+    public String getProvider() {
+        return provider;
+    }
+
 
     public int getFrequency() {
         return frequency;
@@ -377,4 +386,5 @@ public final class Network implements ClusterItem {
             return null;
         }
     }
+
 }

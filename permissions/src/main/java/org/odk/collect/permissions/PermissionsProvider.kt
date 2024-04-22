@@ -33,7 +33,8 @@ open class PermissionsProvider internal constructor(
     fun areLocationPermissionsGranted(): Boolean {
         return permissionsChecker.isPermissionGranted(
             Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.ACCESS_COARSE_LOCATION
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_BACKGROUND_LOCATION
         )
     }
 
@@ -104,7 +105,8 @@ open class PermissionsProvider internal constructor(
                 }
             },
             Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.ACCESS_COARSE_LOCATION
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_BACKGROUND_LOCATION
         )
     }
 

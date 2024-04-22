@@ -22,7 +22,6 @@ import org.javarosa.core.reference.ReferenceManager;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.odk.collect.analytics.Analytics;
-import org.odk.collect.analytics.BlockableFirebaseAnalytics;
 import org.odk.collect.analytics.NoopAnalytics;
 import org.odk.collect.android.BuildConfig;
 import org.odk.collect.android.R;
@@ -202,12 +201,7 @@ public class AppDependencyModule {
     @Provides
     @Singleton
     public Analytics providesAnalytics(Application application) {
-        try {
-            return new BlockableFirebaseAnalytics(application);
-        } catch (IllegalStateException e) {
-            // Couldn't setup Firebase so use no-op instance
-            return new NoopAnalytics();
-        }
+        return new NoopAnalytics();
     }
 
     @Provides

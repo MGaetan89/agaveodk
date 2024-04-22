@@ -3,13 +3,6 @@
 
 package org.odk.collect.db;
 
-//import static net.wigle.wigleandroid.MainActivity.ERROR_REPORT_DIALOG;
-//import static net.wigle.wigleandroid.listener.GNSSListener.MIN_ROUTE_LOCATION_DIFF_METERS;
-//import static net.wigle.wigleandroid.listener.GNSSListener.MIN_ROUTE_LOCATION_DIFF_TIME;
-//import static net.wigle.wigleandroid.listener.GNSSListener.MIN_ROUTE_LOCATION_PRECISION_METERS;
-//import static net.wigle.wigleandroid.util.FileUtility.SQL_EXT;
-//import static net.wigle.wigleandroid.util.FileUtility.hasSD;
-//import static net.wigle.wigleandroid.util.Timber.i;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static org.odk.collect.receivers.GNSSListener.MIN_ROUTE_LOCATION_DIFF_METERS;
 import static org.odk.collect.receivers.GNSSListener.MIN_ROUTE_LOCATION_DIFF_TIME;
@@ -28,6 +21,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteStatement;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -107,6 +101,12 @@ public final class DatabaseHelper extends Thread {
     private SQLiteStatement insertRoute;
 
     public static final String NETWORK_TABLE = "network";
+
+    private Boolean newCapture = false;
+
+    public void startNewCapture() {
+        this.newCapture = true;
+    }
     private static final String NETWORK_CREATE =
             "create table " + NETWORK_TABLE + " ( "
                     + "bssid text primary key not null,"
@@ -1093,6 +1093,15 @@ public final class DatabaseHelper extends Thread {
     public int recoverLocations( final Location loc ) {
         int count = 0;
         long locWhen = System.currentTimeMillis();
+        boolean shouldLerp = true;
+
+        //check if this is the first change from network to gps
+        if (( lastLoc != null ) && (this.newCapture) &&
+                !loc.getProvider().equals(lastLoc.getProvider()) &&
+                LocationManager.GPS_PROVIDER.equals(loc.getProvider())) {
+            shouldLerp = false;
+            this.newCapture = false;
+        }
 
         if ( ( lastLoc != null ) && ( ! pending.isEmpty() ) ) {
             final float accuracy = loc.distanceTo( lastLoc );
@@ -1131,9 +1140,19 @@ public final class DatabaseHelper extends Thread {
                 // pull this once we're happy.
                 //        MainActivity.info( "interpolated to ("+lerp_lat+","+lerp_lon+")" );
 
+                boolean add = false;
                 // throw it on the queue!
-                if ( addObservation(pend.network, pend.level, lerpLoc, pend.newForRun,
-                        pend.frequencyChanged, pend.typeMorphed) ) {
+                if (shouldLerp) {
+                    pend.network.setProvider(lerpLoc.getProvider());
+                    add = addObservation(pend.network, pend.level, lerpLoc, pend.newForRun,
+                            pend.frequencyChanged, pend.typeMorphed);
+                } else {
+                    pend.network.setProvider(loc.getProvider());
+                    add = addObservation(pend.network, pend.level, loc, pend.newForRun,
+                            pend.frequencyChanged, pend.typeMorphed);
+                }
+
+                if ( add ) {
                     count++;
                 } else {
                     Timber.i( "failed to add "+pend );
@@ -1418,10 +1437,10 @@ public final class DatabaseHelper extends Thread {
     public Cursor getCurrentVisibleRouteIterator(SharedPreferences prefs) throws DBException{
             Timber.i("currentRouteIterator");
             checkDB();
-            if (prefs == null || !prefs.getBoolean(PreferenceKeys.PREF_VISUALIZE_ROUTE, false)) {
+            if (prefs == null || !prefs.getBoolean(PreferenceKeys.PREF_VISUALIZE_ROUTE, true)) {
                 return null;
             }
-            boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, false);
+            boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, true);
             final long visibleRouteId = logRoutes ? prefs.getLong(PreferenceKeys.PREF_ROUTE_DB_RUN, 0L) : 0L;
             final String[] args = new String[]{String.valueOf(visibleRouteId)};
             return db.rawQuery("SELECT lat,lon FROM route WHERE run_id = ?", args);
@@ -1442,40 +1461,7 @@ public final class DatabaseHelper extends Thread {
     }
 
 
-//    public Pair<Boolean,String> copyDatabase(final BackupTask task) {
-//        File file = context.getDatabasePath(DATABASE_NAME);
-//        String outputFilename = "backup-" + System.currentTimeMillis() + SQL_EXT;
-//
-//        if (hasSD()) {
-//            file = new File(EXTERNAL_DATABASE_PATH, DATABASE_NAME);
-//        }
-//        Pair<Boolean,String> result;
-//        try {
-//            InputStream input = new FileInputStream(file);
-//            FileOutputStream output = FileUtility.createFile(context, outputFilename, false);
-//            byte[] buffer = new byte[1024];
-//            int bytesRead;
-//            final long total = file.length();
-//            long read = 0;
-//            while( (bytesRead = input.read(buffer)) > 0){
-//                output.write(buffer, 0, bytesRead);
-//                read += bytesRead;
-//                int percent = (int)( (read*100)/total );
-//                // MainActivity.info("percent: " + percent + " read: " + read + " total: " + total );
-//                task.progress( percent );
-//            }
-//            output.close();
-//            input.close();
-//            final File outputFile = new File(FileUtility.getBackupPath(context), outputFilename);
-//            result = new Pair<>(Boolean.TRUE, outputFile.getAbsolutePath());
-//        }
-//        catch ( IOException ex ) {
-//            Timber.e("backup failure: " + ex, ex);
-//            result = new Pair<>(Boolean.FALSE, "ERROR: " + ex);
-//        }
-//
-//        return result;
-//    }
+
 
     public int clearDatabase() {
         try {

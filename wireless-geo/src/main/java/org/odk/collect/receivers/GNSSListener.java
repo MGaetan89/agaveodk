@@ -1,6 +1,7 @@
 package org.odk.collect.receivers;
 
 import static android.content.Context.LOCATION_SERVICE;
+import static android.location.LocationManager.FUSED_PROVIDER;
 import static android.location.LocationManager.GPS_PROVIDER;
 import static android.location.LocationManager.NETWORK_PROVIDER;
 
@@ -33,24 +34,18 @@ import timber.log.Timber;
 import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 
-//import net.wigle.wigleandroid.ListFragment;
-//import net.wigle.wigleandroid.NetworkMapManager;
-//import net.wigle.wigleandroid.R;
-//import net.wigle.wigleandroid.db.DatabaseHelper;
-//import net.wigle.wigleandroid.ui.WiGLEToast;
-//import net.wigle.wigleandroid.util.KalmanLatLong;
-//import net.wigle.wigleandroid.util.Logging;
-//import net.wigle.wigleandroid.util.PreferenceKeys;
+import com.google.android.gms.maps.model.LatLng;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
 public class GNSSListener implements LocationListener {
-    public static final long GPS_TIMEOUT_DEFAULT = 15000L;
-    public static final long NET_LOC_TIMEOUT_DEFAULT = 60000L;
+    public static final long GPS_TIMEOUT_DEFAULT = 5000L;
+    public static final long NET_LOC_TIMEOUT_DEFAULT = 10000L;
     public static final float LERP_MIN_THRESHOLD_METERS = 20.0f;
     public static final float LERP_MAX_THRESHOLD_METERS = 200f;
 
@@ -59,7 +54,6 @@ public class GNSSListener implements LocationListener {
     public static final float MIN_ROUTE_LOCATION_PRECISION_METERS = 24.99f;
 
     //Minimum difference between updates to change total distance.
-    // ALIBI: Don't know if B. Bonzai is a user
     public static final float MACH_1_3_METERS_SEC = 445.9f; // compensate for use on vehicles up to the HB-88
     // ALIBI: excludes the snail-stumbling community until they work out weight/power supply problems
     public static final float SLOW_METERS_SEC = 0.025f;     // snails actually vary between 0.013m/s and 0.0028m/s
@@ -103,7 +97,6 @@ public class GNSSListener implements LocationListener {
     }
 
     public void handleScanStop() {
-        Timber.i("GPSListener: handleScanStop");
         gnssStatus = null;
         gpsStatus = null;
         currentLocation = null;
@@ -111,7 +104,7 @@ public class GNSSListener implements LocationListener {
 
     @Override
     public void onLocationChanged( final Location newLocation ) {
-        Timber.i("GPS onLocationChanged: " + newLocation);
+        Timber.d("GNSS GPS onLocationChanged: " + newLocation);
         updateLocationData( newLocation );
 
         if ( mapLocationListener != null ) {
@@ -120,8 +113,15 @@ public class GNSSListener implements LocationListener {
     }
 
     @Override
+    public void onLocationChanged(final List<Location> locations) {
+        Timber.d("GNSS GPS onLocationChanged<batched>: " + locations);
+        Location l = locations.get(locations.size()-1);
+        onLocationChanged(l);
+    }
+
+    @Override
     public void onProviderDisabled( final String provider ) {
-        Timber.i("provider disabled: " + provider);
+        Timber.d("provider disabled: " + provider);
 
         if ( mapLocationListener != null ) {
             mapLocationListener.onProviderDisabled( provider );
@@ -130,7 +130,7 @@ public class GNSSListener implements LocationListener {
 
     @Override
     public void onProviderEnabled( final String provider ) {
-        Timber.i("provider enabled: " + provider);
+        Timber.d("provider enabled: " + provider);
         if (null != kalmanLatLong) {
             kalmanLatLong.reset();
         }
@@ -143,7 +143,7 @@ public class GNSSListener implements LocationListener {
     public void onStatusChanged( final String provider, final int status, final Bundle extras ) {
         final boolean isgps = "gps".equals(provider);
         if (!isgps || status != prevStatus) {
-            Timber.i("provider status changed: " + provider + " status: " + status);
+            Timber.d("provider status changed: " + provider + " status: " + status);
             if (isgps) prevStatus = status;
         }
 
@@ -154,21 +154,22 @@ public class GNSSListener implements LocationListener {
 
     public void onGnssStatusChanged(GnssStatus gnssStatus) {
         this.gnssStatus = gnssStatus;
-        Timber.i("GNSS Status:" + gnssStatus.toString());
+        Timber.d("GNSS Status:" + gnssStatus.toString());
     }
 
     /** newLocation can be null */
     @SuppressLint("MissingPermission")
     private synchronized void updateLocationData(final Location L ) {
         Location newLocation = L;
-//        Timber.i("updating location data: " + newLocation);
+        Timber.i("validating location data: " + newLocation);
         /*
           ALIBI: the location manager call's a non-starter if permission hasn't been granted.
          */
         if ( Build.VERSION.SDK_INT >= 23 &&
                 !permissionsChecker.isPermissionGranted(
                         Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.ACCESS_COARSE_LOCATION
+                        Manifest.permission.ACCESS_COARSE_LOCATION,
+                        Manifest.permission.ACCESS_BACKGROUND_LOCATION
                 )) {
             Timber.e("Missing location permissions");
             return;
@@ -178,14 +179,6 @@ public class GNSSListener implements LocationListener {
         final LocationManager locationManager = (LocationManager)
                 networkMapManager.getSystemService(LOCATION_SERVICE);
 
-        // see if we have new data
-        try {
-            newLocation = locationManager.getLastKnownLocation("gps");
-//            Timber.i("Last location: " + L);
-        } catch (NullPointerException npe) {
-            Timber.e(npe, "NPE trying to call getGPSStatus");
-            return;
-        }
         final int satCount = getSatCount();
 
         final long gpsTimeout = prefs.getLong(PreferenceKeys.PREF_GPS_TIMEOUT, GPS_TIMEOUT_DEFAULT);
@@ -205,9 +198,9 @@ public class GNSSListener implements LocationListener {
         }
         final boolean locOK = locationOK(currentLocation, satCount, gpsTimeout, netLocTimeout );
         final long now = System.currentTimeMillis();
-
         if ( newOK ) {
-            if ( NETWORK_PROVIDER.equals( newLocation.getProvider() ) ) {
+            if ( NETWORK_PROVIDER.equals( newLocation.getProvider() )
+            || FUSED_PROVIDER.equals( newLocation.getProvider() ) ) {
                 // save for later, in case we lose gps
                 networkLocation = newLocation;
                 lastNetworkLocationTime = now;
@@ -219,12 +212,8 @@ public class GNSSListener implements LocationListener {
             }
         }
 
-//        if ( networkMapManager.inEmulator() && newLocation != null ) {
-//            newOK = true;
-//        }
-
-        final boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, false);
-        final boolean showRoute = prefs.getBoolean(PreferenceKeys.PREF_VISUALIZE_ROUTE, false);
+        final boolean logRoutes = prefs.getBoolean(PreferenceKeys.PREF_LOG_ROUTES, true);
+        final boolean showRoute = prefs.getBoolean(PreferenceKeys.PREF_VISUALIZE_ROUTE, true);
 
         final boolean netLocOK = locationOK( networkLocation, satCount, gpsTimeout, netLocTimeout );
 
@@ -245,7 +234,7 @@ public class GNSSListener implements LocationListener {
             }
             else if ( currentLocation != null ) {
                 // transition to null
-                Timber.i( "nulling location: " + currentLocation);
+                Timber.d( "nulling location: " + currentLocation);
                 currentLocation = null;
                 wasProviderChange = true;
                 // make sure we're registered for updates
@@ -269,6 +258,7 @@ public class GNSSListener implements LocationListener {
                 currentLocation = newLocation;
             }
         }
+        Timber.i("current location data: " + currentLocation);
         if (currentLocation != null && currentLocation.getTime() != 0L &&
                 currentLocation.getAccuracy()  < MIN_ROUTE_LOCATION_PRECISION_METERS &&
                 currentLocation.getAccuracy()  > 0.0d) {
@@ -293,7 +283,7 @@ public class GNSSListener implements LocationListener {
                             Timber.w("Diff is too large, not lerping. " + dist + " meters");
                             dbHelper.clearPendingObservations();
                         } else if (!currentLocation.equals(prevLocation)) {
-                            Timber.i("lerping for " + dist + " meters");
+                            Timber.d("lerping for " + dist + " meters");
                             dbHelper.recoverLocations(currentLocation);
                         }
                     }
@@ -314,60 +304,21 @@ public class GNSSListener implements LocationListener {
             if ( prevLocation != null ) {
                 if (null != dbHelper) {
                     dbHelper.lastLocation(prevLocation);
-                    Timber.i("set last location for lerping");
+                    Timber.d("set last location for lerping");
                 }
             }
         }
 
-        // for maps. so lame!
-        NetworkMapManager.networkState.location = currentLocation;
-        boolean scanScheduled = false;
-        if ( currentLocation != null ) {
-            final float currentSpeed = currentLocation.getSpeed();
-            if ( (previousSpeed == 0f && currentSpeed > 0f)
-                    || (previousSpeed < 5f && currentSpeed >= 5f)) {
-                // moving faster now than before, schedule a scan because the timing config pry changed
-                Timber.i("Going faster, scheduling scan");
-                networkMapManager.scheduleScan();
-                scanScheduled = true;
-            }
-            previousSpeed = currentSpeed;
-        }
-        else {
-            previousSpeed = 0f;
-        }
-
-        // NetworkMapManager.info("sat count: " + satCount);
-
         if ( wasProviderChange ) {
-            Timber.i( "wasProviderChange: satCount: " + satCount
+            Timber.d( "wasProviderChange: satCount: " + satCount
                     + " newOK: " + newOK + " locOK: " + locOK + " netLocOK: " + netLocOK
                     + (newOK ? " newProvider: " + newLocation.getProvider() : "")
                     + (locOK ? " locProvider: " + currentLocation.getProvider() : "")
                     + " newLocation: " + newLocation );
 
-            final boolean disableToast = prefs.getBoolean( PreferenceKeys.PREF_DISABLE_TOAST, false );
-//            if (!disableToast) {
-//                final String announce = currentLocation == null ? networkMapManager.getString(R.string.lost_location)
-//                        : networkMapManager.getString(R.string.have_location) + " \"" + currentLocation.getProvider() + "\"";
-//                Handler handler = new Handler(Looper.getMainLooper());
-//                handler.post(() -> WiGLEToast.showOverActivity(networkMapManager, R.string.gps_status, announce));
-//            }
-
-            final boolean speechGPS = prefs.getBoolean( PreferenceKeys.PREF_SPEECH_GPS, true );
-//            if ( speechGPS ) {
-//                // no quotes or the voice pauses
-//
-//                final String speakAnnounce = currentLocation == null ? networkMapManager.getString(R.string.lost_location)
-//                        : networkMapManager.getString(R.string.have_location) + " " + currentLocation.getProvider() + ".";
-//                networkMapManager.speak( speakAnnounce );
-//            }
-
-            if ( ! scanScheduled ) {
-                // get the ball rolling
-                Timber.i("Location provider change, scheduling scan");
-                networkMapManager.scheduleScan();
-            }
+            // get the ball rolling
+            Timber.d("Location provider changed, scheduling scan");
+            networkMapManager.scheduleScan();
         }
 
         if (logRoutes && null != currentLocation) {
@@ -427,7 +378,8 @@ public class GNSSListener implements LocationListener {
             if (gpsLost) Timber.i("gps gpsLost");
             retval = ! gpsLost;
         }
-        else if ( NETWORK_PROVIDER.equals( location.getProvider() ) ) {
+        else if ( NETWORK_PROVIDER.equals( location.getProvider() )||
+                FUSED_PROVIDER.equals( location.getProvider() ) ) {
             boolean gpsLost = now - lastNetworkLocationTime > networkLocationTimeout;
             gpsLost |= horribleGps(location);
             if (gpsLost) Timber.i("network gpsLost");
@@ -439,7 +391,7 @@ public class GNSSListener implements LocationListener {
 
     private boolean horribleGps(final Location location) {
         // try to protect against some horrible gps's out there
-        // check if accuracy is under 10 miles
+        // check if accuracy is under 1 km
         boolean horrible = location.hasAccuracy() && location.getAccuracy() > 16000;
         horrible |= location.getLatitude() < -90 || location.getLatitude() > 90;
         horrible |= location.getLongitude() < -180 || location.getLongitude() > 180;
@@ -518,6 +470,10 @@ public class GNSSListener implements LocationListener {
             edit.putFloat( PreferenceKeys.PREF_PREV_LON, (float) currentLocation.getLongitude() );
             edit.apply();
         }
+    }
+
+    public void setPrevLocation(Location location) {
+        prevLocation = location;
     }
 
     public Location getCurrentLocation() {

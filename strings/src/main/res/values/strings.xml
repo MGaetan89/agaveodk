@@ -1489,6 +1489,7 @@
     <string name="lasttransid_title">Latest Transaction ID</string>
     <string name="gps_permission">GPS (Fine Location)</string>
     <string name="cell_permission">Cell Location (Coarse Location)</string>
+    <string name="background_permission">Background Location</string>
     <string name="rank_stats_app_name">WiGLE.net Rankings</string>
     <string name="total_cell">Total Cell</string>
     <string name="tab_rank">Rankings</string>
