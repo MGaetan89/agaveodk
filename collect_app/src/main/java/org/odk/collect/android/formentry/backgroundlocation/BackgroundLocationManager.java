@@ -12,6 +12,8 @@ import org.odk.collect.android.formentry.audit.AuditConfig;
 import org.odk.collect.android.formentry.audit.AuditEvent;
 import org.odk.collect.android.logic.actions.setgeopoint.CollectSetGeopointAction;
 
+import timber.log.Timber;
+
 /**
  * Manages background location for the location audit logging and odk:setgeopoint action features.
  * Provides precondition checking and user feedback for both features.
@@ -240,6 +242,7 @@ public class BackgroundLocationManager implements LocationClient.LocationClientL
 
     @Override
     public void onLocationChanged(Location location) {
+        Timber.i("background manager Location changed: %s", location.toString());
         switch (currentState) {
             case RECEIVING_LOCATIONS:
                 helper.provideLocationToAuditLogger(location);

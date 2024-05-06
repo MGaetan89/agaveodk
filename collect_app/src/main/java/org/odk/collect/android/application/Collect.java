@@ -160,6 +160,7 @@ public class Collect extends Application implements
             StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
                     .detectAll()
                     .permitDiskReads()  // shared preferences are being read on main thread
+                    .permitDiskWrites()
                     .penaltyLog()
                     .build());
             StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()

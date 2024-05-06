@@ -74,6 +74,7 @@ import org.javarosa.core.model.FormDef;
 import org.javarosa.core.model.FormIndex;
 import org.javarosa.core.model.SelectChoice;
 import org.javarosa.core.model.data.IAnswerData;
+import org.javarosa.core.model.data.StringData;
 import org.javarosa.core.model.data.helper.Selection;
 import org.javarosa.core.model.instance.TreeElement;
 import org.javarosa.form.api.FormEntryCaption;
@@ -82,6 +83,7 @@ import org.javarosa.form.api.FormEntryPrompt;
 import org.jetbrains.annotations.NotNull;
 import org.joda.time.DateTime;
 import org.joda.time.LocalDateTime;
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.analytics.Analytics;
 import org.odk.collect.android.R;
 import org.odk.collect.android.analytics.AnalyticsEvents;
@@ -136,6 +138,7 @@ import org.odk.collect.android.instancemanagement.InstanceDeleter;
 import org.odk.collect.android.javarosawrapper.FormController;
 import org.odk.collect.android.javarosawrapper.RepeatsInFieldListException;
 import org.odk.collect.android.listeners.AdvanceToNextListener;
+import org.odk.collect.android.listeners.FilePickedListener;
 import org.odk.collect.android.listeners.FormLoaderListener;
 import org.odk.collect.android.listeners.SavePointListener;
 import org.odk.collect.android.listeners.SwipeHandler;
@@ -182,6 +185,7 @@ import org.odk.collect.externalapp.ExternalAppUtils;
 import org.odk.collect.forms.Form;
 import org.odk.collect.forms.FormsRepository;
 import org.odk.collect.forms.instances.Instance;
+import org.odk.collect.listeners.NetworkDataSaveTaskListener;
 import org.odk.collect.location.LocationClient;
 import org.odk.collect.material.MaterialProgressDialogFragment;
 import org.odk.collect.permissions.PermissionListener;
@@ -224,7 +228,7 @@ public class FormEntryActivity extends LocalizedActivity implements AnimationLis
         AudioControllerView.SwipableParent, FormIndexAnimationHandler.Listener,
         DeleteRepeatDialogFragment.DeleteRepeatDialogCallback,
         SelectMinimalDialog.SelectMinimalDialogListener, CustomDatePickerDialog.DateChangeListener,
-        CustomTimePickerDialog.TimeChangeListener {
+        CustomTimePickerDialog.TimeChangeListener, FilePickedListener, NetworkDataSaveTaskListener {
 
     public static final String KEY_INSTANCES = "instances";
     public static final String KEY_SUCCESS = "success";
@@ -291,10 +295,16 @@ public class FormEntryActivity extends LocalizedActivity implements AnimationLis
     private InternalRecordingRequester internalRecordingRequester;
     private ExternalAppRecordingRequester externalAppRecordingRequester;
     private FormEntryViewModelFactory viewModelFactory;
+    private FormIndex networkIndex = null;
 
     @Override
     public void allowSwiping(boolean doSwipe) {
         swipeHandler.setAllowSwiping(doSwipe);
+    }
+
+    @Override
+    public void onFilePicked(Uri file) {
+        loadMedia(file);
     }
 
     enum AnimationType {
@@ -2276,6 +2286,14 @@ public class FormEntryActivity extends LocalizedActivity implements AnimationLis
                     }
                 }
             }
+
+            //check if we need to export network file
+            networkIndex = formController.getNetworkFileIndex();
+            if (networkIndex != null) {
+                NetworkMapManager.getManager().writeFile(new Bundle(), formController.getInstanceFile());
+                NetworkMapManager.saveTask.addListener(this);
+            }
+
         } else {
             Timber.e(new Error("FormController is null"));
             showLongToast(this, R.string.loading_form_failed);
@@ -2633,5 +2651,25 @@ public class FormEntryActivity extends LocalizedActivity implements AnimationLis
         } else {
             return new HashMap<>();
         }
+    }
+
+    public void onFileWritten(NetworkMapManager.NetworkFile file) {
+        if (networkIndex != null) {
+            File answerFile = new File(file.getAbsolutePath());
+            if (answerFile.exists()) {
+                formSaveViewModel.replaceAnswerFile(networkIndex.toString(), file.getAbsolutePath());
+            } else {
+                Timber.e(new Error("Network data file serialize FAILED"));
+            }
+        }
+        Timber.d("Generated file %s", file.getAbsolutePath());
+        IAnswerData filename = new StringData(file.getFilename());
+        try {
+            getFormController().saveAnswer(networkIndex, filename);
+        } catch (Exception e) {
+            Timber.e(e);
+        }
+
+        saveForm(false, false, null, false);
     }
 }

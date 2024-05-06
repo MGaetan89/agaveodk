@@ -124,6 +124,10 @@ interface FormController {
 
     fun isCurrentQuestionFirstInForm(): Boolean
 
+    fun isCurrentQuestionNetworkFile(): Boolean
+
+    fun getNetworkFileIndex(): FormIndex?
+
     /**
      * Attempts to save answer into the given FormIndex into the data model.
      */

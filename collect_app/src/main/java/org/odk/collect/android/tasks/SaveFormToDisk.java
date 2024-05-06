@@ -19,9 +19,12 @@ import static org.odk.collect.strings.localization.LocalizedApplicationKt.getLoc
 
 import android.content.ContentValues;
 import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
 import android.util.Pair;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 
 import org.javarosa.core.model.condition.EvaluationContext;
 import org.javarosa.core.model.data.GeoPointData;
@@ -39,6 +42,7 @@ import org.jetbrains.annotations.Nullable;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.analytics.Analytics;
 import org.odk.collect.android.R;
 import org.odk.collect.android.application.Collect;
@@ -60,11 +64,16 @@ import org.odk.collect.entities.EntitiesRepository;
 import org.odk.collect.forms.Form;
 import org.odk.collect.forms.instances.Instance;
 import org.odk.collect.forms.instances.InstancesRepository;
+import org.odk.collect.util.XmlUtility;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 import timber.log.Timber;
@@ -368,9 +377,7 @@ public class SaveFormToDisk {
             File submissionXml = new File(instanceXml.getParentFile(), "submission.xml");
 
             payload = formController.getSubmissionXml();
-
             // write out submission.xml -- the data to actually submit to aggregate
-
             progressListener.onProgressUpdate(
                     getLocalizedString(Collect.getInstance(), R.string.survey_saving_finalizing_message));
 
@@ -519,3 +526,4 @@ public class SaveFormToDisk {
         }
     }
 }
+

@@ -17,7 +17,7 @@ ant.condition(property: 'os', value: 'unix') {
 }
 
 // Build numbers were manually set until 1067
-def LEGACY_BUILD_NUMBER_OFFSET = 1067
+def LEGACY_BUILD_NUMBER_OFFSET = 1068
 
 // Based on http://stackoverflow.com/questions/17097263#24121734
 def getMasterCommitCount = { ->
@@ -267,6 +267,7 @@ dependencies {
     implementation project(':crash-handler')
     implementation project(':selfie-camera')
     implementation project(':qr-code')
+    implementation project(':wireless-geo')
 
     if (getSecrets().getProperty('MAPBOX_DOWNLOADS_TOKEN', '') != '') {
         implementation project(':mapbox')
@@ -290,9 +291,6 @@ dependencies {
     implementation Dependencies.play_services_maps
     implementation Dependencies.play_services_location
     implementation Dependencies.play_services_oss_licenses
-
-    implementation Dependencies.firebase_analytics
-    implementation Dependencies.firebase_crashlytics
 
     implementation Dependencies.guava
 
@@ -422,7 +420,3 @@ dependencies {
 // Must be at bottom to prevent dependency collisions
 // https://developers.google.com/android/guides/google-services-plugin
 apply plugin: 'com.google.gms.google-services'
-
-// Must be after google-services to prevent build failure
-// https://stackoverflow.com/a/67995305
-apply plugin: 'com.google.firebase.crashlytics'

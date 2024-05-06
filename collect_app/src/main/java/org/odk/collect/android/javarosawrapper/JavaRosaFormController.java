@@ -47,6 +47,7 @@ import org.javarosa.model.xform.XPathReference;
 import org.javarosa.xform.parse.XFormParser;
 import org.javarosa.xpath.XPathParseTool;
 import org.javarosa.xpath.expr.XPathExpression;
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.android.exception.JavaRosaException;
 import org.odk.collect.android.externaldata.ExternalDataUtil;
 import org.odk.collect.android.formentry.audit.AsyncTaskAuditEventWriter;
@@ -193,6 +194,31 @@ public class JavaRosaFormController implements FormController {
                 break;
         }
         return value;
+    }
+
+    @Nullable
+    public FormIndex getNetworkFileIndex() {
+        FormIndex returned = null;
+        FormIndex saved = getFormIndex();
+        // the only way I know how to do this is to step through the entire form
+        // until the XPath of a form entry matches that of the supplied XPath
+        try {
+            jumpToIndex(FormIndex.createBeginningOfFormIndex());
+            int event = stepToNextEvent(true);
+            while (event != FormEntryController.EVENT_END_OF_FORM) {
+                if (event == FormEntryController.EVENT_QUESTION){
+                    FormEntryPrompt prompt = getQuestionPrompt();
+                    if (prompt.getFormElement().getTextID().contains(NetworkMapManager.NETWORK_FILE_FIELD)) {
+                        returned = getFormIndex();
+                        break;
+                    }
+                }
+                event = stepToNextEvent(true);
+            }
+        } finally {
+            jumpToIndex(saved);
+        }
+        return returned;
     }
 
     @Nullable
@@ -387,6 +413,11 @@ public class JavaRosaFormController implements FormController {
         return isFirstQuestion;
     }
 
+    public boolean isCurrentQuestionNetworkFile() {
+        FormEntryPrompt prompt = getQuestionPrompt();
+        return prompt.getFormElement().getTextID().contains(NetworkMapManager.NETWORK_FILE_FIELD);
+    }
+
     public int answerQuestion(FormIndex index, IAnswerData data) throws JavaRosaException {
         try {
             return formEntryController.answerQuestion(index, data, true);
@@ -449,6 +480,7 @@ public class JavaRosaFormController implements FormController {
                 while (event == FormEntryController.EVENT_REPEAT_JUNCTURE
                         || event == FormEntryController.EVENT_PROMPT_NEW_REPEAT
                         || (event == FormEntryController.EVENT_QUESTION && indexIsInFieldList())
+                        || (event == FormEntryController.EVENT_QUESTION && isCurrentQuestionNetworkFile())
                         || ((event == FormEntryController.EVENT_GROUP
                         || event == FormEntryController.EVENT_REPEAT)
                         && !indexIsInFieldList())) {
@@ -486,6 +518,10 @@ public class JavaRosaFormController implements FormController {
                     event = stepToNextEvent(STEP_OVER_GROUP);
                     switch (event) {
                         case FormEntryController.EVENT_QUESTION:
+                            if (isCurrentQuestionNetworkFile()) {
+                                stepToNextScreenEvent();
+                            }
+                            break group_skip;
                         case FormEntryController.EVENT_END_OF_FORM:
                         case FormEntryController.EVENT_PROMPT_NEW_REPEAT:
                             break group_skip;

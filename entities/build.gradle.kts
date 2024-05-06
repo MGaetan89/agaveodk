@@ -42,6 +42,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    namespace = "org.odk.collect.entities"
 }
 
 dependencies {

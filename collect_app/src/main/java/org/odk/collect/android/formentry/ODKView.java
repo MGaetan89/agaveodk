@@ -55,6 +55,7 @@ import org.javarosa.core.reference.ReferenceManager;
 import org.javarosa.form.api.FormEntryCaption;
 import org.javarosa.form.api.FormEntryPrompt;
 import org.odk.collect.android.R;
+import org.odk.collect.android.activities.FormEntryActivity;
 import org.odk.collect.android.application.Collect;
 import org.odk.collect.android.audio.AudioHelper;
 import org.odk.collect.android.exception.ExternalParamsException;
@@ -63,6 +64,7 @@ import org.odk.collect.android.externaldata.ExternalAppsUtils;
 import org.odk.collect.android.formentry.media.PromptAutoplayer;
 import org.odk.collect.android.formentry.questions.QuestionTextSizeHelper;
 import org.odk.collect.android.javarosawrapper.FormController;
+import org.odk.collect.android.listeners.FilePickedListener;
 import org.odk.collect.android.listeners.SwipeHandler;
 import org.odk.collect.android.listeners.WidgetValueChangedListener;
 import org.odk.collect.android.utilities.ContentUriHelper;
@@ -73,6 +75,7 @@ import org.odk.collect.android.utilities.QuestionFontSizeUtils;
 import org.odk.collect.android.utilities.QuestionMediaManager;
 import org.odk.collect.android.utilities.ScreenContext;
 import org.odk.collect.android.utilities.ThemeUtils;
+import org.odk.collect.android.widgets.NetworkReportFileWidget;
 import org.odk.collect.android.widgets.QuestionWidget;
 import org.odk.collect.android.widgets.StringWidget;
 import org.odk.collect.android.widgets.WidgetFactory;
@@ -302,6 +305,12 @@ public class ODKView extends SwipeHandler.View implements OnLongClickListener, W
         QuestionWidget qw = widgetFactory.createWidgetFromPrompt(question, permissionsProvider);
         qw.setOnLongClickListener(this);
         qw.setValueChangedListener(this);
+        Activity a = (((Activity) getContext()));
+        if(qw instanceof NetworkReportFileWidget &&
+           a instanceof FormEntryActivity) {
+            ((NetworkReportFileWidget)qw).setListener((FilePickedListener)a);
+            ((NetworkReportFileWidget)qw).validateAnswerFile();
+        }
 
         return qw;
     }

@@ -17,9 +17,13 @@ package org.odk.collect.android.utilities;
 import static org.odk.collect.strings.localization.LocalizedApplicationKt.getLocalizedString;
 import static java.util.Arrays.asList;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.webkit.MimeTypeMap;
 
 import com.google.common.base.CharMatcher;
@@ -47,6 +51,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.FileNameMap;
 import java.net.URLConnection;
@@ -564,4 +569,5 @@ public final class FileUtils {
             throw new RuntimeException(msg);
         }
     }
+
 }

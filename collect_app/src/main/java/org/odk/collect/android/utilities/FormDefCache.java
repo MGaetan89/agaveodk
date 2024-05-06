@@ -118,4 +118,8 @@ public final class FormDefCache {
 
         return fd;
     }
+
+    public static boolean hasCache(File formXml) {
+        return getCacheFile(formXml).exists();
+    }
 }

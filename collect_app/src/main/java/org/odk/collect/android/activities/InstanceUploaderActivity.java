@@ -81,6 +81,7 @@ public class InstanceUploaderActivity extends LocalizedActivity implements Insta
     private Boolean deleteInstanceAfterUpload;
 
     private boolean isInstanceStateSaved;
+    private Bundle pendingReports;
 
     @Inject
     InstancesRepositoryProvider instancesRepositoryProvider;
@@ -113,7 +114,9 @@ public class InstanceUploaderActivity extends LocalizedActivity implements Insta
             if (savedInstanceState.containsKey(ALERT_MSG)) {
                 alertMsg = savedInstanceState.getString(ALERT_MSG);
             }
-
+            if(savedInstanceState.containsKey(InstanceUploaderListActivity.PENDING_REPORTS)) {
+                pendingReports = savedInstanceState.getBundle(InstanceUploaderListActivity.PENDING_REPORTS);
+            }
             url = savedInstanceState.getString(AUTH_URI);
         }
 
@@ -128,6 +131,7 @@ public class InstanceUploaderActivity extends LocalizedActivity implements Insta
         } else {
             selectedInstanceIDs = getIntent().getLongArrayExtra(FormEntryActivity.KEY_INSTANCES);
             dataBundle = getIntent().getExtras();
+            pendingReports = getIntent().getBundleExtra(InstanceUploaderListActivity.PENDING_REPORTS);
 
             boolean missingInstances = stream(selectedInstanceIDs).anyMatch(id -> instancesRepository.get(id) == null);
             if (missingInstances) {

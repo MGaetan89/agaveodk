@@ -37,6 +37,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.odk.collect.android.R;
 import org.odk.collect.android.activities.FormEntryActivity;
+import org.odk.collect.android.activities.InstanceUploaderListActivity;
 import org.odk.collect.android.injection.DaggerUtils;
 import org.odk.collect.android.listeners.InstanceUploaderListener;
 import org.odk.collect.androidshared.network.NetworkStateProvider;
@@ -71,6 +72,7 @@ public class GoogleSheetsUploaderActivity extends LocalizedActivity implements I
     private Long[] instancesToSend;
     private InstanceGoogleSheetsUploaderTask instanceGoogleSheetsUploaderTask;
 
+    private Bundle pendingReports;
     @Inject
     GoogleAccountsManager accountsManager;
 
@@ -115,6 +117,9 @@ public class GoogleSheetsUploaderActivity extends LocalizedActivity implements I
             }
             if (savedInstanceState.containsKey(ALERT_SHOWING)) {
                 alertShowing = savedInstanceState.getBoolean(ALERT_SHOWING, false);
+            }
+            if(savedInstanceState.containsKey(InstanceUploaderListActivity.PENDING_REPORTS)) {
+                pendingReports = savedInstanceState.getBundle(InstanceUploaderListActivity.PENDING_REPORTS);
             }
         }
 

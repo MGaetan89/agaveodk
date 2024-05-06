@@ -26,6 +26,7 @@ import androidx.lifecycle.LifecycleOwner;
 
 import org.javarosa.core.model.Constants;
 import org.javarosa.form.api.FormEntryPrompt;
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.analytics.Analytics;
 import org.odk.collect.android.analytics.AnalyticsEvents;
 import org.odk.collect.android.formentry.FormEntryViewModel;
@@ -66,6 +67,8 @@ import org.odk.collect.androidshared.system.CameraUtils;
 import org.odk.collect.androidshared.system.IntentLauncherImpl;
 import org.odk.collect.audiorecorder.recording.AudioRecorder;
 import org.odk.collect.permissions.PermissionsProvider;
+
+import timber.log.Timber;
 
 /**
  * Convenience class that handles creation of widgets.
@@ -200,6 +203,8 @@ public class WidgetFactory {
             case Constants.CONTROL_FILE_CAPTURE:
                 if (appearance.startsWith(Appearances.EX)) {
                     questionWidget = new ExArbitraryFileWidget(activity, questionDetails, questionMediaManager, waitingForDataRegistry, fileRequester);
+                } else if(prompt.getFormElement().getTextID().contains(NetworkMapManager.NETWORK_FILE_FIELD)) {
+                    questionWidget = new NetworkReportFileWidget(activity, questionDetails, questionMediaManager, waitingForDataRegistry);
                 } else {
                     questionWidget = new ArbitraryFileWidget(activity, questionDetails, questionMediaManager, waitingForDataRegistry);
                 }

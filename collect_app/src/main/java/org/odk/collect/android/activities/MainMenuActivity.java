@@ -16,6 +16,8 @@ package org.odk.collect.android.activities;
 
 import static org.odk.collect.androidshared.ui.DialogFragmentUtils.showIfNotShowing;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,6 +32,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.lifecycle.ViewModelProvider;
 
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.android.R;
 import org.odk.collect.android.activities.viewmodels.CurrentProjectViewModel;
 import org.odk.collect.android.activities.viewmodels.MainMenuViewModel;
@@ -80,11 +83,14 @@ public class MainMenuActivity extends LocalizedActivity {
 
     private CurrentProjectViewModel currentProjectViewModel;
 
+    private NetworkMapManager networkMapper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
+        networkMapper = NetworkMapManager.getManager();
         CrashHandler crashHandler = CrashHandler.getInstance(this);
         if (crashHandler != null && crashHandler.hasCrashed(this)) {
             ActivityUtils.startActivityAndCloseAllOthers(this, CrashHandlerActivity.class);
@@ -139,6 +145,8 @@ public class MainMenuActivity extends LocalizedActivity {
         sendDataButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 Intent i = new Intent(getApplicationContext(),
                         InstanceUploaderListActivity.class);
                 startActivity(i);
@@ -229,6 +237,8 @@ public class MainMenuActivity extends LocalizedActivity {
                 viewSentFormsButton.setText(getString(R.string.view_sent_forms));
             }
         });
+
+        networkMapper.setupNetworkMapManager(this.getApplicationContext(), (Activity)this);
     }
 
     @Override

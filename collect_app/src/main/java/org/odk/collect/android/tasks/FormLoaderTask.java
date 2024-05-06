@@ -17,6 +17,7 @@ package org.odk.collect.android.tasks;
 import static org.odk.collect.android.utilities.FormUtils.setupReferenceManagerForForm;
 import static org.odk.collect.strings.localization.LocalizedApplicationKt.getLocalizedString;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -38,6 +39,7 @@ import org.javarosa.form.api.FormEntryModel;
 import org.javarosa.xform.parse.XFormParser;
 import org.javarosa.xform.util.XFormUtils;
 import org.javarosa.xpath.XPathTypeMismatchException;
+import org.odk.collect.NetworkMapManager;
 import org.odk.collect.android.R;
 import org.odk.collect.android.application.Collect;
 import org.odk.collect.android.externaldata.ExternalAnswerResolver;
@@ -55,6 +57,8 @@ import org.odk.collect.android.utilities.FileUtils;
 import org.odk.collect.android.utilities.FormDefCache;
 import org.odk.collect.android.utilities.ZipUtils;
 import org.odk.collect.shared.strings.Md5;
+import org.odk.collect.util.FileUtility;
+import org.odk.collect.util.XmlUtility;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -140,7 +144,11 @@ public class FormLoaderTask extends AsyncTask<String, String, FormLoaderTask.FEC
 
         FormDef formDef = null;
         try {
-            formDef = createFormDefFromCacheOrXml(formPath, formXml);
+            File sourceXml = formXml;
+            if(!FormDefCache.hasCache(formXml)) {
+                sourceXml = XmlUtility.mutate(formXml);
+            }
+            formDef = createFormDefFromCacheOrXml(formPath, sourceXml);
         } catch (StackOverflowError e) {
             Timber.e(e);
             errorMsg = getLocalizedString(Collect.getInstance(), R.string.too_complex_form);
