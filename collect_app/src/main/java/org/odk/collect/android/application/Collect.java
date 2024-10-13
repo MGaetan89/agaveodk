@@ -22,7 +22,6 @@ import android.content.res.Configuration;
 import android.os.StrictMode;
 
 import androidx.annotation.NonNull;
-import androidx.multidex.MultiDex;
 
 import org.jetbrains.annotations.NotNull;
 import org.odk.collect.android.BuildConfig;
@@ -120,16 +119,6 @@ public class Collect extends Application implements
 
     public void setExternalDataManager(ExternalDataManager externalDataManager) {
         this.externalDataManager = externalDataManager;
-    }
-
-    /*
-        Adds support for multidex support library. For more info check out the link below,
-        https://developer.android.com/studio/build/multidex.html
-    */
-    @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
-        MultiDex.install(this);
     }
 
     @Override
